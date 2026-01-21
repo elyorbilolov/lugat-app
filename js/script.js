@@ -9,6 +9,47 @@ let quizCorrect = 0;
 let quizIncorrectWords = 0;
 let quizTimeLeft = 60; // 1 minute challenge
 
+// Initialize Theme
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+    
+    document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
+});
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+}
+
+function updateThemeIcon(theme) {
+    const themeIcon = document.getElementById('themeIcon');
+    if (!themeIcon) return;
+    
+    if (theme === 'dark') {
+        // Sun Icon
+        themeIcon.innerHTML = `
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        `;
+    } else {
+        // Moon Icon
+        themeIcon.innerHTML = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>`;
+    }
+}
+
 function normalizeKey(key) {
     if (!key) return '';
     return key.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -37,15 +78,48 @@ fetch('lugat.json')
     .catch(error => console.error('Error loading lugat data:', error));
 
 function initCards() {
-    const cards = document.querySelectorAll('.card');
+    const grid = document.getElementById('categoryGrid');
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    
+    // Remove existing Favorites card if it exists
+    const existingFav = document.getElementById('favoritesCard');
+    if (existingFav) existingFav.remove();
+
+    // Add Favorites card if there are favorites
+    if (favorites.length > 0) {
+        const favCard = document.createElement('div');
+        favCard.className = 'card';
+        favCard.id = 'favoritesCard';
+        favCard.style.borderColor = 'var(--accent)';
+        favCard.innerHTML = `
+            <div class="card-content">
+                <h2 class="card-title">⭐ Favorites</h2>
+                <p class="card-subtitle">${favorites.length} words</p>
+                <div class="progress-bar" style="display: block"><div class="progress" style="width: 100%;"></div></div>
+            </div>
+            <div class="card-illustration"><img src="assets/favorites.png" alt="Favorites" style="opacity: 0.5"></div>
+        `;
+        favCard.addEventListener('click', () => showCategory('Favorites'));
+        grid.prepend(favCard);
+    }
+
     cards.forEach(card => {
         const title = card.querySelector('.card-title').innerText.trim();
         const normKey = normalizeKey(title);
         
-        // Update word count if entry exists in JSON
         if (normalizedLugatData[normKey]) {
-            const count = normalizedLugatData[normKey].length;
+            const words = normalizedLugatData[normKey];
+            const count = words.length;
             card.querySelector('.card-subtitle').innerText = `${count} words`;
+            
+            // Progress Bar
+            const progressValue = getProgress(normKey);
+            const progressBar = card.querySelector('.progress-bar');
+            if (progressBar) {
+                progressBar.style.display = 'block';
+                progressBar.querySelector('.progress').style.width = `${progressValue}%`;
+            }
         }
 
         card.addEventListener('click', () => {
@@ -54,10 +128,43 @@ function initCards() {
     });
 }
 
+function getProgress(categoryKey) {
+    const progressData = JSON.parse(localStorage.getItem('progress') || '{}');
+    return progressData[categoryKey] || 0;
+}
+
+function saveProgress(categoryKey, correctCount, totalCount) {
+    const progressData = JSON.parse(localStorage.getItem('progress') || '{}');
+    const currentPercent = progressData[categoryKey] || 0;
+    const newPercent = Math.round((correctCount / totalCount) * 100);
+    
+    // Only update if the new result is better
+    if (newPercent > currentPercent) {
+        progressData[categoryKey] = newPercent;
+        localStorage.setItem('progress', JSON.stringify(progressData));
+    }
+}
+
 function showCategory(category) {
     currentCategory = category;
-    const normKey = normalizeKey(category);
-    const words = normalizedLugatData[normKey] || [];
+    let words = [];
+    
+    if (category === 'Favorites') {
+        const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+        // We need to find the word objects in the full data
+        for (let key in normalizedLugatData) {
+            normalizedLugatData[key].forEach(w => {
+                if (favorites.includes(w.word)) {
+                    words.push(w);
+                }
+            });
+        }
+        // Remove duplicates if any
+        words = Array.from(new Set(words.map(w => JSON.stringify(w)))).map(s => JSON.parse(s));
+    } else {
+        const normKey = normalizeKey(category);
+        words = normalizedLugatData[normKey] || [];
+    }
     
     document.getElementById('categoryGrid').style.display = 'none';
     document.getElementById('detailView').style.display = 'block';
@@ -76,13 +183,50 @@ function showGrid() {
 
 function renderWords(words) {
     const tbody = document.getElementById('wordListBody');
-    tbody.innerHTML = words.map(w => `
-        <tr>
-            <td><span class="translation">${w.translation}</span></td>
-            <td><span class="word-text">${w.word}</span></td>
-            <td><span class="transcription">${w.transcription}</span></td>
-        </tr>
-    `).join('');
+    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    
+    tbody.innerHTML = words.map(w => {
+        const isFav = favorites.includes(w.word);
+        return `
+            <tr>
+                <td><span class="translation">${w.translation}</span></td>
+                <td>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span class="word-text">${w.word}</span>
+                        <button class="icon-btn-small" onclick="speakWord('${w.word}')" title="Pronounce">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                        </button>
+                        <button class="icon-btn-small favorite-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${w.word}', this)" title="Add to Favorites">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="${isFav ? 'var(--accent)' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </button>
+                    </div>
+                </td>
+                <td><span class="transcription">${w.transcription}</span></td>
+            </tr>
+        `;
+    }).join('');
+}
+
+function speakWord(text) {
+    if (!window.speechSynthesis) return;
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
+}
+
+function toggleFavorite(word, btn) {
+    let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    if (favorites.includes(word)) {
+        favorites = favorites.filter(f => f !== word);
+        btn.classList.remove('active');
+        btn.querySelector('svg').setAttribute('fill', 'none');
+    } else {
+        favorites.push(word);
+        btn.classList.add('active');
+        btn.querySelector('svg').setAttribute('fill', 'var(--accent)');
+    }
+    localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
 function filterWords() {
@@ -192,6 +336,14 @@ function renderQuizWord() {
     const targetWord = wordObj.word.trim();
     const inputsContainer = document.getElementById('letterInputs');
     inputsContainer.innerHTML = '';
+    
+    // Add Audio Button to Quiz
+    const audioBtn = document.createElement('button');
+    audioBtn.className = 'icon-btn-small';
+    audioBtn.style.margin = '0 auto 20px';
+    audioBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>`;
+    audioBtn.onclick = () => speakWord(targetWord);
+    inputsContainer.appendChild(audioBtn);
     
     const words = targetWord.split(' ');
     
@@ -312,6 +464,12 @@ function showResult() {
     stopTimer();
     document.querySelector('.quiz-body').style.display = 'none';
     document.getElementById('quizResult').style.display = 'block';
+    
+    // Save Progress
+    if (currentCategory !== 'Favorites') {
+        const normKey = normalizeKey(currentCategory);
+        saveProgress(normKey, quizCorrect, quizCorrect + quizIncorrectWords);
+    }
     
     const statsContainer = document.querySelector('.result-stats');
     statsContainer.innerHTML = `
