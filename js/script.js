@@ -220,6 +220,12 @@ function renderQuizWord() {
                 input.addEventListener('input', (e) => handleLetterInput(e, targetWord));
                 input.addEventListener('keydown', (e) => handleKeydown(e, globalIndex));
                 
+                // Add active class on focus for styling
+                input.addEventListener('focus', () => {
+                    document.querySelectorAll('.letter-box').forEach(box => box.classList.remove('active'));
+                    input.classList.add('active');
+                });
+                
                 wordGroup.appendChild(input);
             }
         }
@@ -228,7 +234,10 @@ function renderQuizWord() {
     
     setTimeout(() => {
         const firstInput = inputsContainer.querySelector('input');
-        if (firstInput) firstInput.focus();
+        if (firstInput) {
+            firstInput.focus();
+            firstInput.classList.add('active');
+        }
     }, 50);
 }
 

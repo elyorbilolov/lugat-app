@@ -748,23 +748,22 @@
         </div>
         <div id="quizView" class="quiz-view">
             <div class="quiz-header">
-                <button class="back-btn" onclick="exitQuiz()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                    Exit Quiz
-                </button>
+                <button class="quiz-close-btn" onclick="exitQuiz()">✕</button>
                 <div class="quiz-timer">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    <span id="timerText">00:00</span>
+                    <span id="timerText">01:00</span>
+                </div>
+                <div class="quiz-progress">
+                    <span id="currentQuestionNum">1</span> of <span id="totalQuestionsNum">10</span>
                 </div>
             </div>
-
-            <div class="quiz-body">
-                <div class="quiz-progress-info">
-                    Question <span id="currentQuestionNum">1</span> of <span id="totalQuestionsNum">10</span>
-                </div>
-                <div class="uzbek-word" id="quizUzbekWord">Uzbek Word</div>
-                <div class="letter-inputs" id="letterInputs">
-                    <!-- Letter boxes will be injected here -->
+            
+            <div class="quiz-card">
+                <div class="quiz-body">
+                    <p class="quiz-instruction">Write the word correctly</p>
+                    <div class="uzbek-word" id="quizUzbekWord">Uzbek Word</div>
+                    <div class="letter-inputs" id="letterInputs">
+                        <!-- Letter boxes will be injected here -->
+                    </div>
                 </div>
                 <div id="quizMessage" class="quiz-message"></div>
             </div>
