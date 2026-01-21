@@ -337,14 +337,6 @@ function renderQuizWord() {
     const inputsContainer = document.getElementById('letterInputs');
     inputsContainer.innerHTML = '';
     
-    // Add Audio Button to Quiz
-    const audioBtn = document.createElement('button');
-    audioBtn.className = 'icon-btn-small';
-    audioBtn.style.margin = '0 auto 20px';
-    audioBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>`;
-    audioBtn.onclick = () => speakWord(targetWord);
-    inputsContainer.appendChild(audioBtn);
-    
     const words = targetWord.split(' ');
     
     words.forEach((word, wordIdx) => {
