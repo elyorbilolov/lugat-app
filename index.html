@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugat - Categories</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lugat Categories</h1>
+            <p>Explore your vocabulary by categories</p>
+            <div class="search-container home-search">
+                <input type="text" id="categorySearch" class="search-input" placeholder="Search categories..." oninput="filterCategories()">
+            </div>
+        </header>
+
+        <div class="grid" id="categoryGrid">
+            <!-- Accessories -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Accessories</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/accessories.png" alt="Accessories"></div>
+            </div>
+
+            <!-- Airport -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Airport</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/airport.png" alt="Airport"></div>
+            </div>
+
+            <!-- Animals -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Animals</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/animals.png" alt="Animals"></div>
+            </div>
+
+            <!-- Appearance -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Appearance</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/appearance.png" alt="Appearance"></div>
+            </div>
+
+            <!-- Artificial Intelligence -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Artificial Intelligence</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/ai.png" alt="Artificial Intelligence"></div>
+            </div>
+
+            <!-- Arts -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Arts</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/arts.png" alt="Arts"></div>
+            </div>
+
+            <!-- Bakery -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Bakery</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/bakery.png" alt="Bakery"></div>
+            </div>
+
+            <!-- Beauty & Makeup -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Beauty & Makeup</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/beauty.png" alt="Beauty & Makeup"></div>
+            </div>
+
+            <!-- Body -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Body</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/body.png" alt="Body"></div>
+            </div>
+
+            <!-- Characters -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Characters</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/characters.png" alt="Characters"></div>
+            </div>
+
+            <!-- Cinema -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Cinema</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/cinema.png" alt="Cinema"></div>
+            </div>
+
+            <!-- Clothes -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Clothes</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/clothes.png" alt="Clothes"></div>
+            </div>
+
+            <!-- Computer -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Computer</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/computer.png" alt="Computer"></div>
+            </div>
+
+            <!-- Cybersecurity -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Cybersecurity</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/cybersecurity.png" alt="Cybersecurity"></div>
+            </div>
+
+            <!-- Daily speech -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Daily speech</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/daily_speech.png" alt="Daily speech"></div>
+            </div>
+
+            <!-- Dairy Products -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Dairy Products</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/dairy.png" alt="Dairy Products"></div>
+            </div>
+
+            <!-- Describing Food -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Describing Food</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/food_description.png" alt="Describing Food"></div>
+            </div>
+
+            <!-- Destinations -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Destinations</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/destinations.png" alt="Destinations"></div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Drinks</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/drinks.png" alt="Drinks"></div>
+            </div>
+
+            <!-- Educational Institutions -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Educational Institutions</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/edu_institutions.png" alt="Educational Institutions"></div>
+            </div>
+
+            <!-- Educational Tools -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Educational Tools</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/edu_tools.png" alt="Educational Tools"></div>
+            </div>
+
+            <!-- Family members -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Family members</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/family.png" alt="Family members"></div>
+            </div>
+
+            <!-- Fast food -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Fast food</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/fast_food.png" alt="Fast food"></div>
+            </div>
+
+            <!-- Film & Television -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Film & Television</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/film_tv.png" alt="Film & Television"></div>
+            </div>
+
+            <!-- Finance -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Finance</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/finance.png" alt="Finance"></div>
+            </div>
+
+            <!-- Fruits -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Fruits</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/fruits.png" alt="Fruits"></div>
+            </div>
+
+            <!-- Furniture -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Furniture</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/furniture.png" alt="Furniture"></div>
+            </div>
+
+            <!-- Gadgets -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Gadgets</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/gadgets.png" alt="Gadgets"></div>
+            </div>
+
+            <!-- Greeting -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Greeting</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/greeting.png" alt="Greeting"></div>
+            </div>
+
+            <!-- Health problems -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Health problems</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/health.png" alt="Health problems"></div>
+            </div>
+
+            <!-- Hobbies -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Hobbies</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/hobbies.png" alt="Hobbies"></div>
+            </div>
+
+            <!-- Hospital -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Hospital</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/hospital.png" alt="Hospital"></div>
+            </div>
+
+            <!-- Hotel -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Hotel</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/hotel.png" alt="Hotel"></div>
+            </div>
+
+            <!-- House parts -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">House parts</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/house_parts.png" alt="House parts"></div>
+            </div>
+
+            <!-- Household appliances -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Household appliances</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/appliances.png" alt="Household appliances"></div>
+            </div>
+
+            <!-- Household chores -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Household chores</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/chores.png" alt="Household chores"></div>
+            </div>
+
+            <!-- Informal communication -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Informal communication</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/informal.png" alt="Informal communication"></div>
+            </div>
+
+            <!-- Interests -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Interests</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/interests.png" alt="Interests"></div>
+            </div>
+
+            <!-- Job search -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Job search</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/job_search.png" alt="Job search"></div>
+            </div>
+
+            <!-- Jobs -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Jobs</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/jobs.png" alt="Jobs"></div>
+            </div>
+
+            <!-- Kitchen -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Kitchen</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/kitchen.png" alt="Kitchen"></div>
+            </div>
+
+            <!-- Linking words -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Linking words</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/linking_words.png" alt="Linking words"></div>
+            </div>
+
+            <!-- Literature -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Literature</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/literature.png" alt="Literature"></div>
+            </div>
+
+            <!-- Locations -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Locations</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/locations.png" alt="Locations"></div>
+            </div>
+
+            <!-- Market -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Market</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/market.png" alt="Market"></div>
+            </div>
+
+            <!-- Meat and Seafood -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Meat and Seafood</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/meat.png" alt="Meat and Seafood"></div>
+            </div>
+
+            <!-- Medicine -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Medicine</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/medicine.png" alt="Medicine"></div>
+            </div>
+
+            <!-- Music -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Music</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/music.png" alt="Music"></div>
+            </div>
+
+            <!-- Nationalities -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Nationalities</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/nationalities.png" alt="Nationalities"></div>
+            </div>
+
+            <!-- Natural disasters -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Natural disasters</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/disasters.png" alt="Natural disasters"></div>
+            </div>
+
+            <!-- Nutrition & Diet -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Nutrition & Diet</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/nutrition.png" alt="Nutrition & Diet"></div>
+            </div>
+
+            <!-- Places -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Places</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/places.png" alt="Places"></div>
+            </div>
+
+            <!-- Relationships -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Relationships</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/relationships.png" alt="Relationships"></div>
+            </div>
+
+            <!-- Restaurant -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Restaurant</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/restaurant.png" alt="Restaurant"></div>
+            </div>
+
+            <!-- Self-Improvement -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Self-Improvement</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/self_improvement.png" alt="Self-Improvement"></div>
+            </div>
+
+            <!-- Shoes -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Shoes</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/shoes.png" alt="Shoes"></div>
+            </div>
+
+            <!-- Sightseeings -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Sightseeings</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/sightseeings.png" alt="Sightseeings"></div>
+            </div>
+
+            <!-- Skills -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Skills</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/skills.png" alt="Skills"></div>
+            </div>
+
+            <!-- Smartphone -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Smartphone</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/smartphone.png" alt="Smartphone"></div>
+            </div>
+
+            <!-- Space -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Space</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/space.png" alt="Space"></div>
+            </div>
+
+            <!-- Sport -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Sport</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/sport.png" alt="Sport"></div>
+            </div>
+
+            <!-- Stages of life -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Stages of life</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/life_stages.png" alt="Stages of life"></div>
+            </div>
+
+            <!-- Subjects -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Subjects</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/subjects.png" alt="Subjects"></div>
+            </div>
+
+            <!-- Sweets -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Sweets</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/sweets.png" alt="Sweets"></div>
+            </div>
+
+            <!-- Task 1 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Task 1</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/task1.png" alt="Task 1"></div>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Task 2</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/task2.png" alt="Task 2"></div>
+            </div>
+
+            <!-- Transportation -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Transportation</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/transportation.png" alt="Transportation"></div>
+            </div>
+
+            <!-- Vegetables -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Vegetables</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/vegetables.png" alt="Vegetables"></div>
+            </div>
+
+            <!-- Weather -->
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-title">Weather</h2>
+                    <p class="card-subtitle">0 words</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/weather.png" alt="Weather"></div>
+            </div>
+        </div>
+
+        <div id="detailView" class="detail-view">
+            <div class="detail-header">
+                <button class="back-btn" onclick="showGrid()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Back to Categories
+                </button>
+                <div class="search-container">
+                    <input type="text" id="wordSearch" class="search-input" placeholder="Search words..." oninput="filterWords()">
+                </div>
+                <button class="start-quiz-btn" onclick="startQuiz()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Start Quiz
+                </button>
+            </div>
+            
+            <header>
+                <h1 id="categoryTitle">Category Name</h1>
+                <p id="categoryCount">0 words available</p>
+            </header>
+
+            <div class="word-table-container">
+                <table class="word-table">
+                    <thead>
+                        <tr>
+                            <th>Translation</th>
+                            <th>Word</th>
+                            <th>Transcription</th>
+                        </tr>
+                    </thead>
+                    <tbody id="wordListBody">
+                        <!-- Words will be injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="quizView" class="quiz-view">
+            <div class="quiz-header">
+                <button class="back-btn" onclick="exitQuiz()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    Exit Quiz
+                </button>
+                <div class="quiz-timer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span id="timerText">00:00</span>
+                </div>
+            </div>
+
+            <div class="quiz-body">
+                <div class="quiz-progress-info">
+                    Question <span id="currentQuestionNum">1</span> of <span id="totalQuestionsNum">10</span>
+                </div>
+                <div class="uzbek-word" id="quizUzbekWord">Uzbek Word</div>
+                <div class="letter-inputs" id="letterInputs">
+                    <!-- Letter boxes will be injected here -->
+                </div>
+                <div id="quizMessage" class="quiz-message"></div>
+            </div>
+
+            <div id="quizResult" class="quiz-result">
+                <h2>Quiz Completed!</h2>
+                <div class="result-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Time Taken</span>
+                        <span class="stat-value" id="resultTime">00:00</span>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="exitQuiz()">Back to Category</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
