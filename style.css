@@ -314,27 +314,50 @@ header p {
     }
 
     .uzbek-word {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    .letter-inputs {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .word-group {
+        gap: 4px;
     }
 
     .letter-box {
-        width: 40px;
-        height: 55px;
-        font-size: 1.4rem;
+        width: 32px;
+        height: 45px;
+        font-size: 1.2rem;
+        border-radius: 8px;
     }
 
     .quiz-view {
-        padding: 30px 15px;
-        margin: 10px auto;
+        padding: 20px 10px;
+        margin: 5px auto;
     }
 
     .result-stats {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
     .stat-item {
         min-width: auto;
+        padding: 10px;
+    }
+
+    .quiz-message {
+        font-size: 1.4rem;
+        height: auto;
+        min-height: 60px;
+    }
+
+    .correct-answer {
+        font-size: 1rem;
+        padding: 4px 12px;
     }
 }
 
