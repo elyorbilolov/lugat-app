@@ -25,6 +25,7 @@
             <p>Explore your vocabulary by categories</p>
             <div class="search-container home-search">
                 <input type="text" id="categorySearch" class="search-input" placeholder="Search categories..." oninput="filterCategories()">
+                <button class="clear-btn" onclick="clearSearch('categorySearch')" id="clearCategorySearch">✕</button>
             </div>
         </header>
 
@@ -728,6 +729,7 @@
                 </button>
                 <div class="search-container">
                     <input type="text" id="wordSearch" class="search-input" placeholder="Search words..." oninput="filterWords()">
+                    <button class="clear-btn" onclick="clearSearch('wordSearch')" id="clearWordSearch">✕</button>
                 </div>
                 <button class="start-quiz-btn" onclick="startQuiz()">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>

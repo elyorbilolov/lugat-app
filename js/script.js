@@ -179,6 +179,24 @@ function showGrid() {
     document.getElementById('detailView').style.display = 'none';
     document.getElementById('categoryGrid').style.display = 'grid';
     document.getElementById('wordSearch').value = '';
+    
+    // Clear category search when returning
+    const catSearch = document.getElementById('categorySearch');
+    catSearch.value = '';
+    filterCategories();
+    
+    window.scrollTo(0, 0);
+}
+
+function clearSearch(inputId) {
+    const input = document.getElementById(inputId);
+    input.value = '';
+    if (inputId === 'categorySearch') {
+        filterCategories();
+    } else {
+        filterWords();
+    }
+    input.focus();
 }
 
 function renderWords(words) {
@@ -230,7 +248,13 @@ function toggleFavorite(word, btn) {
 }
 
 function filterWords() {
-    const searchTerm = document.getElementById('wordSearch').value.toLowerCase();
+    const searchInput = document.getElementById('wordSearch');
+    const searchTerm = searchInput.value.toLowerCase();
+    const clearBtn = document.getElementById('clearWordSearch');
+    
+    // Toggle clear button visibility
+    clearBtn.style.display = searchTerm ? 'block' : 'none';
+
     const normKey = normalizeKey(currentCategory);
     const words = normalizedLugatData[normKey] || [];
     const filtered = words.filter(w => 
@@ -241,7 +265,13 @@ function filterWords() {
 }
 
 function filterCategories() {
-    const searchTerm = document.getElementById('categorySearch').value.toLowerCase();
+    const searchInput = document.getElementById('categorySearch');
+    const searchTerm = searchInput.value.toLowerCase();
+    const clearBtn = document.getElementById('clearCategorySearch');
+    
+    // Toggle clear button visibility
+    clearBtn.style.display = searchTerm ? 'block' : 'none';
+
     const cards = document.querySelectorAll('.card');
     
     cards.forEach(card => {

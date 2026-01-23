@@ -226,6 +226,12 @@ header p {
     gap: 20px;
     margin-bottom: 30px;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    padding: 15px 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--progress-bg);
 }
 
 .back-btn {
@@ -292,6 +298,28 @@ header p {
 .search-input:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.1);
+}
+
+.clear-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    padding: 5px;
+    line-height: 1;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.clear-btn:hover {
+    background: var(--progress-bg);
+    color: var(--text-primary);
 }
 
 .word-table-container {
