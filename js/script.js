@@ -1,6 +1,7 @@
 let lugatData = null;
 let normalizedLugatData = {}; // Store data with normalized keys
 let currentCategory = null;
+let displayedWords = []; // Current words being shown in detail view
 let quizWords = [];
 let quizCurrentIndex = 0;
 let quizStartTime = null;
@@ -147,31 +148,33 @@ function saveProgress(categoryKey, correctCount, totalCount) {
 
 function showCategory(category) {
     currentCategory = category;
-    let words = [];
     
     if (category === 'Favorites') {
         const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-        // We need to find the word objects in the full data
+        displayedWords = [];
+        
+        // Find favorite words in normalized data
         for (let key in normalizedLugatData) {
             normalizedLugatData[key].forEach(w => {
                 if (favorites.includes(w.word)) {
-                    words.push(w);
+                    // Check if already added to avoid duplicates from multiple categories
+                    if (!displayedWords.some(dw => dw.word === w.word)) {
+                        displayedWords.push(w);
+                    }
                 }
             });
         }
-        // Remove duplicates if any
-        words = Array.from(new Set(words.map(w => JSON.stringify(w)))).map(s => JSON.parse(s));
     } else {
         const normKey = normalizeKey(category);
-        words = normalizedLugatData[normKey] || [];
+        displayedWords = normalizedLugatData[normKey] || [];
     }
     
     document.getElementById('categoryGrid').style.display = 'none';
     document.getElementById('detailView').style.display = 'block';
     document.getElementById('categoryTitle').innerText = category;
-    document.getElementById('categoryCount').innerText = `${words.length} words available`;
+    document.getElementById('categoryCount').innerText = `${displayedWords.length} words available`;
     
-    renderWords(words);
+    renderWords(displayedWords);
     window.scrollTo(0, 0);
 }
 
@@ -255,9 +258,7 @@ function filterWords() {
     // Toggle clear button visibility
     clearBtn.style.display = searchTerm ? 'block' : 'none';
 
-    const normKey = normalizeKey(currentCategory);
-    const words = normalizedLugatData[normKey] || [];
-    const filtered = words.filter(w => 
+    const filtered = displayedWords.filter(w => 
         w.word.toLowerCase().includes(searchTerm) || 
         w.translation.toLowerCase().includes(searchTerm)
     );
@@ -286,16 +287,13 @@ function filterCategories() {
 
 // Quiz Functions
 function startQuiz() {
-    const normKey = normalizeKey(currentCategory);
-    const allWords = normalizedLugatData[normKey] || [];
-    
-    if (allWords.length === 0) {
+    if (displayedWords.length === 0) {
         alert('No words in this category to start quiz!');
         return;
     }
 
-    // Shuffle ALL words in the category for the 1-min challenge
-    quizWords = [...allWords].sort(() => 0.5 - Math.random());
+    // Shuffle words currently shown for the 1-min challenge
+    quizWords = [...displayedWords].sort(() => 0.5 - Math.random());
     quizCurrentIndex = 0;
     quizCorrect = 0;
     quizIncorrectWords = 0;
