@@ -9,6 +9,7 @@ let quizTimerInterval = null;
 let quizCorrect = 0;
 let quizIncorrectWords = 0;
 let quizTimeLeft = 60; // 1 minute challenge
+let quizMode = 'quiz'; // 'quiz' or 'practice'
 
 // Initialize Theme
 document.addEventListener('DOMContentLoaded', () => {
@@ -286,12 +287,39 @@ function filterCategories() {
 }
 
 // Quiz Functions
+function startPractice() {
+    if (displayedWords.length === 0) {
+        alert('No words in this category to start practice!');
+        return;
+    }
+
+    quizMode = 'practice';
+    // Shuffle words
+    quizWords = [...displayedWords].sort(() => 0.5 - Math.random());
+    quizCurrentIndex = 0;
+    quizCorrect = 0;
+    quizIncorrectWords = 0;
+    
+    document.getElementById('detailView').style.display = 'none';
+    document.getElementById('quizView').style.display = 'block';
+    document.getElementById('quizResult').style.display = 'none';
+    document.querySelector('.quiz-body').style.display = 'block';
+    
+    // Hide timer for practice mode
+    document.querySelector('.quiz-timer').style.display = 'none';
+    
+    document.getElementById('totalQuestionsNum').innerText = quizWords.length;
+    
+    renderQuizWord();
+}
+
 function startQuiz() {
     if (displayedWords.length === 0) {
         alert('No words in this category to start quiz!');
         return;
     }
 
+    quizMode = 'quiz';
     // Shuffle words currently shown for the 1-min challenge
     quizWords = [...displayedWords].sort(() => 0.5 - Math.random());
     quizCurrentIndex = 0;
@@ -303,6 +331,9 @@ function startQuiz() {
     document.getElementById('quizView').style.display = 'block';
     document.getElementById('quizResult').style.display = 'none';
     document.querySelector('.quiz-body').style.display = 'block';
+    
+    // Show timer for quiz mode
+    document.querySelector('.quiz-timer').style.display = 'flex';
     
     document.getElementById('totalQuestionsNum').innerText = quizWords.length;
     
@@ -355,6 +386,9 @@ function renderQuizWord() {
         showResult();
         return;
     }
+
+    // Update total questions count in case it increased due to errors in practice mode
+    document.getElementById('totalQuestionsNum').innerText = quizWords.length;
 
     const wordObj = quizWords[quizCurrentIndex];
     document.getElementById('currentQuestionNum').innerText = quizCurrentIndex + 1;
@@ -468,11 +502,16 @@ function checkWordComplete(targetWord) {
         document.getElementById('quizMessage').innerHTML = `Incorrect! ❌ <div class="correct-answer">Correct: ${targetWord}</div>`;
         document.getElementById('quizMessage').style.color = '#ff5252';
         displayDelay = 1500; // Give 1.5s to read the correct answer on error
+
+        // If practice mode, add the word to the end of the queue
+        if (quizMode === 'practice') {
+            quizWords.push(quizWords[quizCurrentIndex]);
+        }
     }
     
     setTimeout(() => {
         quizCurrentIndex++;
-        if (quizCurrentIndex < quizWords.length && quizTimeLeft > 0) {
+        if (quizCurrentIndex < quizWords.length && (quizMode === 'practice' || quizTimeLeft > 0)) {
             renderQuizWord();
         } else {
             showResult();
@@ -492,18 +531,30 @@ function showResult() {
     }
     
     const statsContainer = document.querySelector('.result-stats');
+    const totalAttempted = quizCorrect + quizIncorrectWords;
     statsContainer.innerHTML = `
         <div class="stat-item">
             <span class="stat-label">Challenge Type</span>
-            <span class="stat-value" style="font-size: 1.2rem">1 MINUTE CHALLENGE</span>
+            <span class="stat-value" style="font-size: 1.2rem">${quizMode.toUpperCase()} MODE</span>
         </div>
         <div class="stat-item">
             <span class="stat-label">Correct Words</span>
             <span class="stat-value" style="color: #00c853">${quizCorrect}</span>
         </div>
+        ${quizMode === 'quiz' ? `
         <div class="stat-item">
             <span class="stat-label">Incorrect Words</span>
             <span class="stat-value" style="color: #ff5252">${quizIncorrectWords}</span>
         </div>
+        ` : `
+        <div class="stat-item">
+            <span class="stat-label">Mistakes Made</span>
+            <span class="stat-value" style="color: #ff5252">${quizIncorrectWords}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Total Completed</span>
+            <span class="stat-value">${quizWords.length} words</span>
+        </div>
+        `}
     `;
 }
