@@ -701,3 +701,53 @@ header p {
     font-weight: 800;
     color: var(--accent);
 }
+
+/* Robot Button Styles */
+.robot-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--progress-bg);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.robot-btn:hover {
+    background: var(--progress-bg);
+    transform: translateY(-2px);
+}
+
+.robot-btn.active {
+    background: #ffc107;
+    color: #000;
+    border-color: #ffc107;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+    animation: robot-pulse 1.5s infinite;
+}
+
+@keyframes robot-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.robot-btn svg {
+    transition: var(--transition);
+}
+
+.robot-btn.active svg {
+    animation: robot-spin 2s linear infinite;
+}
+
+@keyframes robot-spin {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}

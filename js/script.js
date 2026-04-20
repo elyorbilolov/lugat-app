@@ -10,6 +10,71 @@ let quizCorrect = 0;
 let quizIncorrectWords = 0;
 let quizTimeLeft = 60; // 1 minute challenge
 let quizMode = 'quiz'; // 'quiz' or 'practice'
+let robotActive = false;
+let robotTimeout = null;
+
+function toggleRobot() {
+    robotActive = !robotActive;
+    const btn = document.getElementById('robotBtn');
+    if (btn) {
+        btn.classList.toggle('active', robotActive);
+        btn.querySelector('span').innerText = robotActive ? 'Robot ON' : 'Robot';
+    }
+    
+    if (robotActive) {
+        autoSolve();
+    } else {
+        if (robotTimeout) clearTimeout(robotTimeout);
+    }
+}
+
+function autoSolve() {
+    if (!robotActive || document.getElementById('quizView').style.display === 'none') {
+        robotActive = false;
+        const btn = document.getElementById('robotBtn');
+        if (btn) {
+            btn.classList.remove('active');
+            btn.querySelector('span').innerText = 'Robot';
+        }
+        return;
+    }
+
+    const currentWordObj = quizWords[quizCurrentIndex];
+    if (!currentWordObj) return;
+
+    const targetWord = currentWordObj.word.trim();
+    const allInputs = Array.from(document.querySelectorAll('.letter-box'));
+    
+    if (allInputs.length === 0) {
+        // Wait for inputs to be rendered
+        robotTimeout = setTimeout(autoSolve, 100);
+        return;
+    }
+
+    // Step by step typing
+    let charIdx = 0;
+    function typeNextChar() {
+        if (!robotActive) return;
+        
+        if (charIdx < allInputs.length) {
+            const input = allInputs[charIdx];
+            const globalIdx = parseInt(input.dataset.index);
+            const char = targetWord[globalIdx];
+            
+            input.value = char;
+            input.classList.add('active');
+            
+            // Trigger the input event like a real user
+            const event = new Event('input', { bubbles: true });
+            input.dispatchEvent(event);
+            
+            charIdx++;
+            robotTimeout = setTimeout(typeNextChar, 150); // Speed of typing
+        }
+    }
+    
+    typeNextChar();
+}
 
 // Initialize Theme
 document.addEventListener('DOMContentLoaded', () => {
@@ -343,6 +408,13 @@ function startQuiz() {
 
 function exitQuiz() {
     stopTimer();
+    robotActive = false;
+    const btn = document.getElementById('robotBtn');
+    if (btn) {
+        btn.classList.remove('active');
+        btn.querySelector('span').innerText = 'Robot';
+    }
+    if (robotTimeout) clearTimeout(robotTimeout);
     document.getElementById('quizView').style.display = 'none';
     document.getElementById('detailView').style.display = 'block';
 }
@@ -513,6 +585,9 @@ function checkWordComplete(targetWord) {
         quizCurrentIndex++;
         if (quizCurrentIndex < quizWords.length && (quizMode === 'practice' || quizTimeLeft > 0)) {
             renderQuizWord();
+            if (robotActive) {
+                robotTimeout = setTimeout(autoSolve, 500); // Delay before starting next word
+            }
         } else {
             showResult();
         }
