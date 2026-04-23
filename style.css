@@ -755,8 +755,8 @@ header p {
 /* Global Game Options Styles */
 .options-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr;
+    gap: 12px;
     margin-bottom: 20px;
 }
 
