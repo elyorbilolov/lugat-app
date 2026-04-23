@@ -721,15 +721,13 @@ function renderGameQuestion() {
     document.getElementById('gameMessage').innerText = '';
 
     let currentWord = gameWords[gameCurrentIndex];
-    document.getElementById('gameEnglishWord').innerText = currentWord.word;
-    document.getElementById('gameTranscription').innerText = currentWord.transcription;
+    document.getElementById('gameEnglishWord').innerText = currentWord.translation; // Main word is Uzbek
+    document.getElementById('gameTranscription').style.display = 'none'; // Hide transcription
+    document.getElementById('gameSpeakBtn').style.display = 'none'; // Hide speaker since it's an Uzbek word
 
-    // Attach speak button logic
-    document.getElementById('gameSpeakBtn').onclick = () => speakWord(currentWord.word);
-
-    // generate 4 options
+    // generate 4 options (English)
     let options = [currentWord];
-    let otherWords = allLugatWords.filter(w => w.translation !== currentWord.translation);
+    let otherWords = allLugatWords.filter(w => w.word !== currentWord.word);
     otherWords.sort(() => 0.5 - Math.random());
     options.push(...otherWords.slice(0, 3));
     options.sort(() => 0.5 - Math.random());
@@ -739,8 +737,8 @@ function renderGameQuestion() {
     options.forEach(opt => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.innerText = opt.translation;
-        btn.onclick = () => handleGameAnswer(btn, opt.translation === currentWord.translation);
+        btn.innerText = opt.word;
+        btn.onclick = () => handleGameAnswer(btn, opt.word === currentWord.word);
         optionsContainer.appendChild(btn);
     });
 }
@@ -753,7 +751,7 @@ function handleGameAnswer(btn, isCorrect) {
     const btns = document.querySelectorAll('.option-btn');
     btns.forEach(b => {
         b.disabled = true;
-        if(b.innerText === gameWords[gameCurrentIndex].translation) {
+        if(b.innerText === gameWords[gameCurrentIndex].word) {
             b.classList.add('correct'); // always show correct
         }
     });
@@ -770,7 +768,7 @@ function handleGameAnswer(btn, isCorrect) {
         btn.classList.add('incorrect');
         gameIncorrect++;
         if(gameMode === 'practice') {
-            document.getElementById('gameMessage').innerHTML = `Incorrect! ❌ <div class="correct-answer">Correct: ${gameWords[gameCurrentIndex].translation}</div>`;
+            document.getElementById('gameMessage').innerHTML = `Incorrect! ❌ <div class="correct-answer">Correct: ${gameWords[gameCurrentIndex].word}</div>`;
             document.getElementById('gameMessage').style.color = '#ff5252';
         }
     }
