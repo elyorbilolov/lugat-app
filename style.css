@@ -750,32 +750,38 @@ header p {
     25% { transform: rotate(-10deg); }
     75% { transform: rotate(10deg); }
     100% { transform: rotate(0deg); }
-}
-
 /* Global Game Options Styles */
 .options-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
     margin-bottom: 20px;
 }
 
+@media (min-width: 900px) {
+    .options-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .option-btn {
-    background: var(--card-bg);
-    border: 2px solid var(--progress-bg);
-    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 16px 20px;
     border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.2s ease;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 
 .option-btn:hover:not(:disabled) {
-    border-color: var(--accent);
-    background: rgba(24, 119, 242, 0.05);
+    border-color: #ffc107;
+    background: rgba(255, 193, 7, 0.05);
+    transform: translateY(-2px);
 }
 
 .option-btn.correct {
@@ -792,11 +798,15 @@ header p {
 
 .option-btn:disabled {
     cursor: not-allowed;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 @media (max-width: 480px) {
     .options-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .option-btn {
+        padding: 14px 16px;
     }
 }

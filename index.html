@@ -817,34 +817,52 @@
         </div>
         </div>
         
-        <div id="gameView" class="quiz-view" style="display: none;">
-            <div class="quiz-header">
-                <button class="quiz-close-btn" onclick="exitGame()">✕</button>
-                <div class="quiz-timer" id="gameTimerContainer" style="display: none;">
-                    <span id="gameTimerText">01:00</span>
-                </div>
-                <div class="quiz-progress" id="gameProgressContainer">
-                    <span id="gameProgressLabel">Word:</span> <span id="gameCurrentNum">1</span> / <span id="gameTotalNum">40</span>
-                </div>
+        <div id="gameView" class="quiz-view" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #f0f2f5; z-index: 1000; overflow-y: auto; overflow-x: hidden; border-radius: 0; max-width: 100%; margin: 0; padding: 0;">
+            <!-- Header matching screenshot -->
+            <div style="background: white; width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; position: sticky; top: 0; z-index: 10;">
+                <button onclick="exitGame()" style="background: #f0f2f5; border: none; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #666;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+                <div style="font-weight: 600; color: #1c1e21; font-size: 1.1rem;" id="gameHeaderTitle">Vocabulary</div>
+                <div id="gameTimerText" style="color: #65676b; font-weight: 500; font-size: 0.95rem;">01:00</div>
+                <!-- Progress Line -->
+                <div style="position: absolute; bottom: 0; left: 0; height: 4px; background: #ffc107; width: 0%; transition: width 0.3s ease;" id="gameProgressBar"></div>
             </div>
             
-            <div class="quiz-card">
-                <div class="quiz-body" id="gameBody">
-                    <p class="quiz-instruction" id="gameInstruction">Choose the correct translation</p>
-                    <div class="uzbek-word" id="gameUzbekWord">Uzbek Word</div>
+            <div style="max-width: 900px; margin: 0 auto; padding: 20px; width: 100%;">
+                <div id="gameBody">
+                    <p style="font-size: 0.9rem; color: #1c1e21; margin-bottom: 15px; font-weight: 500;">Choose the correct translation</p>
+                    
+                    <!-- Question Mark Card -->
+                    <div style="background: white; border-radius: 12px; padding: 40px; display: flex; justify-content: center; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+                        <img src="assets/question_mark.png" alt="Question" style="height: 120px;">
+                    </div>
+                    
+                    <!-- Word Card -->
+                    <div style="background: white; border-radius: 12px; padding: 20px; display: flex; align-items: center; gap: 15px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+                        <button id="gameSpeakBtn" style="width: 48px; height: 48px; border-radius: 50%; background: #ffc107; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #333; flex-shrink: 0; transition: transform 0.2s;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                        </button>
+                        <div>
+                            <div id="gameEnglishWord" style="font-size: 1.3rem; font-weight: 700; color: #1c1e21; margin-bottom: 4px;">Word</div>
+                            <div id="gameTranscription" style="font-size: 0.95rem; color: #8e8e93; font-family: monospace;">transcription</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Options -->
                     <div class="options-grid" id="gameOptions">
                         <!-- Options injected here -->
                     </div>
                 </div>
                 <div id="gameMessage" class="quiz-message" style="margin-top: 10px; height: 40px; font-size: 1.2rem;"></div>
-                <button id="nextGameBtn" class="back-btn" style="display: none; margin: 10px auto 0; background: var(--accent); color: white; border: none;" onclick="nextGameQuestion()">
-                    Next Word ➔
+                <button id="nextGameBtn" style="display: none; margin: 15px auto 0; padding: 12px 40px; background: #ffc107; color: #000; border: none; border-radius: 100px; font-weight: 700; font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3); transition: transform 0.2s;" onclick="nextGameQuestion()">
+                    Next
                 </button>
             </div>
 
-            <div id="gameResult" class="quiz-result" style="display: none;">
+            <div id="gameResult" class="quiz-result" style="display: none; padding-top: 50px;">
                 <h2>Game Completed!</h2>
-                <div class="result-stats" id="gameResultStats">
+                <div class="result-stats" id="gameResultStats" style="margin-bottom: 20px;">
                     <!-- Stats injected here -->
                 </div>
                 <button class="back-btn" onclick="exitGame()" style="margin: 0 auto; display: inline-flex;">Back to Home</button>
