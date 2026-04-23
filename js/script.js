@@ -13,6 +13,17 @@ let quizMode = 'quiz'; // 'quiz' or 'practice'
 let robotActive = false;
 let robotTimeout = null;
 
+let allLugatWords = [];
+let gameWords = [];
+let gameCurrentIndex = 0;
+let gameMode = 'challenge';
+let gameCorrect = 0;
+let gameIncorrect = 0;
+let gameTimerLeft = 60;
+let gameInterval = null;
+let gameLimit = 40;
+let gameAnswered = false;
+
 function toggleRobot() {
     robotActive = !robotActive;
     const btn = document.getElementById('robotBtn');
@@ -139,6 +150,7 @@ fetch('lugat.json')
         for (let key in data) {
             const normKey = normalizeKey(key);
             normalizedLugatData[normKey] = data[key].map(normalizeWord);
+            data[key].forEach(w => allLugatWords.push(normalizeWord(w)));
         }
         initCards();
     })
@@ -633,3 +645,211 @@ function showResult() {
         `}
     `;
 }
+
+// Global Game Logic
+function startGlobalChallenge() {
+    if (allLugatWords.length === 0) return;
+    
+    gameMode = 'challenge';
+    gameLimit = 40;
+    gameCorrect = 0;
+    gameIncorrect = 0;
+    gameCurrentIndex = 0;
+    gameTimerLeft = 60;
+    gameAnswered = false;
+
+    // shuffle all words and take 40
+    gameWords = [...allLugatWords].sort(() => 0.5 - Math.random()).slice(0, gameLimit);
+
+    document.getElementById('categoryGrid').style.display = 'none';
+    document.querySelector('header').style.display = 'none';
+    document.getElementById('gameView').style.display = 'block';
+    document.getElementById('gameResult').style.display = 'none';
+    document.getElementById('gameBody').style.display = 'block';
+    
+    document.getElementById('gameTimerContainer').style.display = 'flex';
+    document.getElementById('gameTotalNum').innerText = gameLimit;
+
+    startGameTimer();
+    renderGameQuestion();
+}
+
+function startGlobalPractice() {
+    if (allLugatWords.length === 0) return;
+
+    gameMode = 'practice';
+    gameLimit = allLugatWords.length;
+    gameCorrect = 0;
+    gameIncorrect = 0;
+    gameCurrentIndex = 0;
+    gameAnswered = false;
+
+    // shuffle all words
+    gameWords = [...allLugatWords].sort(() => 0.5 - Math.random());
+
+    document.getElementById('categoryGrid').style.display = 'none';
+    document.querySelector('header').style.display = 'none';
+    document.getElementById('gameView').style.display = 'block';
+    document.getElementById('gameResult').style.display = 'none';
+    document.getElementById('gameBody').style.display = 'block';
+    
+    document.getElementById('gameTimerContainer').style.display = 'none';
+    document.getElementById('gameTotalNum').innerText = gameLimit;
+
+    renderGameQuestion();
+}
+
+function renderGameQuestion() {
+    if(gameCurrentIndex >= gameLimit) {
+        showGameResult();
+        return;
+    }
+    gameAnswered = false;
+    
+    if (gameMode === 'practice') {
+        document.getElementById('gameProgressLabel').innerText = 'Found:';
+        document.getElementById('gameCurrentNum').innerText = gameCorrect;
+    } else {
+        document.getElementById('gameProgressLabel').innerText = 'Word:';
+        document.getElementById('gameCurrentNum').innerText = gameCurrentIndex + 1;
+    }
+
+    document.getElementById('nextGameBtn').style.display = 'none';
+    document.getElementById('gameMessage').innerText = '';
+
+    let currentWord = gameWords[gameCurrentIndex];
+    document.getElementById('gameUzbekWord').innerText = currentWord.translation;
+
+    // generate 4 options
+    let options = [currentWord];
+    let otherWords = allLugatWords.filter(w => w.word !== currentWord.word);
+    otherWords.sort(() => 0.5 - Math.random());
+    options.push(...otherWords.slice(0, 3));
+    options.sort(() => 0.5 - Math.random());
+
+    const optionsContainer = document.getElementById('gameOptions');
+    optionsContainer.innerHTML = '';
+    options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.innerText = opt.word;
+        btn.onclick = () => handleGameAnswer(btn, opt.word === currentWord.word);
+        optionsContainer.appendChild(btn);
+    });
+}
+
+function handleGameAnswer(btn, isCorrect) {
+    if(gameAnswered) return;
+    gameAnswered = true;
+
+    // disable all buttons
+    const btns = document.querySelectorAll('.option-btn');
+    btns.forEach(b => {
+        b.disabled = true;
+        if(b.innerText === gameWords[gameCurrentIndex].word) {
+            b.classList.add('correct'); // always show correct
+        }
+    });
+
+    if(isCorrect) {
+        btn.classList.add('correct');
+        gameCorrect++;
+        if(gameMode === 'practice') {
+            document.getElementById('gameMessage').innerText = 'Correct! ✨';
+            document.getElementById('gameMessage').style.color = '#00c853';
+            document.getElementById('gameCurrentNum').innerText = gameCorrect;
+        }
+    } else {
+        btn.classList.add('incorrect');
+        gameIncorrect++;
+        if(gameMode === 'practice') {
+            document.getElementById('gameMessage').innerHTML = `Incorrect! ❌ <div class="correct-answer">Correct: ${gameWords[gameCurrentIndex].word}</div>`;
+            document.getElementById('gameMessage').style.color = '#ff5252';
+        }
+    }
+
+    document.getElementById('nextGameBtn').style.display = 'block';
+}
+
+function nextGameQuestion() {
+    gameCurrentIndex++;
+    if (gameCurrentIndex < gameLimit) {
+        renderGameQuestion();
+    } else {
+        showGameResult();
+    }
+}
+
+function startGameTimer() {
+    updateGameTimerDisplay();
+    gameInterval = setInterval(() => {
+        gameTimerLeft--;
+        updateGameTimerDisplay();
+        if(gameTimerLeft <= 0) {
+            clearInterval(gameInterval);
+            showGameResult();
+        }
+    }, 1000);
+}
+
+function updateGameTimerDisplay() {
+    const minutes = Math.floor(gameTimerLeft / 60).toString().padStart(2, '0');
+    const seconds = (gameTimerLeft % 60).toString().padStart(2, '0');
+    document.getElementById('gameTimerText').innerText = `${minutes}:${seconds}`;
+    
+    // Visual warning when time is low
+    if (gameTimerLeft <= 10) {
+        document.getElementById('gameTimerText').parentElement.style.color = '#ff5252';
+        document.getElementById('gameTimerText').parentElement.style.background = 'rgba(255, 82, 82, 0.1)';
+    } else {
+        document.getElementById('gameTimerText').parentElement.style.color = 'var(--accent)';
+        document.getElementById('gameTimerText').parentElement.style.background = 'rgba(24, 119, 242, 0.1)';
+    }
+}
+
+function exitGame() {
+    clearInterval(gameInterval);
+    document.getElementById('gameView').style.display = 'none';
+    document.getElementById('categoryGrid').style.display = 'grid';
+    document.querySelector('header').style.display = 'block';
+}
+
+function showGameResult() {
+    clearInterval(gameInterval);
+    document.getElementById('gameBody').style.display = 'none';
+    document.getElementById('nextGameBtn').style.display = 'none';
+    document.getElementById('gameMessage').innerText = '';
+    document.getElementById('gameResult').style.display = 'block';
+
+    const unattempted = gameMode === 'challenge' 
+        ? gameLimit - (gameCorrect + gameIncorrect)
+        : gameLimit - gameCurrentIndex;
+    
+    document.getElementById('gameResultStats').innerHTML = `
+        <div class="stat-item">
+            <span class="stat-label">Mode</span>
+            <span class="stat-value" style="font-size: 1.2rem; color: var(--text-primary)">
+                ${gameMode === 'challenge' ? '1 MIN CHALLENGE' : 'FULL DICTIONARY'}
+            </span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Correct</span>
+            <span class="stat-value" style="color: #00c853">${gameCorrect}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Incorrect</span>
+            <span class="stat-value" style="color: #ff5252">${gameIncorrect}</span>
+        </div>
+        ${gameMode === 'challenge' ? `
+        <div class="stat-item">
+            <span class="stat-label">Unattempted</span>
+            <span class="stat-value" style="color: var(--text-secondary)">${Math.max(0, unattempted)}</span>
+        </div>
+        ` : `
+        <div class="stat-item">
+            <span class="stat-label">Total Completed</span>
+            <span class="stat-value" style="color: var(--text-secondary)">${gameCurrentIndex} / ${gameLimit}</span>
+        </div>`}
+    `;
+}
+

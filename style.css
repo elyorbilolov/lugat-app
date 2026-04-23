@@ -751,3 +751,52 @@ header p {
     75% { transform: rotate(10deg); }
     100% { transform: rotate(0deg); }
 }
+
+/* Global Game Options Styles */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    background: var(--card-bg);
+    border: 2px solid var(--progress-bg);
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.option-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: rgba(24, 119, 242, 0.05);
+}
+
+.option-btn.correct {
+    background: #00c853 !important;
+    border-color: #00c853 !important;
+    color: white !important;
+}
+
+.option-btn.incorrect {
+    background: #ff5252 !important;
+    border-color: #ff5252 !important;
+    color: white !important;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+}

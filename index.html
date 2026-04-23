@@ -27,6 +27,16 @@
                 <input type="text" id="categorySearch" class="search-input" placeholder="Search categories..." oninput="filterCategories()">
                 <button class="clear-btn" onclick="clearSearch('categorySearch')" id="clearCategorySearch">✕</button>
             </div>
+            <div class="global-modes" style="display: flex; gap: 10px; justify-content: center; margin-top: 15px; flex-wrap: wrap;">
+                <button class="start-quiz-btn" onclick="startGlobalChallenge()" style="background: #ff5252; box-shadow: 0 4px 12px rgba(255, 82, 82, 0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    1 Min Challenge
+                </button>
+                <button class="start-practice-btn" onclick="startGlobalPractice()" style="background: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Full Dictionary
+                </button>
+            </div>
         </header>
 
         <div class="grid" id="categoryGrid">
@@ -803,6 +813,41 @@
                     </div>
                 </div>
                 <button class="back-btn" onclick="exitQuiz()">Back to Category</button>
+            </div>
+        </div>
+        </div>
+        
+        <div id="gameView" class="quiz-view" style="display: none;">
+            <div class="quiz-header">
+                <button class="quiz-close-btn" onclick="exitGame()">✕</button>
+                <div class="quiz-timer" id="gameTimerContainer" style="display: none;">
+                    <span id="gameTimerText">01:00</span>
+                </div>
+                <div class="quiz-progress" id="gameProgressContainer">
+                    <span id="gameProgressLabel">Word:</span> <span id="gameCurrentNum">1</span> / <span id="gameTotalNum">40</span>
+                </div>
+            </div>
+            
+            <div class="quiz-card">
+                <div class="quiz-body" id="gameBody">
+                    <p class="quiz-instruction" id="gameInstruction">Choose the correct translation</p>
+                    <div class="uzbek-word" id="gameUzbekWord">Uzbek Word</div>
+                    <div class="options-grid" id="gameOptions">
+                        <!-- Options injected here -->
+                    </div>
+                </div>
+                <div id="gameMessage" class="quiz-message" style="margin-top: 10px; height: 40px; font-size: 1.2rem;"></div>
+                <button id="nextGameBtn" class="back-btn" style="display: none; margin: 10px auto 0; background: var(--accent); color: white; border: none;" onclick="nextGameQuestion()">
+                    Next Word ➔
+                </button>
+            </div>
+
+            <div id="gameResult" class="quiz-result" style="display: none;">
+                <h2>Game Completed!</h2>
+                <div class="result-stats" id="gameResultStats">
+                    <!-- Stats injected here -->
+                </div>
+                <button class="back-btn" onclick="exitGame()" style="margin: 0 auto; display: inline-flex;">Back to Home</button>
             </div>
         </div>
     </div>
