@@ -668,7 +668,6 @@ function startGlobalChallenge() {
     document.getElementById('gameBody').style.display = 'block';
     
     document.getElementById('gameTimerContainer').style.display = 'flex';
-    document.getElementById('gameTotalNum').innerText = gameLimit;
 
     startGameTimer();
     renderGameQuestion();
@@ -694,7 +693,6 @@ function startGlobalPractice() {
     document.getElementById('gameBody').style.display = 'block';
     
     document.getElementById('gameTimerContainer').style.display = 'none';
-    document.getElementById('gameTotalNum').innerText = gameLimit;
 
     renderGameQuestion();
 }
@@ -762,7 +760,6 @@ function handleGameAnswer(btn, isCorrect) {
         if(gameMode === 'practice') {
             document.getElementById('gameMessage').innerText = 'Correct! ✨';
             document.getElementById('gameMessage').style.color = '#00c853';
-            document.getElementById('gameCurrentNum').innerText = gameCorrect;
         }
     } else {
         btn.classList.add('incorrect');
