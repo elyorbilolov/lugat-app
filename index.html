@@ -854,12 +854,17 @@
                         <!-- Options injected here -->
                     </div>
                     
-                    <div id="gameMessage" class="quiz-message game-message"></div>
-                    
-                    <button id="nextGameBtn" class="game-next-btn" style="display: none;" onclick="nextGameQuestion()">
-                        Next Question
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                    </button>
+                    <div id="gameFooter" class="game-footer" style="display: none;">
+                        <div class="game-footer-content">
+                            <div id="gameMessage" class="game-footer-message"></div>
+                            <div class="game-footer-actions">
+                                <button class="game-flag-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#a0aab5"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>
+                                </button>
+                                <button class="game-next-btn-new" onclick="nextGameQuestion()">Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="gameResult" class="game-result" style="display: none;">
