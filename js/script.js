@@ -667,7 +667,7 @@ function startGlobalChallenge() {
     document.getElementById('gameResult').style.display = 'none';
     document.getElementById('gameBody').style.display = 'block';
     
-    document.getElementById('gameTimerContainer').style.display = 'flex';
+    document.getElementById('gameTimerText').style.display = 'block';
 
     startGameTimer();
     renderGameQuestion();
@@ -692,7 +692,7 @@ function startGlobalPractice() {
     document.getElementById('gameResult').style.display = 'none';
     document.getElementById('gameBody').style.display = 'block';
     
-    document.getElementById('gameTimerContainer').style.display = 'none';
+    document.getElementById('gameTimerText').style.display = 'none';
 
     renderGameQuestion();
 }
