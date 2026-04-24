@@ -966,17 +966,17 @@ header p {
 
 .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .option-btn {
     background: var(--card-bg);
     border: 2px solid var(--progress-bg);
-    padding: 20px;
+    padding: 15px 10px;
     border-radius: 16px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--text-primary);
     cursor: pointer;
