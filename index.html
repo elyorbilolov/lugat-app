@@ -40,6 +40,16 @@
         </header>
 
         <div class="grid" id="categoryGrid">
+            <!-- Irregular Verbs -->
+            <div class="card" id="irregularVerbsCard" style="border-color: #ff9800;">
+                <div class="card-content">
+                    <h2 class="card-title">Irregular Verbs</h2>
+                    <p class="card-subtitle" id="irregularCount">0 words</p>
+                    <div class="progress-bar" style="display: none"><div class="progress" id="irregularProgress" style="width: 0%;"></div></div>
+                </div>
+                <div class="card-illustration"><img src="assets/task1.png" alt="Irregular Verbs" style="filter: hue-rotate(45deg);"></div>
+            </div>
+
             <!-- Accessories -->
             <div class="card">
                 <div class="card-content">
@@ -815,6 +825,88 @@
                 <button class="back-btn" onclick="exitQuiz()">Back to Category</button>
             </div>
         </div>
+        </div>
+        
+        <div id="irregularDetailView" class="detail-view" style="display: none;">
+            <div class="detail-header">
+                <button class="back-btn" onclick="showGrid()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Back to Categories
+                </button>
+                <div class="search-container">
+                    <input type="text" id="irrWordSearch" class="search-input" placeholder="Search words..." oninput="filterIrrWords()">
+                    <button class="clear-btn" onclick="clearIrrSearch()" id="clearIrrSearch">✕</button>
+                </div>
+                <button class="start-quiz-btn" onclick="startIrregularQuiz()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Play
+                </button>
+            </div>
+            
+            <header>
+                <h1>Irregular Verbs</h1>
+                <p id="irrCategoryCount">0 words available</p>
+            </header>
+
+            <div class="word-table-container">
+                <table class="word-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 40px; text-align: center;"><input type="checkbox" id="irrSelectAll" onclick="toggleAllIrrCheckboxes(this)"></th>
+                            <th>Translation</th>
+                            <th>Base form (V1)</th>
+                            <th>Past tense (V2)</th>
+                            <th>Past participle (V3)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="irrWordListBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="irregularQuizView" class="quiz-view" style="display: none;">
+            <div class="quiz-header">
+                <button class="quiz-close-btn" onclick="exitIrregularQuiz()">✕</button>
+                <div class="quiz-progress">
+                    <span id="irrCurrentNum">1</span> of <span id="irrTotalNum">10</span>
+                </div>
+            </div>
+            
+            <div class="quiz-card">
+                <div class="quiz-body" id="irrQuizBody">
+                    <p class="quiz-instruction">Write the 3 forms of the verb</p>
+                    <div class="uzbek-word" id="irrUzbekWord">Uzbek Word</div>
+                    <div class="irregular-inputs" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                        <div class="irr-input-group">
+                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 5px; display: block;">Base form (V1)</label>
+                            <input type="text" id="irrV1" class="search-input" style="width: 100%; text-align: center; font-size: 1.1rem;" autocomplete="off">
+                        </div>
+                        <div class="irr-input-group">
+                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 5px; display: block;">Past tense (V2)</label>
+                            <input type="text" id="irrV2" class="search-input" style="width: 100%; text-align: center; font-size: 1.1rem;" autocomplete="off">
+                        </div>
+                        <div class="irr-input-group">
+                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 5px; display: block;">Past participle (V3)</label>
+                            <input type="text" id="irrV3" class="search-input" style="width: 100%; text-align: center; font-size: 1.1rem;" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div id="irrQuizMessage" class="quiz-message" style="margin-top: 20px;"></div>
+                <div style="text-align: center; margin-top: 20px; display: none;" id="irrNextContainer">
+                    <button class="start-quiz-btn" id="irrNextBtn" onclick="nextIrregularQuestion()">Next</button>
+                </div>
+                <div style="text-align: center; margin-top: 20px;" id="irrCheckContainer">
+                    <button class="start-quiz-btn" style="background: #1877f2;" onclick="checkIrregularAnswer()">Check</button>
+                </div>
+            </div>
+
+            <div id="irrQuizResult" class="quiz-result" style="display: none;">
+                <h2>Practice Completed! 🎉</h2>
+                <div class="result-stats" id="irrResultStats">
+                </div>
+                <button class="back-btn" onclick="exitIrregularQuiz()">Back to List</button>
+            </div>
         </div>
         
         <div id="gameView" class="global-game-view" style="display: none;">

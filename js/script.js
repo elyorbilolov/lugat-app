@@ -12,6 +12,14 @@ let quizTimeLeft = 60; // 1 minute challenge
 let quizMode = 'quiz'; // 'quiz' or 'practice'
 let robotActive = false;
 let robotTimeout = null;
+let robotTimeout = null;
+
+let irregularRoyxat = [];
+let irregularPlay = [];
+let irregularQuizIndex = 0;
+let irregularQuizCorrect = 0;
+let irregularQuizIncorrect = 0;
+let irregularQuizWords = [];
 
 let allLugatWords = [];
 let gameWords = [];
@@ -156,6 +164,22 @@ fetch('lugat.json')
     })
     .catch(error => console.error('Error loading lugat data:', error));
 
+fetch('royxat.json')
+    .then(response => response.json())
+    .then(data => {
+        irregularRoyxat = data.royxat;
+        const irrCard = document.getElementById('irregularCount');
+        if (irrCard) irrCard.innerText = `${irregularRoyxat.length} words`;
+    })
+    .catch(error => console.error('Error loading royxat data:', error));
+
+fetch('play.json')
+    .then(response => response.json())
+    .then(data => {
+        irregularPlay = data.play;
+    })
+    .catch(error => console.error('Error loading play data:', error));
+
 function initCards() {
     const grid = document.getElementById('categoryGrid');
     const cards = Array.from(grid.querySelectorAll('.card'));
@@ -202,7 +226,11 @@ function initCards() {
         }
 
         card.addEventListener('click', () => {
-            showCategory(title);
+            if (title === 'Irregular Verbs') {
+                showIrregularVerbs();
+            } else {
+                showCategory(title);
+            }
         });
     });
 }
@@ -258,8 +286,12 @@ function showCategory(category) {
 
 function showGrid() {
     document.getElementById('detailView').style.display = 'none';
+    document.getElementById('irregularDetailView').style.display = 'none';
     document.getElementById('categoryGrid').style.display = 'grid';
     document.getElementById('wordSearch').value = '';
+    
+    const irrSearch = document.getElementById('irrWordSearch');
+    if (irrSearch) irrSearch.value = '';
     
     // Clear category search when returning
     const catSearch = document.getElementById('categorySearch');
@@ -811,15 +843,8 @@ function updateGameTimerDisplay() {
     }
 }
 
-function exitGame() {
-    clearInterval(gameInterval);
-    document.getElementById('gameView').style.display = 'none';
-    document.getElementById('categoryGrid').style.display = 'grid';
-    document.querySelector('header').style.display = 'block';
-}
-
 function showGameResult() {
-    clearInterval(gameInterval);
+    if(gameInterval) clearInterval(gameInterval);
     document.getElementById('gameBody').style.display = 'none';
     document.getElementById('gameFooter').style.display = 'none';
     document.getElementById('gameMessage').innerHTML = '';
@@ -833,7 +858,7 @@ function showGameResult() {
         <div class="stat-item">
             <span class="stat-label">Mode</span>
             <span class="stat-value" style="font-size: 1.2rem; color: var(--text-primary)">
-                ${gameMode === 'challenge' ? '1 MIN CHALLENGE' : 'FULL DICTIONARY'}
+                ${gameMode === 'challenge' ? '1 MIN CHALLENGE' : 'PRACTICE'}
             </span>
         </div>
         <div class="stat-item">
@@ -853,7 +878,152 @@ function showGameResult() {
         <div class="stat-item">
             <span class="stat-label">Total Completed</span>
             <span class="stat-value" style="color: var(--text-secondary)">${gameCurrentIndex} / ${gameLimit}</span>
-        </div>`}
+        </div>
+        `}
     `;
 }
 
+function exitGame() {
+    if(gameInterval) clearInterval(gameInterval);
+    document.getElementById('gameView').style.display = 'none';
+    document.getElementById('categoryGrid').style.display = 'grid';
+    document.querySelector('header').style.display = 'block';
+}
+
+// ========================
+// Irregular Verbs Logic
+// ========================
+    document.getElementById('irrTotalNum').innerText = irregularQuizWords.length;
+    
+    renderIrregularQuestion();
+}
+
+function renderIrregularQuestion() {
+    if (irregularQuizIndex >= irregularQuizWords.length) {
+        showIrregularQuizResult();
+        return;
+    }
+
+    const wordObj = irregularQuizWords[irregularQuizIndex];
+    document.getElementById('irrCurrentNum').innerText = irregularQuizIndex + 1;
+    document.getElementById('irrUzbekWord').innerText = wordObj.Uzb_translate;
+    document.getElementById('irrQuizMessage').innerText = '';
+    document.getElementById('irrNextContainer').style.display = 'none';
+    document.getElementById('irrCheckContainer').style.display = 'block';
+    
+    const inputs = ['irrV1', 'irrV2', 'irrV3'];
+    inputs.forEach(id => {
+        const input = document.getElementById(id);
+        input.value = '';
+        input.className = 'search-input'; // Reset class
+        input.style.width = '100%';
+        input.style.textAlign = 'center';
+        input.style.fontSize = '1.1rem';
+        input.style.backgroundColor = '';
+        input.style.color = '';
+        input.style.borderColor = '';
+        input.disabled = false;
+    });
+
+    setTimeout(() => {
+        document.getElementById('irrV1').focus();
+    }, 50);
+}
+
+function checkIrregularAnswer() {
+    const wordObj = irregularQuizWords[irregularQuizIndex];
+    const v1Input = document.getElementById('irrV1');
+    const v2Input = document.getElementById('irrV2');
+    const v3Input = document.getElementById('irrV3');
+    
+    const v1Target = wordObj.Base_form.trim().toLowerCase();
+    const v2Target = wordObj.Past_tense_V2.trim().toLowerCase();
+    const v3Target = wordObj.Past_participle_V3.trim().toLowerCase();
+
+    // Support answers separated by '/'
+    const isCorrectV1 = v1Target.split('/').some(t => t.trim() === v1Input.value.trim().toLowerCase());
+    const isCorrectV2 = v2Target.split('/').some(t => t.trim() === v2Input.value.trim().toLowerCase());
+    const isCorrectV3 = v3Target.split('/').some(t => t.trim() === v3Input.value.trim().toLowerCase());
+
+    const markInput = (input, correct) => {
+        input.disabled = true;
+        if (correct) {
+            input.style.backgroundColor = '#e8f5e9';
+            input.style.borderColor = '#00c853';
+            input.style.color = '#00c853';
+        } else {
+            input.style.backgroundColor = '#ffebee';
+            input.style.borderColor = '#ff5252';
+            input.style.color = '#ff5252';
+        }
+    };
+
+    markInput(v1Input, isCorrectV1);
+    markInput(v2Input, isCorrectV2);
+    markInput(v3Input, isCorrectV3);
+
+    const isAllCorrect = isCorrectV1 && isCorrectV2 && isCorrectV3;
+
+    if (isAllCorrect) {
+        irregularQuizCorrect++;
+        document.getElementById('irrQuizMessage').innerHTML = 'Correct! ✨';
+        document.getElementById('irrQuizMessage').style.color = '#00c853';
+    } else {
+        irregularQuizIncorrect++;
+        document.getElementById('irrQuizMessage').innerHTML = `
+            <div style="color: #ff5252; font-weight: bold; margin-bottom: 5px;">Incorrect! ❌</div>
+            <div style="color: #1877f2; font-size: 0.95rem;">
+                Correct answers:<br>
+                V1: <strong>${wordObj.Base_form}</strong><br>
+                V2: <strong>${wordObj.Past_tense_V2}</strong><br>
+                V3: <strong>${wordObj.Past_participle_V3}</strong>
+            </div>
+        `;
+    }
+
+    document.getElementById('irrCheckContainer').style.display = 'none';
+    document.getElementById('irrNextContainer').style.display = 'block';
+    document.getElementById('irrNextBtn').focus();
+}
+
+function nextIrregularQuestion() {
+    irregularQuizIndex++;
+    renderIrregularQuestion();
+}
+
+function showIrregularQuizResult() {
+    document.getElementById('irrQuizBody').style.display = 'none';
+    document.getElementById('irrQuizResult').style.display = 'block';
+    
+    document.getElementById('irrResultStats').innerHTML = `
+        <div class="stat-item">
+            <span class="stat-label">Correct Forms</span>
+            <span class="stat-value" style="color: #00c853">${irregularQuizCorrect}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Incorrect Forms</span>
+            <span class="stat-value" style="color: #ff5252">${irregularQuizIncorrect}</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Total Completed</span>
+            <span class="stat-value">${irregularQuizWords.length} words</span>
+        </div>
+    `;
+    
+    // Update progress
+    const totalCount = irregularQuizCorrect + irregularQuizIncorrect;
+    if (totalCount > 0) {
+        saveProgress('irregularverbs', irregularQuizCorrect, totalCount);
+        const progressValue = getProgress('irregularverbs');
+        const pb = document.getElementById('irregularProgress');
+        if (pb) {
+            pb.style.width = \`\${progressValue}%\`;
+            pb.parentElement.style.display = 'block';
+        }
+    }
+}
+
+function exitIrregularQuiz() {
+    document.getElementById('irregularQuizView').style.display = 'none';
+    document.getElementById('irregularDetailView').style.display = 'block';
+}
