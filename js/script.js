@@ -987,6 +987,80 @@ function startIrregularQuiz() {
     renderIrregularQuestion();
 }
 
+
+function renderIrrLetterBoxes(containerId, targetWord, prefix) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = '';
+    
+    const wordGroup = document.createElement('div');
+    wordGroup.className = 'word-group';
+    
+    for (let i = 0; i < targetWord.length; i++) {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.maxLength = 1;
+        input.className = `letter-box irr-box ${prefix}-box`;
+        input.dataset.prefix = prefix;
+        
+        input.addEventListener('input', (e) => handleIrrLetterInput(e, prefix));
+        input.addEventListener('keydown', (e) => handleIrrKeydown(e, prefix));
+        
+        input.addEventListener('focus', () => {
+            document.querySelectorAll('.irr-box').forEach(box => box.classList.remove('active'));
+            input.classList.add('active');
+        });
+        
+        wordGroup.appendChild(input);
+    }
+    container.appendChild(wordGroup);
+}
+
+function handleIrrLetterInput(e, prefix) {
+    const input = e.target;
+    const val = input.value;
+    input.value = val.replace(/[^a-zA-Z-]/g, '').toLowerCase();
+    
+    if (input.value === '') return;
+
+    const allInputs = Array.from(document.querySelectorAll(`.${prefix}-box`));
+    const currIdx = allInputs.indexOf(input);
+    
+    if (currIdx < allInputs.length - 1) {
+        allInputs[currIdx + 1].focus();
+    } else {
+        if (prefix === 'v1') {
+            const nextInputs = document.querySelectorAll('.v2-box');
+            if (nextInputs.length > 0) nextInputs[0].focus();
+        } else if (prefix === 'v2') {
+            const nextInputs = document.querySelectorAll('.v3-box');
+            if (nextInputs.length > 0) nextInputs[0].focus();
+        } else {
+            // End of v3, trigger check automatically
+            setTimeout(() => {
+                document.querySelector('#irrCheckContainer button').click();
+            }, 100);
+        }
+    }
+}
+
+function handleIrrKeydown(e, prefix) {
+    if (e.key === 'Backspace' && !e.target.value) {
+        const allInputs = Array.from(document.querySelectorAll(`.${prefix}-box`));
+        const currIdx = allInputs.indexOf(e.target);
+        if (currIdx > 0) {
+            allInputs[currIdx - 1].focus();
+        } else {
+            if (prefix === 'v3') {
+                const prevInputs = document.querySelectorAll('.v2-box');
+                if (prevInputs.length > 0) prevInputs[prevInputs.length - 1].focus();
+            } else if (prefix === 'v2') {
+                const prevInputs = document.querySelectorAll('.v1-box');
+                if (prevInputs.length > 0) prevInputs[prevInputs.length - 1].focus();
+            }
+        }
+    }
+}
+
 function renderIrregularQuestion() {
     if (irregularQuizIndex >= irregularQuizWords.length) {
         showIrregularQuizResult();
@@ -1000,56 +1074,52 @@ function renderIrregularQuestion() {
     document.getElementById('irrNextContainer').style.display = 'none';
     document.getElementById('irrCheckContainer').style.display = 'block';
     
-    const inputs = ['irrV1', 'irrV2', 'irrV3'];
-    inputs.forEach(id => {
-        const input = document.getElementById(id);
-        input.value = '';
-        input.className = 'search-input'; // Reset class
-        input.style.width = '100%';
-        input.style.textAlign = 'center';
-        input.style.fontSize = '1.1rem';
-        input.style.backgroundColor = '';
-        input.style.color = '';
-        input.style.borderColor = '';
-        input.disabled = false;
-    });
+    const v1Target = wordObj.Base_form.trim().toLowerCase();
+    const v2Target = wordObj.Past_tense_V2.trim().toLowerCase();
+    const v3Target = wordObj.Past_participle_V3.trim().toLowerCase();
+
+    renderIrrLetterBoxes('irrV1Container', v1Target, 'v1');
+    renderIrrLetterBoxes('irrV2Container', v2Target, 'v2');
+    renderIrrLetterBoxes('irrV3Container', v3Target, 'v3');
 
     setTimeout(() => {
-        document.getElementById('irrV1').focus();
+        const firstBox = document.querySelector('.v1-box');
+        if(firstBox) firstBox.focus();
     }, 50);
 }
 
 function checkIrregularAnswer() {
     const wordObj = irregularQuizWords[irregularQuizIndex];
-    const v1Input = document.getElementById('irrV1');
-    const v2Input = document.getElementById('irrV2');
-    const v3Input = document.getElementById('irrV3');
     
     const v1Target = wordObj.Base_form.trim().toLowerCase();
     const v2Target = wordObj.Past_tense_V2.trim().toLowerCase();
     const v3Target = wordObj.Past_participle_V3.trim().toLowerCase();
 
-    // Support answers separated by '/'
-    const isCorrectV1 = v1Target.split('/').some(t => t.trim() === v1Input.value.trim().toLowerCase());
-    const isCorrectV2 = v2Target.split('/').some(t => t.trim() === v2Input.value.trim().toLowerCase());
-    const isCorrectV3 = v3Target.split('/').some(t => t.trim() === v3Input.value.trim().toLowerCase());
+    const getWord = (prefix) => Array.from(document.querySelectorAll(`.${prefix}-box`)).map(inp => inp.value).join('');
+    
+    const v1InputStr = getWord('v1').toLowerCase();
+    const v2InputStr = getWord('v2').toLowerCase();
+    const v3InputStr = getWord('v3').toLowerCase();
 
-    const markInput = (input, correct) => {
-        input.disabled = true;
-        if (correct) {
-            input.style.backgroundColor = '#e8f5e9';
-            input.style.borderColor = '#00c853';
-            input.style.color = '#00c853';
-        } else {
-            input.style.backgroundColor = '#ffebee';
-            input.style.borderColor = '#ff5252';
-            input.style.color = '#ff5252';
-        }
+    const isCorrectV1 = v1Target.split('/').some(t => t.trim() === v1InputStr);
+    const isCorrectV2 = v2Target.split('/').some(t => t.trim() === v2InputStr);
+    const isCorrectV3 = v3Target.split('/').some(t => t.trim() === v3InputStr);
+
+    const markBoxes = (prefix, targetStr) => {
+        const boxes = document.querySelectorAll(`.${prefix}-box`);
+        boxes.forEach((box, i) => {
+            box.disabled = true;
+            if (box.value.toLowerCase() === targetStr[i]?.toLowerCase()) {
+                box.classList.add('correct');
+            } else {
+                box.classList.add('incorrect');
+            }
+        });
     };
 
-    markInput(v1Input, isCorrectV1);
-    markInput(v2Input, isCorrectV2);
-    markInput(v3Input, isCorrectV3);
+    markBoxes('v1', v1Target);
+    markBoxes('v2', v2Target);
+    markBoxes('v3', v3Target);
 
     const isAllCorrect = isCorrectV1 && isCorrectV2 && isCorrectV3;
 

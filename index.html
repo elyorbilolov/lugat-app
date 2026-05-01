@@ -825,7 +825,6 @@
                 <button class="back-btn" onclick="exitQuiz()">Back to Category</button>
             </div>
         </div>
-        </div>
         
         <div id="irregularDetailView" class="detail-view" style="display: none;">
             <div class="detail-header">
@@ -877,18 +876,18 @@
                 <div class="quiz-body" id="irrQuizBody">
                     <p class="quiz-instruction">Write the 3 forms of the verb</p>
                     <div class="uzbek-word" id="irrUzbekWord">Uzbek Word</div>
-                    <div class="irregular-inputs" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                    <div class="irregular-inputs" style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
                         <div class="irr-input-group">
-                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 5px; display: block;">Base form (V1)</label>
-                            <input type="text" id="irrV1" class="search-input" style="width: 100%; text-align: center; font-size: 1.1rem;" autocomplete="off">
+                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 10px; display: block; font-weight: 600;">Base form (V1)</label>
+                            <div class="letter-inputs" id="irrV1Container" style="margin-bottom: 0;"></div>
                         </div>
                         <div class="irr-input-group">
-                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 5px; display: block;">Past tense (V2)</label>
-                            <input type="text" id="irrV2" class="search-input" style="width: 100%; text-align: center; font-size: 1.1rem;" autocomplete="off">
+                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 10px; display: block; font-weight: 600;">Past tense (V2)</label>
+                            <div class="letter-inputs" id="irrV2Container" style="margin-bottom: 0;"></div>
                         </div>
                         <div class="irr-input-group">
-                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 5px; display: block;">Past participle (V3)</label>
-                            <input type="text" id="irrV3" class="search-input" style="width: 100%; text-align: center; font-size: 1.1rem;" autocomplete="off">
+                            <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 10px; display: block; font-weight: 600;">Past participle (V3)</label>
+                            <div class="letter-inputs" id="irrV3Container" style="margin-bottom: 0;"></div>
                         </div>
                     </div>
                 </div>
