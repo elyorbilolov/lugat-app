@@ -22,6 +22,7 @@ let irregularQuizWords = [];
 
 let allLugatWords = [];
 let gameWords = [];
+let gameOrigin = 'grid';
 let gameCurrentIndex = 0;
 let gameMode = 'challenge';
 let gameCorrect = 0;
@@ -210,7 +211,9 @@ function initCards() {
         const title = card.querySelector('.card-title').innerText.trim();
         const normKey = normalizeKey(title);
         
-        if (normalizedLugatData[normKey]) {
+        if (title === 'Full Dictionary') {
+            card.querySelector('.card-subtitle').innerText = `${allLugatWords.length} words`;
+        } else if (normalizedLugatData[normKey]) {
             const words = normalizedLugatData[normKey];
             const count = words.length;
             card.querySelector('.card-subtitle').innerText = `${count} words`;
@@ -269,6 +272,8 @@ function showCategory(category) {
                 }
             });
         }
+    } else if (category === 'Full Dictionary') {
+        displayedWords = allLugatWords;
     } else {
         const normKey = normalizeKey(category);
         displayedWords = normalizedLugatData[normKey] || [];
@@ -681,6 +686,7 @@ function showResult() {
 function startGlobalChallenge() {
     if (allLugatWords.length === 0) return;
     
+    gameOrigin = 'grid';
     gameMode = 'challenge';
     gameLimit = 40;
     gameCorrect = 0;
@@ -707,6 +713,7 @@ function startGlobalChallenge() {
 function startGlobalPractice() {
     if (allLugatWords.length === 0) return;
 
+    gameOrigin = 'grid';
     gameMode = 'practice';
     gameLimit = allLugatWords.length;
     gameCorrect = 0;
@@ -728,6 +735,35 @@ function startGlobalPractice() {
     renderGameQuestion();
 }
 
+function startCategoryChallenge() {
+    if (displayedWords.length === 0) {
+        alert('No words in this category to start challenge!');
+        return;
+    }
+    
+    gameOrigin = 'detail';
+    gameMode = 'challenge';
+    gameLimit = Math.min(displayedWords.length, 40);
+    gameCorrect = 0;
+    gameIncorrect = 0;
+    gameCurrentIndex = 0;
+    gameTimerLeft = 60;
+    gameAnswered = false;
+
+    // shuffle category words and take gameLimit
+    gameWords = [...displayedWords].sort(() => 0.5 - Math.random()).slice(0, gameLimit);
+
+    document.getElementById('detailView').style.display = 'none';
+    document.getElementById('gameView').style.display = 'block';
+    document.getElementById('gameResult').style.display = 'none';
+    document.getElementById('gameBody').style.display = 'block';
+    
+    document.getElementById('gameTimerText').style.display = 'block';
+
+    startGameTimer();
+    renderGameQuestion();
+}
+
 function renderGameQuestion() {
     if(gameCurrentIndex >= gameLimit) {
         showGameResult();
@@ -742,7 +778,7 @@ function renderGameQuestion() {
         document.getElementById('gameHeaderTitle').innerText = 'Vocabulary - Practice';
     } else {
         progressPercent = (gameCurrentIndex / gameLimit) * 100;
-        document.getElementById('gameHeaderTitle').innerText = '1 Min Challenge';
+        document.getElementById('gameHeaderTitle').innerText = (gameOrigin === 'detail') ? `${currentCategory} - 1 Min` : '1 Min Challenge';
     }
     document.getElementById('gameProgressBar').style.width = `${progressPercent}%`;
 
@@ -750,13 +786,31 @@ function renderGameQuestion() {
     document.getElementById('gameMessage').innerHTML = '';
 
     let currentWord = gameWords[gameCurrentIndex];
-    document.getElementById('gameEnglishWord').innerText = currentWord.translation; // Main word is Uzbek
-    document.getElementById('gameTranscription').style.display = 'none'; // Hide transcription
-    document.getElementById('gameSpeakBtn').style.display = 'none'; // Hide speaker since it's an Uzbek word
+    document.getElementById('gameEnglishWord').innerText = currentWord.word; // Main word is English
+    
+    // Show transcription
+    const transDiv = document.getElementById('gameTranscription');
+    if (currentWord.transcription) {
+        transDiv.innerText = currentWord.transcription;
+        transDiv.style.display = 'inline-block';
+    } else {
+        transDiv.style.display = 'none';
+    }
+    
+    // Show speak button
+    const speakBtn = document.getElementById('gameSpeakBtn');
+    speakBtn.style.display = 'flex';
+    speakBtn.onclick = () => speakWord(currentWord.word);
 
-    // generate 4 options (English)
+    // generate 4 options (Uzbek translations)
     let options = [currentWord];
-    let otherWords = allLugatWords.filter(w => w.word !== currentWord.word);
+    let pool = (gameOrigin === 'detail') ? displayedWords : allLugatWords;
+    let otherWords = pool.filter(w => w.word !== currentWord.word);
+    
+    if (otherWords.length < 3) {
+        otherWords = allLugatWords.filter(w => w.word !== currentWord.word);
+    }
+    
     otherWords.sort(() => 0.5 - Math.random());
     options.push(...otherWords.slice(0, 3));
     options.sort(() => 0.5 - Math.random());
@@ -766,7 +820,7 @@ function renderGameQuestion() {
     options.forEach(opt => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.innerText = opt.word;
+        btn.innerText = opt.translation;
         btn.onclick = () => handleGameAnswer(btn, opt.word === currentWord.word);
         optionsContainer.appendChild(btn);
     });
@@ -780,7 +834,7 @@ function handleGameAnswer(btn, isCorrect) {
     const btns = document.querySelectorAll('.option-btn');
     btns.forEach(b => {
         b.disabled = true;
-        if(b.innerText === gameWords[gameCurrentIndex].word) {
+        if(b.innerText === gameWords[gameCurrentIndex].translation) {
             b.classList.add('correct'); // always show correct
         }
     });
@@ -799,7 +853,7 @@ function handleGameAnswer(btn, isCorrect) {
         document.getElementById('gameFooter').className = 'game-footer incorrect';
         document.getElementById('gameMessage').innerHTML = `
             <div class="footer-icon-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
-            <div class="footer-text">Correct: ${gameWords[gameCurrentIndex].word}</div>
+            <div class="footer-text">Correct: ${gameWords[gameCurrentIndex].translation}</div>
         `;
     }
 
@@ -880,13 +934,22 @@ function showGameResult() {
         </div>
         `}
     `;
+
+    const backBtn = document.getElementById('gameResultBackBtn');
+    if (backBtn) {
+        backBtn.innerText = gameOrigin === 'detail' ? 'Back to Category' : 'Back to Home';
+    }
 }
 
 function exitGame() {
     if(gameInterval) clearInterval(gameInterval);
     document.getElementById('gameView').style.display = 'none';
-    document.getElementById('categoryGrid').style.display = 'grid';
-    document.querySelector('header').style.display = 'block';
+    if (gameOrigin === 'detail') {
+        document.getElementById('detailView').style.display = 'block';
+    } else {
+        document.getElementById('categoryGrid').style.display = 'grid';
+        document.querySelector('header').style.display = 'block';
+    }
 }
 
 // ========================

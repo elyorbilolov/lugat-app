@@ -897,6 +897,50 @@ header p {
     border-color: rgba(255,255,255,0.05);
 }
 
+.game-question-card {
+    background: var(--card-bg);
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+    border: 1px solid var(--progress-bg);
+}
+
+[data-theme="dark"] .game-question-card {
+    border-color: rgba(255,255,255,0.05);
+}
+
+.game-question-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--progress-bg);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+[data-theme="dark"] .game-question-image-wrapper {
+    border-bottom-color: rgba(255,255,255,0.05);
+}
+
+.game-question-image-wrapper img {
+    height: 90px;
+    filter: drop-shadow(0 10px 15px rgba(255, 193, 7, 0.2));
+    animation: float 6s ease-in-out infinite;
+}
+
+.game-question-word-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
 .game-speak-btn {
     width: 56px;
     height: 56px;
@@ -1142,7 +1186,7 @@ header p {
     box-shadow: 0 12px 25px rgba(24, 119, 242, 0.4);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .options-grid {
         grid-template-columns: 1fr;
     }
@@ -1162,5 +1206,13 @@ header p {
     
     .game-image-card img {
         height: 100px;
+    }
+
+    .game-question-card {
+        padding: 20px;
+    }
+
+    .game-question-image-wrapper img {
+        height: 80px;
     }
 }
