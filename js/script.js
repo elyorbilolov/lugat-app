@@ -302,6 +302,9 @@ function showGrid() {
     catSearch.value = '';
     filterCategories();
     
+    // Refresh card stats and dynamic Favorites card
+    initCards();
+    
     window.scrollTo(0, 0);
 }
 
@@ -319,19 +322,25 @@ function clearSearch(inputId) {
 function renderWords(words) {
     const tbody = document.getElementById('wordListBody');
     const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    const learned = JSON.parse(localStorage.getItem('learnedWords') || '[]');
     
     tbody.innerHTML = words.map(w => {
         const isFav = favorites.includes(w.word);
+        const isLearned = learned.includes(w.word);
+        const escapedWord = w.word.replace(/'/g, "\\'");
         return `
-            <tr>
+            <tr class="${isLearned ? 'learned-row' : ''}">
+                <td style="text-align: center;">
+                    <input type="checkbox" class="learned-checkbox" ${isLearned ? 'checked' : ''} onclick="toggleLearned('${escapedWord}', this)">
+                </td>
                 <td><span class="translation">${w.translation}</span></td>
                 <td>
                     <div style="display: flex; align-items: center; gap: 10px;">
                         <span class="word-text">${w.word}</span>
-                        <button class="icon-btn-small" onclick="speakWord('${w.word}')" title="Pronounce">
+                        <button class="icon-btn-small" onclick="speakWord('${escapedWord}')" title="Pronounce">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
                         </button>
-                        <button class="icon-btn-small favorite-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${w.word}', this)" title="Add to Favorites">
+                        <button class="icon-btn-small favorite-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${escapedWord}', this)" title="Add to Favorites">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="${isFav ? 'var(--accent)' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         </button>
                     </div>
@@ -362,6 +371,20 @@ function toggleFavorite(word, btn) {
         btn.querySelector('svg').setAttribute('fill', 'var(--accent)');
     }
     localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+
+function toggleLearned(word, checkbox) {
+    let learned = JSON.parse(localStorage.getItem('learnedWords') || '[]');
+    const row = checkbox.closest('tr');
+    
+    if (learned.includes(word)) {
+        learned = learned.filter(w => w !== word);
+        if (row) row.classList.remove('learned-row');
+    } else {
+        learned.push(word);
+        if (row) row.classList.add('learned-row');
+    }
+    localStorage.setItem('learnedWords', JSON.stringify(learned));
 }
 
 function filterWords() {

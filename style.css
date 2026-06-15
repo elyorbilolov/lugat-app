@@ -1215,4 +1215,21 @@ header p {
     .game-question-image-wrapper img {
         height: 80px;
     }
+}
+
+/* Learned Word Styles */
+.learned-row {
+    opacity: 0.55;
+    background-color: rgba(0, 200, 83, 0.03) !important;
+}
+
+[data-theme="dark"] .learned-row {
+    background-color: rgba(0, 200, 83, 0.015) !important;
+}
+
+.learned-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #00c853;
 }
