@@ -211,6 +211,19 @@ function initCards() {
         const title = card.querySelector('.card-title').innerText.trim();
         const normKey = normalizeKey(title);
         
+        // Remove existing check button if it exists to avoid duplicates
+        const existingCheck = card.querySelector('.card-check-btn');
+        if (existingCheck) existingCheck.remove();
+        
+        const completedCategories = JSON.parse(localStorage.getItem('completedCategories') || '[]');
+        const isCompleted = completedCategories.includes(normKey);
+        
+        if (isCompleted) {
+            card.classList.add('completed-card');
+        } else {
+            card.classList.remove('completed-card');
+        }
+
         if (title === 'Full Dictionary') {
             card.querySelector('.card-subtitle').innerText = `${allLugatWords.length} words`;
         } else if (normalizedLugatData[normKey]) {
@@ -227,6 +240,22 @@ function initCards() {
             }
         }
 
+        // Add checkmark toggle button for categories (excluding Favorites)
+        if (title !== '⭐ Favorites' && title !== 'Favorites') {
+            const checkBtn = document.createElement('button');
+            checkBtn.className = `card-check-btn ${isCompleted ? 'completed' : ''}`;
+            checkBtn.title = isCompleted ? 'Mark as incomplete' : 'Mark as completed';
+            checkBtn.innerHTML = isCompleted 
+                ? `<svg width="18" height="18" viewBox="0 0 24 24" fill="#00c853" stroke="#00c853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`
+                : `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>`;
+            
+            checkBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent navigation
+                toggleCategoryCompleted(normKey, checkBtn, card);
+            });
+            card.appendChild(checkBtn);
+        }
+
         card.addEventListener('click', () => {
             if (title === 'Irregular Verbs') {
                 showIrregularVerbs();
@@ -235,6 +264,24 @@ function initCards() {
             }
         });
     });
+}
+
+function toggleCategoryCompleted(normKey, btn, card) {
+    let completedCategories = JSON.parse(localStorage.getItem('completedCategories') || '[]');
+    if (completedCategories.includes(normKey)) {
+        completedCategories = completedCategories.filter(k => k !== normKey);
+        card.classList.remove('completed-card');
+        btn.classList.remove('completed');
+        btn.title = 'Mark as completed';
+        btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>`;
+    } else {
+        completedCategories.push(normKey);
+        card.classList.add('completed-card');
+        btn.classList.add('completed');
+        btn.title = 'Mark as incomplete';
+        btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="#00c853" stroke="#00c853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`;
+    }
+    localStorage.setItem('completedCategories', JSON.stringify(completedCategories));
 }
 
 function getProgress(categoryKey) {
