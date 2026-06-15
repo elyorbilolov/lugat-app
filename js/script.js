@@ -764,6 +764,33 @@ function startCategoryChallenge() {
     renderGameQuestion();
 }
 
+function startCategoryPractice() {
+    if (displayedWords.length === 0) {
+        alert('No words in this category to start practice!');
+        return;
+    }
+    
+    gameOrigin = 'detail';
+    gameMode = 'practice';
+    gameLimit = displayedWords.length;
+    gameCorrect = 0;
+    gameIncorrect = 0;
+    gameCurrentIndex = 0;
+    gameAnswered = false;
+
+    // shuffle category words
+    gameWords = [...displayedWords].sort(() => 0.5 - Math.random());
+
+    document.getElementById('detailView').style.display = 'none';
+    document.getElementById('gameView').style.display = 'block';
+    document.getElementById('gameResult').style.display = 'none';
+    document.getElementById('gameBody').style.display = 'block';
+    
+    document.getElementById('gameTimerText').style.display = 'none';
+
+    renderGameQuestion();
+}
+
 function renderGameQuestion() {
     if(gameCurrentIndex >= gameLimit) {
         showGameResult();
@@ -850,6 +877,13 @@ function handleGameAnswer(btn, isCorrect) {
     } else {
         btn.classList.add('incorrect');
         gameIncorrect++;
+        
+        // If it's practice mode, push the word to the end to repeat it until answered correctly
+        if (gameMode === 'practice') {
+            gameWords.push(gameWords[gameCurrentIndex]);
+            gameLimit++;
+        }
+        
         document.getElementById('gameFooter').className = 'game-footer incorrect';
         document.getElementById('gameMessage').innerHTML = `
             <div class="footer-icon-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
