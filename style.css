@@ -413,8 +413,8 @@ header p {
 @media (max-width: 480px) {
 
     /* Hide transcription instead of word on small screens for better UX */
-    .word-table th:nth-child(3),
-    .word-table td:nth-child(3) {
+    .word-table th:nth-child(4),
+    .word-table td:nth-child(4) {
         display: none;
     }
 
