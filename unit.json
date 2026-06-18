@@ -1,0 +1,954 @@
+[
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Make a list",
+    "Uzb": "Ro'yxat tuzmoq",
+    "Transcription": "meɪk eɪ lɪst"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Spend time",
+    "Uzb": "Vaqt o'tkazmoq",
+    "Transcription": "spɛnd taɪm"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Exercise",
+    "Uzb": "Mashq",
+    "Transcription": "ɛksər,saɪz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Fun",
+    "Uzb": "Xursandchilik",
+    "Transcription": "fən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Psychologist",
+    "Uzb": "Ruhshunos",
+    "Transcription": "saɪ'kɑlədʒɪst"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Housework",
+    "Uzb": "Uy yumushlari",
+    "Transcription": "haʊs,wɜrk"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Swimming",
+    "Uzb": "Suzish",
+    "Transcription": "swɪmɪŋ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "To-do list",
+    "Uzb": "Qilinadigan ishlar ro'yxati",
+    "Transcription": "tu-du lɪst"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Equal",
+    "Uzb": "Teng",
+    "Transcription": "ikwəl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Homework",
+    "Uzb": "Uy vazifasi",
+    "Transcription": "hoʊm,wɜrk"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Family",
+    "Uzb": "Oila",
+    "Transcription": "fæməli"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Pleasure",
+    "Uzb": "Zavq",
+    "Transcription": "plɛʒər"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Make plans",
+    "Uzb": "Rejalar tuzmoq",
+    "Transcription": "meɪk plæn"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Work",
+    "Uzb": "Ish",
+    "Transcription": "wɜrk"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Early",
+    "Uzb": "Dastlabki",
+    "Transcription": "ˈɜːli"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Shopping",
+    "Uzb": "Хarid",
+    "Transcription": "ʃɑpɪŋ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Relationship",
+    "Uzb": "Munosabat",
+    "Transcription": "rɪ'leɪʃən,ʃɪp"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Indoors",
+    "Uzb": "Ichkarida",
+    "Transcription": "ɪn'doʊrz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Meal",
+    "Uzb": "Taom",
+    "Transcription": "miːl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Outdoors",
+    "Uzb": "Tashqarida",
+    "Transcription": "aʊt'doʊrz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Chat",
+    "Uzb": "Onlayn  suhbatlashmoq",
+    "Transcription": "tʃæt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Karate",
+    "Uzb": "Karate",
+    "Transcription": "kə'rɑti"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Golf",
+    "Uzb": "Golf",
+    "Transcription": "ɡɑlf"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Chess",
+    "Uzb": "Shaxmat",
+    "Transcription": "tʃɛs"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Running",
+    "Uzb": "Yugurish",
+    "Transcription": "rənɪŋ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Relative",
+    "Uzb": "Qarindosh",
+    "Transcription": "rɛlətɪv"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Aerobics",
+    "Uzb": "Aerobika",
+    "Transcription": "ə'roʊbɪks"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Cards",
+    "Uzb": "Karta",
+    "Transcription": "kɑrdz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Gym",
+    "Uzb": "Sport zal",
+    "Transcription": "dʒɪm"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Lie-in",
+    "Uzb": "Uyg'ongandan keyin yotish",
+    "Transcription": "li ɪn"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Walk",
+    "Uzb": "Sayr",
+    "Transcription": "wɔk"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Camping",
+    "Uzb": "Tabiatga sayr",
+    "Transcription": "kæmpɪŋ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Reviewer",
+    "Uzb": "Taqrizchi",
+    "Transcription": "ri'vjuɝr"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Computer game",
+    "Uzb": "Kompyuter o'yini",
+    "Transcription": "kəm'pjutər ɡeɪm"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Cloudy",
+    "Uzb": "Bulutli",
+    "Transcription": "klaʊdi"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Post",
+    "Uzb": "Joylamoq",
+    "Transcription": "poʊst"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Damp",
+    "Uzb": "Nam",
+    "Transcription": "dæmp"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Coffee",
+    "Uzb": "Qahva",
+    "Transcription": "kɔfi"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Nasty",
+    "Uzb": "Yoqimsiz",
+    "Transcription": "næsti"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Record",
+    "Uzb": "Qayd",
+    "Transcription": "rɪ'kɔrd"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Film",
+    "Uzb": "Kino",
+    "Transcription": "fɪlm"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Promise",
+    "Uzb": "Va'da",
+    "Transcription": "prɑmɪs"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Cold",
+    "Uzb": "Sovuq",
+    "Transcription": "koʊld"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Busy",
+    "Uzb": "Band",
+    "Transcription": "bɪzi"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Period",
+    "Uzb": "Davr",
+    "Transcription": "piriəd"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Blog",
+    "Uzb": "Blog",
+    "Transcription": "ˈblɒɡ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Lightning",
+    "Uzb": "Chaqmoq",
+    "Transcription": "laɪtnɪŋ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Dream",
+    "Uzb": "Orzu (Tush)",
+    "Transcription": "drim"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Light",
+    "Uzb": "Yorug' (Yengil)",
+    "Transcription": "laɪt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Snowfall",
+    "Uzb": "Qor yog'ishi",
+    "Transcription": "snoʊ,fɔl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Uncomfortable",
+    "Uzb": "Noqulay",
+    "Transcription": "ən'kəmftəbəl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Stay in",
+    "Uzb": "Uyda qolmoq",
+    "Transcription": "steɪ ɪn"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Photograph",
+    "Uzb": "Fotosurat",
+    "Transcription": "fə'tɑgrəf"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Pleasant",
+    "Uzb": "Yoqimli",
+    "Transcription": "plɛzənt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Trip",
+    "Uzb": "Sayohat",
+    "Transcription": "trɪp"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Collect",
+    "Uzb": "Yig'moq",
+    "Transcription": "kɑlɛkt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Pedestrian",
+    "Uzb": "Piyoda",
+    "Transcription": "pə'dɛstriən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Rubbish",
+    "Uzb": "Chiqindi",
+    "Transcription": "ˈrʌbɪʃ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Statue",
+    "Uzb": "Haykal",
+    "Transcription": "stæʧu"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Dull",
+    "Uzb": "Zerikarli",
+    "Transcription": "dəl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Safe",
+    "Uzb": "Xavfsiz",
+    "Transcription": "seɪf"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Lively",
+    "Uzb": "Jonli",
+    "Transcription": "laɪvli"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Market place",
+    "Uzb": "Bozor",
+    "Transcription": "mɑrkɪt pleɪs"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Stall",
+    "Uzb": "Do'koncha",
+    "Transcription": "stɔl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Street cleaner",
+    "Uzb": "Ko'cha tozalovchi",
+    "Transcription": "strit 'klinər"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Crowded",
+    "Uzb": "Gavjum",
+    "Transcription": "kraʊdɪd"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Pavement artist",
+    "Uzb": "Ko'cha rassomi",
+    "Transcription": "peɪvmənt 'ɑrtɪst"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Parking space",
+    "Uzb": "To'xtash joyi",
+    "Transcription": "pærkɪŋ speɪc"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Souvenir seller",
+    "Uzb": "Suvenir sotuvchisi",
+    "Transcription": "ˌsuːvəˈnɪr 'sɛlər"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Recycle",
+    "Uzb": "Qayta ishlash",
+    "Transcription": "ri'saɪkəl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Truck",
+    "Uzb": "Yuk mashinasi",
+    "Transcription": "trʌk"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Street performer",
+    "Uzb": "Ko'cha ijrochisi",
+    "Transcription": "strit pɝr'fɔrmɝr"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Flower stall",
+    "Uzb": "Gul rastasi",
+    "Transcription": "flaʊər stɔl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Navigation",
+    "Uzb": "Navigatsiya",
+    "Transcription": ",nævə'ɡeɪʃən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Mirror",
+    "Uzb": "Oyna",
+    "Transcription": "mɪrə"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "House swap",
+    "Uzb": "Uy almashish",
+    "Transcription": "haʊs swɑp"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Strange",
+    "Uzb": "G'alati",
+    "Transcription": "streɪndʒ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Dustpan and brush",
+    "Uzb": "Xokandoz va cho'tka",
+    "Transcription": "dəst,pæn ænd brəʃ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Rug",
+    "Uzb": "Gilamcha",
+    "Transcription": "rəɡ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Destroy",
+    "Uzb": "Vayron qilmoq",
+    "Transcription": "dɪ'strɔɪ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Microwave oven",
+    "Uzb": "Mikro to'lqinli pech",
+    "Transcription": "maɪkroʊ,weɪv 'əvən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Sheet",
+    "Uzb": "Choyshab",
+    "Transcription": "ʃit"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Pan",
+    "Uzb": "Tova",
+    "Transcription": "pæn"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Household possessions",
+    "Uzb": "Uy ro'zg'or buyumlari",
+    "Transcription": "haʊs,hoʊld pə'zɛʃən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Satellite dish",
+    "Uzb": "Sun'iy yo'ldosh tarelkasi",
+    "Transcription": "sæt,əlaɪt dɪʃ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "House-sit",
+    "Uzb": "Uyga qarab turish",
+    "Transcription": "haʊs sɪt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Student accommodation",
+    "Uzb": "Talabalar turar joyi",
+    "Transcription": "studənt ə,kɑmə'deɪʃən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Candle",
+    "Uzb": "Sham",
+    "Transcription": "kændəl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Location",
+    "Uzb": "Manzil",
+    "Transcription": "loʊ'keɪʃən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Tower block",
+    "Uzb": "Ko'p qavatli imorat",
+    "Transcription": "toʊər blɑk"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Wardrobe",
+    "Uzb": "Shkaf",
+    "Transcription": "wɔrdroʊb"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Play area",
+    "Uzb": "O'yin maydoni",
+    "Transcription": "pleɪ 'ɜriə"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Tap",
+    "Uzb": "Jo'mrak",
+    "Transcription": "tæp"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Project",
+    "Uzb": "Loyiha",
+    "Transcription": "prɒdʒ.ekt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Towel",
+    "Uzb": "Sochiq",
+    "Transcription": "ˈtaʊəl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "On business",
+    "Uzb": "Ish yuzasidan",
+    "Transcription": "ɑn 'bɪznɪs"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Narrow",
+    "Uzb": "Tor",
+    "Transcription": "næroʊ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "On holiday",
+    "Uzb": "Ta'tilda",
+    "Transcription": "ɑn 'hɑlɪ,deɪ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Block",
+    "Uzb": "To'smoq",
+    "Transcription": "blɑk"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "On public transport",
+    "Uzb": "Jamoat transportida",
+    "Transcription": "ɑn 'pəblɪk ˈtrænspɔːrt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "CCTV camera",
+    "Uzb": "Videokuzatuv kamerasi",
+    "Transcription": "ˌsiː.siː.tiːˈviː 'kæmərə"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Shop display",
+    "Uzb": "Do'kon ko'rgazma oynasi",
+    "Transcription": "ʃɑp dɪ'spleɪ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Shopper",
+    "Uzb": "Xaridor",
+    "Transcription": "ʃɑpər"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "On the way",
+    "Uzb": "Yo'lda",
+    "Transcription": "ɑn ðʌ weɪ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Cafe",
+    "Uzb": "Kafe",
+    "Transcription": "kæ'feɪ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "On time",
+    "Uzb": "O'z vaqtida",
+    "Transcription": "ɑn taɪm"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "On the internet",
+    "Uzb": "Internetda",
+    "Transcription": "ɑn ðʌ 'ɪntɝr,nɛt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Architect",
+    "Uzb": "Me'mor",
+    "Transcription": "ɑrkɪ,tɛkt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Maze",
+    "Uzb": "Labirint",
+    "Transcription": "meɪz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "On TV",
+    "Uzb": "Televizorda",
+    "Transcription": "ɑn 'ti'vi"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Fine",
+    "Uzb": "Jarimaga tortmoq",
+    "Transcription": "faɪn"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Rage",
+    "Uzb": "G'azab",
+    "Transcription": "reɪdʒ"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Publisher",
+    "Uzb": "Nashriyotchi",
+    "Transcription": "pəblɪʃər"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Solution",
+    "Uzb": "Yechim",
+    "Transcription": "sə'luʃən"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Industry",
+    "Uzb": "Sanoat",
+    "Transcription": "ɪndəstri"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Balloon",
+    "Uzb": "Havo shari",
+    "Transcription": "bə'lun"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Dive",
+    "Uzb": "Sho'ng'imoq",
+    "Transcription": "daɪv"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Into",
+    "Uzb": "Ichiga",
+    "Transcription": "ɪn'tu"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Fall",
+    "Uzb": "Qulamoq",
+    "Transcription": "fɔl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Out of",
+    "Uzb": "Ichidan",
+    "Transcription": "aʊt ʌv"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Backwards",
+    "Uzb": "Orqaga",
+    "Transcription": "bækwədz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Capsule",
+    "Uzb": "Kapsula",
+    "Transcription": "kæpsəl"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Parachute",
+    "Uzb": "Parashutdan sakramoq",
+    "Transcription": "pærə,ʃut"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Round and round",
+    "Uzb": "Aylanma harakat bilan",
+    "Transcription": "raʊnd ænd raʊnd"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Drop",
+    "Uzb": "Tushirib yubormoq",
+    "Transcription": "drɑp"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Forwards",
+    "Uzb": "Oldinga",
+    "Transcription": "fɔrwərdz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Achievement",
+    "Uzb": "Yutuq",
+    "Transcription": "ə'ʧivmənt"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Over",
+    "Uzb": "Ustidan",
+    "Transcription": "oʊvər"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Climb",
+    "Uzb": "Oshib tushmoq",
+    "Transcription": "klaɪm"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Jump",
+    "Uzb": "Sakramoq",
+    "Transcription": "dʒəmp"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Take off",
+    "Uzb": "Yechmoq (Ko'tarilmoq)",
+    "Transcription": "teɪk ɔf"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Through",
+    "Uzb": "Orqali",
+    "Transcription": "θru"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Lift",
+    "Uzb": "Ko'tarmoq",
+    "Transcription": "lɪft"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Land",
+    "Uzb": "Qo'nmoq",
+    "Transcription": "lænd"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Towards",
+    "Uzb": "Tomonga",
+    "Transcription": "tʌ'wɔrdz"
+  },
+  {
+    "Degre": "Pre-Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Skydiving",
+    "Uzb": "Parashutdan sakrash",
+    "Transcription": "skaɪ,daɪviŋ"
+  }
+]

@@ -1,5 +1,7 @@
 let lugatData = null;
 let normalizedLugatData = {}; // Store data with normalized keys
+let unitData = [];
+let currentDegree = null;
 let currentCategory = null;
 let displayedWords = []; // Current words being shown in detail view
 let quizWords = [];
@@ -150,19 +152,45 @@ function normalizeWord(w) {
 }
 
 // Load JSON data
-fetch('lugat.json')
-    .then(response => response.json())
-    .then(data => {
-        lugatData = data;
-        // Pre-normalize keys and words
-        for (let key in data) {
-            const normKey = normalizeKey(key);
-            normalizedLugatData[normKey] = data[key].map(normalizeWord);
-            data[key].forEach(w => allLugatWords.push(normalizeWord(w)));
+Promise.all([
+    fetch('lugat.json').then(response => response.json()),
+    fetch('unit.json').then(response => response.json()).catch(() => [])
+])
+.then(([lugat, units]) => {
+    lugatData = lugat;
+    // Pre-normalize keys and words from lugat.json
+    for (let key in lugat) {
+        const normKey = normalizeKey(key);
+        normalizedLugatData[normKey] = lugat[key].map(normalizeWord);
+        lugat[key].forEach(w => allLugatWords.push(normalizeWord(w)));
+    }
+    
+    unitData = units;
+    // Parse units
+    units.forEach(item => {
+        const groupKey = `${item.Degre} - ${item.Unit}`;
+        const normGroupKey = normalizeKey(groupKey);
+        
+        if (!normalizedLugatData[normGroupKey]) {
+            normalizedLugatData[normGroupKey] = [];
         }
-        initCards();
-    })
-    .catch(error => console.error('Error loading lugat data:', error));
+        
+        const wordObj = {
+            word: item.Eng || '',
+            translation: item.Uzb || '',
+            transcription: item.Transcription ? `/${item.Transcription}/` : ''
+        };
+        
+        // Avoid duplicate word entries in the same unit
+        if (!normalizedLugatData[normGroupKey].some(w => w.word === wordObj.word)) {
+            normalizedLugatData[normGroupKey].push(wordObj);
+            allLugatWords.push(wordObj);
+        }
+    });
+    
+    initCards();
+})
+.catch(error => console.error('Error loading initialization data:', error));
 
 fetch('royxat.json')
     .then(response => response.json())
@@ -206,6 +234,33 @@ function initCards() {
         favCard.addEventListener('click', () => showCategory('Favorites'));
         grid.prepend(favCard);
     }
+
+    // Remove existing degree cards if they exist
+    grid.querySelectorAll('.degree-card').forEach(c => c.remove());
+
+    // Dynamically add Degree cards (e.g. Pre-Intermediate)
+    const uniqueDegrees = [...new Set(unitData.map(item => item.Degre))];
+    uniqueDegrees.forEach(degree => {
+        const degCard = document.createElement('div');
+        degCard.className = 'card degree-card';
+        degCard.style.borderColor = '#9c27b0'; // purple
+        const degreeWordsCount = unitData.filter(item => item.Degre === degree).length;
+        
+        degCard.innerHTML = `
+            <div class="card-content">
+                <h2 class="card-title">${degree}</h2>
+                <p class="card-subtitle">${degreeWordsCount} words • Units</p>
+                <div class="progress-bar" style="display: none"><div class="progress" style="width: 0%;"></div></div>
+            </div>
+            <div class="card-illustration"><img src="assets/task1.png" alt="${degree}" style="opacity: 0.15; filter: hue-rotate(90deg);"></div>
+        `;
+        
+        degCard.addEventListener('click', () => {
+            showDegreeUnits(degree);
+        });
+        
+        grid.prepend(degCard);
+    });
 
     cards.forEach(card => {
         const title = card.querySelector('.card-title').innerText.trim();
@@ -284,6 +339,100 @@ function toggleCategoryCompleted(normKey, btn, card) {
     localStorage.setItem('completedCategories', JSON.stringify(completedCategories));
 }
 
+function showDegreeUnits(degree) {
+    currentDegree = degree;
+    const grid = document.getElementById('categoryGrid');
+    
+    // Hide all existing cards
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    cards.forEach(card => {
+        card.style.display = 'none';
+    });
+    
+    // Remove any existing dynamic unit cards
+    grid.querySelectorAll('.unit-card').forEach(c => c.remove());
+    
+    // Find units for this degree
+    const degreeUnits = [...new Set(unitData.filter(item => item.Degre === degree).map(item => item.Unit))];
+    
+    // Create a Back card to return to categories
+    const backCard = document.createElement('div');
+    backCard.className = 'card unit-card back-to-categories-card';
+    backCard.style.borderColor = 'var(--text-secondary)';
+    backCard.innerHTML = `
+        <div class="card-content">
+            <h2 class="card-title">🔙 Back</h2>
+            <p class="card-subtitle">Return to categories</p>
+        </div>
+    `;
+    backCard.addEventListener('click', (e) => {
+        e.stopPropagation();
+        exitDegreeUnits();
+    });
+    grid.appendChild(backCard);
+    
+    // Create a card for each unit
+    degreeUnits.forEach(unit => {
+        const unitTitle = `${degree} - ${unit}`; // e.g. "Pre-Intermediate - Unit 1"
+        const normKey = normalizeKey(unitTitle);
+        const words = normalizedLugatData[normKey] || [];
+        const count = words.length;
+        
+        const unitCard = document.createElement('div');
+        unitCard.className = 'card unit-card';
+        unitCard.style.borderColor = '#9c27b0';
+        unitCard.innerHTML = `
+            <div class="card-content">
+                <h2 class="card-title">${unit}</h2>
+                <p class="card-subtitle">${count} words</p>
+                <div class="progress-bar" style="display: none"><div class="progress" style="width: 0%;"></div></div>
+            </div>
+            <div class="card-illustration"><img src="assets/task1.png" alt="${unit}" style="opacity: 0.15; filter: hue-rotate(90deg);"></div>
+        `;
+        
+        // Add check button to unit card
+        const completedCategories = JSON.parse(localStorage.getItem('completedCategories') || '[]');
+        const isCompleted = completedCategories.includes(normKey);
+        if (isCompleted) {
+            unitCard.classList.add('completed-card');
+        }
+        
+        const checkBtn = document.createElement('button');
+        checkBtn.className = `card-check-btn ${isCompleted ? 'completed' : ''}`;
+        checkBtn.title = isCompleted ? 'Mark as incomplete' : 'Mark as completed';
+        checkBtn.innerHTML = isCompleted 
+            ? `<svg width="18" height="18" viewBox="0 0 24 24" fill="#00c853" stroke="#00c853" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>`
+            : `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>`;
+        
+        checkBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleCategoryCompleted(normKey, checkBtn, unitCard);
+        });
+        unitCard.appendChild(checkBtn);
+        
+        // Clicking the unit card opens it in detail view
+        unitCard.addEventListener('click', () => {
+            showCategory(unitTitle);
+        });
+        
+        grid.appendChild(unitCard);
+    });
+}
+
+function exitDegreeUnits() {
+    currentDegree = null;
+    const grid = document.getElementById('categoryGrid');
+    
+    // Remove all dynamic unit cards
+    grid.querySelectorAll('.unit-card').forEach(c => c.remove());
+    
+    // Re-run initCards to restore all standard cards
+    initCards();
+    
+    // If there was a search term in categorySearch, filter categories
+    filterCategories();
+}
+
 function getProgress(categoryKey) {
     const progressData = JSON.parse(localStorage.getItem('progress') || '{}');
     return progressData[categoryKey] || 0;
@@ -351,6 +500,9 @@ function showGrid() {
     
     // Refresh card stats and dynamic Favorites card
     initCards();
+    if (currentDegree) {
+        showDegreeUnits(currentDegree);
+    }
     
     window.scrollTo(0, 0);
 }
@@ -460,11 +612,32 @@ function filterCategories() {
     const cards = document.querySelectorAll('.card');
     
     cards.forEach(card => {
-        const title = card.querySelector('.card-title').innerText.toLowerCase();
-        if (title.includes(searchTerm)) {
-            card.style.display = 'flex';
+        const isUnitCard = card.classList.contains('unit-card');
+        const isBackCard = card.classList.contains('back-to-categories-card');
+        
+        if (currentDegree) {
+            // We are inside a degree units view
+            if (!isUnitCard) {
+                // Hide standard category cards
+                card.style.display = 'none';
+            } else if (isBackCard) {
+                // Always show the Back card
+                card.style.display = 'flex';
+            } else {
+                // Show/hide unit cards based on search term
+                const title = card.querySelector('.card-title').innerText.toLowerCase();
+                card.style.display = title.includes(searchTerm) ? 'flex' : 'none';
+            }
         } else {
-            card.style.display = 'none';
+            // We are on the main category grid
+            if (isUnitCard) {
+                // Hide any leftover unit cards
+                card.style.display = 'none';
+            } else {
+                // Show/hide standard cards based on search term
+                const title = card.querySelector('.card-title').innerText.toLowerCase();
+                card.style.display = title.includes(searchTerm) ? 'flex' : 'none';
+            }
         }
     });
 }
@@ -1053,6 +1226,10 @@ function exitGame() {
     } else {
         document.getElementById('categoryGrid').style.display = 'grid';
         document.querySelector('header').style.display = 'block';
+        initCards();
+        if (currentDegree) {
+            showDegreeUnits(currentDegree);
+        }
     }
 }
 
