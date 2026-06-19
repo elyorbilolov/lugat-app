@@ -154,9 +154,10 @@ function normalizeWord(w) {
 // Load JSON data
 Promise.all([
     fetch('lugat.json').then(response => response.json()),
-    fetch('unit.json').then(response => response.json()).catch(() => [])
+    fetch('unit.json').then(response => response.json()).catch(() => []),
+    fetch('lesson.json').then(response => response.json()).catch(() => [])
 ])
-.then(([lugat, units]) => {
+.then(([lugat, units, lessons]) => {
     lugatData = lugat;
     // Pre-normalize keys and words from lugat.json
     for (let key in lugat) {
@@ -165,9 +166,15 @@ Promise.all([
         lugat[key].forEach(w => allLugatWords.push(normalizeWord(w)));
     }
     
-    unitData = units;
-    // Parse units
-    units.forEach(item => {
+    // Combine units and lessons, mapping lesson degree names to avoid collision
+    const mappedLessons = lessons.map(item => ({
+        ...item,
+        Degre: `${item.Degre} (Lessons)`
+    }));
+    unitData = [...units, ...mappedLessons];
+    
+    // Parse units and lessons
+    unitData.forEach(item => {
         const groupKey = `${item.Degre} - ${item.Unit}`;
         const normGroupKey = normalizeKey(groupKey);
         
@@ -181,7 +188,7 @@ Promise.all([
             transcription: item.Transcription ? `/${item.Transcription}/` : ''
         };
         
-        // Avoid duplicate word entries in the same unit
+        // Avoid duplicate word entries in the same unit/lesson
         if (!normalizedLugatData[normGroupKey].some(w => w.word === wordObj.word)) {
             normalizedLugatData[normGroupKey].push(wordObj);
             allLugatWords.push(wordObj);
@@ -243,16 +250,20 @@ function initCards() {
     uniqueDegrees.forEach(degree => {
         const degCard = document.createElement('div');
         degCard.className = 'card degree-card';
-        degCard.style.borderColor = '#9c27b0'; // purple
+        
+        const isLessons = degree.includes('Lessons');
+        degCard.style.borderColor = isLessons ? '#00bcd4' : '#9c27b0'; // Teal for lessons, purple for units
         const degreeWordsCount = unitData.filter(item => item.Degre === degree).length;
+        const typeLabel = isLessons ? 'Lessons' : 'Units';
+        const hueValue = isLessons ? '180deg' : '90deg';
         
         degCard.innerHTML = `
             <div class="card-content">
                 <h2 class="card-title">${degree}</h2>
-                <p class="card-subtitle">${degreeWordsCount} words • Units</p>
+                <p class="card-subtitle">${degreeWordsCount} words • ${typeLabel}</p>
                 <div class="progress-bar" style="display: none"><div class="progress" style="width: 0%;"></div></div>
             </div>
-            <div class="card-illustration"><img src="assets/task1.png" alt="${degree}" style="opacity: 0.15; filter: hue-rotate(90deg);"></div>
+            <div class="card-illustration"><img src="assets/task1.png" alt="${degree}" style="opacity: 0.15; filter: hue-rotate(${hueValue});"></div>
         `;
         
         degCard.addEventListener('click', () => {
@@ -371,6 +382,10 @@ function showDegreeUnits(degree) {
     });
     grid.appendChild(backCard);
     
+    const isLessons = degree.includes('Lessons');
+    const borderCol = isLessons ? '#00bcd4' : '#9c27b0';
+    const hueVal = isLessons ? '180deg' : '90deg';
+
     // Create a card for each unit
     degreeUnits.forEach(unit => {
         const unitTitle = `${degree} - ${unit}`; // e.g. "Pre-Intermediate - Unit 1"
@@ -378,16 +393,18 @@ function showDegreeUnits(degree) {
         const words = normalizedLugatData[normKey] || [];
         const count = words.length;
         
+        const displayTitle = isLessons ? unit.replace(/Unit/i, 'Lesson') : unit;
+
         const unitCard = document.createElement('div');
         unitCard.className = 'card unit-card';
-        unitCard.style.borderColor = '#9c27b0';
+        unitCard.style.borderColor = borderCol;
         unitCard.innerHTML = `
             <div class="card-content">
-                <h2 class="card-title">${unit}</h2>
+                <h2 class="card-title">${displayTitle}</h2>
                 <p class="card-subtitle">${count} words</p>
                 <div class="progress-bar" style="display: none"><div class="progress" style="width: 0%;"></div></div>
             </div>
-            <div class="card-illustration"><img src="assets/task1.png" alt="${unit}" style="opacity: 0.15; filter: hue-rotate(90deg);"></div>
+            <div class="card-illustration"><img src="assets/task1.png" alt="${unit}" style="opacity: 0.15; filter: hue-rotate(${hueVal});"></div>
         `;
         
         // Add check button to unit card
