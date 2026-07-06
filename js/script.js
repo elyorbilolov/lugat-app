@@ -189,7 +189,7 @@ Promise.all([
         };
         
         // Avoid duplicate word entries in the same unit/lesson
-        if (!normalizedLugatData[normGroupKey].some(w => w.word === wordObj.word)) {
+        if (!normalizedLugatData[normGroupKey].some(w => w.word === wordObj.word && w.translation === wordObj.translation)) {
             normalizedLugatData[normGroupKey].push(wordObj);
             allLugatWords.push(wordObj);
         }
