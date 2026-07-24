@@ -199,21 +199,15 @@ Promise.all([
 })
 .catch(error => console.error('Error loading initialization data:', error));
 
-fetch('royxat.json')
+fetch('iregular.json')
     .then(response => response.json())
     .then(data => {
-        irregularRoyxat = data.royxat;
+        irregularRoyxat = data.royxat || [];
+        irregularPlay = data.royxat || [];
         const irrCard = document.getElementById('irregularCount');
         if (irrCard) irrCard.innerText = `${irregularRoyxat.length} words`;
     })
-    .catch(error => console.error('Error loading royxat data:', error));
-
-fetch('play.json')
-    .then(response => response.json())
-    .then(data => {
-        irregularPlay = data.play;
-    })
-    .catch(error => console.error('Error loading play data:', error));
+    .catch(error => console.error('Error loading iregular data:', error));
 
 function initCards() {
     const grid = document.getElementById('categoryGrid');

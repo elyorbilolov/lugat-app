@@ -1,5 +1,5 @@
 {
-  "play": [
+  "royxat": [
     {
       "Uzb_translate": "rioya qilmoq",
       "Base_form": "abide",
@@ -16,7 +16,7 @@
       "Past_tense_V2": "arose",
       "Past_tense_V2_read": "əˈroʊz",
       "Past_participle_V3": "arisen",
-      "Past_participle_V3_read": "əˈrɪzən"
+      "Past_participle_V3_read": "əˈrɪz.ən"
     },
     {
       "Uzb_translate": "uyg'onmoq",
@@ -25,37 +25,19 @@
       "Past_tense_V2": "awoke",
       "Past_tense_V2_read": "əˈwoʊk",
       "Past_participle_V3": "awoken",
-      "Past_participle_V3_read": "əˈwoʊkən"
-    },
-    {
-      "Uzb_translate": "g'iybat qilmoq",
-      "Base_form": "backbite",
-      "Base_form_read": "ˈbækbaɪt",
-      "Past_tense_V2": "backbit",
-      "Past_tense_V2_read": "ˈbækbɪt",
-      "Past_participle_V3": "backbitten",
-      "Past_participle_V3_read": "ˈbækbɪtn"
-    },
-    {
-      "Uzb_translate": "orqaga qaytmoq",
-      "Base_form": "backslide",
-      "Base_form_read": "ˈbækslaɪd",
-      "Past_tense_V2": "backslid",
-      "Past_tense_V2_read": "ˈbækslɪd",
-      "Past_participle_V3": "backslidden",
-      "Past_participle_V3_read": "ˈbækslɪdn"
+      "Past_participle_V3_read": "əˈwoʊ.kən"
     },
     {
       "Uzb_translate": "bo'lmoq",
       "Base_form": "be",
       "Base_form_read": "biː",
-      "Past_tense_V2": "was",
+      "Past_tense_V2": "was/were",
       "Past_tense_V2_read": "wɒz / wɜːr",
       "Past_participle_V3": "been",
-      "Past_participle_V3_read": "bɪn"
+      "Past_participle_V3_read": "biːn"
     },
     {
-      "Uzb_translate": "ko'tarmoq",
+      "Uzb_translate": "ko'tarmoq, chidamoq",
       "Base_form": "bear",
       "Base_form_read": "beər",
       "Past_tense_V2": "bore",
@@ -64,16 +46,16 @@
       "Past_participle_V3_read": "bɔːrn"
     },
     {
-      "Uzb_translate": "urmoq",
+      "Uzb_translate": "urmoq, g'alaba qozonmoq",
       "Base_form": "beat",
       "Base_form_read": "biːt",
       "Past_tense_V2": "beat",
       "Past_tense_V2_read": "biːt",
       "Past_participle_V3": "beaten",
-      "Past_participle_V3_read": "ˈbiːtən"
+      "Past_participle_V3_read": "ˈbiː.tən"
     },
     {
-      "Uzb_translate": "bo'lib qolmoq",
+      "Uzb_translate": "bo'lmoq (o'zgarmoq)",
       "Base_form": "become",
       "Base_form_read": "bɪˈkʌm",
       "Past_tense_V2": "became",
@@ -82,22 +64,13 @@
       "Past_participle_V3_read": "bɪˈkʌm"
     },
     {
-      "Uzb_translate": "sodir bo'lmoq",
+      "Uzb_translate": "yuzaga kelmoq, sodir bo'lmoq",
       "Base_form": "befall",
       "Base_form_read": "bɪˈfɔːl",
       "Past_tense_V2": "befell",
       "Past_tense_V2_read": "bɪˈfel",
       "Past_participle_V3": "befallen",
-      "Past_participle_V3_read": "bɪˈfɔːlən"
-    },
-    {
-      "Uzb_translate": "tug'dirmoq",
-      "Base_form": "beget",
-      "Base_form_read": "bɪˈɡet",
-      "Past_tense_V2": "begot",
-      "Past_tense_V2_read": "bɪˈɡɒt",
-      "Past_participle_V3": "begotten",
-      "Past_participle_V3_read": "bɪˈɡɒtn"
+      "Past_participle_V3_read": "bɪˈfɔː.lən"
     },
     {
       "Uzb_translate": "boshlamoq",
@@ -109,16 +82,7 @@
       "Past_participle_V3_read": "bɪˈɡʌn"
     },
     {
-      "Uzb_translate": "ko'rib turmoq",
-      "Base_form": "behold",
-      "Base_form_read": "bɪˈhoʊld",
-      "Past_tense_V2": "beheld",
-      "Past_tense_V2_read": "bɪˈheld",
-      "Past_participle_V3": "beheld",
-      "Past_participle_V3_read": "bɪˈheld"
-    },
-    {
-      "Uzb_translate": "egmoq",
+      "Uzb_translate": "egilmoq",
       "Base_form": "bend",
       "Base_form_read": "bend",
       "Past_tense_V2": "bent",
@@ -127,12 +91,12 @@
       "Past_participle_V3_read": "bent"
     },
     {
-      "Uzb_translate": "mahrum qilmoq",
+      "Uzb_translate": "ayrilib qolmoq",
       "Base_form": "bereave",
       "Base_form_read": "bɪˈriːv",
-      "Past_tense_V2": "bereaved",
+      "Past_tense_V2": "bereft",
       "Past_tense_V2_read": "bɪˈreft",
-      "Past_participle_V3": "bereaved",
+      "Past_participle_V3": "bereft",
       "Past_participle_V3_read": "bɪˈreft"
     },
     {
@@ -154,7 +118,7 @@
       "Past_participle_V3_read": "bɪˈset"
     },
     {
-      "Uzb_translate": "garov o'ynamoq",
+      "Uzb_translate": "tikmoq (garov)",
       "Base_form": "bet",
       "Base_form_read": "bet",
       "Past_tense_V2": "bet",
@@ -163,13 +127,13 @@
       "Past_participle_V3_read": "bet"
     },
     {
-      "Uzb_translate": "narx taklif qilmoq",
+      "Uzb_translate": "buyurmoq, taklif qilmoq",
       "Base_form": "bid",
       "Base_form_read": "bɪd",
-      "Past_tense_V2": "bid",
+      "Past_tense_V2": "bade",
       "Past_tense_V2_read": "beɪd",
-      "Past_participle_V3": "bid",
-      "Past_participle_V3_read": "ˈbɪdn"
+      "Past_participle_V3": "bidden",
+      "Past_participle_V3_read": "ˈbɪd.ən"
     },
     {
       "Uzb_translate": "bog'lamoq",
@@ -187,10 +151,10 @@
       "Past_tense_V2": "bit",
       "Past_tense_V2_read": "bɪt",
       "Past_participle_V3": "bitten",
-      "Past_participle_V3_read": "ˈbɪtn"
+      "Past_participle_V3_read": "ˈbɪt.ən"
     },
     {
-      "Uzb_translate": "qon oqmoq",
+      "Uzb_translate": "qonamoq",
       "Base_form": "bleed",
       "Base_form_read": "bliːd",
       "Past_tense_V2": "bled",
@@ -199,7 +163,16 @@
       "Past_participle_V3_read": "bled"
     },
     {
-      "Uzb_translate": "esmoq",
+      "Uzb_translate": "barakalamoq, duo qilmoq",
+      "Base_form": "bless",
+      "Base_form_read": "bles",
+      "Past_tense_V2": "blest",
+      "Past_tense_V2_read": "blest",
+      "Past_participle_V3": "blest",
+      "Past_participle_V3_read": "blest"
+    },
+    {
+      "Uzb_translate": "eshmoq, puflamoq",
       "Base_form": "blow",
       "Base_form_read": "bloʊ",
       "Past_tense_V2": "blew",
@@ -208,16 +181,16 @@
       "Past_participle_V3_read": "bloʊn"
     },
     {
-      "Uzb_translate": "sindirmoq",
+      "Uzb_translate": "sindirmoq, buzmoq",
       "Base_form": "break",
       "Base_form_read": "breɪk",
       "Past_tense_V2": "broke",
       "Past_tense_V2_read": "broʊk",
       "Past_participle_V3": "broken",
-      "Past_participle_V3_read": "ˈbroʊkən"
+      "Past_participle_V3_read": "ˈbroʊ.kən"
     },
     {
-      "Uzb_translate": "ko'paytirmoq",
+      "Uzb_translate": "ko'paytirmoq, boqmoq",
       "Base_form": "breed",
       "Base_form_read": "briːd",
       "Past_tense_V2": "bred",
@@ -235,13 +208,13 @@
       "Past_participle_V3_read": "brɔːt"
     },
     {
-      "Uzb_translate": "efirga uzatmoq",
+      "Uzb_translate": "eshittirmoq, tarqatmoq",
       "Base_form": "broadcast",
-      "Base_form_read": "ˈbrɔːdkæst",
+      "Base_form_read": "ˈbrɔːd.kɑːst",
       "Past_tense_V2": "broadcast",
-      "Past_tense_V2_read": "ˈbrɔːdkæst",
+      "Past_tense_V2_read": "ˈbrɔːd.kɑːst",
       "Past_participle_V3": "broadcast",
-      "Past_participle_V3_read": "ˈbrɔːdkæst"
+      "Past_participle_V3_read": "ˈbrɔːd.kɑːst"
     },
     {
       "Uzb_translate": "qurmoq",
@@ -253,7 +226,7 @@
       "Past_participle_V3_read": "bɪlt"
     },
     {
-      "Uzb_translate": "yonmoq",
+      "Uzb_translate": "yonmoq, kuydirmoq",
       "Base_form": "burn",
       "Base_form_read": "bɜːrn",
       "Past_tense_V2": "burnt",
@@ -262,7 +235,7 @@
       "Past_participle_V3_read": "bɜːrnt"
     },
     {
-      "Uzb_translate": "yorilmoq",
+      "Uzb_translate": "yorilmoq, portlamoq",
       "Base_form": "burst",
       "Base_form_read": "bɜːrst",
       "Past_tense_V2": "burst",
@@ -280,16 +253,16 @@
       "Past_participle_V3_read": "bɔːt"
     },
     {
-      "Uzb_translate": "tashlamoq",
+      "Uzb_translate": "otmoq, tashlamoq",
       "Base_form": "cast",
-      "Base_form_read": "kæst",
+      "Base_form_read": "kɑːst",
       "Past_tense_V2": "cast",
-      "Past_tense_V2_read": "kæst",
+      "Past_tense_V2_read": "kɑːst",
       "Past_participle_V3": "cast",
-      "Past_participle_V3_read": "kæst"
+      "Past_participle_V3_read": "kɑːst"
     },
     {
-      "Uzb_translate": "tutmoq",
+      "Uzb_translate": "ushlab olmoq",
       "Base_form": "catch",
       "Base_form_read": "kætʃ",
       "Past_tense_V2": "caught",
@@ -298,34 +271,16 @@
       "Past_participle_V3_read": "kɔːt"
     },
     {
-      "Uzb_translate": "koyimoq",
-      "Base_form": "chide",
-      "Base_form_read": "tʃaɪd",
-      "Past_tense_V2": "chid",
-      "Past_tense_V2_read": "tʃɪd",
-      "Past_participle_V3": "chidden",
-      "Past_participle_V3_read": "ˈtʃɪdn"
-    },
-    {
       "Uzb_translate": "tanlamoq",
       "Base_form": "choose",
       "Base_form_read": "tʃuːz",
       "Past_tense_V2": "chose",
       "Past_tense_V2_read": "tʃoʊz",
       "Past_participle_V3": "chosen",
-      "Past_participle_V3_read": "ˈtʃoʊzən"
+      "Past_participle_V3_read": "ˈtʃoʊ.zən"
     },
     {
-      "Uzb_translate": "yorib o'tmoq",
-      "Base_form": "cleave",
-      "Base_form_read": "kliːv",
-      "Past_tense_V2": "cleft",
-      "Past_tense_V2_read": "klef",
-      "Past_participle_V3": "cleft",
-      "Past_participle_V3_read": "klef"
-    },
-    {
-      "Uzb_translate": "yopishmoq",
+      "Uzb_translate": "yopishmoq, bog'lanmoq",
       "Base_form": "cling",
       "Base_form_read": "klɪŋ",
       "Past_tense_V2": "clung",
@@ -334,7 +289,7 @@
       "Past_participle_V3_read": "klʌŋ"
     },
     {
-      "Uzb_translate": "kiydirmoq",
+      "Uzb_translate": "kiyintirmoq",
       "Base_form": "clothe",
       "Base_form_read": "kloʊð",
       "Past_tense_V2": "clad",
@@ -352,7 +307,7 @@
       "Past_participle_V3_read": "kʌm"
     },
     {
-      "Uzb_translate": "turmoq",
+      "Uzb_translate": "turmoq (narxga ega bo'lmoq)",
       "Base_form": "cost",
       "Base_form_read": "kɒst",
       "Past_tense_V2": "cost",
@@ -368,15 +323,6 @@
       "Past_tense_V2_read": "krept",
       "Past_participle_V3": "crept",
       "Past_participle_V3_read": "krept"
-    },
-    {
-      "Uzb_translate": "qichqirmoq",
-      "Base_form": "crow",
-      "Base_form_read": "krəʊ",
-      "Past_tense_V2": "crew",
-      "Past_tense_V2_read": "kruː",
-      "Past_participle_V3": "crowed",
-      "Past_participle_V3_read": "kroʊd"
     },
     {
       "Uzb_translate": "kesmoq",
@@ -424,7 +370,7 @@
       "Past_participle_V3_read": "dʌn"
     },
     {
-      "Uzb_translate": "chizmoq",
+      "Uzb_translate": "chizmoq, tortmoq",
       "Base_form": "draw",
       "Base_form_read": "drɔː",
       "Past_tense_V2": "drew",
@@ -433,7 +379,7 @@
       "Past_participle_V3_read": "drɔːn"
     },
     {
-      "Uzb_translate": "orzu qilmoq",
+      "Uzb_translate": "tush ko'rmoq, orzu qilmoq",
       "Base_form": "dream",
       "Base_form_read": "driːm",
       "Past_tense_V2": "dreamt",
@@ -451,16 +397,16 @@
       "Past_participle_V3_read": "drʌŋk"
     },
     {
-      "Uzb_translate": "haydamoq",
+      "Uzb_translate": "haydamoq (mashina)",
       "Base_form": "drive",
       "Base_form_read": "draɪv",
       "Past_tense_V2": "drove",
       "Past_tense_V2_read": "droʊv",
       "Past_participle_V3": "driven",
-      "Past_participle_V3_read": "ˈdrɪvən"
+      "Past_participle_V3_read": "ˈdrɪv.ən"
     },
     {
-      "Uzb_translate": "yashamoq",
+      "Uzb_translate": "yashamoq, to'xtalmoq",
       "Base_form": "dwell",
       "Base_form_read": "dwel",
       "Past_tense_V2": "dwelt",
@@ -473,18 +419,9 @@
       "Base_form": "eat",
       "Base_form_read": "iːt",
       "Past_tense_V2": "ate",
-      "Past_tense_V2_read": "eɪt",
+      "Past_tense_V2_read": "et",
       "Past_participle_V3": "eaten",
-      "Past_participle_V3_read": "ˈiːtn"
-    },
-    {
-      "Uzb_translate": "o'yib yozmoq",
-      "Base_form": "engrave",
-      "Base_form_read": "ɪnˈɡreɪv",
-      "Past_tense_V2": "engraved",
-      "Past_tense_V2_read": "ɪnˈɡreɪvd",
-      "Past_participle_V3": "engraved",
-      "Past_participle_V3_read": "ɪnˈɡreɪvd / ɪnˈɡreɪvən"
+      "Past_participle_V3_read": "ˈiː.tən"
     },
     {
       "Uzb_translate": "yiqilmoq",
@@ -493,10 +430,10 @@
       "Past_tense_V2": "fell",
       "Past_tense_V2_read": "fel",
       "Past_participle_V3": "fallen",
-      "Past_participle_V3_read": "ˈfɔːlən"
+      "Past_participle_V3_read": "ˈfɔː.lən"
     },
     {
-      "Uzb_translate": "ovqatlantirmoq",
+      "Uzb_translate": "boqmoq, ovqatlantirmoq",
       "Base_form": "feed",
       "Base_form_read": "fiːd",
       "Past_tense_V2": "fed",
@@ -514,7 +451,7 @@
       "Past_participle_V3_read": "felt"
     },
     {
-      "Uzb_translate": "kurashmoq",
+      "Uzb_translate": "urushmoq",
       "Base_form": "fight",
       "Base_form_read": "faɪt",
       "Past_tense_V2": "fought",
@@ -530,6 +467,15 @@
       "Past_tense_V2_read": "faʊnd",
       "Past_participle_V3": "found",
       "Past_participle_V3_read": "faʊnd"
+    },
+    {
+      "Uzb_translate": "mos kelmoq",
+      "Base_form": "fit",
+      "Base_form_read": "fɪt",
+      "Past_tense_V2": "fit",
+      "Past_tense_V2_read": "fɪt",
+      "Past_participle_V3": "fit",
+      "Past_participle_V3_read": "fɪt"
     },
     {
       "Uzb_translate": "qochmoq",
@@ -559,103 +505,85 @@
       "Past_participle_V3_read": "floʊn"
     },
     {
-      "Uzb_translate": "o'zini tutmoq",
-      "Base_form": "forbear",
-      "Base_form_read": "fɔːrˈber",
-      "Past_tense_V2": "forbore",
-      "Past_tense_V2_read": "fɔːrˈbɔːr",
-      "Past_participle_V3": "forborne",
-      "Past_participle_V3_read": "fɔːrˈbɔːrn"
-    },
-    {
       "Uzb_translate": "taqiqlamoq",
       "Base_form": "forbid",
-      "Base_form_read": "fərˈbɪd",
+      "Base_form_read": "fəˈbɪd",
       "Past_tense_V2": "forbade",
-      "Past_tense_V2_read": "fərˈbeɪd",
+      "Past_tense_V2_read": "fəˈbeɪd",
       "Past_participle_V3": "forbidden",
-      "Past_participle_V3_read": "fərˈbɪdən"
+      "Past_participle_V3_read": "fəˈbɪd.ən"
+    },
+    {
+      "Uzb_translate": "majbur qilmoq",
+      "Base_form": "force",
+      "Base_form_read": "fɔːrs",
+      "Past_tense_V2": "forced",
+      "Past_tense_V2_read": "fɔːrst",
+      "Past_participle_V3": "forced",
+      "Past_participle_V3_read": "fɔːrst"
     },
     {
       "Uzb_translate": "bashorat qilmoq",
-      "Base_form": "forecast",
-      "Base_form_read": "ˈfɔːrkæst",
-      "Past_tense_V2": "forecast",
-      "Past_tense_V2_read": "ˈfɔːrkæst",
-      "Past_participle_V3": "forecast",
-      "Past_participle_V3_read": "ˈfɔːrkæst"
-    },
-    {
-      "Uzb_translate": "oldindan ko'rmoq",
       "Base_form": "foresee",
-      "Base_form_read": "ˌfɔːrˈsiː",
+      "Base_form_read": "fɔːrˈsiː",
       "Past_tense_V2": "foresaw",
-      "Past_tense_V2_read": "ˌfɔːrˈsɔː",
+      "Past_tense_V2_read": "fɔːrˈsɔː",
       "Past_participle_V3": "foreseen",
-      "Past_participle_V3_read": "ˌfɔːrˈsiːn"
-    },
-    {
-      "Uzb_translate": "bashorat qilmoq",
-      "Base_form": "foretell",
-      "Base_form_read": "ˌfɔːrˈtel",
-      "Past_tense_V2": "foretold",
-      "Past_tense_V2_read": "ˌfɔːrˈtoʊld",
-      "Past_participle_V3": "foretold",
-      "Past_participle_V3_read": "ˌfɔːrˈtoʊld"
+      "Past_participle_V3_read": "fɔːrˈsiːn"
     },
     {
       "Uzb_translate": "unutmoq",
       "Base_form": "forget",
-      "Base_form_read": "fəˈɡet",
+      "Base_form_read": "fərˈɡet",
       "Past_tense_V2": "forgot",
       "Past_tense_V2_read": "fərˈɡɒt",
       "Past_participle_V3": "forgotten",
-      "Past_participle_V3_read": "fərˈɡɒtn"
+      "Past_participle_V3_read": "fərˈɡɒt.ən"
     },
     {
       "Uzb_translate": "kechirmoq",
       "Base_form": "forgive",
-      "Base_form_read": "fɔːrˈɡɪv",
+      "Base_form_read": "fərˈɡɪv",
       "Past_tense_V2": "forgave",
-      "Past_tense_V2_read": "fɔːrˈɡeɪv",
+      "Past_tense_V2_read": "fərˈɡeɪv",
       "Past_participle_V3": "forgiven",
-      "Past_participle_V3_read": "fɔːrˈɡɪvn"
+      "Past_participle_V3_read": "fərˈɡɪv.ən"
     },
     {
-      "Uzb_translate": "tark etmoq",
+      "Uzb_translate": "tark etmoq, tashlab ketmoq",
       "Base_form": "forsake",
-      "Base_form_read": "fɔːrˈseɪk",
+      "Base_form_read": "fərˈseɪk",
       "Past_tense_V2": "forsook",
-      "Past_tense_V2_read": "fɔːrˈsʊk",
+      "Past_tense_V2_read": "fərˈsʊk",
       "Past_participle_V3": "forsaken",
-      "Past_participle_V3_read": "fɔːrˈseɪkən"
+      "Past_participle_V3_read": "fərˈseɪ.kən"
     },
     {
-      "Uzb_translate": "muzlamoq",
+      "Uzb_translate": "muzlamoq, muzlatmoq",
       "Base_form": "freeze",
       "Base_form_read": "friːz",
       "Past_tense_V2": "froze",
       "Past_tense_V2_read": "froʊz",
       "Past_participle_V3": "frozen",
-      "Past_participle_V3_read": "ˈfroʊzn"
+      "Past_participle_V3_read": "ˈfroʊ.zən"
     },
     {
-      "Uzb_translate": "olmoq",
+      "Uzb_translate": "olmoq, ega bo'lmoq",
       "Base_form": "get",
       "Base_form_read": "ɡet",
       "Past_tense_V2": "got",
       "Past_tense_V2_read": "ɡɒt",
-      "Past_participle_V3": "got",
-      "Past_participle_V3_read": "ɡɒt / ˈɡɒtən"
+      "Past_participle_V3": "gotten",
+      "Past_participle_V3_read": "ˈɡɒt.ən"
     },
     {
-      "Uzb_translate": "zarhal bermoq",
+      "Uzb_translate": "oltin yugurtirmoq",
       "Base_form": "gild",
       "Base_form_read": "ɡɪld",
-      "Past_tense_V2": "gilded",
-      "Past_tense_V2_read": "ˈɡɪldɪd / ɡɪlt",
-      "Past_participle_V3": "gilded",
-      "Past_participle_V3_read": "ˈɡɪldɪd / ɡɪlt"
+      "Past_tense_V2": "gilt",
+      "Past_tense_V2_read": "ɡɪlt",
+      "Past_participle_V3": "gilt",
+      "Past_participle_V3_read": "ɡɪlt"
     },
     {
       "Uzb_translate": "bermoq",
@@ -664,7 +592,7 @@
       "Past_tense_V2": "gave",
       "Past_tense_V2_read": "ɡeɪv",
       "Past_participle_V3": "given",
-      "Past_participle_V3_read": "ˈɡɪvn"
+      "Past_participle_V3_read": "ˈɡɪv.ən"
     },
     {
       "Uzb_translate": "bormoq",
@@ -676,7 +604,16 @@
       "Past_participle_V3_read": "ɡɒn"
     },
     {
-      "Uzb_translate": "yanchmoq",
+      "Uzb_translate": "o'ymoq, o'yib olmoq",
+      "Base_form": "grave",
+      "Base_form_read": "ɡreɪv",
+      "Past_tense_V2": "groove",
+      "Past_tense_V2_read": "ɡruːv",
+      "Past_participle_V3": "graven",
+      "Past_participle_V3_read": "ˈɡreɪ.vən"
+    },
+    {
+      "Uzb_translate": "maydalamoq, tortmoq",
       "Base_form": "grind",
       "Base_form_read": "ɡraɪnd",
       "Past_tense_V2": "ground",
@@ -685,16 +622,7 @@
       "Past_participle_V3_read": "ɡraʊnd"
     },
     {
-      "Uzb_translate": "mahkam ushlamoq",
-      "Base_form": "grip",
-      "Base_form_read": "ɡrɪp",
-      "Past_tense_V2": "gripped",
-      "Past_tense_V2_read": "ɡrɪpt",
-      "Past_participle_V3": "gripped",
-      "Past_participle_V3_read": "ɡrɪpt"
-    },
-    {
-      "Uzb_translate": "o'smoq",
+      "Uzb_translate": "o'smoq, o'stirmoq",
       "Base_form": "grow",
       "Base_form_read": "ɡroʊ",
       "Past_tense_V2": "grew",
@@ -703,7 +631,7 @@
       "Past_participle_V3_read": "ɡroʊn"
     },
     {
-      "Uzb_translate": "osmoq",
+      "Uzb_translate": "osmoq, osilib turmoq",
       "Base_form": "hang",
       "Base_form_read": "hæŋ",
       "Past_tense_V2": "hung",
@@ -712,7 +640,7 @@
       "Past_participle_V3_read": "hʌŋ"
     },
     {
-      "Uzb_translate": "ega bo'lmoq",
+      "Uzb_translate": "bor bo'lmoq, borligi",
       "Base_form": "have",
       "Base_form_read": "hæv",
       "Past_tense_V2": "had",
@@ -723,41 +651,23 @@
     {
       "Uzb_translate": "eshitmoq",
       "Base_form": "hear",
-      "Base_form_read": "hiːr",
+      "Base_form_read": "hɪər",
       "Past_tense_V2": "heard",
       "Past_tense_V2_read": "hɜːrd",
       "Past_participle_V3": "heard",
       "Past_participle_V3_read": "hɜːrd"
     },
     {
-      "Uzb_translate": "ko'tarmoq",
-      "Base_form": "heave",
-      "Base_form_read": "hiːv",
-      "Past_tense_V2": "heaved",
-      "Past_tense_V2_read": "hiːvd / hoʊv",
-      "Past_participle_V3": "heaved",
-      "Past_participle_V3_read": "hiːvd / hoʊv"
-    },
-    {
-      "Uzb_translate": "chopmoq",
-      "Base_form": "hew",
-      "Base_form_read": "hjuː",
-      "Past_tense_V2": "hewed",
-      "Past_tense_V2_read": "hjuːd",
-      "Past_participle_V3": "hewn",
-      "Past_participle_V3_read": "hjuːn / hjuːd"
-    },
-    {
-      "Uzb_translate": "yashirmoq",
+      "Uzb_translate": "yashirinmoq, yashirmoq",
       "Base_form": "hide",
       "Base_form_read": "haɪd",
       "Past_tense_V2": "hid",
       "Past_tense_V2_read": "hɪd",
       "Past_participle_V3": "hidden",
-      "Past_participle_V3_read": "ˈhɪdn"
+      "Past_participle_V3_read": "ˈhɪd.ən"
     },
     {
-      "Uzb_translate": "urmoq",
+      "Uzb_translate": "urmoq, tegmoq",
       "Base_form": "hit",
       "Base_form_read": "hɪt",
       "Past_tense_V2": "hit",
@@ -766,7 +676,7 @@
       "Past_participle_V3_read": "hɪt"
     },
     {
-      "Uzb_translate": "ushlamoq",
+      "Uzb_translate": "ushlab turmoq",
       "Base_form": "hold",
       "Base_form_read": "hoʊld",
       "Past_tense_V2": "held",
@@ -775,7 +685,7 @@
       "Past_participle_V3_read": "held"
     },
     {
-      "Uzb_translate": "og'ritmoq",
+      "Uzb_translate": "ozor bermoq, og'ritmoq",
       "Base_form": "hurt",
       "Base_form_read": "hɜːrt",
       "Past_tense_V2": "hurt",
@@ -784,34 +694,7 @@
       "Past_participle_V3_read": "hɜːrt"
     },
     {
-      "Uzb_translate": "qadamoq",
-      "Base_form": "inlay",
-      "Base_form_read": "ˈɪnleɪ",
-      "Past_tense_V2": "inlaid",
-      "Past_tense_V2_read": "ˈɪnleɪd",
-      "Past_participle_V3": "inlaid",
-      "Past_participle_V3_read": "ˈɪnleɪd"
-    },
-    {
-      "Uzb_translate": "kiritmoq",
-      "Base_form": "input",
-      "Base_form_read": "ˈɪnpʊt",
-      "Past_tense_V2": "input",
-      "Past_tense_V2_read": "ˈɪnpʊt",
-      "Past_participle_V3": "input",
-      "Past_participle_V3_read": "ˈɪnpʊt"
-    },
-    {
-      "Uzb_translate": "to'qib kiritmoq",
-      "Base_form": "interweave",
-      "Base_form_read": "ˌɪntərˈwiːv",
-      "Past_tense_V2": "interwove",
-      "Past_tense_V2_read": "ˌɪntərˈwoʊv",
-      "Past_participle_V3": "interwoven",
-      "Past_participle_V3_read": "ˌɪntərˈwoʊvən"
-    },
-    {
-      "Uzb_translate": "saqlamoq",
+      "Uzb_translate": "ushlab turmoq, saqlamoq",
       "Base_form": "keep",
       "Base_form_read": "kiːp",
       "Past_tense_V2": "kept",
@@ -833,21 +716,21 @@
       "Base_form": "knit",
       "Base_form_read": "nɪt",
       "Past_tense_V2": "knit",
-      "Past_tense_V2_read": "nɪt / ˈnɪtɪd",
+      "Past_tense_V2_read": "nɪt",
       "Past_participle_V3": "knit",
-      "Past_participle_V3_read": "nɪt / ˈnɪtɪd"
+      "Past_participle_V3_read": "nɪt"
     },
     {
-      "Uzb_translate": "bilmoq",
+      "Uzb_translate": "bilmoq, tanimoq",
       "Base_form": "know",
       "Base_form_read": "noʊ",
       "Past_tense_V2": "knew",
-      "Past_tense_V2_read": "kjuː",
+      "Past_tense_V2_read": "njuː",
       "Past_participle_V3": "known",
       "Past_participle_V3_read": "noʊn"
     },
     {
-      "Uzb_translate": "qo'ymoq",
+      "Uzb_translate": "qo'ymoq, yotqizmoq",
       "Base_form": "lay",
       "Base_form_read": "leɪ",
       "Past_tense_V2": "laid",
@@ -856,7 +739,7 @@
       "Past_participle_V3_read": "leɪd"
     },
     {
-      "Uzb_translate": "boshlamoq",
+      "Uzb_translate": "boshqarmoq, yetaklamoq",
       "Base_form": "lead",
       "Base_form_read": "liːd",
       "Past_tense_V2": "led",
@@ -865,34 +748,34 @@
       "Past_participle_V3_read": "led"
     },
     {
-      "Uzb_translate": "egilmoq",
+      "Uzb_translate": "suyanmoq",
       "Base_form": "lean",
       "Base_form_read": "liːn",
       "Past_tense_V2": "leant",
-      "Past_tense_V2_read": "lent / liːnd",
+      "Past_tense_V2_read": "lent",
       "Past_participle_V3": "leant",
-      "Past_participle_V3_read": "lent / liːnd"
+      "Past_participle_V3_read": "lent"
     },
     {
       "Uzb_translate": "sakramoq",
       "Base_form": "leap",
       "Base_form_read": "liːp",
       "Past_tense_V2": "leapt",
-      "Past_tense_V2_read": "lept / liːpt",
+      "Past_tense_V2_read": "lept",
       "Past_participle_V3": "leapt",
-      "Past_participle_V3_read": "lept / liːpt"
+      "Past_participle_V3_read": "lept"
     },
     {
       "Uzb_translate": "o'rganmoq",
       "Base_form": "learn",
       "Base_form_read": "lɜːrn",
       "Past_tense_V2": "learnt",
-      "Past_tense_V2_read": "lɜːrnt / lɜːrnd",
+      "Past_tense_V2_read": "lɜːrnt",
       "Past_participle_V3": "learnt",
-      "Past_participle_V3_read": "lɜːrnt / lɜːrnd"
+      "Past_participle_V3_read": "lɜːrnt"
     },
     {
-      "Uzb_translate": "ketmoq",
+      "Uzb_translate": "tark etmoq, qoldirmoq",
       "Base_form": "leave",
       "Base_form_read": "liːv",
       "Past_tense_V2": "left",
@@ -928,13 +811,13 @@
       "Past_participle_V3_read": "leɪn"
     },
     {
-      "Uzb_translate": "yoqmoq",
+      "Uzb_translate": "yoqmoq, yoritmoq",
       "Base_form": "light",
       "Base_form_read": "laɪt",
       "Past_tense_V2": "lit",
-      "Past_tense_V2_read": "lɪt / ˈlaɪtɪd",
+      "Past_tense_V2_read": "lɪt",
       "Past_participle_V3": "lit",
-      "Past_participle_V3_read": "lɪt / ˈlaɪtɪd"
+      "Past_participle_V3_read": "lɪt"
     },
     {
       "Uzb_translate": "yo'qotmoq",
@@ -946,7 +829,7 @@
       "Past_participle_V3_read": "lɒst"
     },
     {
-      "Uzb_translate": "qilmoq",
+      "Uzb_translate": "yasamoq, qilmoq",
       "Base_form": "make",
       "Base_form_read": "meɪk",
       "Past_tense_V2": "made",
@@ -955,7 +838,7 @@
       "Past_participle_V3_read": "meɪd"
     },
     {
-      "Uzb_translate": "anglatmoq",
+      "Uzb_translate": "anglatmoq, nazarda tutmoq",
       "Base_form": "mean",
       "Base_form_read": "miːn",
       "Past_tense_V2": "meant",
@@ -964,7 +847,7 @@
       "Past_participle_V3_read": "ment"
     },
     {
-      "Uzb_translate": "uchratmoq",
+      "Uzb_translate": "uchratmoq, ko'rishmoq",
       "Base_form": "meet",
       "Base_form_read": "miːt",
       "Past_tense_V2": "met",
@@ -973,16 +856,16 @@
       "Past_participle_V3_read": "met"
     },
     {
-      "Uzb_translate": "erimoq",
-      "Base_form": "melt",
-      "Base_form_read": "melt",
-      "Past_tense_V2": "melted",
-      "Past_tense_V2_read": "ˈmeltɪd",
-      "Past_participle_V3": "molten",
-      "Past_participle_V3_read": "ˈmoʊltən / ˈmeltɪd"
+      "Uzb_translate": "yanglishmoq",
+      "Base_form": "mislay",
+      "Base_form_read": "ˌmɪsˈleɪ",
+      "Past_tense_V2": "mislaid",
+      "Past_tense_V2_read": "ˌmɪsˈleɪd",
+      "Past_participle_V3": "mislaid",
+      "Past_participle_V3_read": "ˌmɪsˈleɪd"
     },
     {
-      "Uzb_translate": "chalg'itmoq",
+      "Uzb_translate": "yo'ldan ozdirmoq",
       "Base_form": "mislead",
       "Base_form_read": "ˌmɪsˈliːd",
       "Past_tense_V2": "misled",
@@ -991,202 +874,22 @@
       "Past_participle_V3_read": "ˌmɪsˈled"
     },
     {
-      "Uzb_translate": "adashmoq",
-      "Base_form": "mistake",
-      "Base_form_read": "mɪˈsteɪk",
-      "Past_tense_V2": "mistook",
-      "Past_tense_V2_read": "mɪˈstʊk",
-      "Past_participle_V3": "mistaken",
-      "Past_participle_V3_read": "mɪˈsteɪkən"
-    },
-    {
-      "Uzb_translate": "noto'g'ri tushunmoq",
+      "Uzb_translate": "xato tushunmoq",
       "Base_form": "misunderstand",
-      "Base_form_read": "ˌmɪsʌndərˈstænd",
+      "Base_form_read": "ˌmɪs.ʌn.dəˈstænd",
       "Past_tense_V2": "misunderstood",
-      "Past_tense_V2_read": "ˌmɪsʌndərˈstʊd",
+      "Past_tense_V2_read": "ˌmɪs.ʌn.dəˈstʊd",
       "Past_participle_V3": "misunderstood",
-      "Past_participle_V3_read": "ˌmɪsʌndərˈstʊd"
+      "Past_participle_V3_read": "ˌmɪs.ʌn.dəˈstʊd"
     },
     {
-      "Uzb_translate": "o'rmoq",
+      "Uzb_translate": "o'rmoq (o't)",
       "Base_form": "mow",
       "Base_form_read": "moʊ",
       "Past_tense_V2": "mowed",
       "Past_tense_V2_read": "moʊd",
       "Past_participle_V3": "mown",
-      "Past_participle_V3_read": "moʊn / moʊd"
-    },
-    {
-      "Uzb_translate": "qoplamoq",
-      "Base_form": "offset",
-      "Base_form_read": "ˈɔːfset",
-      "Past_tense_V2": "offset",
-      "Past_tense_V2_read": "ˈɔːfset",
-      "Past_participle_V3": "offset",
-      "Past_participle_V3_read": "ˈɔːfset"
-    },
-    {
-      "Uzb_translate": "narxni oshirmoq",
-      "Base_form": "outbid",
-      "Base_form_read": "ˌaʊtˈbɪd",
-      "Past_tense_V2": "outbid",
-      "Past_tense_V2_read": "ˌaʊtˈbɪd",
-      "Past_participle_V3": "outbid",
-      "Past_participle_V3_read": "ˌaʊtˈbɪd"
-    },
-    {
-      "Uzb_translate": "ustun kelmoq",
-      "Base_form": "outdo",
-      "Base_form_read": "ˌaʊtˈduː",
-      "Past_tense_V2": "outdid",
-      "Past_tense_V2_read": "ˌaʊtˈdɪd",
-      "Past_participle_V3": "outdone",
-      "Past_participle_V3_read": "ˌaʊtˈdʌn"
-    },
-    {
-      "Uzb_translate": "o'sib ketmoq",
-      "Base_form": "outgrow",
-      "Base_form_read": "ˌaʊtˈɡroʊ",
-      "Past_tense_V2": "outgrew",
-      "Past_tense_V2_read": "ˌaʊtˈɡruː",
-      "Past_participle_V3": "outgrown",
-      "Past_participle_V3_read": "ˌaʊtˈɡroʊn"
-    },
-    {
-      "Uzb_translate": "chiqarmoq",
-      "Base_form": "output",
-      "Base_form_read": "ˈaʊtpʊt",
-      "Past_tense_V2": "output",
-      "Past_tense_V2_read": "ˈaʊtpʊt",
-      "Past_participle_V3": "output",
-      "Past_participle_V3_read": "ˈaʊtpʊt"
-    },
-    {
-      "Uzb_translate": "quvib o'tmoq",
-      "Base_form": "outrun",
-      "Base_form_read": "ˌaʊtˈrʌn",
-      "Past_tense_V2": "outran",
-      "Past_tense_V2_read": "ˌaʊtˈræn",
-      "Past_participle_V3": "outrun",
-      "Past_participle_V3_read": "ˌaʊtˈrʌn"
-    },
-    {
-      "Uzb_translate": "yengib o'tmoq",
-      "Base_form": "overcome",
-      "Base_form_read": "ˌoʊvərˈkʌm",
-      "Past_tense_V2": "overcame",
-      "Past_tense_V2_read": "ˌoʊvərˈkeɪm",
-      "Past_participle_V3": "overcome",
-      "Past_participle_V3_read": "ˌoʊvərˈkʌm"
-    },
-    {
-      "Uzb_translate": "haddan oshirmoq",
-      "Base_form": "overdo",
-      "Base_form_read": "ˌoʊvərˈduː",
-      "Past_tense_V2": "overdid",
-      "Past_tense_V2_read": "ˌoʊvərˈdɪd",
-      "Past_participle_V3": "overdone",
-      "Past_participle_V3_read": "ˌoʊvərˈdʌn"
-    },
-    {
-      "Uzb_translate": "toshib ketmoq",
-      "Base_form": "overflow",
-      "Base_form_read": "ˌoʊvərˈfloʊ",
-      "Past_tense_V2": "overflowed",
-      "Past_tense_V2_read": "ˌoʊvərˈfloʊd",
-      "Past_participle_V3": "overflown",
-      "Past_participle_V3_read": "ˌoʊvərˈfloʊn"
-    },
-    {
-      "Uzb_translate": "osilib turmoq",
-      "Base_form": "overhang",
-      "Base_form_read": "ˌoʊvərˈhæŋ",
-      "Past_tense_V2": "overhung",
-      "Past_tense_V2_read": "ˌoʊvərˈhʌŋ",
-      "Past_participle_V3": "overhung",
-      "Past_participle_V3_read": "ˌoʊvərˈhʌŋ"
-    },
-    {
-      "Uzb_translate": "eshitib qolmoq",
-      "Base_form": "overhear",
-      "Base_form_read": "ˌoʊvərˈhɪr",
-      "Past_tense_V2": "overheard",
-      "Past_tense_V2_read": "ˌoʊvərˈhɜːrd",
-      "Past_participle_V3": "overheard",
-      "Past_participle_V3_read": "ˌoʊvərˈhɜːrd"
-    },
-    {
-      "Uzb_translate": "ustiga qo'ymoq",
-      "Base_form": "overlay",
-      "Base_form_read": "ˌoʊvərˈleɪ",
-      "Past_tense_V2": "overlaid",
-      "Past_tense_V2_read": "ˌoʊvərˈleɪd",
-      "Past_participle_V3": "overlaid",
-      "Past_participle_V3_read": "ˌoʊvərˈleɪd"
-    },
-    {
-      "Uzb_translate": "bekor qilmoq",
-      "Base_form": "override",
-      "Base_form_read": "ˌoʊvərˈraɪd",
-      "Past_tense_V2": "overrode",
-      "Past_tense_V2_read": "ˌoʊvərˈroʊd",
-      "Past_participle_V3": "overridden",
-      "Past_participle_V3_read": "ˌoʊvərˈrɪdən"
-    },
-    {
-      "Uzb_translate": "nazorat qilmoq",
-      "Base_form": "oversee",
-      "Base_form_read": "ˌoʊvərˈsiː",
-      "Past_tense_V2": "oversaw",
-      "Past_tense_V2_read": "ˌoʊvərˈsɔː",
-      "Past_participle_V3": "overseen",
-      "Past_participle_V3_read": "ˌoʊvərˈsiːn"
-    },
-    {
-      "Uzb_translate": "o'tib ketmoq",
-      "Base_form": "overshoot",
-      "Base_form_read": "ˌoʊvərˈʃuːt",
-      "Past_tense_V2": "overshot",
-      "Past_tense_V2_read": "ˌoʊvərˈʃɒt",
-      "Past_participle_V3": "overshot",
-      "Past_participle_V3_read": "ˌoʊvərˈʃɒt"
-    },
-    {
-      "Uzb_translate": "uxlab qolmoq",
-      "Base_form": "oversleep",
-      "Base_form_read": "ˌoʊvərˈsliːp",
-      "Past_tense_V2": "overslept",
-      "Past_tense_V2_read": "ˌoʊvərˈslept",
-      "Past_participle_V3": "overslept",
-      "Past_participle_V3_read": "ˌoʊvərˈslept"
-    },
-    {
-      "Uzb_translate": "quvib yetmoq",
-      "Base_form": "overtake",
-      "Base_form_read": "ˌoʊvərˈteɪk",
-      "Past_tense_V2": "overtook",
-      "Past_tense_V2_read": "ˌoʊvərˈtʊk",
-      "Past_participle_V3": "overtaken",
-      "Past_participle_V3_read": "ˌoʊvərˈteɪkən"
-    },
-    {
-      "Uzb_translate": "ag'darmoq",
-      "Base_form": "overthrow",
-      "Base_form_read": "ˌoʊvərˈθroʊ",
-      "Past_tense_V2": "overthrew",
-      "Past_tense_V2_read": "ˌoʊvərˈθruː",
-      "Past_participle_V3": "overthrown",
-      "Past_participle_V3_read": "ˌoʊvərˈθroʊn"
-    },
-    {
-      "Uzb_translate": "ishtirok etmoq",
-      "Base_form": "partake",
-      "Base_form_read": "pɑːrˈteɪk",
-      "Past_tense_V2": "partook",
-      "Past_tense_V2_read": "pɑːrˈtʊk",
-      "Past_participle_V3": "partaken",
-      "Past_participle_V3_read": "pɑːrˈteɪkən"
+      "Past_participle_V3_read": "moʊn"
     },
     {
       "Uzb_translate": "to'lamoq",
@@ -1198,67 +901,13 @@
       "Past_participle_V3_read": "peɪd"
     },
     {
-      "Uzb_translate": "yolvormoq",
-      "Base_form": "plead",
-      "Base_form_read": "pliːd",
-      "Past_tense_V2": "pled",
-      "Past_tense_V2_read": "pled / ˈpliːdɪd",
-      "Past_participle_V3": "pled",
-      "Past_participle_V3_read": "pled / ˈpliːdɪd"
-    },
-    {
-      "Uzb_translate": "oldindan o'rnatmoq",
-      "Base_form": "preset",
-      "Base_form_read": "ˌpriːˈset",
-      "Past_tense_V2": "preset",
-      "Past_tense_V2_read": "ˌpriːˈset",
-      "Past_participle_V3": "preset",
-      "Past_participle_V3_read": "ˌpriːˈset"
-    },
-    {
-      "Uzb_translate": "isbotlamoq",
-      "Base_form": "prove",
-      "Base_form_read": "pruːv",
-      "Past_tense_V2": "proved",
-      "Past_tense_V2_read": "pruːvd",
-      "Past_participle_V3": "proven",
-      "Past_participle_V3_read": "ˈpruːvən / pruːvd"
-    },
-    {
       "Uzb_translate": "qo'ymoq",
       "Base_form": "put",
-      "Base_form_read": "puːt",
+      "Base_form_read": "pʊt",
       "Past_tense_V2": "put",
-      "Past_tense_V2_read": "puːt",
+      "Past_tense_V2_read": "pʊt",
       "Past_participle_V3": "put",
-      "Past_participle_V3_read": "puːt"
-    },
-    {
-      "Uzb_translate": "to'xtatmoq",
-      "Base_form": "quit",
-      "Base_form_read": "kwɪt",
-      "Past_tense_V2": "quit",
-      "Past_tense_V2_read": "kwɪt",
-      "Past_participle_V3": "quit",
-      "Past_participle_V3_read": "kwɪt"
-    },
-    {
-      "Uzb_translate": "tez o'rnatmoq",
-      "Base_form": "quickset",
-      "Base_form_read": "ˈkwɪkset",
-      "Past_tense_V2": "quickset",
-      "Past_tense_V2_read": "ˈkwɪkset",
-      "Past_participle_V3": "quickset",
-      "Past_participle_V3_read": "ˈkwɪkset"
-    },
-    {
-      "Uzb_translate": "tez muzlatmoq",
-      "Base_form": "quickfreeze",
-      "Base_form_read": "ˈkwɪkfriːz",
-      "Past_tense_V2": "quickfroze",
-      "Past_tense_V2_read": "ˈkwɪkfroʊz",
-      "Past_participle_V3": "quickfrozen",
-      "Past_participle_V3_read": "ˈkwɪkfroʊzən"
+      "Past_participle_V3_read": "pʊt"
     },
     {
       "Uzb_translate": "o'qimoq",
@@ -1270,7 +919,7 @@
       "Past_participle_V3_read": "red"
     },
     {
-      "Uzb_translate": "qayta qurmoq",
+      "Uzb_translate": "yangilamoq, qayta qurmoq",
       "Base_form": "rebuild",
       "Base_form_read": "ˌriːˈbɪld",
       "Past_tense_V2": "rebuilt",
@@ -1279,97 +928,7 @@
       "Past_participle_V3_read": "ˌriːˈbɪlt"
     },
     {
-      "Uzb_translate": "qayta ishlamoq",
-      "Base_form": "recast",
-      "Base_form_read": "ˌriːˈkæst",
-      "Past_tense_V2": "recast",
-      "Past_tense_V2_read": "ˌriːˈkæst",
-      "Past_participle_V3": "recast",
-      "Past_participle_V3_read": "ˌriːˈkæst"
-    },
-    {
-      "Uzb_translate": "qayta qilmoq",
-      "Base_form": "redo",
-      "Base_form_read": "ˌriːˈduː",
-      "Past_tense_V2": "redid",
-      "Past_tense_V2_read": "ˌriːˈdɪd",
-      "Past_participle_V3": "redone",
-      "Past_participle_V3_read": "ˌriːˈdʌn"
-    },
-    {
-      "Uzb_translate": "qayta ko'rib chiqmoq",
-      "Base_form": "rehear",
-      "Base_form_read": "ˌriːˈhɪr",
-      "Past_tense_V2": "reheard",
-      "Past_tense_V2_read": "ˌriːˈhɜːrd",
-      "Past_participle_V3": "reheard",
-      "Past_participle_V3_read": "ˌriːˈhɜːrd"
-    },
-    {
-      "Uzb_translate": "qayta yasmoq",
-      "Base_form": "remake",
-      "Base_form_read": "ˌriːˈmeɪk",
-      "Past_tense_V2": "remade",
-      "Past_tense_V2_read": "ˌriːˈmeɪd",
-      "Past_participle_V3": "remade",
-      "Past_participle_V3_read": "ˌriːˈmeɪd"
-    },
-    {
-      "Uzb_translate": "yirtmoq",
-      "Base_form": "rend",
-      "Base_form_read": "rend",
-      "Past_tense_V2": "rent",
-      "Past_tense_V2_read": "rent",
-      "Past_participle_V3": "rent",
-      "Past_participle_V3_read": "rent"
-    },
-    {
-      "Uzb_translate": "qaytarmoq",
-      "Base_form": "repay",
-      "Base_form_read": "ˌriːˈpeɪ",
-      "Past_tense_V2": "repaid",
-      "Past_tense_V2_read": "ˌriːˈpeɪd",
-      "Past_participle_V3": "repaid",
-      "Past_participle_V3_read": "ˌriːˈpeɪd"
-    },
-    {
-      "Uzb_translate": "qayta o'rnatmoq",
-      "Base_form": "reset",
-      "Base_form_read": "ˌriːˈset",
-      "Past_tense_V2": "reset",
-      "Past_tense_V2_read": "ˌriːˈset",
-      "Past_participle_V3": "reset",
-      "Past_participle_V3_read": "ˌriːˈset"
-    },
-    {
-      "Uzb_translate": "qayta topshirmoq",
-      "Base_form": "retake",
-      "Base_form_read": "ˌriːˈteɪk",
-      "Past_tense_V2": "retook",
-      "Past_tense_V2_read": "ˌriːˈtʊk",
-      "Past_participle_V3": "retaken",
-      "Past_participle_V3_read": "ˌriːˈteɪkən"
-    },
-    {
-      "Uzb_translate": "qayta aytib bermoq",
-      "Base_form": "retell",
-      "Base_form_read": "ˌriːˈtel",
-      "Past_tense_V2": "retold",
-      "Past_tense_V2_read": "ˌriːˈtoʊld",
-      "Past_participle_V3": "retold",
-      "Past_participle_V3_read": "ˌriːˈtoʊld"
-    },
-    {
-      "Uzb_translate": "qayta yozmoq",
-      "Base_form": "rewrite",
-      "Base_form_read": "ˌriːˈraɪt",
-      "Past_tense_V2": "rewrote",
-      "Past_tense_V2_read": "ˌriːˈroʊt",
-      "Past_participle_V3": "rewritten",
-      "Past_participle_V3_read": "ˌriːˈrɪtən"
-    },
-    {
-      "Uzb_translate": "qutulmoq",
+      "Uzb_translate": "xalos bo'lmoq",
       "Base_form": "rid",
       "Base_form_read": "rɪd",
       "Past_tense_V2": "rid",
@@ -1378,16 +937,16 @@
       "Past_participle_V3_read": "rɪd"
     },
     {
-      "Uzb_translate": "minib yurmoq",
+      "Uzb_translate": "minmoq (ot, velosiped)",
       "Base_form": "ride",
       "Base_form_read": "raɪd",
       "Past_tense_V2": "rode",
       "Past_tense_V2_read": "roʊd",
       "Past_participle_V3": "ridden",
-      "Past_participle_V3_read": "ˈrɪdən"
+      "Past_participle_V3_read": "ˈrɪd.ən"
     },
     {
-      "Uzb_translate": "qo'ng'iroq qilmoq",
+      "Uzb_translate": "jiringlamoq",
       "Base_form": "ring",
       "Base_form_read": "rɪŋ",
       "Past_tense_V2": "rang",
@@ -1402,7 +961,7 @@
       "Past_tense_V2": "rose",
       "Past_tense_V2_read": "roʊz",
       "Past_participle_V3": "risen",
-      "Past_participle_V3_read": "ˈrɪzən"
+      "Past_participle_V3_read": "ˈrɪz.ən"
     },
     {
       "Uzb_translate": "yugurmoq",
@@ -1420,7 +979,7 @@
       "Past_tense_V2": "sawed",
       "Past_tense_V2_read": "sɔːd",
       "Past_participle_V3": "sawn",
-      "Past_participle_V3_read": "sɔːn / sɔːd"
+      "Past_participle_V3_read": "sɔːn"
     },
     {
       "Uzb_translate": "aytmoq",
@@ -1441,7 +1000,7 @@
       "Past_participle_V3_read": "siːn"
     },
     {
-      "Uzb_translate": "izlamoq",
+      "Uzb_translate": "qidirmoq",
       "Base_form": "seek",
       "Base_form_read": "siːk",
       "Past_tense_V2": "sought",
@@ -1452,14 +1011,14 @@
     {
       "Uzb_translate": "sotmoq",
       "Base_form": "sell",
-      "Base_form_read": "sɛl",
+      "Base_form_read": "sel",
       "Past_tense_V2": "sold",
       "Past_tense_V2_read": "soʊld",
       "Past_participle_V3": "sold",
       "Past_participle_V3_read": "soʊld"
     },
     {
-      "Uzb_translate": "jo'natmoq",
+      "Uzb_translate": "yubormoq",
       "Base_form": "send",
       "Base_form_read": "send",
       "Past_tense_V2": "sent",
@@ -1468,7 +1027,7 @@
       "Past_participle_V3_read": "sent"
     },
     {
-      "Uzb_translate": "o'rnatmoq",
+      "Uzb_translate": "o'rnatmoq, qo'ymoq",
       "Base_form": "set",
       "Base_form_read": "set",
       "Past_tense_V2": "set",
@@ -1483,7 +1042,7 @@
       "Past_tense_V2": "sewed",
       "Past_tense_V2_read": "soʊd",
       "Past_participle_V3": "sewn",
-      "Past_participle_V3_read": "soʊn / soʊd"
+      "Past_participle_V3_read": "soʊn"
     },
     {
       "Uzb_translate": "silkitmoq",
@@ -1492,7 +1051,7 @@
       "Past_tense_V2": "shook",
       "Past_tense_V2_read": "ʃʊk",
       "Past_participle_V3": "shaken",
-      "Past_participle_V3_read": "ˈʃeɪkən"
+      "Past_participle_V3_read": "ˈʃeɪ.kən"
     },
     {
       "Uzb_translate": "soch olmoq",
@@ -1501,19 +1060,19 @@
       "Past_tense_V2": "shaved",
       "Past_tense_V2_read": "ʃeɪvd",
       "Past_participle_V3": "shaven",
-      "Past_participle_V3_read": "ˈʃeɪvən / ʃeɪvd"
+      "Past_participle_V3_read": "ˈʃeɪ.vən"
     },
     {
-      "Uzb_translate": "qirqmoq",
+      "Uzb_translate": "qirqmoq (jun)",
       "Base_form": "shear",
-      "Base_form_read": "ʃɪr",
-      "Past_tense_V2": "sheared",
-      "Past_tense_V2_read": "ʃɪrd",
+      "Base_form_read": "ʃɪər",
+      "Past_tense_V2": "shore",
+      "Past_tense_V2_read": "ʃɔːr",
       "Past_participle_V3": "shorn",
-      "Past_participle_V3_read": "ʃɔːrn / ʃɪrd"
+      "Past_participle_V3_read": "ʃɔːrn"
     },
     {
-      "Uzb_translate": "to'kmoq",
+      "Uzb_translate": "to'kmoq (yosh, qon)",
       "Base_form": "shed",
       "Base_form_read": "ʃed",
       "Past_tense_V2": "shed",
@@ -1526,9 +1085,18 @@
       "Base_form": "shine",
       "Base_form_read": "ʃaɪn",
       "Past_tense_V2": "shone",
-      "Past_tense_V2_read": "ʃoʊn",
+      "Past_tense_V2_read": "ʃɒn",
       "Past_participle_V3": "shone",
-      "Past_participle_V3_read": "ʃoʊn"
+      "Past_participle_V3_read": "ʃɒn"
+    },
+    {
+      "Uzb_translate": "yengmoq, kiyintirmoq",
+      "Base_form": "shoe",
+      "Base_form_read": "ʃuː",
+      "Past_tense_V2": "shod",
+      "Past_tense_V2_read": "ʃɒd",
+      "Past_participle_V3": "shod",
+      "Past_participle_V3_read": "ʃɒd"
     },
     {
       "Uzb_translate": "otmoq",
@@ -1546,14 +1114,14 @@
       "Past_tense_V2": "showed",
       "Past_tense_V2_read": "ʃoʊd",
       "Past_participle_V3": "shown",
-      "Past_participle_V3_read": "ʃoʊn / ʃoʊd"
+      "Past_participle_V3_read": "ʃoʊn"
     },
     {
-      "Uzb_translate": "kirishmoq",
+      "Uzb_translate": "kichraymoq, tortishmoq",
       "Base_form": "shrink",
       "Base_form_read": "ʃrɪŋk",
       "Past_tense_V2": "shrank",
-      "Past_tense_V2_read": "ʃræŋk / ʃrʌŋk",
+      "Past_tense_V2_read": "ʃræŋk",
       "Past_participle_V3": "shrunk",
       "Past_participle_V3_read": "ʃrʌŋk"
     },
@@ -1580,7 +1148,7 @@
       "Base_form": "sink",
       "Base_form_read": "sɪŋk",
       "Past_tense_V2": "sank",
-      "Past_tense_V2_read": "sæŋk / sʌŋk",
+      "Past_tense_V2_read": "sæŋk",
       "Past_participle_V3": "sunk",
       "Past_participle_V3_read": "sʌŋk"
     },
@@ -1612,7 +1180,7 @@
       "Past_participle_V3_read": "slept"
     },
     {
-      "Uzb_translate": "sirpanmoq",
+      "Uzb_translate": "sirg'almoq",
       "Base_form": "slide",
       "Base_form_read": "slaɪd",
       "Past_tense_V2": "slid",
@@ -1621,7 +1189,7 @@
       "Past_participle_V3_read": "slɪd"
     },
     {
-      "Uzb_translate": "uloqtirmoq",
+      "Uzb_translate": "oting'ichlik qilmoq",
       "Base_form": "sling",
       "Base_form_read": "slɪŋ",
       "Past_tense_V2": "slung",
@@ -1630,7 +1198,7 @@
       "Past_participle_V3_read": "slʌŋ"
     },
     {
-      "Uzb_translate": "sekin yurmoq",
+      "Uzb_translate": "sekin harakatlanmoq",
       "Base_form": "slink",
       "Base_form_read": "slɪŋk",
       "Past_tense_V2": "slunk",
@@ -1639,7 +1207,7 @@
       "Past_participle_V3_read": "slʌŋk"
     },
     {
-      "Uzb_translate": "yormoq",
+      "Uzb_translate": "yorib yubormoq",
       "Base_form": "slit",
       "Base_form_read": "slɪt",
       "Past_tense_V2": "slit",
@@ -1652,27 +1220,27 @@
       "Base_form": "smell",
       "Base_form_read": "smel",
       "Past_tense_V2": "smelt",
-      "Past_tense_V2_read": "smelt / smeld",
+      "Past_tense_V2_read": "smelt",
       "Past_participle_V3": "smelt",
-      "Past_participle_V3_read": "smelt / smeld"
+      "Past_participle_V3_read": "smelt"
     },
     {
-      "Uzb_translate": "urmoq",
+      "Uzb_translate": "urmoq, sindirmoq",
       "Base_form": "smite",
       "Base_form_read": "smaɪt",
       "Past_tense_V2": "smote",
       "Past_tense_V2_read": "smoʊt",
       "Past_participle_V3": "smitten",
-      "Past_participle_V3_read": "ˈsmɪtən"
+      "Past_participle_V3_read": "ˈsmɪt.ən"
     },
     {
-      "Uzb_translate": "ekmoq",
+      "Uzb_translate": "sochmoq",
       "Base_form": "sow",
       "Base_form_read": "soʊ",
       "Past_tense_V2": "sowed",
       "Past_tense_V2_read": "soʊd",
       "Past_participle_V3": "sown",
-      "Past_participle_V3_read": "soʊn / soʊd"
+      "Past_participle_V3_read": "soʊn"
     },
     {
       "Uzb_translate": "gapirmoq",
@@ -1681,28 +1249,28 @@
       "Past_tense_V2": "spoke",
       "Past_tense_V2_read": "spoʊk",
       "Past_participle_V3": "spoken",
-      "Past_participle_V3_read": "ˈspoʊkən"
+      "Past_participle_V3_read": "ˈspoʊ.kən"
     },
     {
       "Uzb_translate": "tezlashtirmoq",
       "Base_form": "speed",
       "Base_form_read": "spiːd",
       "Past_tense_V2": "sped",
-      "Past_tense_V2_read": "sped / ˈspiːdɪd",
+      "Past_tense_V2_read": "sped",
       "Past_participle_V3": "sped",
-      "Past_participle_V3_read": "sped / ˈspiːdɪd"
+      "Past_participle_V3_read": "sped"
     },
     {
-      "Uzb_translate": "harflab aytmoq",
+      "Uzb_translate": "harfma-harf aytmoq",
       "Base_form": "spell",
       "Base_form_read": "spel",
       "Past_tense_V2": "spelt",
-      "Past_tense_V2_read": "spelt / speld",
+      "Past_tense_V2_read": "spelt",
       "Past_participle_V3": "spelt",
-      "Past_participle_V3_read": "spelt / speld"
+      "Past_participle_V3_read": "spelt"
     },
     {
-      "Uzb_translate": "sarflamoq",
+      "Uzb_translate": "sarflamoq, o'tkazmoq",
       "Base_form": "spend",
       "Base_form_read": "spend",
       "Past_tense_V2": "spent",
@@ -1715,12 +1283,12 @@
       "Base_form": "spill",
       "Base_form_read": "spɪl",
       "Past_tense_V2": "spilt",
-      "Past_tense_V2_read": "spɪlt / spɪld",
+      "Past_tense_V2_read": "spɪlt",
       "Past_participle_V3": "spilt",
-      "Past_participle_V3_read": "spɪlt / spɪld"
+      "Past_participle_V3_read": "spɪlt"
     },
     {
-      "Uzb_translate": "yigirmoq",
+      "Uzb_translate": "yigirmoq, aylantirmoq",
       "Base_form": "spin",
       "Base_form_read": "spɪn",
       "Past_tense_V2": "spun",
@@ -1729,16 +1297,16 @@
       "Past_participle_V3_read": "spʌn"
     },
     {
-      "Uzb_translate": "tupurmoq",
+      "Uzb_translate": "tufurmoq",
       "Base_form": "spit",
       "Base_form_read": "spɪt",
       "Past_tense_V2": "spat",
-      "Past_tense_V2_read": "spæt / spɪt",
+      "Past_tense_V2_read": "spæt",
       "Past_participle_V3": "spat",
-      "Past_participle_V3_read": "spæt / spɪt"
+      "Past_participle_V3_read": "spæt"
     },
     {
-      "Uzb_translate": "yormoq",
+      "Uzb_translate": "yorilmoq, bo'linmoq",
       "Base_form": "split",
       "Base_form_read": "splɪt",
       "Past_tense_V2": "split",
@@ -1747,16 +1315,16 @@
       "Past_participle_V3_read": "splɪt"
     },
     {
-      "Uzb_translate": "buzmoq",
+      "Uzb_translate": "buzmoq, erkalatmoq",
       "Base_form": "spoil",
-      "Base_form_read": "spɔɪl",
+      "Base_form_read": "spoɪl",
       "Past_tense_V2": "spoilt",
-      "Past_tense_V2_read": "spɔɪlt / spɔɪld",
+      "Past_tense_V2_read": "spoɪlt",
       "Past_participle_V3": "spoilt",
-      "Past_participle_V3_read": "spɔɪlt / spɔɪld"
+      "Past_participle_V3_read": "spoɪlt"
     },
     {
-      "Uzb_translate": "yoymoq",
+      "Uzb_translate": "tarqatmoq, yoymoq",
       "Base_form": "spread",
       "Base_form_read": "spred",
       "Past_tense_V2": "spread",
@@ -1765,11 +1333,11 @@
       "Past_participle_V3_read": "spred"
     },
     {
-      "Uzb_translate": "sakramoq",
+      "Uzb_translate": "sakramoq, otilmoq",
       "Base_form": "spring",
       "Base_form_read": "sprɪŋ",
       "Past_tense_V2": "sprang",
-      "Past_tense_V2_read": "spræŋ / sprʌŋ",
+      "Past_tense_V2_read": "spræŋ",
       "Past_participle_V3": "sprung",
       "Past_participle_V3_read": "sprʌŋ"
     },
@@ -1789,7 +1357,7 @@
       "Past_tense_V2": "stole",
       "Past_tense_V2_read": "stoʊl",
       "Past_participle_V3": "stolen",
-      "Past_participle_V3_read": "ˈstoʊlən"
+      "Past_participle_V3_read": "ˈstoʊ.lən"
     },
     {
       "Uzb_translate": "yopishtirmoq",
@@ -1801,7 +1369,7 @@
       "Past_participle_V3_read": "stʌk"
     },
     {
-      "Uzb_translate": "chaqmoq",
+      "Uzb_translate": "sanchmoq, chaqmoq",
       "Base_form": "sting",
       "Base_form_read": "stɪŋ",
       "Past_tense_V2": "stung",
@@ -1810,43 +1378,43 @@
       "Past_participle_V3_read": "stʌŋ"
     },
     {
-      "Uzb_translate": "sassimoq",
+      "Uzb_translate": "sasimoq",
       "Base_form": "stink",
       "Base_form_read": "stɪŋk",
       "Past_tense_V2": "stank",
-      "Past_tense_V2_read": "stæŋk / stʌŋk",
+      "Past_tense_V2_read": "stæŋk",
       "Past_participle_V3": "stunk",
       "Past_participle_V3_read": "stʌŋk"
     },
     {
-      "Uzb_translate": "sochmoq",
+      "Uzb_translate": "sochmoq, yoymoq",
       "Base_form": "strew",
       "Base_form_read": "struː",
       "Past_tense_V2": "strewed",
       "Past_tense_V2_read": "struːd",
-      "Past_participle_V3": "strewed",
-      "Past_participle_V3_read": "struːn / struːd"
+      "Past_participle_V3": "strewn",
+      "Past_participle_V3_read": "struːn"
     },
     {
-      "Uzb_translate": "katta qadam tashlamoq",
+      "Uzb_translate": "qadam tashlamoq",
       "Base_form": "stride",
       "Base_form_read": "straɪd",
       "Past_tense_V2": "strode",
       "Past_tense_V2_read": "stroʊd",
       "Past_participle_V3": "stridden",
-      "Past_participle_V3_read": "ˈstrɪdən"
+      "Past_participle_V3_read": "ˈstrɪd.ən"
     },
     {
-      "Uzb_translate": "urmoq",
+      "Uzb_translate": "urmoq, zarba bermoq",
       "Base_form": "strike",
       "Base_form_read": "straɪk",
       "Past_tense_V2": "struck",
       "Past_tense_V2_read": "strʌk",
       "Past_participle_V3": "struck",
-      "Past_participle_V3_read": "strʌk / ˈstrɪkən"
+      "Past_participle_V3_read": "strʌk"
     },
     {
-      "Uzb_translate": "tizmoq",
+      "Uzb_translate": "ipga tizmoq",
       "Base_form": "string",
       "Base_form_read": "strɪŋ",
       "Past_tense_V2": "strung",
@@ -1855,16 +1423,16 @@
       "Past_participle_V3_read": "strʌŋ"
     },
     {
-      "Uzb_translate": "intilmoq",
+      "Uzb_translate": "harakat qilmoq",
       "Base_form": "strive",
       "Base_form_read": "straɪv",
       "Past_tense_V2": "strove",
       "Past_tense_V2_read": "stroʊv",
       "Past_participle_V3": "striven",
-      "Past_participle_V3_read": "ˈstrɪvən"
+      "Past_participle_V3_read": "ˈstrɪv.ən"
     },
     {
-      "Uzb_translate": "qasam ichmoq",
+      "Uzb_translate": "qasam ichmoq, so'kinmoq",
       "Base_form": "swear",
       "Base_form_read": "sweər",
       "Past_tense_V2": "swore",
@@ -1873,7 +1441,7 @@
       "Past_participle_V3_read": "swɔːrn"
     },
     {
-      "Uzb_translate": "supurmoq",
+      "Uzb_translate": "tozalamoq, supurmoq",
       "Base_form": "sweep",
       "Base_form_read": "swiːp",
       "Past_tense_V2": "swept",
@@ -1882,13 +1450,13 @@
       "Past_participle_V3_read": "swept"
     },
     {
-      "Uzb_translate": "shishmoq",
+      "Uzb_translate": "ishmoq, shishmoq",
       "Base_form": "swell",
       "Base_form_read": "swel",
       "Past_tense_V2": "swelled",
       "Past_tense_V2_read": "sweld",
-      "Past_participle_V3": "swelled",
-      "Past_participle_V3_read": "ˈswoʊlən / sweld"
+      "Past_participle_V3": "swollen",
+      "Past_participle_V3_read": "ˈswoʊ.lən"
     },
     {
       "Uzb_translate": "suzmoq",
@@ -1911,16 +1479,16 @@
     {
       "Uzb_translate": "olmoq",
       "Base_form": "take",
-      "Base_form_read": "tek",
+      "Base_form_read": "teɪk",
       "Past_tense_V2": "took",
       "Past_tense_V2_read": "tʊk",
       "Past_participle_V3": "taken",
-      "Past_participle_V3_read": "ˈteɪkən"
+      "Past_participle_V3_read": "ˈteɪ.kən"
     },
     {
-      "Uzb_translate": "o'qitmoq",
+      "Uzb_translate": "o'rgatmoq",
       "Base_form": "teach",
-      "Base_form_read": "tɔːk",
+      "Base_form_read": "tiːtʃ",
       "Past_tense_V2": "taught",
       "Past_tense_V2_read": "tɔːt",
       "Past_participle_V3": "taught",
@@ -1936,7 +1504,7 @@
       "Past_participle_V3_read": "tɔːrn"
     },
     {
-      "Uzb_translate": "aytmoq",
+      "Uzb_translate": "aytmoq, so'zlab bermoq",
       "Base_form": "tell",
       "Base_form_read": "tel",
       "Past_tense_V2": "told",
@@ -1954,16 +1522,7 @@
       "Past_participle_V3_read": "θɔːt"
     },
     {
-      "Uzb_translate": "gullab-yashnamoq",
-      "Base_form": "thrive",
-      "Base_form_read": "θraɪv",
-      "Past_tense_V2": "throve",
-      "Past_tense_V2_read": "θroʊv / θraɪvd",
-      "Past_participle_V3": "thriven",
-      "Past_participle_V3_read": "ˈθrɪvən / θraɪvd"
-    },
-    {
-      "Uzb_translate": "otmoq",
+      "Uzb_translate": "otmoq, tashlamoq",
       "Base_form": "throw",
       "Base_form_read": "θroʊ",
       "Past_tense_V2": "threw",
@@ -1972,88 +1531,43 @@
       "Past_participle_V3_read": "θroʊn"
     },
     {
-      "Uzb_translate": "turtmoq",
-      "Base_form": "thrust",
-      "Base_form_read": "θrʌst",
-      "Past_tense_V2": "thrust",
-      "Past_tense_V2_read": "θrʌst",
-      "Past_participle_V3": "thrust",
-      "Past_participle_V3_read": "θrʌst"
-    },
-    {
-      "Uzb_translate": "bosib o'tmoq",
+      "Uzb_translate": "bosmoq, ezmoq",
       "Base_form": "tread",
       "Base_form_read": "tred",
       "Past_tense_V2": "trod",
       "Past_tense_V2_read": "trɒd",
-      "Past_participle_V3": "trod",
-      "Past_participle_V3_read": "ˈtrɒdən / trɒd"
+      "Past_participle_V3": "trodden",
+      "Past_participle_V3_read": "ˈtrɒd.ən"
     },
     {
       "Uzb_translate": "tushunmoq",
       "Base_form": "understand",
-      "Base_form_read": "ˌʌndərˈstænd",
+      "Base_form_read": "ˌʌn.dəˈstænd",
       "Past_tense_V2": "understood",
-      "Past_tense_V2_read": "ˌʌndərˈstʊd",
+      "Past_tense_V2_read": "ˌʌn.dəˈstʊd",
       "Past_participle_V3": "understood",
-      "Past_participle_V3_read": "ˌʌndərˈstʊd"
+      "Past_participle_V3_read": "ˌʌn.dəˈstʊd"
     },
     {
-      "Uzb_translate": "zimmasiga olmoq",
+      "Uzb_translate": "o'z ustiga olmoq",
       "Base_form": "undertake",
-      "Base_form_read": "ˌʌndərˈteɪk",
+      "Base_form_read": "ˌʌn.dəˈteɪk",
       "Past_tense_V2": "undertook",
-      "Past_tense_V2_read": "ˌʌndərˈtʊk",
+      "Past_tense_V2_read": "ˌʌn.dəˈtʊk",
       "Past_participle_V3": "undertaken",
-      "Past_participle_V3_read": "ˌʌndərˈteɪkən"
+      "Past_participle_V3_read": "ˌʌn.dəˈteɪ.kən"
     },
     {
-      "Uzb_translate": "kafolat bermoq",
-      "Base_form": "underwrite",
-      "Base_form_read": "ˌʌndərˈraɪt",
-      "Past_tense_V2": "underwrote",
-      "Past_tense_V2_read": "ˌʌndərˈroʊt",
-      "Past_participle_V3": "underwritten",
-      "Past_participle_V3_read": "ˌʌndərˈrɪtən"
-    },
-    {
-      "Uzb_translate": "bekor qilmoq",
+      "Uzb_translate": "inkor etmoq, bekor qilmoq",
       "Base_form": "undo",
-      "Base_form_read": "ˌʌnˈduː",
+      "Base_form_read": "ʌnˈduː",
       "Past_tense_V2": "undid",
-      "Past_tense_V2_read": "ˌʌnˈdɪd",
+      "Past_tense_V2_read": "ʌnˈdɪd",
       "Past_participle_V3": "undone",
-      "Past_participle_V3_read": "ˌʌnˈdʌn"
+      "Past_participle_V3_read": "ʌnˈdʌn"
     },
     {
-      "Uzb_translate": "muzdan tushirmoq",
-      "Base_form": "unfreeze",
-      "Base_form_read": "ˌʌnˈfriːz",
-      "Past_tense_V2": "unfroze",
-      "Past_tense_V2_read": "ˌʌnˈfroʊz",
-      "Past_participle_V3": "unfrozen",
-      "Past_participle_V3_read": "ˌʌnˈfroʊzən"
-    },
-    {
-      "Uzb_translate": "yechmoq",
-      "Base_form": "unwind",
-      "Base_form_read": "ˌʌnˈwaɪnd",
-      "Past_tense_V2": "unwound",
-      "Past_tense_V2_read": "ˌʌnˈwaʊnd",
-      "Past_participle_V3": "unwound",
-      "Past_participle_V3_read": "ˌʌnˈwaʊnd"
-    },
-    {
-      "Uzb_translate": "qo'llab-quvvatlamoq",
-      "Base_form": "uphold",
-      "Base_form_read": "ʌpˈhoʊld",
-      "Past_tense_V2": "upheld",
-      "Past_tense_V2_read": "ʌpˈheld",
-      "Past_participle_V3": "upheld",
-      "Past_participle_V3_read": "ʌpˈheld"
-    },
-    {
-      "Uzb_translate": "tashvishga solmoq",
+      "Uzb_translate": "xafa qilmoq, ag'darmoq",
       "Base_form": "upset",
       "Base_form_read": "ʌpˈset",
       "Past_tense_V2": "upset",
@@ -2068,19 +1582,10 @@
       "Past_tense_V2": "woke",
       "Past_tense_V2_read": "woʊk",
       "Past_participle_V3": "woken",
-      "Past_participle_V3_read": "ˈwoʊkən"
+      "Past_participle_V3_read": "ˈwoʊ.kən"
     },
     {
-      "Uzb_translate": "pistirma qo'ymoq",
-      "Base_form": "waylay",
-      "Base_form_read": "ˈweɪleɪ",
-      "Past_tense_V2": "waylaid",
-      "Past_tense_V2_read": "ˈweɪleɪd",
-      "Past_participle_V3": "waylaid",
-      "Past_participle_V3_read": "ˈweɪleɪd"
-    },
-    {
-      "Uzb_translate": "kiymoq",
+      "Uzb_translate": "kiyib yurmoq",
       "Base_form": "wear",
       "Base_form_read": "weər",
       "Past_tense_V2": "wore",
@@ -2095,16 +1600,7 @@
       "Past_tense_V2": "wove",
       "Past_tense_V2_read": "woʊv",
       "Past_participle_V3": "woven",
-      "Past_participle_V3_read": "ˈwoʊvən"
-    },
-    {
-      "Uzb_translate": "uylanmoq",
-      "Base_form": "wed",
-      "Base_form_read": "wed",
-      "Past_tense_V2": "wed",
-      "Past_tense_V2_read": "wed / ˈwedɪd",
-      "Past_participle_V3": "wed",
-      "Past_participle_V3_read": "wed / ˈwedɪd"
+      "Past_participle_V3_read": "ˈwoʊ.vən"
     },
     {
       "Uzb_translate": "yig'lamoq",
@@ -2116,16 +1612,7 @@
       "Past_participle_V3_read": "wept"
     },
     {
-      "Uzb_translate": "ho'llamoq",
-      "Base_form": "wet",
-      "Base_form_read": "wet",
-      "Past_tense_V2": "wet",
-      "Past_tense_V2_read": "wet / ˈwetɪd",
-      "Past_participle_V3": "wet",
-      "Past_participle_V3_read": "wet / ˈwetɪd"
-    },
-    {
-      "Uzb_translate": "yutmoq",
+      "Uzb_translate": "yutmoq, g'alaba qilmoq",
       "Base_form": "win",
       "Base_form_read": "wɪn",
       "Past_tense_V2": "won",
@@ -2134,7 +1621,7 @@
       "Past_participle_V3_read": "wʌn"
     },
     {
-      "Uzb_translate": "o'ramoq",
+      "Uzb_translate": "buralmoq, buramoq",
       "Base_form": "wind",
       "Base_form_read": "waɪnd",
       "Past_tense_V2": "wound",
@@ -2143,7 +1630,7 @@
       "Past_participle_V3_read": "waʊnd"
     },
     {
-      "Uzb_translate": "qaytarib olmoq",
+      "Uzb_translate": "tortib olmoq, qaytarib olmoq",
       "Base_form": "withdraw",
       "Base_form_read": "wɪðˈdrɔː",
       "Past_tense_V2": "withdrew",
@@ -2152,16 +1639,16 @@
       "Past_participle_V3_read": "wɪðˈdrɔːn"
     },
     {
-      "Uzb_translate": "ushlab qolmoq",
-      "Base_form": "withhold",
-      "Base_form_read": "wɪðˈhoʊld",
-      "Past_tense_V2": "withheld",
-      "Past_tense_V2_read": "wɪðˈheld",
-      "Past_participle_V3": "withheld",
-      "Past_participle_V3_read": "wɪðˈheld"
+      "Uzb_translate": "boshdan kechirmoq",
+      "Base_form": "undergo",
+      "Base_form_read": "ˌʌn.dəˈɡoʊ",
+      "Past_tense_V2": "underwent",
+      "Past_tense_V2_read": "ˌʌn.dəˈwent",
+      "Past_participle_V3": "undergone",
+      "Past_participle_V3_read": "ˌʌn.dəˈɡɒn"
     },
     {
-      "Uzb_translate": "bardosh bermoq",
+      "Uzb_translate": "chidamli bo'lmoq",
       "Base_form": "withstand",
       "Base_form_read": "wɪðˈstænd",
       "Past_tense_V2": "withstood",
@@ -2170,7 +1657,7 @@
       "Past_participle_V3_read": "wɪðˈstʊd"
     },
     {
-      "Uzb_translate": "siqib olmoq",
+      "Uzb_translate": "siqmoq, buramoq",
       "Base_form": "wring",
       "Base_form_read": "rɪŋ",
       "Past_tense_V2": "wrung",
@@ -2185,7 +1672,520 @@
       "Past_tense_V2": "wrote",
       "Past_tense_V2_read": "roʊt",
       "Past_participle_V3": "written",
-      "Past_participle_V3_read": "ˈrɪtn"
+      "Past_participle_V3_read": "ˈrɪt.ən"
+    },
+    {
+      "Uzb_translate": "orqaga qaytarmoq",
+      "Base_form": "backslide",
+      "Base_form_read": "ˈbæk.slaɪd",
+      "Past_tense_V2": "backslid",
+      "Past_tense_V2_read": "ˈbæk.slɪd",
+      "Past_participle_V3": "backslid",
+      "Past_participle_V3_read": "ˈbæk.slɪd"
+    },
+    {
+      "Uzb_translate": "bo'lishi mumkin bo'lmoq",
+      "Base_form": "befit",
+      "Base_form_read": "bɪˈfɪt",
+      "Past_tense_V2": "befitted",
+      "Past_tense_V2_read": "bɪˈfɪt.ɪd",
+      "Past_participle_V3": "befitted",
+      "Past_participle_V3_read": "bɪˈfɪt.ɪd"
+    },
+    {
+      "Uzb_translate": "yolg'ondan aytmoq",
+      "Base_form": "belie",
+      "Base_form_read": "bɪˈlaɪ",
+      "Past_tense_V2": "belied",
+      "Past_tense_V2_read": "bɪˈlaɪd",
+      "Past_participle_V3": "belied",
+      "Past_participle_V3_read": "bɪˈlaɪd"
+    },
+    {
+      "Uzb_translate": "past urmoq, qadrini tushirmoq",
+      "Base_form": "belittle",
+      "Base_form_read": "bɪˈlɪt.əl",
+      "Past_tense_V2": "belittled",
+      "Past_tense_V2_read": "bɪˈlɪt.əld",
+      "Past_participle_V3": "belittled",
+      "Past_participle_V3_read": "bɪˈlɪt.əld"
+    },
+    {
+      "Uzb_translate": "boshqaga o'tkazmoq",
+      "Base_form": "bequeath",
+      "Base_form_read": "bɪˈkwiːð",
+      "Past_tense_V2": "bequeathed",
+      "Past_tense_V2_read": "bɪˈkwiːðd",
+      "Past_participle_V3": "bequeathed",
+      "Past_participle_V3_read": "bɪˈkwiːðd"
+    },
+    {
+      "Uzb_translate": "so'ramoq, tilamoq",
+      "Base_form": "bespeak",
+      "Base_form_read": "bɪˈspiːk",
+      "Past_tense_V2": "bespoke",
+      "Past_tense_V2_read": "bɪˈspoʊk",
+      "Past_participle_V3": "bespoken",
+      "Past_participle_V3_read": "bɪˈspoʊ.kən"
+    },
+    {
+      "Uzb_translate": "tufurmoq (ustiga)",
+      "Base_form": "bespit",
+      "Base_form_read": "bɪˈspɪt",
+      "Past_tense_V2": "bespat",
+      "Past_tense_V2_read": "bɪˈspæt",
+      "Past_participle_V3": "bespat",
+      "Past_participle_V3_read": "bɪˈspæt"
+    },
+    {
+      "Uzb_translate": "poylamoq",
+      "Base_form": "bestride",
+      "Base_form_read": "bɪˈstraɪd",
+      "Past_tense_V2": "bestrode",
+      "Past_tense_V2_read": "bɪˈstroʊd",
+      "Past_participle_V3": "bestridden",
+      "Past_participle_V3_read": "bɪˈstrɪd.ən"
+    },
+    {
+      "Uzb_translate": "tikmoq, pul tikmoq",
+      "Base_form": "betide",
+      "Base_form_read": "bɪˈtaɪd",
+      "Past_tense_V2": "betid",
+      "Past_tense_V2_read": "bɪˈtaɪd",
+      "Past_participle_V3": "betid",
+      "Past_participle_V3_read": "bɪˈtaɪd"
+    },
+    {
+      "Uzb_translate": "ikkilanmoq",
+      "Base_form": "betake",
+      "Base_form_read": "bɪˈteɪk",
+      "Past_tense_V2": "betook",
+      "Past_tense_V2_read": "bɪˈtʊk",
+      "Past_participle_V3": "betaken",
+      "Past_participle_V3_read": "bɪˈteɪ.kən"
+    },
+    {
+      "Uzb_translate": "qaytib kelmoq",
+      "Base_form": "come back",
+      "Base_form_read": "kʌm bæk",
+      "Past_tense_V2": "came back",
+      "Past_tense_V2_read": "keɪm bæk",
+      "Past_participle_V3": "come back",
+      "Past_participle_V3_read": "kʌm bæk"
+    },
+    {
+      "Uzb_translate": "qayta tiklamoq",
+      "Base_form": "recreate",
+      "Base_form_read": "ˌriː.kriːˈeɪt",
+      "Past_tense_V2": "recreated",
+      "Past_tense_V2_read": "ˌriː.kriːˈeɪ.tɪd",
+      "Past_participle_V3": "recreated",
+      "Past_participle_V3_read": "ˌriː.kriːˈeɪ.tɪd"
+    },
+    {
+      "Uzb_translate": "qayta to'lamoq",
+      "Base_form": "repay",
+      "Base_form_read": "riːˈpeɪ",
+      "Past_tense_V2": "repaid",
+      "Past_tense_V2_read": "riːˈpeɪd",
+      "Past_participle_V3": "repaid",
+      "Past_participle_V3_read": "riːˈpeɪd"
+    },
+    {
+      "Uzb_translate": "qayta o'qimoq",
+      "Base_form": "reread",
+      "Base_form_read": "ˌriːˈriːd",
+      "Past_tense_V2": "reread",
+      "Past_tense_V2_read": "ˌriːˈred",
+      "Past_participle_V3": "reread",
+      "Past_participle_V3_read": "ˌriːˈred"
+    },
+    {
+      "Uzb_translate": "qayta yozmoq",
+      "Base_form": "rewrite",
+      "Base_form_read": "ˌriːˈraɪt",
+      "Past_tense_V2": "rewrote",
+      "Past_tense_V2_read": "ˌriːˈroʊt",
+      "Past_participle_V3": "rewritten",
+      "Past_participle_V3_read": "ˌriːˈrɪt.ən"
+    },
+    {
+      "Uzb_translate": "qayta sotmoq",
+      "Base_form": "resell",
+      "Base_form_read": "ˌriːˈsel",
+      "Past_tense_V2": "resold",
+      "Past_tense_V2_read": "ˌriːˈsoʊld",
+      "Past_participle_V3": "resold",
+      "Past_participle_V3_read": "ˌriːˈsoʊld"
+    },
+    {
+      "Uzb_translate": "qayta yubormoq",
+      "Base_form": "resend",
+      "Base_form_read": "ˌriːˈsend",
+      "Past_tense_V2": "resent",
+      "Past_tense_V2_read": "ˌriːˈsent",
+      "Past_participle_V3": "resent",
+      "Past_participle_V3_read": "ˌriːˈsent"
+    },
+    {
+      "Uzb_translate": "qayta o'rnatmoq",
+      "Base_form": "reset",
+      "Base_form_read": "ˌriːˈset",
+      "Past_tense_V2": "reset",
+      "Past_tense_V2_read": "ˌriːˈset",
+      "Past_participle_V3": "reset",
+      "Past_participle_V3_read": "ˌriːˈset"
+    },
+    {
+      "Uzb_translate": "qayta o'ylash",
+      "Base_form": "rethink",
+      "Base_form_read": "ˌriːˈθɪŋk",
+      "Past_tense_V2": "rethought",
+      "Past_tense_V2_read": "ˌriːˈθɔːt",
+      "Past_participle_V3": "rethought",
+      "Past_participle_V3_read": "ˌriːˈθɔːt"
+    },
+    {
+      "Uzb_translate": "qayta tikish",
+      "Base_form": "resew",
+      "Base_form_read": "ˌriːˈsoʊ",
+      "Past_tense_V2": "resewed",
+      "Past_tense_V2_read": "ˌriːˈsoʊd",
+      "Past_participle_V3": "resewn",
+      "Past_participle_V3_read": "ˌriːˈsoʊn"
+    },
+    {
+      "Uzb_translate": "qayta bog'lash",
+      "Base_form": "rebind",
+      "Base_form_read": "ˌriːˈbaɪnd",
+      "Past_tense_V2": "rebound",
+      "Past_tense_V2_read": "ˌriːˈbaʊnd",
+      "Past_participle_V3": "rebound",
+      "Past_participle_V3_read": "ˌriːˈbaʊnd"
+    },
+    {
+      "Uzb_translate": "qayta qurish",
+      "Base_form": "rebuild",
+      "Base_form_read": "ˌriːˈbɪld",
+      "Past_tense_V2": "rebuilt",
+      "Past_tense_V2_read": "ˌriːˈbɪlt",
+      "Past_participle_V3": "rebuilt",
+      "Past_participle_V3_read": "ˌriːˈbɪlt"
+    },
+    {
+      "Uzb_translate": "qayta tayyorlash",
+      "Base_form": "remake",
+      "Base_form_read": "ˌriːˈmeɪk",
+      "Past_tense_V2": "remade",
+      "Past_tense_V2_read": "ˌriːˈmeɪd",
+      "Past_participle_V3": "remade",
+      "Past_participle_V3_read": "ˌriːˈmeɪd"
+    },
+    {
+      "Uzb_translate": "qayta o'smoq",
+      "Base_form": "regrow",
+      "Base_form_read": "ˌriːˈɡroʊ",
+      "Past_tense_V2": "regrew",
+      "Past_tense_V2_read": "ˌriːˈɡruː",
+      "Past_participle_V3": "regrown",
+      "Past_participle_V3_read": "ˌriːˈɡroʊn"
+    },
+    {
+      "Uzb_translate": "o'z o'rnini egallamoq",
+      "Base_form": "overcome",
+      "Base_form_read": "ˌoʊ.vərˈkʌm",
+      "Past_tense_V2": "overcame",
+      "Past_tense_V2_read": "ˌoʊ.vərˈkeɪm",
+      "Past_participle_V3": "overcome",
+      "Past_participle_V3_read": "ˌoʊ.vərˈkʌm"
+    },
+    {
+      "Uzb_translate": "ortiqcha sarflamoq",
+      "Base_form": "overspend",
+      "Base_form_read": "ˌoʊ.vərˈspend",
+      "Past_tense_V2": "overspent",
+      "Past_tense_V2_read": "ˌoʊ.vərˈspent",
+      "Past_participle_V3": "overspent",
+      "Past_participle_V3_read": "ˌoʊ.vərˈspent"
+    },
+    {
+      "Uzb_translate": "ortiqcha pishirmoq",
+      "Base_form": "overdo",
+      "Base_form_read": "ˌoʊ.vərˈduː",
+      "Past_tense_V2": "overdid",
+      "Past_tense_V2_read": "ˌoʊ.vərˈdɪd",
+      "Past_participle_V3": "overdone",
+      "Past_participle_V3_read": "ˌoʊ.vərˈdʌn"
+    },
+    {
+      "Uzb_translate": "ortiqcha yemoq",
+      "Base_form": "overeat",
+      "Base_form_read": "ˌoʊ.vərˈiːt",
+      "Past_tense_V2": "overate",
+      "Past_tense_V2_read": "ˌoʊ.vərˈet",
+      "Past_participle_V3": "overeaten",
+      "Past_participle_V3_read": "ˌoʊ.vərˈiː.tən"
+    },
+    {
+      "Uzb_translate": "o'zib ketmoq",
+      "Base_form": "overtake",
+      "Base_form_read": "ˌoʊ.vərˈteɪk",
+      "Past_tense_V2": "overtook",
+      "Past_tense_V2_read": "ˌoʊ.vərˈtʊk",
+      "Past_participle_V3": "overtaken",
+      "Past_participle_V3_read": "ˌoʊ.vərˈteɪ.kən"
+    },
+    {
+      "Uzb_translate": "tepasidan qaramoq",
+      "Base_form": "overlook",
+      "Base_form_read": "ˌoʊ.vərˈlʊk",
+      "Past_tense_V2": "overlooked",
+      "Past_tense_V2_read": "ˌoʊ.vərˈlʊkt",
+      "Past_participle_V3": "overlooked",
+      "Past_participle_V3_read": "ˌoʊ.vərˈlʊkt"
+    },
+    {
+      "Uzb_translate": "uxlab qolmoq",
+      "Base_form": "oversleep",
+      "Base_form_read": "ˌoʊ.vərˈsliːp",
+      "Past_tense_V2": "overslept",
+      "Past_tense_V2_read": "ˌoʊ.vərˈslept",
+      "Past_participle_V3": "overslept",
+      "Past_participle_V3_read": "ˌoʊ.vərˈslept"
+    },
+    {
+      "Uzb_translate": "eshitib qolmoq",
+      "Base_form": "overhear",
+      "Base_form_read": "ˌoʊ.vərˈhɪər",
+      "Past_tense_V2": "overheard",
+      "Past_tense_V2_read": "ˌoʊ.vərˈhɜːrd",
+      "Past_participle_V3": "overheard",
+      "Past_participle_V3_read": "ˌoʊ.vərˈhɜːrd"
+    },
+    {
+      "Uzb_translate": "osib qo'ymoq",
+      "Base_form": "overhang",
+      "Base_form_read": "ˌoʊ.vərˈhæŋ",
+      "Past_tense_V2": "overhung",
+      "Past_tense_V2_read": "ˌoʊ.vərˈhʌŋ",
+      "Past_participle_V3": "overhung",
+      "Past_participle_V3_read": "ˌoʊ.vərˈhʌŋ"
+    },
+    {
+      "Uzb_translate": "boshqarmoq",
+      "Base_form": "oversee",
+      "Base_form_read": "ˌoʊ.vərˈsiː",
+      "Past_tense_V2": "oversaw",
+      "Past_tense_V2_read": "ˌoʊ.vərˈsɔː",
+      "Past_participle_V3": "overseen",
+      "Past_participle_V3_read": "ˌoʊ.vərˈsiːn"
+    },
+    {
+      "Uzb_translate": "ag'darmoq",
+      "Base_form": "overthrow",
+      "Base_form_read": "ˌoʊ.vərˈθroʊ",
+      "Past_tense_V2": "overthrew",
+      "Past_tense_V2_read": "ˌoʊ.vərˈθruː",
+      "Past_participle_V3": "overthrown",
+      "Past_participle_V3_read": "ˌoʊ.vərˈθroʊn"
+    },
+    {
+      "Uzb_translate": "bosib olmoq",
+      "Base_form": "overrun",
+      "Base_form_read": "ˌoʊ.vərˈrʌn",
+      "Past_tense_V2": "overran",
+      "Past_tense_V2_read": "ˌoʊ.vərˈræn",
+      "Past_participle_V3": "overrun",
+      "Past_participle_V3_read": "ˌoʊ.vərˈrʌn"
+    },
+    {
+      "Uzb_translate": "tashqarida uxlash",
+      "Base_form": "outdo",
+      "Base_form_read": "ˌaʊtˈduː",
+      "Past_tense_V2": "outdid",
+      "Past_tense_V2_read": "ˌaʊtˈdɪd",
+      "Past_participle_V3": "outdone",
+      "Past_participle_V3_read": "ˌaʊtˈdʌn"
+    },
+    {
+      "Uzb_translate": "o'zib ketmoq (o'sishda)",
+      "Base_form": "outgrow",
+      "Base_form_read": "ˌaʊtˈɡroʊ",
+      "Past_tense_V2": "outgrew",
+      "Past_tense_V2_read": "ˌaʊtˈɡruː",
+      "Past_participle_V3": "outgrown",
+      "Past_participle_V3_read": "ˌaʊtˈɡroʊn"
+    },
+    {
+      "Uzb_translate": "ko'proq yashamoq",
+      "Base_form": "outlive",
+      "Base_form_read": "ˌaʊtˈlɪv",
+      "Past_tense_V2": "outlived",
+      "Past_tense_V2_read": "ˌaʊtˈlɪvd",
+      "Past_participle_V3": "outlived",
+      "Past_participle_V3_read": "ˌaʊtˈlɪvd"
+    },
+    {
+      "Uzb_translate": "ko'proq sotmoq",
+      "Base_form": "outsell",
+      "Base_form_read": "ˌaʊtˈsel",
+      "Past_tense_V2": "outsold",
+      "Past_tense_V2_read": "ˌaʊtˈsoʊld",
+      "Past_participle_V3": "outsold",
+      "Past_participle_V3_read": "ˌaʊtˈsoʊld"
+    },
+    {
+      "Uzb_translate": "ko'proq yugurmoq",
+      "Base_form": "outrun",
+      "Base_form_read": "ˌaʊtˈrʌn",
+      "Past_tense_V2": "outran",
+      "Past_tense_V2_read": "ˌaʊtˈræn",
+      "Past_participle_V3": "outrun",
+      "Past_participle_V3_read": "ˌaʊtˈrʌn"
+    },
+    {
+      "Uzb_translate": "ko'proq sarflamoq",
+      "Base_form": "outspend",
+      "Base_form_read": "ˌaʊtˈspend",
+      "Past_tense_V2": "outspent",
+      "Past_tense_V2_read": "ˌaʊtˈspent",
+      "Past_participle_V3": "outspent",
+      "Past_participle_V3_read": "ˌaʊtˈspent"
+    },
+    {
+      "Uzb_translate": "ko'proq duragaylash",
+      "Base_form": "outshine",
+      "Base_form_read": "ˌaʊtˈʃaɪn",
+      "Past_tense_V2": "outshone",
+      "Past_tense_V2_read": "ˌaʊtˈʃɒn",
+      "Past_participle_V3": "outshone",
+      "Past_participle_V3_read": "ˌaʊtˈʃɒn"
+    },
+    {
+      "Uzb_translate": "pastroq sotmoq",
+      "Base_form": "undersell",
+      "Base_form_read": "ˌʌn.dəˈsel",
+      "Past_tense_V2": "undersold",
+      "Past_tense_V2_read": "ˌʌn.dəˈsoʊld",
+      "Past_participle_V3": "undersold",
+      "Past_participle_V3_read": "ˌʌn.dəˈsoʊld"
+    },
+    {
+      "Uzb_translate": "kamroq to'lamoq",
+      "Base_form": "underpay",
+      "Base_form_read": "ˌʌn.dəˈpeɪ",
+      "Past_tense_V2": "underpaid",
+      "Past_tense_V2_read": "ˌʌn.dəˈpeɪd",
+      "Past_participle_V3": "underpaid",
+      "Past_participle_V3_read": "ˌʌn.dəˈpeɪd"
+    },
+    {
+      "Uzb_translate": "pastroq narx qo'ymoq",
+      "Base_form": "undercut",
+      "Base_form_read": "ˌʌn.dəˈkʌt",
+      "Past_tense_V2": "undercut",
+      "Past_tense_V2_read": "ˌʌn.dəˈkʌt",
+      "Past_participle_V3": "undercut",
+      "Past_participle_V3_read": "ˌʌn.dəˈkʌt"
+    },
+    {
+      "Uzb_translate": "ostiga chizmoq",
+      "Base_form": "underline",
+      "Base_form_read": "ˌʌn.dəˈlaɪn",
+      "Past_tense_V2": "underlined",
+      "Past_tense_V2_read": "ˌʌn.dəˈlaɪnd",
+      "Past_participle_V3": "underlined",
+      "Past_participle_V3_read": "ˌʌn.dəˈlaɪnd"
+    },
+    {
+      "Uzb_translate": "orqaga tortmoq",
+      "Base_form": "unbend",
+      "Base_form_read": "ʌnˈbend",
+      "Past_tense_V2": "unbent",
+      "Past_tense_V2_read": "ʌnˈbent",
+      "Past_participle_V3": "unbent",
+      "Past_participle_V3_read": "ʌnˈbent"
+    },
+    {
+      "Uzb_translate": "yechmoq, bog'ichini yechmoq",
+      "Base_form": "unbind",
+      "Base_form_read": "ʌnˈbaɪnd",
+      "Past_tense_V2": "unbound",
+      "Past_tense_V2_read": "ʌnˈbaʊnd",
+      "Past_participle_V3": "unbound",
+      "Past_participle_V3_read": "ʌnˈbaʊnd"
+    },
+    {
+      "Uzb_translate": "yuki/kiyimni yechmoq",
+      "Base_form": "unclothe",
+      "Base_form_read": "ʌnˈkloʊð",
+      "Past_tense_V2": "unclad",
+      "Past_tense_V2_read": "ʌnˈklæd",
+      "Past_participle_V3": "unclad",
+      "Past_participle_V3_read": "ʌnˈklæd"
+    },
+    {
+      "Uzb_translate": "ochmoq, yashirinini ochmoq",
+      "Base_form": "uncover",
+      "Base_form_read": "ʌnˈkʌv.ər",
+      "Past_tense_V2": "uncovered",
+      "Past_tense_V2_read": "ʌnˈkʌv.ərd",
+      "Past_participle_V3": "uncovered",
+      "Past_participle_V3_read": "ʌnˈkʌv.ərd"
+    },
+    {
+      "Uzb_translate": "muzdan tushirmoq",
+      "Base_form": "unfreeze",
+      "Base_form_read": "ʌnˈfriːz",
+      "Past_tense_V2": "unfroze",
+      "Past_tense_V2_read": "ʌnˈfroʊz",
+      "Past_participle_V3": "unfrozen",
+      "Past_participle_V3_read": "ʌnˈfroʊ.zən"
+    },
+    {
+      "Uzb_translate": "tugunni yechmoq",
+      "Base_form": "unhitch",
+      "Base_form_read": "ʌnˈhɪtʃ",
+      "Past_tense_V2": "unhitched",
+      "Past_tense_V2_read": "ʌnˈhɪtʃt",
+      "Past_participle_V3": "unhitched",
+      "Past_participle_V3_read": "ʌnˈhɪtʃt"
+    },
+    {
+      "Uzb_translate": "o'rashni yechmoq",
+      "Base_form": "unwind",
+      "Base_form_read": "ʌnˈwaɪnd",
+      "Past_tense_V2": "unwound",
+      "Past_tense_V2_read": "ʌnˈwaʊnd",
+      "Past_participle_V3": "unwound",
+      "Past_participle_V3_read": "ʌnˈwaʊnd"
+    },
+    {
+      "Uzb_translate": "so'zini qaytarib olmoq",
+      "Base_form": "unsay",
+      "Base_form_read": "ʌnˈseɪ",
+      "Past_tense_V2": "unsaid",
+      "Past_tense_V2_read": "ʌnˈsed",
+      "Past_participle_V3": "unsaid",
+      "Past_participle_V3_read": "ʌnˈsed"
+    },
+    {
+      "Uzb_translate": "yashirincha qilish",
+      "Base_form": "waylay",
+      "Base_form_read": "ˈweɪ.leɪ",
+      "Past_tense_V2": "waylaid",
+      "Past_tense_V2_read": "ˈweɪ.leɪd",
+      "Past_participle_V3": "waylaid",
+      "Past_participle_V3_read": "ˈweɪ.leɪd"
+    },
+    {
+      "Uzb_translate": "suv bosmoq",
+      "Base_form": "flood",
+      "Base_form_read": "flʌd",
+      "Past_tense_V2": "flooded",
+      "Past_tense_V2_read": "ˈflʌd.ɪd",
+      "Past_participle_V3": "flooded",
+      "Past_participle_V3_read": "ˈflʌd.ɪd"
     }
   ]
 }
