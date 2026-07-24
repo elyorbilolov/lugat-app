@@ -1247,37 +1247,149 @@ function exitGame() {
 // ========================
 // Irregular Verbs Logic
 // ========================
+// Irregular Verbs Modern Enhancements State
+let currentIrrPattern = 'ALL';
+let filteredIrrList = [];
+let currentFcIndex = 0;
+let fcIsFlipped = false;
+let speedTimerInterval = null;
+let speedScore = 0;
+let speedTimeLeft = 60;
+let speedCurrentWord = null;
+
+// Speech synthesis audio helper
+function speakIrrWord(text, e) {
+    if (e) e.stopPropagation();
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+    }
+}
+
+function speakIrrFull(idx) {
+    const list = filteredIrrList.length > 0 ? filteredIrrList : irregularRoyxat;
+    const w = list[idx];
+    if (w) {
+        speakIrrWord(`${w.Base_form}, ${w.Past_tense_V2}, ${w.Past_participle_V3}`);
+    }
+}
+
+function speakIrrQuizPrompt() {
+    if (irregularQuizWords && irregularQuizWords[irregularQuizIndex]) {
+        const w = irregularQuizWords[irregularQuizIndex];
+        speakIrrWord(w.Base_form);
+    }
+}
+
+// Pattern categorizer
+function getVerbPattern(w) {
+    if (!w || !w.Base_form || !w.Past_tense_V2 || !w.Past_participle_V3) return 'ABC';
+    const v1 = w.Base_form.trim().toLowerCase();
+    const v2 = w.Past_tense_V2.trim().toLowerCase();
+    const v3 = w.Past_participle_V3.trim().toLowerCase();
+
+    if (v1 === v2 && v2 === v3) return 'AAA';
+    if (v1 === v3 && v1 !== v2) return 'ABA';
+    if (v2 === v3 && v1 !== v2) return 'ABB';
+    return 'ABC';
+}
+
+// Mistakes / Error Tracker Storage
+function getIrrErrors() {
+    return JSON.parse(localStorage.getItem('irr_errors') || '[]');
+}
+
+function saveIrrError(w) {
+    const errors = getIrrErrors();
+    if (!errors.some(item => item.Base_form === w.Base_form)) {
+        errors.push(w);
+        localStorage.setItem('irr_errors', JSON.stringify(errors));
+        updateIrrErrorBadge();
+    }
+}
+
+function updateIrrErrorBadge() {
+    const badge = document.getElementById('irrErrorCount');
+    if (badge) badge.innerText = getIrrErrors().length;
+}
+
 function showIrregularVerbs() {
     document.getElementById('categoryGrid').style.display = 'none';
     document.getElementById('irregularDetailView').style.display = 'block';
+    filteredIrrList = [...irregularRoyxat];
     document.getElementById('irrCategoryCount').innerText = `${irregularRoyxat.length} words available`;
-    renderIrregularWords(irregularRoyxat);
+    updateIrrErrorBadge();
+    renderIrregularWords(filteredIrrList);
+    switchIrrMode('table');
     window.scrollTo(0, 0);
+}
+
+function filterIrrByPattern(pattern, btnElement) {
+    currentIrrPattern = pattern;
+    
+    document.querySelectorAll('#irrFilterTabs .irr-tab').forEach(t => t.classList.remove('active'));
+    if (btnElement) btnElement.classList.add('active');
+
+    if (pattern === 'ALL') {
+        filteredIrrList = [...irregularRoyxat];
+    } else if (pattern === 'ERRORS') {
+        filteredIrrList = getIrrErrors();
+    } else {
+        filteredIrrList = irregularRoyxat.filter(w => getVerbPattern(w) === pattern);
+    }
+
+    document.getElementById('irrCategoryCount').innerText = `${filteredIrrList.length} words available (${pattern})`;
+    renderIrregularWords(filteredIrrList);
+
+    if (document.getElementById('irregularFlashcardView').style.display !== 'none') {
+        currentFcIndex = 0;
+        renderIrrFlashcard();
+    }
 }
 
 function renderIrregularWords(words) {
     const tbody = document.getElementById('irrWordListBody');
+    if (!words || words.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;padding:30px;color:var(--text-secondary);">Birorta fe'l topilmadi</td></tr>`;
+        return;
+    }
     tbody.innerHTML = words.map(w => {
+        const pat = getVerbPattern(w);
         return `
             <tr>
                 <td style="text-align: center;"><input type="checkbox" class="irr-checkbox" value="${w.Uzb_translate}"></td>
-                <td><span class="translation">${w.Uzb_translate}</span></td>
                 <td>
-                    <div style="display:flex;flex-direction:column;">
-                        <span class="word-text">${w.Base_form}</span>
-                        <span class="transcription">${w.Base_form_read}</span>
+                    <span class="translation">${w.Uzb_translate}</span>
+                    <span class="pattern-badge pattern-${pat}">${pat}</span>
+                </td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:6px;">
+                        <div style="display:flex;flex-direction:column;">
+                            <span class="word-text">${w.Base_form}</span>
+                            <span class="transcription">${w.Base_form_read}</span>
+                        </div>
+                        <button class="irr-audio-btn" onclick="speakIrrWord('${w.Base_form}', event)">🔊</button>
                     </div>
                 </td>
                 <td>
-                    <div style="display:flex;flex-direction:column;">
-                        <span class="word-text">${w.Past_tense_V2}</span>
-                        <span class="transcription">${w.Past_tense_V2_read}</span>
+                    <div style="display:flex;align-items:center;gap:6px;">
+                        <div style="display:flex;flex-direction:column;">
+                            <span class="word-text">${w.Past_tense_V2}</span>
+                            <span class="transcription">${w.Past_tense_V2_read}</span>
+                        </div>
+                        <button class="irr-audio-btn" onclick="speakIrrWord('${w.Past_tense_V2}', event)">🔊</button>
                     </div>
                 </td>
                 <td>
-                    <div style="display:flex;flex-direction:column;">
-                        <span class="word-text">${w.Past_participle_V3}</span>
-                        <span class="transcription">${w.Past_participle_V3_read}</span>
+                    <div style="display:flex;align-items:center;gap:6px;">
+                        <div style="display:flex;flex-direction:column;">
+                            <span class="word-text">${w.Past_participle_V3}</span>
+                            <span class="transcription">${w.Past_participle_V3_read}</span>
+                        </div>
+                        <button class="irr-audio-btn" onclick="speakIrrWord('${w.Past_participle_V3}', event)">🔊</button>
                     </div>
                 </td>
             </tr>
@@ -1299,7 +1411,8 @@ function filterIrrWords() {
     const clearBtn = document.getElementById('clearIrrSearch');
     clearBtn.style.display = searchTerm ? 'block' : 'none';
 
-    const filtered = irregularRoyxat.filter(w => 
+    const baseList = (currentIrrPattern === 'ALL') ? irregularRoyxat : filteredIrrList;
+    const filtered = baseList.filter(w => 
         w.Uzb_translate.toLowerCase().includes(searchTerm) || 
         w.Base_form.toLowerCase().includes(searchTerm) ||
         w.Past_tense_V2.toLowerCase().includes(searchTerm) ||
@@ -1313,6 +1426,145 @@ function clearIrrSearch() {
     input.value = '';
     filterIrrWords();
     input.focus();
+}
+
+// Switch Mode (Table vs Flashcards vs Speed)
+function switchIrrMode(mode) {
+    const tableView = document.getElementById('irrTableView');
+    const fcView = document.getElementById('irregularFlashcardView');
+    const speedView = document.getElementById('irregularSpeedView');
+
+    document.getElementById('irrModeTableBtn').classList.remove('active');
+    document.getElementById('irrModeFlashcardBtn').classList.remove('active');
+
+    if (mode === 'table') {
+        tableView.style.display = 'block';
+        fcView.style.display = 'none';
+        speedView.style.display = 'none';
+        document.getElementById('irrModeTableBtn').classList.add('active');
+    } else if (mode === 'flashcards') {
+        tableView.style.display = 'none';
+        fcView.style.display = 'block';
+        speedView.style.display = 'none';
+        document.getElementById('irrModeFlashcardBtn').classList.add('active');
+        currentFcIndex = 0;
+        renderIrrFlashcard();
+    }
+}
+
+// 3D Flashcard Controls
+function renderIrrFlashcard() {
+    const list = (filteredIrrList && filteredIrrList.length > 0) ? filteredIrrList : irregularRoyxat;
+    if (!list || list.length === 0) return;
+    if (currentFcIndex >= list.length) currentFcIndex = 0;
+    if (currentFcIndex < 0) currentFcIndex = list.length - 1;
+
+    const w = list[currentFcIndex];
+    const card = document.getElementById('irrFlashcardCard');
+    card.classList.remove('flipped');
+    fcIsFlipped = false;
+
+    const pat = getVerbPattern(w);
+    document.getElementById('fcUzbek').innerText = w.Uzb_translate;
+    document.getElementById('fcPatternBadge').innerHTML = `<span class="pattern-badge pattern-${pat}">${pat} pattern</span>`;
+    
+    document.getElementById('fcV1').innerText = w.Base_form;
+    document.getElementById('fcV1Read').innerText = `/${w.Base_form_read}/`;
+    document.getElementById('fcV2').innerText = w.Past_tense_V2;
+    document.getElementById('fcV2Read').innerText = `/${w.Past_tense_V2_read}/`;
+    document.getElementById('fcV3').innerText = w.Past_participle_V3;
+    document.getElementById('fcV3Read').innerText = `/${w.Past_participle_V3_read}/`;
+
+    document.getElementById('fcProgress').innerText = `${currentFcIndex + 1} / ${list.length}`;
+}
+
+function flipIrrFlashcard() {
+    const card = document.getElementById('irrFlashcardCard');
+    card.classList.toggle('flipped');
+    fcIsFlipped = !fcIsFlipped;
+}
+
+function nextIrrFlashcard() {
+    currentFcIndex++;
+    renderIrrFlashcard();
+}
+
+function prevIrrFlashcard() {
+    currentFcIndex--;
+    renderIrrFlashcard();
+}
+
+function shuffleIrrFlashcards() {
+    const list = (filteredIrrList && filteredIrrList.length > 0) ? filteredIrrList : irregularRoyxat;
+    currentFcIndex = Math.floor(Math.random() * list.length);
+    renderIrrFlashcard();
+}
+
+// 1-Min Speed Challenge Logic
+function startIrrSpeedChallenge() {
+    document.getElementById('irrTableView').style.display = 'none';
+    document.getElementById('irregularFlashcardView').style.display = 'none';
+    document.getElementById('irregularSpeedView').style.display = 'block';
+
+    speedScore = 0;
+    speedTimeLeft = 60;
+    document.getElementById('speedScore').innerText = '0';
+    document.getElementById('speedTimer').innerText = '60';
+
+    if (speedTimerInterval) clearInterval(speedTimerInterval);
+    speedTimerInterval = setInterval(() => {
+        speedTimeLeft--;
+        document.getElementById('speedTimer').innerText = speedTimeLeft;
+        if (speedTimeLeft <= 0) {
+            clearInterval(speedTimerInterval);
+            alert(`⏱️ Vaqt tugadi! Sizning natijangiz: ${speedScore} ball! 🎉`);
+            switchIrrMode('table');
+        }
+    }, 1000);
+
+    nextIrrSpeedQuestion();
+}
+
+function nextIrrSpeedQuestion() {
+    const list = irregularRoyxat;
+    if (!list || list.length === 0) return;
+
+    speedCurrentWord = list[Math.floor(Math.random() * list.length)];
+    const pat = getVerbPattern(speedCurrentWord);
+
+    document.getElementById('speedUzbekWord').innerText = speedCurrentWord.Uzb_translate;
+    document.getElementById('speedV1Hint').innerText = `V1: ${speedCurrentWord.Base_form}`;
+    document.getElementById('speedPatternBadge').innerHTML = `<span class="pattern-badge pattern-${pat}">${pat}</span>`;
+
+    let options = [speedCurrentWord];
+    let pool = list.filter(w => w.Base_form !== speedCurrentWord.Base_form);
+    pool.sort(() => 0.5 - Math.random());
+    options.push(...pool.slice(0, 3));
+    options.sort(() => 0.5 - Math.random());
+
+    const grid = document.getElementById('speedOptionsGrid');
+    grid.innerHTML = '';
+    options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'speed-opt-btn';
+        btn.innerText = `${opt.Past_tense_V2} – ${opt.Past_participle_V3}`;
+        btn.onclick = () => handleIrrSpeedAnswer(btn, opt.Base_form === speedCurrentWord.Base_form);
+        grid.appendChild(btn);
+    });
+}
+
+function handleIrrSpeedAnswer(btn, isCorrect) {
+    if (isCorrect) {
+        btn.classList.add('correct');
+        speedScore += 10;
+        document.getElementById('speedScore').innerText = speedScore;
+        speakIrrWord(speedCurrentWord.Base_form);
+        setTimeout(() => nextIrrSpeedQuestion(), 400);
+    } else {
+        btn.classList.add('incorrect');
+        saveIrrError(speedCurrentWord);
+        setTimeout(() => nextIrrSpeedQuestion(), 600);
+    }
 }
 
 function startIrregularQuiz() {
@@ -1484,6 +1736,7 @@ function checkIrregularAnswer() {
         document.getElementById('irrQuizMessage').style.color = '#00c853';
     } else {
         irregularQuizIncorrect++;
+        saveIrrError(wordObj);
         document.getElementById('irrQuizMessage').innerHTML = `
             <div style="color: #ff5252; font-weight: bold; margin-bottom: 5px;">Incorrect! ❌</div>
             <div style="color: #1877f2; font-size: 0.95rem;">

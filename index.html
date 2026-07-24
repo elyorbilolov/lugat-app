@@ -855,18 +855,41 @@
                     <input type="text" id="irrWordSearch" class="search-input" placeholder="Search words..." oninput="filterIrrWords()">
                     <button class="clear-btn" onclick="clearIrrSearch()" id="clearIrrSearch">✕</button>
                 </div>
-                <button class="start-quiz-btn" onclick="startIrregularQuiz()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                    Play
-                </button>
             </div>
             
-            <header>
+            <header style="margin-bottom: 15px;">
                 <h1>Irregular Verbs</h1>
                 <p id="irrCategoryCount">0 words available</p>
             </header>
 
-            <div class="word-table-container">
+            <!-- Mode Switcher Navigation -->
+            <div class="irr-mode-nav">
+                <button class="irr-mode-btn active" id="irrModeTableBtn" onclick="switchIrrMode('table')">
+                    📋 Ro'yxat
+                </button>
+                <button class="irr-mode-btn" id="irrModeFlashcardBtn" onclick="switchIrrMode('flashcards')">
+                    🎴 Flesh-karta
+                </button>
+                <button class="irr-mode-btn" onclick="startIrregularQuiz()">
+                    ✍️ Yozma Test
+                </button>
+                <button class="irr-mode-btn" style="border-color: #ff5252; color: #ff5252;" onclick="startIrrSpeedChallenge()">
+                    ⚡ 1-Min Challenge
+                </button>
+            </div>
+
+            <!-- Pattern Filter Tabs -->
+            <div class="irr-filter-tabs" id="irrFilterTabs">
+                <button class="irr-tab active" onclick="filterIrrByPattern('ALL', this)">Barchasi</button>
+                <button class="irr-tab" onclick="filterIrrByPattern('AAA', this)">AAA (Bir xil)</button>
+                <button class="irr-tab" onclick="filterIrrByPattern('ABB', this)">ABB (V2=V3)</button>
+                <button class="irr-tab" onclick="filterIrrByPattern('ABC', this)">ABC (Har xil)</button>
+                <button class="irr-tab" onclick="filterIrrByPattern('ABA', this)">ABA (V1=V3)</button>
+                <button class="irr-tab tab-errors" onclick="filterIrrByPattern('ERRORS', this)">⚠️ Xatolarim (<span id="irrErrorCount">0</span>)</button>
+            </div>
+
+            <!-- Table View -->
+            <div class="word-table-container" id="irrTableView">
                 <table class="word-table">
                     <thead>
                         <tr>
@@ -881,6 +904,76 @@
                     </tbody>
                 </table>
             </div>
+
+            <!-- Flashcard View -->
+            <div id="irregularFlashcardView" style="display: none;">
+                <div class="flashcard-container">
+                    <div class="flashcard-card" id="irrFlashcardCard" onclick="flipIrrFlashcard()">
+                        <!-- Front Face -->
+                        <div class="flashcard-face flashcard-front">
+                            <div class="flashcard-hint">
+                                <span>💡 Usbu kartaga bosing (Aylantirish)</span>
+                            </div>
+                            <div class="flashcard-uzbek" id="fcUzbek">Ma'nosi</div>
+                            <div id="fcPatternBadge"></div>
+                        </div>
+
+                        <!-- Back Face -->
+                        <div class="flashcard-face flashcard-back">
+                            <div style="width: 100%; text-align: right;">
+                                <button class="irr-audio-btn" onclick="event.stopPropagation(); speakIrrFull(currentFcIndex)">🔊</button>
+                            </div>
+                            <div class="flashcard-verb-grid">
+                                <div class="flashcard-verb-item">
+                                    <div class="flashcard-v-label">V1</div>
+                                    <div class="flashcard-v-word" id="fcV1">go</div>
+                                    <div class="flashcard-v-read" id="fcV1Read">/ɡoʊ/</div>
+                                </div>
+                                <div class="flashcard-verb-item">
+                                    <div class="flashcard-v-label">V2</div>
+                                    <div class="flashcard-v-word" id="fcV2">went</div>
+                                    <div class="flashcard-v-read" id="fcV2Read">/wɛnt/</div>
+                                </div>
+                                <div class="flashcard-verb-item">
+                                    <div class="flashcard-v-label">V3</div>
+                                    <div class="flashcard-v-word" id="fcV3">gone</div>
+                                    <div class="flashcard-v-read" id="fcV3Read">/ɡɔn/</div>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.85rem; color: var(--text-secondary);" id="fcProgress">1 / 243</div>
+                        </div>
+                    </div>
+
+                    <div class="flashcard-actions">
+                        <button class="irr-mode-btn" onclick="prevIrrFlashcard()">⬅️ Oldingisi</button>
+                        <button class="irr-mode-btn" onclick="shuffleIrrFlashcards()">🔀 Tasodifiy</button>
+                        <button class="irr-mode-btn" onclick="nextIrrFlashcard()">Keyingisi ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speed Challenge View -->
+            <div id="irregularSpeedView" style="display: none; padding-top: 10px;">
+                <div class="speed-challenge-card">
+                    <div class="speed-header-bar">
+                        <div class="speed-timer-badge">
+                            ⏱️ <span id="speedTimer">60</span>s
+                        </div>
+                        <div class="speed-score-badge">
+                            ⭐ Natija: <span id="speedScore">0</span>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin: 20px 0;">
+                        <span id="speedPatternBadge"></span>
+                        <h2 id="speedUzbekWord" style="font-size: 2rem; font-weight: 800; margin-top: 10px;">O'zbekcha</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary);" id="speedV1Hint">V1: -</p>
+                    </div>
+
+                    <div class="speed-options-grid" id="speedOptionsGrid">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="irregularQuizView" class="quiz-view" style="display: none;">
@@ -894,7 +987,10 @@
             <div class="quiz-card">
                 <div class="quiz-body" id="irrQuizBody">
                     <p class="quiz-instruction">Write the 3 forms of the verb</p>
-                    <div class="uzbek-word" id="irrUzbekWord">Uzbek Word</div>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <div class="uzbek-word" id="irrUzbekWord" style="margin-bottom: 0;">Uzbek Word</div>
+                        <button class="irr-audio-btn" id="irrQuizAudioBtn" onclick="speakIrrQuizPrompt()" style="margin-bottom: 40px;">🔊</button>
+                    </div>
                     <div class="irregular-inputs" style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
                         <div class="irr-input-group">
                             <label style="font-size: 0.9rem; color: #65676b; margin-bottom: 10px; display: block; font-weight: 600;">Base form (V1)</label>
