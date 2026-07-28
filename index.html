@@ -792,8 +792,16 @@
                     Start Quiz
                 </button>
                 <button class="start-quiz-btn" onclick="startCategoryChallenge()" style="background: #ff5252; box-shadow: 0 4px 12px rgba(255, 82, 82, 0.2);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    1 Min Challenge
+                    ⚡ 1-Min Challenge
+                </button>
+                <button class="start-practice-btn" onclick="startMatchingGame()" style="background: #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.2);">
+                    🧩 Juftini Top
+                </button>
+                <button class="start-practice-btn" onclick="startListeningPractice()" style="background: #00bcd4; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);">
+                    🎧 Eshitib Yozish
+                </button>
+                <button class="start-practice-btn" onclick="startSpeechPractice()" style="background: #e91e63; box-shadow: 0 4px 12px rgba(233, 30, 99, 0.2);">
+                    🎤 Talaffuz
                 </button>
                 <button class="start-practice-btn" onclick="startCategoryPractice()" style="background: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);" title="Untimed multiple choice practice">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -894,6 +902,15 @@
                 </button>
                 <button class="irr-mode-btn" onclick="startIrregularQuiz()">
                     ✍️ Yozma Test
+                </button>
+                <button class="irr-mode-btn" style="border-color: #9c27b0; color: #9c27b0;" onclick="startMatchingGame()">
+                    🧩 Juftini Top
+                </button>
+                <button class="irr-mode-btn" style="border-color: #00bcd4; color: #00bcd4;" onclick="startListeningPractice()">
+                    🎧 Eshitib Yozish
+                </button>
+                <button class="irr-mode-btn" style="border-color: #e91e63; color: #e91e63;" onclick="startSpeechPractice()">
+                    🎤 Talaffuz
                 </button>
                 <button class="irr-mode-btn" style="border-color: #ff5252; color: #ff5252;" onclick="startIrrSpeedChallenge()">
                     ⚡ 1-Min Challenge
@@ -1110,7 +1127,10 @@
         <div id="matchingGameModal" class="modal-overlay" style="display: none;">
             <div class="modal-card matching-card">
                 <div class="modal-header">
-                    <h2>🧩 Juftini Top</h2>
+                    <div>
+                        <h2>🧩 Juftini Top</h2>
+                        <span id="matchTopicLabel" style="font-size:0.85rem; color:var(--text-secondary); font-weight:600;"></span>
+                    </div>
                     <button class="quiz-close-btn" onclick="closeMatchingGame()">✕</button>
                 </div>
                 <div class="matching-stats-bar">
@@ -1133,7 +1153,10 @@
         <div id="listeningModal" class="modal-overlay" style="display: none;">
             <div class="modal-card listening-card">
                 <div class="modal-header">
-                    <h2>🎧 Eshitib Yozish Mashqi</h2>
+                    <div>
+                        <h2>🎧 Eshitib Yozish Mashqi</h2>
+                        <span id="listeningTopicLabel" style="font-size:0.85rem; color:var(--text-secondary); font-weight:600;"></span>
+                    </div>
                     <button class="quiz-close-btn" onclick="closeListeningPractice()">✕</button>
                 </div>
                 <div style="text-align: center; margin: 25px 0;">
@@ -1158,7 +1181,10 @@
         <div id="speechModal" class="modal-overlay" style="display: none;">
             <div class="modal-card speech-card">
                 <div class="modal-header">
-                    <h2>🎤 Talaffuzni Tekshirish</h2>
+                    <div>
+                        <h2>🎤 Talaffuzni Tekshirish</h2>
+                        <span id="speechTopicLabel" style="font-size:0.85rem; color:var(--text-secondary); font-weight:600;"></span>
+                    </div>
                     <button class="quiz-close-btn" onclick="closeSpeechPractice()">✕</button>
                 </div>
                 <div style="text-align: center; margin: 20px 0;">

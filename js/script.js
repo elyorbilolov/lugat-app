@@ -1967,11 +1967,37 @@ let matchScore = 0;
 let matchMoves = 0;
 let matchPairsLeft = 0;
 
+function getCurrentCategoryLabel() {
+    const irrView = document.getElementById('irregularDetailView');
+    if (irrView && irrView.style.display !== 'none') {
+        const p = currentIrrPattern === 'ALL' ? 'Barchasi' : currentIrrPattern;
+        return `Irregular Verbs (${p})`;
+    }
+    const catView = document.getElementById('detailView');
+    if (catView && catView.style.display !== 'none') {
+        const title = document.getElementById('categoryTitle')?.innerText;
+        if (title) return title;
+    }
+    return "Barcha lug'at";
+}
+
 function getRandomPoolWords(count = 6) {
-    let pool = allLugatWords.length > 0 ? allLugatWords : irregularRoyxat.map(i => ({ word: i.V1, translation: i.Uzb_translate }));
+    let pool = [];
+
+    const irrView = document.getElementById('irregularDetailView');
+    const catView = document.getElementById('detailView');
+
+    if (irrView && irrView.style.display !== 'none' && filteredIrrList && filteredIrrList.length > 0) {
+        pool = filteredIrrList.map(i => ({ word: i.V1, translation: i.Uzb_translate }));
+    } else if (catView && catView.style.display !== 'none' && displayedWords && displayedWords.length > 0) {
+        pool = displayedWords;
+    } else {
+        pool = allLugatWords.length > 0 ? allLugatWords : irregularRoyxat.map(i => ({ word: i.V1, translation: i.Uzb_translate }));
+    }
+
     if (pool.length === 0) return [];
     let shuffled = [...pool].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
+    return shuffled.slice(0, Math.min(count, pool.length));
 }
 
 function startMatchingGame() {
@@ -1986,6 +2012,9 @@ function startMatchingGame() {
     matchSeconds = 0;
     matchPairsLeft = words.length;
     matchSelectedTile = null;
+
+    const topicLabelEl = document.getElementById('matchTopicLabel');
+    if (topicLabelEl) topicLabelEl.innerText = `Mavzu: ${getCurrentCategoryLabel()}`;
 
     document.getElementById('matchScore').innerText = matchScore;
     document.getElementById('matchMoves').innerText = matchMoves;
@@ -2080,6 +2109,9 @@ function startListeningPractice() {
     if (words.length === 0) return;
 
     listeningCurrentWord = words[0];
+    const topicLabelEl = document.getElementById('listeningTopicLabel');
+    if (topicLabelEl) topicLabelEl.innerText = `Mavzu: ${getCurrentCategoryLabel()}`;
+
     const input = document.getElementById('listeningInput');
     input.value = '';
     document.getElementById('listeningHintText').innerText = '';
@@ -2133,6 +2165,9 @@ function startSpeechPractice() {
     if (words.length === 0) return;
 
     speechCurrentWord = words[0];
+    const topicLabelEl = document.getElementById('speechTopicLabel');
+    if (topicLabelEl) topicLabelEl.innerText = `Mavzu: ${getCurrentCategoryLabel()}`;
+
     document.getElementById('speechTargetWord').innerText = speechCurrentWord.word;
     document.getElementById('speechUzbekHint').innerText = speechCurrentWord.translation;
     document.getElementById('speechTranscriptBox').style.display = 'none';
