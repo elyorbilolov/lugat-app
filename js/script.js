@@ -1572,18 +1572,31 @@ function startIrregularQuiz() {
         alert('Data is loading, please try again in a moment.');
         return;
     }
-    
+
+    // Use the currently active filtered list (by pattern or errors)
+    const activeList = (filteredIrrList && filteredIrrList.length > 0) ? filteredIrrList : irregularPlay;
+
     const checkedBoxes = Array.from(document.querySelectorAll('.irr-checkbox:checked')).map(cb => cb.value);
-    let wordsToPlay = irregularPlay;
-    
+    let wordsToPlay = activeList;
+
     if (checkedBoxes.length > 0) {
-        wordsToPlay = irregularPlay.filter(w => checkedBoxes.includes(w.Uzb_translate));
+        wordsToPlay = activeList.filter(w => checkedBoxes.includes(w.Uzb_translate));
     }
-    
+
+    if (wordsToPlay.length === 0) {
+        alert("Bu guruhda fe'l topilmadi!");
+        return;
+    }
+
     irregularQuizWords = [...wordsToPlay].sort(() => 0.5 - Math.random());
     irregularQuizIndex = 0;
     irregularQuizCorrect = 0;
     irregularQuizIncorrect = 0;
+
+    // Show which group is being tested
+    const patternLabel = currentIrrPattern === 'ALL' ? 'Barchasi' : currentIrrPattern;
+    const groupLabelEl = document.getElementById('irrQuizGroupLabel');
+    if (groupLabelEl) groupLabelEl.innerText = patternLabel;
 
     document.getElementById('irregularDetailView').style.display = 'none';
     document.getElementById('irregularQuizView').style.display = 'block';
