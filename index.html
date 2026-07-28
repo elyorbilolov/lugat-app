@@ -13,16 +13,26 @@
 </head>
 <body>
     <div class="container">
-        <div class="top-bar">
-            <button id="themeToggle" class="icon-btn" title="Toggle Dark Mode">
-                <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+        <div class="top-bar" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="top-bar-left" style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <div class="streak-badge" id="streakBadge" title="Ketma-ket kunlik faollik">
+                    🔥 <span id="streakCount">1</span> kun
+                </div>
+                <button class="srs-badge-btn" onclick="startSRSReview()" id="srsBadgeBtn" title="Bugun takrorlanishi kerak bo'lgan so'zlar">
+                    📅 Takrorlash: <span id="srsDueCount">0</span>
+                </button>
+            </div>
+            <div class="top-bar-right">
+                <button id="themeToggle" class="icon-btn" title="Toggle Dark Mode">
+                    <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
         <header>
             <h1>Lugat Categories</h1>
-            <p>Explore your vocabulary by categories</p>
+            <p>Explore your vocabulary by categories & interactive games</p>
             <div class="search-container home-search">
                 <input type="text" id="categorySearch" class="search-input" placeholder="Search categories..." oninput="filterCategories()">
                 <button class="clear-btn" onclick="clearSearch('categorySearch')" id="clearCategorySearch">✕</button>
@@ -31,6 +41,18 @@
                 <button class="start-quiz-btn" onclick="startGlobalChallenge()" style="background: #ff5252; box-shadow: 0 4px 12px rgba(255, 82, 82, 0.2);">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                     1 Min Challenge
+                </button>
+                <button class="start-practice-btn" onclick="startMatchingGame()" style="background: #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.2);">
+                    🧩 Juftini Top
+                </button>
+                <button class="start-practice-btn" onclick="startListeningPractice()" style="background: #00bcd4; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);">
+                    🎧 Eshitib Yozish
+                </button>
+                <button class="start-practice-btn" onclick="startSpeechPractice()" style="background: #e91e63; box-shadow: 0 4px 12px rgba(233, 30, 99, 0.2);">
+                    🎤 Talaffuz
+                </button>
+                <button class="start-practice-btn" onclick="openFavoritesView()" style="background: #ff9800; box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);">
+                    ⭐ Tanlanganlar (<span id="favCount">0</span>)
                 </button>
                 <button class="start-practice-btn" onclick="startGlobalPractice()" style="background: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -1080,6 +1102,94 @@
                         <!-- Stats injected here -->
                     </div>
                     <button id="gameResultBackBtn" class="game-btn-primary" onclick="exitGame()">Back to Home</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🧩 Juftini Top (Matching Game) Modal -->
+        <div id="matchingGameModal" class="modal-overlay" style="display: none;">
+            <div class="modal-card matching-card">
+                <div class="modal-header">
+                    <h2>🧩 Juftini Top</h2>
+                    <button class="quiz-close-btn" onclick="closeMatchingGame()">✕</button>
+                </div>
+                <div class="matching-stats-bar">
+                    <span>⏱️ <strong id="matchTimer">0s</strong></span>
+                    <span>⭐ Ball: <strong id="matchScore">0</strong></span>
+                    <span>🎯 Urinishlar: <strong id="matchMoves">0</strong></span>
+                </div>
+                <div class="matching-grid" id="matchingGrid">
+                    <!-- 12 tiles generated dynamically -->
+                </div>
+                <div id="matchingResult" style="display: none; text-align: center; margin-top: 20px;">
+                    <h3>🎉 A'lo darajada bajarildi!</h3>
+                    <p id="matchSummaryText"></p>
+                    <button class="irr-mode-btn" onclick="startMatchingGame()" style="margin-top: 15px;">🔁 Qayta o'ynash</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🎧 Eshitib Yozish (Listening Practice) Modal -->
+        <div id="listeningModal" class="modal-overlay" style="display: none;">
+            <div class="modal-card listening-card">
+                <div class="modal-header">
+                    <h2>🎧 Eshitib Yozish Mashqi</h2>
+                    <button class="quiz-close-btn" onclick="closeListeningPractice()">✕</button>
+                </div>
+                <div style="text-align: center; margin: 25px 0;">
+                    <button class="listening-audio-btn" onclick="playListeningAudio()">
+                        🔊 Audioni eshitish
+                    </button>
+                    <p style="color: var(--text-secondary); margin-top: 10px; font-size: 0.95rem;">Audioda aytilgan so'zning imlosini kiriting</p>
+                </div>
+                <div class="listening-input-wrapper">
+                    <input type="text" id="listeningInput" class="search-input" placeholder="So'zni yozing..." autocomplete="off" autocorrect="off" autocapitalize="none">
+                    <div style="display: flex; gap: 10px; margin-top: 15px; justify-content: center;">
+                        <button class="irr-mode-btn" onclick="showListeningHint()">💡 Ishora</button>
+                        <button class="game-btn-primary" onclick="checkListeningAnswer()" style="padding: 10px 25px;">Tekshirish</button>
+                    </div>
+                    <p id="listeningHintText" style="text-align: center; margin-top: 10px; color: #ff9800; font-weight: 600; min-height: 24px;"></p>
+                    <div id="listeningFeedback" class="quiz-message" style="margin-top: 15px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🎤 Talaffuz Mashqi (Speech Practice) Modal -->
+        <div id="speechModal" class="modal-overlay" style="display: none;">
+            <div class="modal-card speech-card">
+                <div class="modal-header">
+                    <h2>🎤 Talaffuzni Tekshirish</h2>
+                    <button class="quiz-close-btn" onclick="closeSpeechPractice()">✕</button>
+                </div>
+                <div style="text-align: center; margin: 20px 0;">
+                    <span id="speechUzbekHint" style="background: rgba(24,119,242,0.1); color: #1877f2; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">O'zbekcha</span>
+                    <h2 id="speechTargetWord" style="font-size: 2.2rem; font-weight: 800; margin: 10px 0;">Word</h2>
+                    <button class="irr-audio-btn" onclick="speakTargetWord()" title="Tog'ri talaffuzni eshitish">🔊</button>
+                </div>
+                <div style="text-align: center; margin: 25px 0;">
+                    <button class="speech-mic-btn" id="speechMicBtn" onclick="toggleSpeechRecognition()">
+                        🎙️ Bosib gapiring
+                    </button>
+                    <p id="speechStatus" style="margin-top: 12px; font-weight: 600; color: var(--text-secondary);">Tugmani bosib, so'zni ayting</p>
+                </div>
+                <div id="speechTranscriptBox" class="speech-transcript-box" style="display: none;">
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">Eshitilgan talaffuz:</p>
+                    <h3 id="speechUserText" style="font-size: 1.4rem; color: var(--text-primary); margin-top: 5px;">-</h3>
+                    <div id="speechRating" style="margin-top: 10px; font-weight: 700; font-size: 1.1rem;"></div>
+                    <button class="irr-mode-btn" onclick="nextSpeechWord()" style="margin-top: 15px;">Keyingi so'z ➡️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⭐ Tanlanganlar (Favorites) Modal -->
+        <div id="favoritesModal" class="modal-overlay" style="display: none;">
+            <div class="modal-card favorites-card">
+                <div class="modal-header">
+                    <h2>⭐ Tanlangan So'zlarim</h2>
+                    <button class="quiz-close-btn" onclick="closeFavoritesView()">✕</button>
+                </div>
+                <div id="favoritesListContainer" class="favorites-list-container" style="max-height: 400px; overflow-y: auto; margin-top: 15px;">
+                    <!-- Injected favorited words -->
                 </div>
             </div>
         </div>

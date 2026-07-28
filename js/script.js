@@ -1807,3 +1807,435 @@ function exitIrregularQuiz() {
     document.getElementById('irregularQuizView').style.display = 'none';
     document.getElementById('irregularDetailView').style.display = 'block';
 }
+
+/* ==========================================
+   NEW MEMORIZATION ENHANCEMENTS LOGIC
+   ========================================== */
+
+// 1. STREAK MANAGER
+function initStreak() {
+    const today = new Date().toISOString().split('T')[0];
+    const lastActive = localStorage.getItem('lugat_last_active');
+    let streak = parseInt(localStorage.getItem('lugat_streak_count') || '1', 10);
+
+    if (lastActive) {
+        const lastDate = new Date(lastActive);
+        const currentDate = new Date(today);
+        const diffDays = Math.floor((currentDate - lastDate) / (1000 * 60 * 60 * 24));
+
+        if (diffDays === 1) {
+            streak += 1;
+            localStorage.setItem('lugat_streak_count', streak);
+            localStorage.setItem('lugat_last_active', today);
+        } else if (diffDays > 1) {
+            streak = 1;
+            localStorage.setItem('lugat_streak_count', streak);
+            localStorage.setItem('lugat_last_active', today);
+        }
+    } else {
+        localStorage.setItem('lugat_last_active', today);
+        localStorage.setItem('lugat_streak_count', '1');
+    }
+
+    const streakEl = document.getElementById('streakCount');
+    if (streakEl) streakEl.innerText = streak;
+}
+
+// 2. SRS (SPACED REPETITION) MANAGER
+function getSRSData() {
+    return JSON.parse(localStorage.getItem('lugat_srs_data') || '{}');
+}
+
+function saveSRSWordResult(wordStr, isCorrect) {
+    const srs = getSRSData();
+    const now = Date.now();
+    const boxIntervals = [0, 1, 3, 7, 14, 30]; // Days for box 1 to 5
+
+    let item = srs[wordStr] || { box: 1, nextReview: now };
+    if (isCorrect) {
+        item.box = Math.min(item.box + 1, 5);
+    } else {
+        item.box = 1;
+    }
+    item.nextReview = now + boxIntervals[item.box] * 86400000;
+    srs[wordStr] = item;
+    localStorage.setItem('lugat_srs_data', JSON.stringify(srs));
+    updateSRSCounter();
+}
+
+function updateSRSCounter() {
+    const srs = getSRSData();
+    const now = Date.now();
+    let dueCount = 0;
+    for (let key in srs) {
+        if (srs[key].nextReview <= now) {
+            dueCount++;
+        }
+    }
+    const badgeEl = document.getElementById('srsDueCount');
+    if (badgeEl) badgeEl.innerText = dueCount;
+}
+
+function startSRSReview() {
+    const srs = getSRSData();
+    const now = Date.now();
+    const dueWordsKeys = Object.keys(srs).filter(k => srs[k].nextReview <= now);
+    
+    if (dueWordsKeys.length === 0) {
+        alert("Bugun takrorlanishi kerak bo'lgan so'zlar yo'q! Barcha so'zlar o'zlashtirilgan. 🎉");
+        return;
+    }
+
+    const dueWords = allLugatWords.filter(w => dueWordsKeys.includes(w.word));
+    if (dueWords.length > 0) {
+        gameWords = dueWords;
+        gameMode = 'practice';
+        startChallengeGame('SRS Review');
+    } else {
+        alert("Takrorlash so'zlari topilmadi.");
+    }
+}
+
+// 3. ⭐ FAVORITES MANAGER
+function getFavorites() {
+    return JSON.parse(localStorage.getItem('lugat_favorites_list') || '[]');
+}
+
+function toggleFavoriteWord(wordObj, btnElement) {
+    let favs = getFavorites();
+    const existsIndex = favs.findIndex(f => f.word === wordObj.word);
+
+    if (existsIndex > -1) {
+        favs.splice(existsIndex, 1);
+        if (btnElement) btnElement.classList.remove('active');
+    } else {
+        favs.push(wordObj);
+        if (btnElement) btnElement.classList.add('active');
+    }
+    localStorage.setItem('lugat_favorites_list', JSON.stringify(favs));
+    updateFavCounter();
+}
+
+function updateFavCounter() {
+    const favs = getFavorites();
+    const el = document.getElementById('favCount');
+    if (el) el.innerText = favs.length;
+}
+
+function openFavoritesView() {
+    const favs = getFavorites();
+    const container = document.getElementById('favoritesListContainer');
+    if (!container) return;
+
+    if (favs.length === 0) {
+        container.innerHTML = `<p style="text-align: center; color: var(--text-secondary); padding: 20px;">Hali tanlangan so'zlar yo'q. So'zlar yonidagi ⭐ belgisini bosib saqlang.</p>`;
+    } else {
+        container.innerHTML = favs.map((item, idx) => `
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; border-bottom: 1px solid var(--border-color);">
+                <div>
+                    <strong style="font-size: 1.1rem; color: var(--text-primary);">${item.word}</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary);">${item.translation}</div>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                    <button class="irr-audio-btn" onclick="speakText('${item.word.replace(/'/g, "\\'")}')">🔊</button>
+                    <button class="fav-star-btn active" onclick="removeFavAndRefresh(${idx})">⭐</button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    document.getElementById('favoritesModal').style.display = 'flex';
+}
+
+function removeFavAndRefresh(index) {
+    let favs = getFavorites();
+    favs.splice(index, 1);
+    localStorage.setItem('lugat_favorites_list', JSON.stringify(favs));
+    updateFavCounter();
+    openFavoritesView();
+}
+
+function closeFavoritesView() {
+    document.getElementById('favoritesModal').style.display = 'none';
+}
+
+// 4. 🧩 MATCHING GAME (JUFTINI TOP)
+let matchSelectedTile = null;
+let matchTimerInterval = null;
+let matchSeconds = 0;
+let matchScore = 0;
+let matchMoves = 0;
+let matchPairsLeft = 0;
+
+function getRandomPoolWords(count = 6) {
+    let pool = allLugatWords.length > 0 ? allLugatWords : irregularRoyxat.map(i => ({ word: i.V1, translation: i.Uzb_translate }));
+    if (pool.length === 0) return [];
+    let shuffled = [...pool].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+function startMatchingGame() {
+    const words = getRandomPoolWords(6);
+    if (words.length === 0) {
+        alert("So'zlar yuklanmoqda, iltimos biroz kuting.");
+        return;
+    }
+
+    matchScore = 0;
+    matchMoves = 0;
+    matchSeconds = 0;
+    matchPairsLeft = words.length;
+    matchSelectedTile = null;
+
+    document.getElementById('matchScore').innerText = matchScore;
+    document.getElementById('matchMoves').innerText = matchMoves;
+    document.getElementById('matchTimer').innerText = '0s';
+    document.getElementById('matchingResult').style.display = 'none';
+
+    let tilesData = [];
+    words.forEach((w, id) => {
+        tilesData.push({ id, text: w.word, type: 'ENG' });
+        tilesData.push({ id, text: w.translation, type: 'UZB' });
+    });
+
+    tilesData.sort(() => 0.5 - Math.random());
+
+    const grid = document.getElementById('matchingGrid');
+    grid.style.display = 'grid';
+    grid.innerHTML = tilesData.map((tile, i) => `
+        <div class="matching-tile" data-pair-id="${tile.id}" data-index="${i}" onclick="onMatchingTileClick(this)">
+            ${tile.text}
+        </div>
+    `).join('');
+
+    if (matchTimerInterval) clearInterval(matchTimerInterval);
+    matchTimerInterval = setInterval(() => {
+        matchSeconds++;
+        document.getElementById('matchTimer').innerText = `${matchSeconds}s`;
+    }, 1000);
+
+    document.getElementById('matchingGameModal').style.display = 'flex';
+}
+
+function onMatchingTileClick(tileEl) {
+    if (tileEl.classList.contains('matched') || tileEl.classList.contains('selected')) return;
+
+    tileEl.classList.add('selected');
+
+    if (!matchSelectedTile) {
+        matchSelectedTile = tileEl;
+    } else {
+        matchMoves++;
+        document.getElementById('matchMoves').innerText = matchMoves;
+
+        const pair1 = matchSelectedTile.getAttribute('data-pair-id');
+        const pair2 = tileEl.getAttribute('data-pair-id');
+
+        if (pair1 === pair2) {
+            matchSelectedTile.classList.remove('selected');
+            tileEl.classList.remove('selected');
+
+            matchSelectedTile.classList.add('matched');
+            tileEl.classList.add('matched');
+
+            matchScore += 10;
+            document.getElementById('matchScore').innerText = matchScore;
+
+            matchPairsLeft--;
+            matchSelectedTile = null;
+
+            if (matchPairsLeft === 0) {
+                clearInterval(matchTimerInterval);
+                setTimeout(() => {
+                    document.getElementById('matchingGrid').style.display = 'none';
+                    document.getElementById('matchSummaryText').innerText = `Siz ${matchSeconds} soniyada ${matchMoves} ta urinishda barcha juftliklarni topdingiz! Ball: ${matchScore}`;
+                    document.getElementById('matchingResult').style.display = 'block';
+                }, 400);
+            }
+        } else {
+            const tile1 = matchSelectedTile;
+            const tile2 = tileEl;
+            tile1.classList.add('mismatch');
+            tile2.classList.add('mismatch');
+
+            matchSelectedTile = null;
+            setTimeout(() => {
+                tile1.classList.remove('selected', 'mismatch');
+                tile2.classList.remove('selected', 'mismatch');
+            }, 500);
+        }
+    }
+}
+
+function closeMatchingGame() {
+    if (matchTimerInterval) clearInterval(matchTimerInterval);
+    document.getElementById('matchingGameModal').style.display = 'none';
+}
+
+// 5. 🎧 LISTENING & DICTATION PRACTICE
+let listeningCurrentWord = null;
+
+function startListeningPractice() {
+    const words = getRandomPoolWords(1);
+    if (words.length === 0) return;
+
+    listeningCurrentWord = words[0];
+    const input = document.getElementById('listeningInput');
+    input.value = '';
+    document.getElementById('listeningHintText').innerText = '';
+    document.getElementById('listeningFeedback').innerText = '';
+    document.getElementById('listeningModal').style.display = 'flex';
+
+    setTimeout(() => playListeningAudio(), 300);
+}
+
+function playListeningAudio() {
+    if (listeningCurrentWord) {
+        speakText(listeningCurrentWord.word);
+    }
+}
+
+function showListeningHint() {
+    if (!listeningCurrentWord) return;
+    const w = listeningCurrentWord.word;
+    const hint = w[0] + ' ' + '_ '.repeat(w.length - 1);
+    document.getElementById('listeningHintText').innerText = `Ishora: ${hint} (${w.length} harf)`;
+}
+
+function checkListeningAnswer() {
+    if (!listeningCurrentWord) return;
+    const val = document.getElementById('listeningInput').value.trim().toLowerCase();
+    const target = listeningCurrentWord.word.trim().toLowerCase();
+    const feedback = document.getElementById('listeningFeedback');
+
+    if (val === target) {
+        feedback.innerText = "To'g'ri! Barakalla! 🎉";
+        feedback.className = "quiz-message correct";
+        saveSRSWordResult(listeningCurrentWord.word, true);
+        setTimeout(() => startListeningPractice(), 1200);
+    } else {
+        feedback.innerText = `Noto'g'ri. To'g'ri javob: "${listeningCurrentWord.word}"`;
+        feedback.className = "quiz-message incorrect";
+        saveSRSWordResult(listeningCurrentWord.word, false);
+    }
+}
+
+function closeListeningPractice() {
+    document.getElementById('listeningModal').style.display = 'none';
+}
+
+// 6. 🎤 TALAFFUZ MASHQI (SPEECH PRACTICE)
+let speechCurrentWord = null;
+let speechRecognitionObj = null;
+
+function startSpeechPractice() {
+    const words = getRandomPoolWords(1);
+    if (words.length === 0) return;
+
+    speechCurrentWord = words[0];
+    document.getElementById('speechTargetWord').innerText = speechCurrentWord.word;
+    document.getElementById('speechUzbekHint').innerText = speechCurrentWord.translation;
+    document.getElementById('speechTranscriptBox').style.display = 'none';
+    document.getElementById('speechStatus').innerText = "Tugmani bosib, so'zni ayting";
+
+    document.getElementById('speechModal').style.display = 'flex';
+}
+
+function speakTargetWord() {
+    if (speechCurrentWord) speakText(speechCurrentWord.word);
+}
+
+function toggleSpeechRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        alert("Kechirasiz, brauzeringiz nutqni aniqlash (Speech Recognition) API ini qo'llamaydi. Chrome brauzeridan foydalaning.");
+        return;
+    }
+
+    const btn = document.getElementById('speechMicBtn');
+    const status = document.getElementById('speechStatus');
+
+    if (speechRecognitionObj) {
+        speechRecognitionObj.stop();
+        return;
+    }
+
+    speechRecognitionObj = new SpeechRecognition();
+    speechRecognitionObj.lang = 'en-US';
+    speechRecognitionObj.interimResults = false;
+
+    speechRecognitionObj.onstart = () => {
+        btn.classList.add('recording');
+        btn.innerText = "🔴 Eshitilmoqda...";
+        status.innerText = "Gapiring...";
+    };
+
+    speechRecognitionObj.onresult = (event) => {
+        const transcript = event.results[0][0].transcript.trim();
+        evaluateSpeech(transcript);
+    };
+
+    speechRecognitionObj.onerror = () => {
+        status.innerText = "Ovoz eshitilmadi. Qayta urinib ko'ring.";
+        btn.classList.remove('recording');
+        btn.innerText = "🎙️ Bosib gapiring";
+        speechRecognitionObj = null;
+    };
+
+    speechRecognitionObj.onend = () => {
+        btn.classList.remove('recording');
+        btn.innerText = "🎙️ Bosib gapiring";
+        speechRecognitionObj = null;
+    };
+
+    speechRecognitionObj.start();
+}
+
+function evaluateSpeech(userSpoken) {
+    if (!speechCurrentWord) return;
+    const target = speechCurrentWord.word.toLowerCase();
+    const spoken = userSpoken.toLowerCase();
+
+    document.getElementById('speechUserText').innerText = `"${userSpoken}"`;
+    const ratingEl = document.getElementById('speechRating');
+    const box = document.getElementById('speechTranscriptBox');
+    box.style.display = 'block';
+
+    if (spoken === target || spoken.includes(target) || target.includes(spoken)) {
+        ratingEl.innerText = "A'lo talaffuz! 🌟 (100%)";
+        ratingEl.style.color = "#00c853";
+        saveSRSWordResult(speechCurrentWord.word, true);
+    } else {
+        ratingEl.innerText = "Qayta urinib ko'ring 🔁";
+        ratingEl.style.color = "#ff5252";
+        saveSRSWordResult(speechCurrentWord.word, false);
+    }
+}
+
+function nextSpeechWord() {
+    startSpeechPractice();
+}
+
+function closeSpeechPractice() {
+    if (speechRecognitionObj) {
+        speechRecognitionObj.stop();
+        speechRecognitionObj = null;
+    }
+    document.getElementById('speechModal').style.display = 'none';
+}
+
+function speakText(text) {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initStreak();
+    updateSRSCounter();
+    updateFavCounter();
+});
