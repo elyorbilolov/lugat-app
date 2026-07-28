@@ -2103,8 +2103,13 @@ function closeMatchingGame() {
 
 // 5. 🎧 LISTENING & DICTATION PRACTICE
 let listeningCurrentWord = null;
+let listeningTimer = null;
+let listeningAnswered = false;
 
 function startListeningPractice() {
+    if (listeningTimer) clearTimeout(listeningTimer);
+    listeningAnswered = false;
+
     const words = getRandomPoolWords(1);
     if (words.length === 0) return;
 
@@ -2114,11 +2119,29 @@ function startListeningPractice() {
 
     const input = document.getElementById('listeningInput');
     input.value = '';
+    input.disabled = false;
     document.getElementById('listeningHintText').innerText = '';
     document.getElementById('listeningFeedback').innerText = '';
+    
+    const nextBtnContainer = document.getElementById('listeningNextContainer');
+    if (nextBtnContainer) nextBtnContainer.style.display = 'none';
+    const checkBtn = document.getElementById('listeningCheckBtn');
+    if (checkBtn) checkBtn.style.display = 'inline-block';
+
     document.getElementById('listeningModal').style.display = 'flex';
 
-    setTimeout(() => playListeningAudio(), 300);
+    setTimeout(() => {
+        input.focus();
+        playListeningAudio();
+    }, 300);
+}
+
+function handleListeningEnter() {
+    if (!listeningAnswered) {
+        checkListeningAnswer();
+    } else {
+        startListeningPractice();
+    }
 }
 
 function playListeningAudio() {
@@ -2135,24 +2158,34 @@ function showListeningHint() {
 }
 
 function checkListeningAnswer() {
-    if (!listeningCurrentWord) return;
-    const val = document.getElementById('listeningInput').value.trim().toLowerCase();
+    if (!listeningCurrentWord || listeningAnswered) return;
+    listeningAnswered = true;
+
+    const input = document.getElementById('listeningInput');
+    const val = input.value.trim().toLowerCase();
     const target = listeningCurrentWord.word.trim().toLowerCase();
     const feedback = document.getElementById('listeningFeedback');
+    const nextBtnContainer = document.getElementById('listeningNextContainer');
+    const checkBtn = document.getElementById('listeningCheckBtn');
+
+    if (checkBtn) checkBtn.style.display = 'none';
 
     if (val === target) {
         feedback.innerText = "To'g'ri! Barakalla! 🎉";
         feedback.className = "quiz-message correct";
         saveSRSWordResult(listeningCurrentWord.word, true);
-        setTimeout(() => startListeningPractice(), 1200);
+        listeningTimer = setTimeout(() => startListeningPractice(), 1200);
     } else {
-        feedback.innerText = `Noto'g'ri. To'g'ri javob: "${listeningCurrentWord.word}"`;
+        feedback.innerHTML = `Noto'g'ri. To'g'ri javob: <strong>"${listeningCurrentWord.word}"</strong>`;
         feedback.className = "quiz-message incorrect";
         saveSRSWordResult(listeningCurrentWord.word, false);
+        if (nextBtnContainer) nextBtnContainer.style.display = 'block';
+        listeningTimer = setTimeout(() => startListeningPractice(), 3000);
     }
 }
 
 function closeListeningPractice() {
+    if (listeningTimer) clearTimeout(listeningTimer);
     document.getElementById('listeningModal').style.display = 'none';
 }
 

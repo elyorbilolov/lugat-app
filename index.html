@@ -1166,13 +1166,16 @@
                     <p style="color: var(--text-secondary); margin-top: 10px; font-size: 0.95rem;">Audioda aytilgan so'zning imlosini kiriting</p>
                 </div>
                 <div class="listening-input-wrapper">
-                    <input type="text" id="listeningInput" class="search-input" placeholder="So'zni yozing..." autocomplete="off" autocorrect="off" autocapitalize="none">
+                    <input type="text" id="listeningInput" class="search-input" placeholder="So'zni yozing..." autocomplete="off" autocorrect="off" autocapitalize="none" onkeydown="if(event.key==='Enter') handleListeningEnter()">
                     <div style="display: flex; gap: 10px; margin-top: 15px; justify-content: center;">
                         <button class="irr-mode-btn" onclick="showListeningHint()">💡 Ishora</button>
-                        <button class="game-btn-primary" onclick="checkListeningAnswer()" style="padding: 10px 25px;">Tekshirish</button>
+                        <button class="game-btn-primary" id="listeningCheckBtn" onclick="checkListeningAnswer()" style="padding: 10px 25px;">Tekshirish</button>
                     </div>
                     <p id="listeningHintText" style="text-align: center; margin-top: 10px; color: #ff9800; font-weight: 600; min-height: 24px;"></p>
                     <div id="listeningFeedback" class="quiz-message" style="margin-top: 15px;"></div>
+                    <div id="listeningNextContainer" style="text-align: center; margin-top: 15px; display: none;">
+                        <button class="game-btn-primary" onclick="startListeningPractice()" style="padding: 10px 25px; background: #00c853;">Keyingi so'z ➡️</button>
+                    </div>
                 </div>
             </div>
         </div>
