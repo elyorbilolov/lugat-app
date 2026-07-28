@@ -1981,9 +1981,8 @@ function getCurrentCategoryLabel() {
     return "Barcha lug'at";
 }
 
-function getRandomPoolWords(count = 6) {
+function getCategoryPoolWords() {
     let pool = [];
-
     const irrView = document.getElementById('irregularDetailView');
     const catView = document.getElementById('detailView');
 
@@ -1995,6 +1994,11 @@ function getRandomPoolWords(count = 6) {
         pool = allLugatWords.length > 0 ? allLugatWords : irregularRoyxat.map(i => ({ word: i.V1, translation: i.Uzb_translate }));
     }
 
+    return pool;
+}
+
+function getRandomPoolWords(count = 6) {
+    let pool = getCategoryPoolWords();
     if (pool.length === 0) return [];
     let shuffled = [...pool].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, Math.min(count, pool.length));
@@ -2102,20 +2106,33 @@ function closeMatchingGame() {
 }
 
 // 5. 🎧 LISTENING & DICTATION PRACTICE
+let listeningQueue = [];
+let listeningQueueIndex = 0;
+let listeningCurrentCategory = null;
 let listeningCurrentWord = null;
-let listeningTimer = null;
 let listeningAnswered = false;
 
-function startListeningPractice() {
-    if (listeningTimer) clearTimeout(listeningTimer);
+function startListeningPractice(forceRestart = false) {
     listeningAnswered = false;
+    const activeLabel = getCurrentCategoryLabel();
 
-    const words = getRandomPoolWords(1);
-    if (words.length === 0) return;
+    if (forceRestart || listeningCurrentCategory !== activeLabel || listeningQueue.length === 0 || listeningQueueIndex >= listeningQueue.length) {
+        const pool = getCategoryPoolWords();
+        if (pool.length === 0) {
+            alert("So'zlar topilmadi.");
+            return;
+        }
+        listeningQueue = [...pool].sort(() => 0.5 - Math.random());
+        listeningQueueIndex = 0;
+        listeningCurrentCategory = activeLabel;
+    }
 
-    listeningCurrentWord = words[0];
+    listeningCurrentWord = listeningQueue[listeningQueueIndex];
+
     const topicLabelEl = document.getElementById('listeningTopicLabel');
-    if (topicLabelEl) topicLabelEl.innerText = `Mavzu: ${getCurrentCategoryLabel()}`;
+    if (topicLabelEl) {
+        topicLabelEl.innerText = `${listeningQueueIndex + 1} / ${listeningQueue.length} · Mavzu: ${activeLabel}`;
+    }
 
     const input = document.getElementById('listeningInput');
     input.value = '';
@@ -2136,11 +2153,35 @@ function startListeningPractice() {
     }, 300);
 }
 
+function handleListeningNext() {
+    listeningQueueIndex++;
+    if (listeningQueueIndex >= listeningQueue.length) {
+        const feedback = document.getElementById('listeningFeedback');
+        const checkBtn = document.getElementById('listeningCheckBtn');
+        const nextBtnContainer = document.getElementById('listeningNextContainer');
+
+        if (checkBtn) checkBtn.style.display = 'none';
+        if (nextBtnContainer) nextBtnContainer.style.display = 'none';
+
+        feedback.innerHTML = `
+            <div style="font-size: 1.2rem; font-weight: 800; color: #00c853; text-align: center; margin-top: 10px;">
+                🎉 Mavzudagi barcha ${listeningQueue.length} ta so'z bajarildi!
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+                <button class="game-btn-primary" onclick="startListeningPractice(true)" style="padding: 10px 25px; background: #1877f2;">🔁 Qayta boshlash</button>
+            </div>
+        `;
+        feedback.className = "quiz-message correct";
+        return;
+    }
+    startListeningPractice(false);
+}
+
 function handleListeningEnter() {
     if (!listeningAnswered) {
         checkListeningAnswer();
     } else {
-        startListeningPractice();
+        handleListeningNext();
     }
 }
 
@@ -2183,7 +2224,6 @@ function checkListeningAnswer() {
         `;
         feedback.className = "quiz-message correct";
         saveSRSWordResult(listeningCurrentWord.word, true);
-        listeningTimer = setTimeout(() => startListeningPractice(), 2200);
     } else {
         feedback.innerHTML = `
             <div style="font-size: 1.1rem; font-weight: 800; color: #ff5252;">Noto'g'ri ❌</div>
@@ -2193,12 +2233,10 @@ function checkListeningAnswer() {
         `;
         feedback.className = "quiz-message incorrect";
         saveSRSWordResult(listeningCurrentWord.word, false);
-        listeningTimer = setTimeout(() => startListeningPractice(), 3500);
     }
 }
 
 function closeListeningPractice() {
-    if (listeningTimer) clearTimeout(listeningTimer);
     document.getElementById('listeningModal').style.display = 'none';
 }
 
