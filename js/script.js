@@ -2169,18 +2169,31 @@ function checkListeningAnswer() {
     const checkBtn = document.getElementById('listeningCheckBtn');
 
     if (checkBtn) checkBtn.style.display = 'none';
+    if (nextBtnContainer) nextBtnContainer.style.display = 'block';
+
+    const wordText = listeningCurrentWord.word;
+    const uzbText = listeningCurrentWord.translation || listeningCurrentWord.Uzb_translate || '';
 
     if (val === target) {
-        feedback.innerText = "To'g'ri! Barakalla! 🎉";
+        feedback.innerHTML = `
+            <div style="font-size: 1.1rem; font-weight: 800; color: #00c853;">To'g'ri! Barakalla! 🎉</div>
+            <div style="margin-top: 6px; font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">
+                ${wordText} <span style="color: var(--text-secondary); font-weight: 500;">— ${uzbText}</span>
+            </div>
+        `;
         feedback.className = "quiz-message correct";
         saveSRSWordResult(listeningCurrentWord.word, true);
-        listeningTimer = setTimeout(() => startListeningPractice(), 1200);
+        listeningTimer = setTimeout(() => startListeningPractice(), 2200);
     } else {
-        feedback.innerHTML = `Noto'g'ri. To'g'ri javob: <strong>"${listeningCurrentWord.word}"</strong>`;
+        feedback.innerHTML = `
+            <div style="font-size: 1.1rem; font-weight: 800; color: #ff5252;">Noto'g'ri ❌</div>
+            <div style="margin-top: 6px; font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">
+                To'g'ri javob: <span style="color: #ff5252;">${wordText}</span> <span style="color: var(--text-secondary); font-weight: 500;">— ${uzbText}</span>
+            </div>
+        `;
         feedback.className = "quiz-message incorrect";
         saveSRSWordResult(listeningCurrentWord.word, false);
-        if (nextBtnContainer) nextBtnContainer.style.display = 'block';
-        listeningTimer = setTimeout(() => startListeningPractice(), 3000);
+        listeningTimer = setTimeout(() => startListeningPractice(), 3500);
     }
 }
 
