@@ -1315,6 +1315,35 @@ function saveIrrError(w) {
     }
 }
 
+function getIrrSelectedVerbs() {
+    return JSON.parse(localStorage.getItem('lugat_irr_selected_verbs') || '[]');
+}
+
+function saveIrrSelectedVerbs(list) {
+    localStorage.setItem('lugat_irr_selected_verbs', JSON.stringify(list));
+    updateIrrCheckedBadge();
+}
+
+function updateIrrCheckedBadge() {
+    const badge = document.getElementById('irrCheckedCount');
+    if (badge) badge.innerText = getIrrSelectedVerbs().length;
+}
+
+function toggleIrrVerbSelection(baseForm, checkboxEl) {
+    let selected = getIrrSelectedVerbs();
+    if (checkboxEl.checked) {
+        if (!selected.includes(baseForm)) selected.push(baseForm);
+    } else {
+        selected = selected.filter(v => v !== baseForm);
+    }
+    saveIrrSelectedVerbs(selected);
+
+    if (currentIrrPattern === 'CHECKED') {
+        const tabEl = document.querySelector('#irrFilterTabs .tab-checked');
+        filterIrrByPattern('CHECKED', tabEl);
+    }
+}
+
 function updateIrrErrorBadge() {
     const badge = document.getElementById('irrErrorCount');
     if (badge) badge.innerText = getIrrErrors().length;
@@ -1328,6 +1357,7 @@ function showIrregularVerbs() {
     filteredIrrList = [...irregularRoyxat];
     document.getElementById('irrCategoryCount').innerText = `${irregularRoyxat.length} words available`;
     updateIrrErrorBadge();
+    updateIrrCheckedBadge();
     renderIrregularWords(filteredIrrList);
     switchIrrMode('table');
     window.scrollTo(0, 0);
@@ -1343,11 +1373,20 @@ function filterIrrByPattern(pattern, btnElement) {
         filteredIrrList = [...irregularRoyxat];
     } else if (pattern === 'ERRORS') {
         filteredIrrList = getIrrErrors();
+    } else if (pattern === 'CHECKED') {
+        const selected = getIrrSelectedVerbs();
+        filteredIrrList = irregularRoyxat.filter(w => selected.includes(w.Base_form));
     } else {
         filteredIrrList = irregularRoyxat.filter(w => getVerbPattern(w) === pattern);
     }
 
-    document.getElementById('irrCategoryCount').innerText = `${filteredIrrList.length} words available (${pattern})`;
+    const labelMap = {
+        'ALL': 'Barchasi',
+        'ERRORS': 'Xatolarim',
+        'CHECKED': 'Tanlanganlarim'
+    };
+    const displayLabel = labelMap[pattern] || pattern;
+    document.getElementById('irrCategoryCount').innerText = `${filteredIrrList.length} words available (${displayLabel})`;
     renderIrregularWords(filteredIrrList);
 
     if (document.getElementById('irregularFlashcardView').style.display !== 'none') {
@@ -1362,11 +1401,17 @@ function renderIrregularWords(words) {
         tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;padding:30px;color:var(--text-secondary);">Birorta fe'l topilmadi</td></tr>`;
         return;
     }
+    const selected = getIrrSelectedVerbs();
+
     tbody.innerHTML = words.map(w => {
         const pat = getVerbPattern(w);
+        const isChecked = selected.includes(w.Base_form);
+        const escapedBase = w.Base_form.replace(/'/g, "\\'");
         return `
             <tr>
-                <td style="text-align: center;"><input type="checkbox" class="irr-checkbox" value="${w.Uzb_translate}"></td>
+                <td style="text-align: center;">
+                    <input type="checkbox" class="irr-checkbox" data-baseform="${w.Base_form}" value="${w.Uzb_translate}" ${isChecked ? 'checked' : ''} onchange="toggleIrrVerbSelection('${escapedBase}', this)">
+                </td>
                 <td>
                     <span class="translation">${w.Uzb_translate}</span>
                     <span class="pattern-badge pattern-${pat}">${pat}</span>
@@ -1403,12 +1448,33 @@ function renderIrregularWords(words) {
     }).join('');
     
     const selectAll = document.getElementById('irrSelectAll');
-    if (selectAll) selectAll.checked = false;
+    if (selectAll) {
+        selectAll.checked = words.length > 0 && words.every(w => selected.includes(w.Base_form));
+    }
 }
 
 function toggleAllIrrCheckboxes(source) {
-    const checkboxes = document.querySelectorAll('.irr-checkbox');
-    checkboxes.forEach(cb => cb.checked = source.checked);
+    const visibleCheckboxes = document.querySelectorAll('.irr-checkbox');
+    let selected = getIrrSelectedVerbs();
+
+    visibleCheckboxes.forEach(cb => {
+        cb.checked = source.checked;
+        const base = cb.getAttribute('data-baseform');
+        if (base) {
+            if (source.checked) {
+                if (!selected.includes(base)) selected.push(base);
+            } else {
+                selected = selected.filter(v => v !== base);
+            }
+        }
+    });
+
+    saveIrrSelectedVerbs(selected);
+
+    if (currentIrrPattern === 'CHECKED') {
+        const tabEl = document.querySelector('#irrFilterTabs .tab-checked');
+        filterIrrByPattern('CHECKED', tabEl);
+    }
 }
 
 function filterIrrWords() {
