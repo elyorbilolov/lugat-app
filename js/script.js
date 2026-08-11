@@ -487,6 +487,8 @@ function showCategory(category) {
     }
     
     document.getElementById('categoryGrid').style.display = 'none';
+    const mainHeader = document.getElementById('mainHeader');
+    if (mainHeader) mainHeader.style.display = 'none';
     document.getElementById('detailView').style.display = 'block';
     document.getElementById('categoryTitle').innerText = category;
     document.getElementById('categoryCount').innerText = `${displayedWords.length} words available`;
@@ -499,6 +501,8 @@ function showGrid() {
     document.getElementById('detailView').style.display = 'none';
     document.getElementById('irregularDetailView').style.display = 'none';
     document.getElementById('categoryGrid').style.display = 'grid';
+    const mainHeader = document.getElementById('mainHeader');
+    if (mainHeader) mainHeader.style.display = 'block';
     document.getElementById('wordSearch').value = '';
     
     const irrSearch = document.getElementById('irrWordSearch');
@@ -1318,6 +1322,8 @@ function updateIrrErrorBadge() {
 
 function showIrregularVerbs() {
     document.getElementById('categoryGrid').style.display = 'none';
+    const mainHeader = document.getElementById('mainHeader');
+    if (mainHeader) mainHeader.style.display = 'none';
     document.getElementById('irregularDetailView').style.display = 'block';
     filteredIrrList = [...irregularRoyxat];
     document.getElementById('irrCategoryCount').innerText = `${irregularRoyxat.length} words available`;
