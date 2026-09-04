@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lugat-cache-v21';
+const CACHE_NAME = 'lugat-cache-v22';
 const ASSETS = [
   './',
   './index.html',
@@ -6,7 +6,9 @@ const ASSETS = [
   './js/script.js',
   './lugat.json',
   './iregular.json',
-  './unit.json'
+  './pre-intermediate-words.json',
+  './intermediate-words.json',
+  './lesson.json'
 ];
 
 // Install Event

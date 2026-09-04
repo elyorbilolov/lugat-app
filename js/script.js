@@ -154,10 +154,12 @@ function normalizeWord(w) {
 // Load JSON data
 Promise.all([
     fetch('lugat.json').then(response => response.json()),
-    fetch('unit.json').then(response => response.json()).catch(() => []),
-    fetch('lesson.json').then(response => response.json()).catch(() => [])
+    fetch('pre-intermediate-words.json').then(response => response.json()).catch(() => []),
+    fetch('intermediate-words.json').then(response => response.json()).catch(() => []),
+    fetch('lesson.json').then(response => response.json()).catch(() => []),
+    fetch('unit.json').then(response => response.json()).catch(() => [])
 ])
-.then(([lugat, units, lessons]) => {
+.then(([lugat, preInterWords, interWords, lessons, legacyUnits]) => {
     lugatData = lugat;
     // Pre-normalize keys and words from lugat.json
     for (let key in lugat) {
@@ -171,7 +173,8 @@ Promise.all([
         ...item,
         Degre: `${item.Degre} (Lessons)`
     }));
-    unitData = [...units, ...mappedLessons];
+    const allUnits = [...preInterWords, ...interWords, ...legacyUnits];
+    unitData = [...allUnits, ...mappedLessons];
     
     // Parse units and lessons
     unitData.forEach(item => {
@@ -218,7 +221,60 @@ function initCards() {
     const existingFav = document.getElementById('favoritesCard');
     if (existingFav) existingFav.remove();
 
-    // Add Favorites card if there are favorites
+    // Remove existing degree cards if they exist
+    grid.querySelectorAll('.degree-card').forEach(c => c.remove());
+
+    // Dynamically add Degree cards (e.g. Pre-Intermediate, Intermediate)
+    const degreeOrder = ['Pre-Intermediate', 'Intermediate', 'Pre-Intermediate (Lessons)'];
+    const uniqueDegrees = [...new Set(unitData.map(item => item.Degre))].sort((a, b) => {
+        const aIndex = degreeOrder.indexOf(a);
+        const bIndex = degreeOrder.indexOf(b);
+        if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+        if (aIndex !== -1) return -1;
+        if (bIndex !== -1) return 1;
+        return a.localeCompare(b);
+    });
+
+    [...uniqueDegrees].reverse().forEach(degree => {
+        const degCard = document.createElement('div');
+        degCard.className = 'card degree-card';
+        
+        const isLessons = degree.includes('Lessons');
+        let borderCol = '#9c27b0';
+        let hueValue = '90deg';
+
+        if (isLessons) {
+            borderCol = '#00bcd4';
+            hueValue = '180deg';
+        } else if (degree === 'Intermediate') {
+            borderCol = '#4caf50';
+            hueValue = '240deg';
+        } else if (degree === 'Pre-Intermediate') {
+            borderCol = '#9c27b0';
+            hueValue = '90deg';
+        }
+
+        const degreeWordsCount = unitData.filter(item => item.Degre === degree).length;
+        const typeLabel = isLessons ? 'Lessons' : 'Units';
+        
+        degCard.style.borderColor = borderCol;
+        degCard.innerHTML = `
+            <div class="card-content">
+                <h2 class="card-title">${degree}</h2>
+                <p class="card-subtitle">${degreeWordsCount} words • ${typeLabel}</p>
+                <div class="progress-bar" style="display: none"><div class="progress" style="width: 0%;"></div></div>
+            </div>
+            <div class="card-illustration"><img src="assets/task1.png" alt="${degree}" style="opacity: 0.15; filter: hue-rotate(${hueValue});"></div>
+        `;
+        
+        degCard.addEventListener('click', () => {
+            showDegreeUnits(degree);
+        });
+        
+        grid.prepend(degCard);
+    });
+
+    // Add Favorites card if there are favorites (always at the very top)
     if (favorites.length > 0) {
         const favCard = document.createElement('div');
         favCard.className = 'card';
@@ -235,37 +291,6 @@ function initCards() {
         favCard.addEventListener('click', () => showCategory('Favorites'));
         grid.prepend(favCard);
     }
-
-    // Remove existing degree cards if they exist
-    grid.querySelectorAll('.degree-card').forEach(c => c.remove());
-
-    // Dynamically add Degree cards (e.g. Pre-Intermediate)
-    const uniqueDegrees = [...new Set(unitData.map(item => item.Degre))];
-    uniqueDegrees.forEach(degree => {
-        const degCard = document.createElement('div');
-        degCard.className = 'card degree-card';
-        
-        const isLessons = degree.includes('Lessons');
-        degCard.style.borderColor = isLessons ? '#00bcd4' : '#9c27b0'; // Teal for lessons, purple for units
-        const degreeWordsCount = unitData.filter(item => item.Degre === degree).length;
-        const typeLabel = isLessons ? 'Lessons' : 'Units';
-        const hueValue = isLessons ? '180deg' : '90deg';
-        
-        degCard.innerHTML = `
-            <div class="card-content">
-                <h2 class="card-title">${degree}</h2>
-                <p class="card-subtitle">${degreeWordsCount} words • ${typeLabel}</p>
-                <div class="progress-bar" style="display: none"><div class="progress" style="width: 0%;"></div></div>
-            </div>
-            <div class="card-illustration"><img src="assets/task1.png" alt="${degree}" style="opacity: 0.15; filter: hue-rotate(${hueValue});"></div>
-        `;
-        
-        degCard.addEventListener('click', () => {
-            showDegreeUnits(degree);
-        });
-        
-        grid.prepend(degCard);
-    });
 
     cards.forEach(card => {
         const title = card.querySelector('.card-title').innerText.trim();
@@ -377,8 +402,19 @@ function showDegreeUnits(degree) {
     grid.appendChild(backCard);
     
     const isLessons = degree.includes('Lessons');
-    const borderCol = isLessons ? '#00bcd4' : '#9c27b0';
-    const hueVal = isLessons ? '180deg' : '90deg';
+    let borderCol = '#9c27b0';
+    let hueVal = '90deg';
+
+    if (isLessons) {
+        borderCol = '#00bcd4';
+        hueVal = '180deg';
+    } else if (degree === 'Intermediate') {
+        borderCol = '#4caf50';
+        hueVal = '240deg';
+    } else if (degree === 'Pre-Intermediate') {
+        borderCol = '#9c27b0';
+        hueVal = '90deg';
+    }
 
     // Create a card for each unit
     degreeUnits.forEach(unit => {
