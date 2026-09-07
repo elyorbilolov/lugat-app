@@ -539,6 +539,8 @@ function showGrid() {
     document.getElementById('categoryGrid').style.display = 'grid';
     const mainHeader = document.getElementById('mainHeader');
     if (mainHeader) mainHeader.style.display = 'block';
+    const topBar = document.querySelector('.top-bar');
+    if (topBar) topBar.style.display = 'flex';
     document.getElementById('wordSearch').value = '';
     
     const irrSearch = document.getElementById('irrWordSearch');
@@ -707,6 +709,10 @@ function startPractice() {
     quizCorrect = 0;
     quizIncorrectWords = 0;
     
+    // Hide top bar on mobile/desktop for full vertical screen
+    const topBar = document.querySelector('.top-bar');
+    if (topBar) topBar.style.display = 'none';
+
     document.getElementById('detailView').style.display = 'none';
     document.getElementById('quizView').style.display = 'block';
     document.getElementById('quizResult').style.display = 'none';
@@ -739,6 +745,10 @@ function startQuiz() {
     quizIncorrectWords = 0;
     quizTimeLeft = 60; // Reset to 1 minute
     
+    // Hide top bar during quiz
+    const topBar = document.querySelector('.top-bar');
+    if (topBar) topBar.style.display = 'none';
+
     document.getElementById('detailView').style.display = 'none';
     document.getElementById('quizView').style.display = 'block';
     document.getElementById('quizResult').style.display = 'none';
@@ -773,6 +783,11 @@ function exitQuiz() {
         btn.querySelector('span').innerText = 'Robot';
     }
     if (robotTimeout) clearTimeout(robotTimeout);
+
+    // Restore top bar
+    const topBar = document.querySelector('.top-bar');
+    if (topBar) topBar.style.display = 'flex';
+
     document.getElementById('quizView').style.display = 'none';
     document.getElementById('detailView').style.display = 'block';
 }
@@ -841,9 +856,9 @@ function renderQuizWord() {
 
     // Dynamic sizing preset for compact responsive display
     inputsContainer.className = 'letter-inputs';
-    if (maxWordLen >= 12) {
+    if (maxWordLen >= 11) {
         inputsContainer.classList.add('size-xs');
-    } else if (maxWordLen >= 9) {
+    } else if (maxWordLen >= 8) {
         inputsContainer.classList.add('size-sm');
     } else if (maxWordLen >= 6) {
         inputsContainer.classList.add('size-md');
@@ -932,6 +947,11 @@ function handleKeydown(e, globalIndex) {
 }
 
 function checkWordComplete(targetWord) {
+    // Dismiss mobile on-screen keyboard so feedback and entire card are clearly visible
+    if (document.activeElement && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+    }
+
     const allInputs = Array.from(document.querySelectorAll('.letter-box'));
     let errorsInThisWord = 0;
     
@@ -948,17 +968,35 @@ function checkWordComplete(targetWord) {
         }
     });
 
-    let displayDelay = 400; // Default 0.4s for correct answers
+    let displayDelay = 600; // 0.6s for correct answers
+    const msgEl = document.getElementById('quizMessage');
 
     if (errorsInThisWord === 0) {
         quizCorrect++;
-        document.getElementById('quizMessage').innerText = 'Correct! ✨';
-        document.getElementById('quizMessage').style.color = '#00c853';
+        if (msgEl) {
+            msgEl.innerHTML = `
+                <div class="feedback-badge correct">
+                    <span>Barakalla! To'g'ri 🎉</span>
+                </div>
+            `;
+        }
     } else {
         quizIncorrectWords++;
-        document.getElementById('quizMessage').innerHTML = `Incorrect! ❌ <div class="correct-answer">Correct: ${targetWord}</div>`;
-        document.getElementById('quizMessage').style.color = '#ff5252';
-        displayDelay = 1500; // Give 1.5s to read the correct answer on error
+        if (msgEl) {
+            msgEl.innerHTML = `
+                <div class="feedback-badge incorrect">
+                    <div class="feedback-header-row">
+                        <span>❌ Noto'g'ri!</span>
+                    </div>
+                    <div class="feedback-correct-box">
+                        <span class="feedback-label">To'g'risi:</span>
+                        <span class="feedback-correct-word">${targetWord}</span>
+                    </div>
+                </div>
+            `;
+        }
+        speakWord(targetWord);
+        displayDelay = 2200; // Give 2.2s to read the correct answer on error
 
         // If practice mode, add the word to the end of the queue
         if (quizMode === 'practice') {
@@ -981,6 +1019,11 @@ function checkWordComplete(targetWord) {
 
 function showResult() {
     stopTimer();
+
+    // Restore top bar on result screen
+    const topBar = document.querySelector('.top-bar');
+    if (topBar) topBar.style.display = 'flex';
+
     document.querySelector('.quiz-body').style.display = 'none';
     document.getElementById('quizResult').style.display = 'block';
     

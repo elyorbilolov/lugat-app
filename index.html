@@ -775,41 +775,42 @@
 
         <div id="detailView" class="detail-view">
             <div class="detail-header">
-                <button class="back-btn" onclick="showGrid()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-                    Back to Categories
-                </button>
-                <div class="search-container">
-                    <input type="text" id="wordSearch" class="search-input" placeholder="Search words..." oninput="filterWords()">
-                    <button class="clear-btn" onclick="clearSearch('wordSearch')" id="clearWordSearch">✕</button>
+                <div class="detail-nav-row">
+                    <button class="back-btn" onclick="showGrid()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        <span>Orqaga</span>
+                    </button>
+                    <div class="search-container detail-search">
+                        <input type="text" id="wordSearch" class="search-input" placeholder="So'zlarni qidirish..." oninput="filterWords()">
+                        <button class="clear-btn" onclick="clearSearch('wordSearch')" id="clearWordSearch">✕</button>
+                    </div>
                 </div>
-                <button class="start-practice-btn" onclick="startPractice()" title="Practice without time limit">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                    Start Practice
-                </button>
-                <button class="start-quiz-btn" onclick="startQuiz()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                    Start Quiz
-                </button>
-                <button class="start-quiz-btn" onclick="startCategoryChallenge()" style="background: #ff5252; box-shadow: 0 4px 12px rgba(255, 82, 82, 0.2);">
-                    ⚡ 1-Min Challenge
-                </button>
-                <button class="start-practice-btn" onclick="startMatchingGame()" style="background: #9c27b0; box-shadow: 0 4px 12px rgba(156, 39, 176, 0.2);">
-                    🧩 Juftini Top
-                </button>
-                <button class="start-practice-btn" onclick="startListeningPractice()" style="background: #00bcd4; box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);">
-                    🎧 Eshitib Yozish
-                </button>
-                <button class="start-practice-btn" onclick="startSpeechPractice()" style="background: #e91e63; box-shadow: 0 4px 12px rgba(233, 30, 99, 0.2);">
-                    🎤 Talaffuz
-                </button>
-                <button class="start-practice-btn" onclick="startCategoryPractice()" style="background: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.2);" title="Untimed multiple choice practice">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                    Practice Game
-                </button>
+                <div class="detail-modes-scroll">
+                    <button class="mode-chip chip-practice" onclick="startPractice()" title="So'z yozish mashqi">
+                        ✍️ Start Practice
+                    </button>
+                    <button class="mode-chip chip-quiz" onclick="startQuiz()" title="1 daqiqali test">
+                        ⏱️ Start Quiz
+                    </button>
+                    <button class="mode-chip chip-challenge" onclick="startCategoryChallenge()" title="1 daqiqalik chaqiruv">
+                        ⚡ 1-Min Challenge
+                    </button>
+                    <button class="mode-chip chip-matching" onclick="startMatchingGame()" title="Juftini top">
+                        🧩 Juftini Top
+                    </button>
+                    <button class="mode-chip chip-listening" onclick="startListeningPractice()" title="Eshitib yozish">
+                        🎧 Eshitib Yozish
+                    </button>
+                    <button class="mode-chip chip-speech" onclick="startSpeechPractice()" title="Talaffuz mashqi">
+                        🎤 Talaffuz
+                    </button>
+                    <button class="mode-chip chip-game" onclick="startCategoryPractice()" title="Variantli test">
+                        🎮 Practice Game
+                    </button>
+                </div>
             </div>
             
-            <header>
+            <header class="detail-title-header">
                 <h1 id="categoryTitle">Category Name</h1>
                 <p id="categoryCount">0 words available</p>
             </header>
@@ -885,13 +886,15 @@
         
         <div id="irregularDetailView" class="detail-view" style="display: none;">
             <div class="detail-header">
-                <button class="back-btn" onclick="showGrid()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-                    Back to Categories
-                </button>
-                <div class="search-container">
-                    <input type="text" id="irrWordSearch" class="search-input" placeholder="Search words..." oninput="filterIrrWords()">
-                    <button class="clear-btn" onclick="clearIrrSearch()" id="clearIrrSearch">✕</button>
+                <div class="detail-nav-row">
+                    <button class="back-btn" onclick="showGrid()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        <span>Orqaga</span>
+                    </button>
+                    <div class="search-container detail-search">
+                        <input type="text" id="irrWordSearch" class="search-input" placeholder="Qidirish..." oninput="filterIrrWords()">
+                        <button class="clear-btn" onclick="clearIrrSearch()" id="clearIrrSearch">✕</button>
+                    </div>
                 </div>
             </div>
             
