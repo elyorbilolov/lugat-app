@@ -712,8 +712,13 @@ function startPractice() {
     document.getElementById('quizResult').style.display = 'none';
     document.querySelector('.quiz-body').style.display = 'block';
     
-    // Hide timer for practice mode
+    // Hide timer for practice mode & show practice pill
     document.querySelector('.quiz-timer').style.display = 'none';
+    const pill = document.getElementById('quizModePill');
+    if (pill) pill.style.display = 'inline-flex';
+    
+    const pb = document.getElementById('quizProgressBarFill');
+    if (pb) pb.style.width = '0%';
     
     document.getElementById('totalQuestionsNum').innerText = quizWords.length;
     
@@ -739,13 +744,24 @@ function startQuiz() {
     document.getElementById('quizResult').style.display = 'none';
     document.querySelector('.quiz-body').style.display = 'block';
     
-    // Show timer for quiz mode
+    // Show timer for quiz mode & hide practice pill
     document.querySelector('.quiz-timer').style.display = 'flex';
+    const pill = document.getElementById('quizModePill');
+    if (pill) pill.style.display = 'none';
+    
+    const pb = document.getElementById('quizProgressBarFill');
+    if (pb) pb.style.width = '0%';
     
     document.getElementById('totalQuestionsNum').innerText = quizWords.length;
     
     startTimer();
     renderQuizWord();
+}
+
+function speakCurrentQuizWord() {
+    if (quizWords && quizWords[quizCurrentIndex]) {
+        speakWord(quizWords[quizCurrentIndex].word);
+    }
 }
 
 function exitQuiz() {
@@ -809,18 +825,35 @@ function renderQuizWord() {
     document.getElementById('quizUzbekWord').innerText = wordObj.translation;
     document.getElementById('quizMessage').innerText = '';
     
+    // Update progress bar
+    const pb = document.getElementById('quizProgressBarFill');
+    if (pb && quizWords.length > 0) {
+        const pct = Math.round((quizCurrentIndex / quizWords.length) * 100);
+        pb.style.width = `${pct}%`;
+    }
+
     const targetWord = wordObj.word.trim();
     const inputsContainer = document.getElementById('letterInputs');
     inputsContainer.innerHTML = '';
     
     const words = targetWord.split(' ');
+    const maxWordLen = Math.max(...words.map(w => w.length));
+
+    // Dynamic sizing preset for compact responsive display
+    inputsContainer.className = 'letter-inputs';
+    if (maxWordLen >= 12) {
+        inputsContainer.classList.add('size-xs');
+    } else if (maxWordLen >= 9) {
+        inputsContainer.classList.add('size-sm');
+    } else if (maxWordLen >= 6) {
+        inputsContainer.classList.add('size-md');
+    } else {
+        inputsContainer.classList.add('size-lg');
+    }
     
     words.forEach((word, wordIdx) => {
         const wordGroup = document.createElement('div');
         wordGroup.className = 'word-group';
-        wordGroup.style.display = 'flex';
-        wordGroup.style.gap = '8px';
-        wordGroup.style.margin = '0 10px 10px 0';
         
         for (let i = 0; i < word.length; i++) {
             const char = word[i];
@@ -834,6 +867,10 @@ function renderQuizWord() {
                 input.type = 'text';
                 input.maxLength = 1;
                 input.className = 'letter-box';
+                input.autocomplete = 'off';
+                input.autocapitalize = 'none';
+                input.spellcheck = false;
+                input.setAttribute('autocorrect', 'off');
                 const globalIndex = words.slice(0, wordIdx).join(' ').length + (wordIdx > 0 ? 1 : 0) + i;
                 input.dataset.index = globalIndex;
                 
@@ -863,9 +900,14 @@ function renderQuizWord() {
 
 function handleLetterInput(e, targetWord) {
     const input = e.target;
-    const val = input.value.toLowerCase();
+    let val = input.value;
     
-    if (val === '') return;
+    if (!val) return;
+
+    if (val.length > 1) {
+        val = val.slice(-1);
+        input.value = val;
+    }
 
     const allInputs = Array.from(document.querySelectorAll('.letter-box'));
     const currIdx = allInputs.indexOf(input);
@@ -884,6 +926,7 @@ function handleKeydown(e, globalIndex) {
         const currIdx = allInputs.indexOf(e.target);
         if (currIdx > 0) {
             allInputs[currIdx - 1].focus();
+            allInputs[currIdx - 1].value = '';
         }
     }
 }

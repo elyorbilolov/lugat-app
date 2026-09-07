@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lugat-cache-v23';
+const CACHE_NAME = 'lugat-cache-v24';
 const ASSETS = [
   './',
   './index.html',
