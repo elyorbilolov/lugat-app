@@ -898,7 +898,7 @@
                 </div>
             </div>
             
-            <header style="margin-bottom: 15px;">
+            <header class="detail-title-header" style="margin-bottom: 8px;">
                 <h1>Irregular Verbs</h1>
                 <p id="irrCategoryCount">0 words available</p>
             </header>
@@ -944,15 +944,21 @@
                 <table class="word-table irr-word-table">
                     <thead>
                         <tr>
-                            <th class="th-check-trans">
+                            <th class="th-irr-trans">
                                 <div class="th-check-wrap">
-                                    <input type="checkbox" id="irrSelectAll" onclick="toggleAllIrrCheckboxes(this)">
-                                    <span>Translation</span>
+                                    <input type="checkbox" id="irrSelectAll" onclick="toggleAllIrrCheckboxes(this)" title="Barchasini tanlash">
+                                    <span>O'zbekcha</span>
                                 </div>
                             </th>
-                            <th>Base form (V1)</th>
-                            <th>Past tense (V2)</th>
-                            <th>Past participle (V3)</th>
+                            <th class="th-irr-v1">
+                                <span class="form-tag tag-v1">V1</span> Base
+                            </th>
+                            <th class="th-irr-v2">
+                                <span class="form-tag tag-v2">V2</span> Past
+                            </th>
+                            <th class="th-irr-v3">
+                                <span class="form-tag tag-v3">V3</span> P.Part
+                            </th>
                         </tr>
                     </thead>
                     <tbody id="irrWordListBody">

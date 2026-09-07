@@ -1529,43 +1529,45 @@ function renderIrregularWords(words) {
         const pat = getVerbPattern(w);
         const isChecked = selected.includes(w.Base_form);
         const escapedBase = w.Base_form.replace(/'/g, "\\'");
+        const escapedV2 = (w.Past_tense_V2 || '').replace(/'/g, "\\'");
+        const escapedV3 = (w.Past_participle_V3 || '').replace(/'/g, "\\'");
+
         return `
             <tr class="irr-table-row">
-                <td class="irr-header-cell">
-                    <label class="irr-check-wrap">
+                <td class="irr-col-trans">
+                    <div class="irr-trans-wrap">
                         <input type="checkbox" class="irr-checkbox" data-baseform="${w.Base_form}" value="${w.Uzb_translate}" ${isChecked ? 'checked' : ''} onchange="toggleIrrVerbSelection('${escapedBase}', this)">
-                        <span class="translation">${w.Uzb_translate}</span>
-                    </label>
-                    <span class="pattern-badge pattern-${pat}">${pat}</span>
-                </td>
-                <td class="irr-verb-cell cell-v1">
-                    <div class="irr-verb-card">
-                        <div class="irr-card-header">
-                            <span class="form-tag tag-v1">V1</span>
-                            <button class="irr-audio-btn" onclick="speakIrrWord('${w.Base_form}', event)" title="Talaffuz">🔊</button>
+                        <div class="irr-trans-text-wrap">
+                            <span class="translation">${w.Uzb_translate}</span>
+                            <span class="pattern-badge pattern-${pat}">${pat}</span>
                         </div>
-                        <div class="irr-card-word">${w.Base_form}</div>
-                        <div class="irr-card-trans">${w.Base_form_read}</div>
                     </div>
                 </td>
-                <td class="irr-verb-cell cell-v2">
-                    <div class="irr-verb-card">
-                        <div class="irr-card-header">
-                            <span class="form-tag tag-v2">V2</span>
-                            <button class="irr-audio-btn" onclick="speakIrrWord('${w.Past_tense_V2}', event)" title="Talaffuz">🔊</button>
+                <td class="irr-col-verb irr-col-v1" onclick="speakIrrWord('${escapedBase}', event)">
+                    <div class="irr-verb-inline">
+                        <span class="word-text">${w.Base_form}</span>
+                        <div class="irr-sub-row">
+                            <span class="transcription">${w.Base_form_read || ''}</span>
+                            <button class="irr-audio-btn" onclick="speakIrrWord('${escapedBase}', event)" title="Eshiting">🔊</button>
                         </div>
-                        <div class="irr-card-word">${w.Past_tense_V2}</div>
-                        <div class="irr-card-trans">${w.Past_tense_V2_read}</div>
                     </div>
                 </td>
-                <td class="irr-verb-cell cell-v3">
-                    <div class="irr-verb-card">
-                        <div class="irr-card-header">
-                            <span class="form-tag tag-v3">V3</span>
-                            <button class="irr-audio-btn" onclick="speakIrrWord('${w.Past_participle_V3}', event)" title="Talaffuz">🔊</button>
+                <td class="irr-col-verb irr-col-v2" onclick="speakIrrWord('${escapedV2}', event)">
+                    <div class="irr-verb-inline">
+                        <span class="word-text">${w.Past_tense_V2}</span>
+                        <div class="irr-sub-row">
+                            <span class="transcription">${w.Past_tense_V2_read || ''}</span>
+                            <button class="irr-audio-btn" onclick="speakIrrWord('${escapedV2}', event)" title="Eshiting">🔊</button>
                         </div>
-                        <div class="irr-card-word">${w.Past_participle_V3}</div>
-                        <div class="irr-card-trans">${w.Past_participle_V3_read}</div>
+                    </div>
+                </td>
+                <td class="irr-col-verb irr-col-v3" onclick="speakIrrWord('${escapedV3}', event)">
+                    <div class="irr-verb-inline">
+                        <span class="word-text">${w.Past_participle_V3}</span>
+                        <div class="irr-sub-row">
+                            <span class="transcription">${w.Past_participle_V3_read || ''}</span>
+                            <button class="irr-audio-btn" onclick="speakIrrWord('${escapedV3}', event)" title="Eshiting">🔊</button>
+                        </div>
                     </div>
                 </td>
             </tr>
