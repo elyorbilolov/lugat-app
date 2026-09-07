@@ -982,20 +982,21 @@ function checkWordComplete(targetWord) {
         }
     } else {
         quizIncorrectWords++;
+        const escapedTarget = targetWord.replace(/'/g, "\\'");
         if (msgEl) {
             msgEl.innerHTML = `
                 <div class="feedback-badge incorrect">
                     <div class="feedback-header-row">
                         <span>❌ Noto'g'ri!</span>
                     </div>
-                    <div class="feedback-correct-box">
+                    <div class="feedback-correct-box" onclick="speakWord('${escapedTarget}')" title="Eshitish uchun bosing">
                         <span class="feedback-label">To'g'risi:</span>
                         <span class="feedback-correct-word">${targetWord}</span>
+                        <span class="feedback-audio-btn">🔊</span>
                     </div>
                 </div>
             `;
         }
-        speakWord(targetWord);
         displayDelay = 2200; // Give 2.2s to read the correct answer on error
 
         // If practice mode, add the word to the end of the queue

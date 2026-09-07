@@ -953,13 +953,34 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
     background: var(--card-bg);
     padding: 5px 14px;
     border-radius: 8px;
     border: 1px solid rgba(255, 82, 82, 0.3);
     width: fit-content;
     max-width: 100%;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.feedback-correct-box:hover {
+    background: rgba(255, 82, 82, 0.08);
+}
+
+.feedback-correct-box:active {
+    transform: scale(0.96);
+}
+
+.feedback-audio-btn {
+    font-size: 0.85rem;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: rgba(24, 119, 242, 0.08);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feedback-label {
