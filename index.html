@@ -940,12 +940,16 @@
             </div>
 
             <!-- Table View -->
-            <div class="word-table-container" id="irrTableView">
-                <table class="word-table">
+            <div class="word-table-container irr-table-container" id="irrTableView">
+                <table class="word-table irr-word-table">
                     <thead>
                         <tr>
-                            <th style="width: 40px; text-align: center;"><input type="checkbox" id="irrSelectAll" onclick="toggleAllIrrCheckboxes(this)"></th>
-                            <th>Translation</th>
+                            <th class="th-check-trans">
+                                <div class="th-check-wrap">
+                                    <input type="checkbox" id="irrSelectAll" onclick="toggleAllIrrCheckboxes(this)">
+                                    <span>Translation</span>
+                                </div>
+                            </th>
                             <th>Base form (V1)</th>
                             <th>Past tense (V2)</th>
                             <th>Past participle (V3)</th>
