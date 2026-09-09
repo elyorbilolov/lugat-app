@@ -424,14 +424,52 @@ header p {
     background: var(--card-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .word-table {
-    width: auto;
+    width: 100%;
     min-width: 100%;
     border-collapse: collapse;
     text-align: left;
+}
+
+.word-cell-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.word-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    flex-shrink: 0;
+}
+
+.icon-btn-small {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.icon-btn-small:hover {
+    background: rgba(24, 119, 242, 0.1);
+    color: var(--accent);
+}
+
+.favorite-btn.active {
+    color: #ff9800;
 }
 
 .word-table th {
@@ -503,10 +541,73 @@ header p {
         padding: 0;
     }
 
-    /* Hide transcription instead of word on small screens for better UX in standard categories */
+    /* Ensure all 4 columns (Learned, Translation, Word, Transcription) fit cleanly on mobile */
+    #detailView .word-table {
+        table-layout: auto;
+        width: 100%;
+    }
+
+    #detailView .word-table th,
+    #detailView .word-table td {
+        padding: 7px 3px;
+        font-size: 0.78rem;
+    }
+
+    #detailView .word-table th:nth-child(1),
+    #detailView .word-table td:nth-child(1) {
+        width: 26px;
+        padding: 7px 1px;
+        text-align: center;
+    }
+
+    #detailView .word-table th:nth-child(2),
+    #detailView .word-table td:nth-child(2) {
+        word-break: break-word;
+        max-width: 110px;
+    }
+
+    #detailView .word-table th:nth-child(3),
+    #detailView .word-table td:nth-child(3) {
+        word-break: break-word;
+        max-width: 125px;
+    }
+
     #detailView .word-table th:nth-child(4),
     #detailView .word-table td:nth-child(4) {
-        display: none;
+        word-break: break-word;
+        max-width: 95px;
+    }
+
+    .translation {
+        font-size: 0.82rem;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    .word-text {
+        font-size: 0.86rem;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    .transcription {
+        font-size: 0.72rem;
+        color: var(--text-secondary);
+        font-family: 'Inter', monospace;
+        line-height: 1.2;
+    }
+
+    .word-actions {
+        gap: 1px;
+    }
+
+    .icon-btn-small {
+        padding: 2px;
+    }
+
+    .icon-btn-small svg {
+        width: 13px;
+        height: 13px;
     }
 
     .detail-header {

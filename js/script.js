@@ -587,14 +587,16 @@ function renderWords(words) {
                 </td>
                 <td><span class="translation">${w.translation}</span></td>
                 <td>
-                    <div style="display: flex; align-items: center; gap: 10px;">
+                    <div class="word-cell-wrap">
                         <span class="word-text">${w.word}</span>
-                        <button class="icon-btn-small" onclick="speakWord('${escapedWord}')" title="Pronounce">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-                        </button>
-                        <button class="icon-btn-small favorite-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${escapedWord}', this)" title="Add to Favorites">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="${isFav ? 'var(--accent)' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                        </button>
+                        <div class="word-actions">
+                            <button class="icon-btn-small" onclick="speakWord('${escapedWord}')" title="Pronounce">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                            </button>
+                            <button class="icon-btn-small favorite-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${escapedWord}', this)" title="Add to Favorites">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="${isFav ? 'var(--accent)' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            </button>
+                        </div>
                     </div>
                 </td>
                 <td><span class="transcription">${w.transcription}</span></td>
