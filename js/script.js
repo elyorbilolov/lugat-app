@@ -970,21 +970,31 @@ function checkWordComplete(targetWord) {
         }
     });
 
-    let displayDelay = 600; // 0.6s for correct answers
     const msgEl = document.getElementById('quizMessage');
+    const wordObj = quizWords[quizCurrentIndex];
+    let transcription = (wordObj && wordObj.transcription) ? wordObj.transcription.trim() : '';
+    if (transcription && !transcription.startsWith('/') && !transcription.startsWith('[')) {
+        transcription = `/${transcription}/`;
+    }
+    const escapedTarget = targetWord.replace(/'/g, "\\'");
+    let displayDelay = 600;
 
     if (errorsInThisWord === 0) {
         quizCorrect++;
         if (msgEl) {
             msgEl.innerHTML = `
-                <div class="feedback-badge correct">
-                    <span>Barakalla! To'g'ri 🎉</span>
+                <div class="feedback-badge correct" onclick="speakWord('${escapedTarget}')" title="Eshitish uchun bosing">
+                    <div class="feedback-correct-row">
+                        <span>Barakalla! To'g'ri 🎉</span>
+                        ${transcription ? `<span class="feedback-transcription">${transcription}</span>` : ''}
+                        <span class="feedback-audio-btn">🔊</span>
+                    </div>
                 </div>
             `;
         }
+        displayDelay = (quizMode === 'practice') ? 1300 : 750;
     } else {
         quizIncorrectWords++;
-        const escapedTarget = targetWord.replace(/'/g, "\\'");
         if (msgEl) {
             msgEl.innerHTML = `
                 <div class="feedback-badge incorrect">
@@ -994,6 +1004,7 @@ function checkWordComplete(targetWord) {
                     <div class="feedback-correct-box" onclick="speakWord('${escapedTarget}')" title="Eshitish uchun bosing">
                         <span class="feedback-label">To'g'risi:</span>
                         <span class="feedback-correct-word">${targetWord}</span>
+                        ${transcription ? `<span class="feedback-transcription">${transcription}</span>` : ''}
                         <span class="feedback-audio-btn">🔊</span>
                     </div>
                 </div>
