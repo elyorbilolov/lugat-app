@@ -411,5 +411,474 @@
     "Eng": "Transport",
     "Uzb": "Tashimoq",
     "Transcription": "ˈtrænspɔːrt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Appear",
+    "Uzb": "Paydo bo'lmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Be stuck",
+    "Uzb": "Tiqilib qolmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Believe",
+    "Uzb": "Ishonmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Breath",
+    "Uzb": "Nafas",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Cable car",
+    "Uzb": "Funikulyor",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Create",
+    "Uzb": "Yaratmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Disappear",
+    "Uzb": "G'oyib bo'lmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Escape",
+    "Uzb": "Qochish",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Expect",
+    "Uzb": "Kutmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Free",
+    "Uzb": "Bo'shatmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Knock into",
+    "Uzb": "Urilish",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Medical",
+    "Uzb": "Tibbiy",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Ordinary",
+    "Uzb": "Oddiy",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Realise",
+    "Uzb": "Anglab yetmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Recognize",
+    "Uzb": "Tanimoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Remember",
+    "Uzb": "Eslamoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Remind",
+    "Uzb": "Eslatmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Scream",
+    "Uzb": "Baqirmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Stream",
+    "Uzb": "Oqim (Anhor)",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Surface",
+    "Uzb": "Yuza",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Survive",
+    "Uzb": "Tirik qolmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Turn around",
+    "Uzb": "O'girilmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Underwater",
+    "Uzb": "Suv ostida",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Whisper",
+    "Uzb": "Pichirlamoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Announce",
+    "Uzb": "E'lon qilmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Charge",
+    "Uzb": "Zaryadlamoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Attempt",
+    "Uzb": "Urinish",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Circulate",
+    "Uzb": "Tarqalmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Claim",
+    "Uzb": "Da'vo qilmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Evidence",
+    "Uzb": "Isbot",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Fake",
+    "Uzb": "Soxta",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Float",
+    "Uzb": "Qalqib turmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Hoax",
+    "Uzb": "Yolg'on",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Inform",
+    "Uzb": "Xabar bermoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Interview",
+    "Uzb": "Intervyu olmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Invent",
+    "Uzb": "O'ylab topmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Jaw",
+    "Uzb": "Jag'",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Keep quiet",
+    "Uzb": "Jimlik saqlamoq (Sir saqlamoq)",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Keen",
+    "Uzb": "Qiziqqan",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Live",
+    "Uzb": "Jonli",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Mention",
+    "Uzb": "Eslatib o'tish (Aytmoq)",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Report",
+    "Uzb": "Xabar bermoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Sharply",
+    "Uzb": "Keskin",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Skull",
+    "Uzb": "Bosh suyagi",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Sour",
+    "Uzb": "Nordon",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Tell",
+    "Uzb": "Gapirib bermoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Track",
+    "Uzb": "Kuzatmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Waste",
+    "Uzb": "Behuda sarflamoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Responsible",
+    "Uzb": "Javobgar",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Screen",
+    "Uzb": "Ekran",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Watermelon",
+    "Uzb": "Tarvuz",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Coincidence",
+    "Uzb": "Tasodif",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Conclusion",
+    "Uzb": "Xulosa",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Consecutively",
+    "Uzb": "Ketma-ket",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Curiously",
+    "Uzb": "Qizig'i shundaki",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Fortunately",
+    "Uzb": "Xayriyatki",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Hire",
+    "Uzb": "Ishga yollamoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Lose contact",
+    "Uzb": "Aloqani yo'qotmoq",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Luckily",
+    "Uzb": "Yaxshiyamki",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Orchestra",
+    "Uzb": "Orkestr",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Personally",
+    "Uzb": "Shaxsan",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Remarkably",
+    "Uzb": "E'tiborga loyiq tarzda",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Sadly",
+    "Uzb": "Xafa (Afsuski)",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Surprisingly",
+    "Uzb": "Ajablanarli",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "System",
+    "Uzb": "Tizim",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Unfortunately",
+    "Uzb": "Afsuski",
+    "Transcription": ""
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Weak",
+    "Uzb": "Zaif (Achchiq bo'lmagan)",
+    "Transcription": ""
   }
 ]
