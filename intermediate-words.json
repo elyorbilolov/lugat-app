@@ -2,156 +2,30 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Ability",
-    "Uzb": "Qobiliyat",
-    "Transcription": "ə'bɪlɪti"
+    "Eng": "In touch",
+    "Uzb": "Aloqada",
+    "Transcription": "Ɪn təʧ"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Able",
-    "Uzb": "Qodir",
-    "Transcription": "'eɪbəl"
+    "Eng": "Run up",
+    "Uzb": "Arafasida",
+    "Transcription": "rən ʌp"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Achievement",
-    "Uzb": "Yutuq",
-    "Transcription": "ə'ʧivmənt"
+    "Eng": "Media",
+    "Uzb": "Axborot vositalari",
+    "Transcription": "'midiʌ"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Adventure",
-    "Uzb": "Sarguzasht",
-    "Transcription": "æd'vɛnʧər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Bargain",
-    "Uzb": "Savdo kelishuvi (Foydali xarid)",
-    "Transcription": "'bɑrgɪn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Behave",
-    "Uzb": "O'zini tutmoq",
-    "Transcription": "bɪ'heɪv"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Charity",
-    "Uzb": "Xayriya",
-    "Transcription": "'ʧærɪti"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Choice",
-    "Uzb": "Tanlov",
-    "Transcription": "tʃɔɪs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Come face-to-face with",
-    "Uzb": "Yuzma-yuz ko’rishmoq",
-    "Transcription": "kʌm feɪs tuː feɪs wɪð"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Communication",
-    "Uzb": "Muloqot",
-    "Transcription": "kə,mjunə'keɪʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Connect",
-    "Uzb": "Ulanmoq",
-    "Transcription": "kə'nɛkt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Consumer",
-    "Uzb": "Iste'molchi",
-    "Transcription": "kənˈsjuːmər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Convinced",
-    "Uzb": "Ishonch hosil qilgan",
-    "Transcription": "kʌn'vɪnst"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Currently",
-    "Uzb": "Hozirda",
-    "Transcription": "'kɜrəntli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Deal",
-    "Uzb": "Kelishuv",
-    "Transcription": "dil"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Deeply",
-    "Uzb": "Chuqur",
-    "Transcription": "ˈdiːplɪ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Definition",
-    "Uzb": "Ta'rif",
-    "Transcription": ",dɛfə'nɪʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Develop",
-    "Uzb": "Rivojlantirmoq",
-    "Transcription": "dɪ'vɛləp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Digital age",
-    "Uzb": "Raqamli asr",
-    "Transcription": "'dɪdʒɪtəl eɪdʒ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Effect",
-    "Uzb": "Ta'sir",
-    "Transcription": "ɪˈfekt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Fall out",
-    "Uzb": "Urishib qolmoq",
-    "Transcription": "fɔl aʊt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Friendship",
-    "Uzb": "Do'stlik",
-    "Transcription": "'frɛndʃɪp"
+    "Eng": "Membership",
+    "Uzb": "A'zolik",
+    "Transcription": "'membər,ʃɪp"
   },
   {
     "Degre": "Intermediate",
@@ -170,79 +44,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Government",
-    "Uzb": "Hukumat",
-    "Transcription": "ˈɡʌvənmənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Half price",
-    "Uzb": "Yarim narx",
-    "Transcription": "hɑːf praɪs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Harmful",
-    "Uzb": "Zararli",
-    "Transcription": "ˈhɑːmfʊl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Have a lot in common",
-    "Uzb": "Umumiy jihatlari ko'p bo'lmoq",
-    "Transcription": "hæv eɪ lɑt ɪn 'kɑmən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Help out",
-    "Uzb": "Yordamlashish",
-    "Transcription": "hɛlp aʊt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Improvement",
-    "Uzb": "Takomillashtirish",
-    "Transcription": "ɪm'pruvmənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "In touch",
-    "Uzb": "Aloqada",
-    "Transcription": "Ɪn təʧ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Injury",
-    "Uzb": "Jarohat",
-    "Transcription": "'ɪndʒəri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
     "Eng": "Item",
     "Uzb": "Buyum",
     "Transcription": "'aɪtəm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Judgement",
-    "Uzb": "Hukm",
-    "Transcription": "'dʒədʒmənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Lately",
-    "Uzb": "So'nggi paytlarda",
-    "Transcription": "'leɪtli"
   },
   {
     "Degre": "Intermediate",
@@ -254,23 +58,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Media",
-    "Uzb": "Axborot vositalari",
-    "Transcription": "'midiʌ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Meet up",
-    "Uzb": "Uchrashmoq",
-    "Transcription": "miːt ʌp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 1",
-    "Eng": "Membership",
-    "Uzb": "A'zolik",
-    "Transcription": "'membər,ʃɪp"
+    "Eng": "Friendship",
+    "Uzb": "Do'stlik",
+    "Transcription": "'frɛndʃɪp"
   },
   {
     "Degre": "Intermediate",
@@ -282,16 +72,23 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Occasional",
-    "Uzb": "Vaqti-vaqti bilan",
-    "Transcription": "ə'keɪʒənəl"
+    "Eng": "Currently",
+    "Uzb": "Hozirda",
+    "Transcription": "'kɜrəntli"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "On credit",
-    "Uzb": "Kreditga",
-    "Transcription": "Ɑn 'krɛdɪt"
+    "Eng": "Judgement",
+    "Uzb": "Hukm",
+    "Transcription": "'dʒədʒmənt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Government",
+    "Uzb": "Hukumat",
+    "Transcription": "ˈɡʌvənmənt"
   },
   {
     "Degre": "Intermediate",
@@ -303,9 +100,30 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Persuade",
-    "Uzb": "Undamoq",
-    "Transcription": "pər'sweɪd"
+    "Eng": "Prove",
+    "Uzb": "Isbotlamoq",
+    "Transcription": "pruv"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Consumer",
+    "Uzb": "Iste'molchi",
+    "Transcription": "kənˈsjuːmər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Trust",
+    "Uzb": "Ishonmoq",
+    "Transcription": "trʌst"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Convinced",
+    "Uzb": "Ishonch hosil qilgan",
+    "Transcription": "kʌn'vɪnst"
   },
   {
     "Degre": "Intermediate",
@@ -317,16 +135,44 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Prove",
-    "Uzb": "Isbotlamoq",
-    "Transcription": "pruv"
+    "Eng": "Injury",
+    "Uzb": "Jarohat",
+    "Transcription": "'ɪndʒəri"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Purchase",
-    "Uzb": "Xarid",
-    "Transcription": "'pɜrʧəs"
+    "Eng": "Deal",
+    "Uzb": "Kelishuv",
+    "Transcription": "dil"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "On credit",
+    "Uzb": "Kreditga",
+    "Transcription": "Ɑn 'krɛdɪt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Special offer",
+    "Uzb": "Maxsus taklif",
+    "Transcription": "'spɛʃəl 'ɔfər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Communication",
+    "Uzb": "Muloqot",
+    "Transcription": "kə,mjunə'keɪʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Socialise",
+    "Uzb": "Muloqot qilmoq",
+    "Transcription": "'soʊʃə,laɪz"
   },
   {
     "Degre": "Intermediate",
@@ -338,9 +184,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Resource",
-    "Uzb": "Resurs",
-    "Transcription": "'risoʊrs"
+    "Eng": "Trend",
+    "Uzb": "Ommaviylashmoq",
+    "Transcription": "trɛnd"
   },
   {
     "Degre": "Intermediate",
@@ -352,9 +198,149 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Run up",
-    "Uzb": "Arafasida",
-    "Transcription": "rən ʌp"
+    "Eng": "Ability",
+    "Uzb": "Qobiliyat",
+    "Transcription": "ə'bɪlɪti"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Able",
+    "Uzb": "Qodir",
+    "Transcription": "'eɪbəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Digital age",
+    "Uzb": "Raqamli asr",
+    "Transcription": "'dɪdʒɪtəl eɪdʒ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Resource",
+    "Uzb": "Resurs",
+    "Transcription": "'risoʊrs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Develop",
+    "Uzb": "Rivojlantirmoq",
+    "Transcription": "dɪ'vɛləp"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Adventure",
+    "Uzb": "Sarguzasht",
+    "Transcription": "æd'vɛnʧər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Bargain",
+    "Uzb": "Savdo kelishuvi (Foydali xarid)",
+    "Transcription": "'bɑrgɪn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Smartphone",
+    "Uzb": "Smartfon",
+    "Transcription": "ˈsmɑːrtfoʊn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Lately",
+    "Uzb": "So'nggi paytlarda",
+    "Transcription": "'leɪtli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Improvement",
+    "Uzb": "Takomillashtirish",
+    "Transcription": "ɪm'pruvmənt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Choice",
+    "Uzb": "Tanlov",
+    "Transcription": "tʃɔɪs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Transport",
+    "Uzb": "Tashimoq",
+    "Transcription": "ˈtrænspɔːrt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Definition",
+    "Uzb": "Ta'rif",
+    "Transcription": ",dɛfə'nɪʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Effect",
+    "Uzb": "Ta'sir",
+    "Transcription": "ɪˈfekt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Connect",
+    "Uzb": "Ulanmoq",
+    "Transcription": "kə'nɛkt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Have a lot in common",
+    "Uzb": "Umumiy jihatlari ko'p bo'lmoq",
+    "Transcription": "hæv eɪ lɑt ɪn 'kɑmən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Persuade",
+    "Uzb": "Undamoq",
+    "Transcription": "pər'sweɪd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Fall out",
+    "Uzb": "Urishib qolmoq",
+    "Transcription": "fɔl aʊt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Meet up",
+    "Uzb": "Uchrashmoq",
+    "Transcription": "miːt ʌp"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Occasional",
+    "Uzb": "Vaqti-vaqti bilan",
+    "Transcription": "ə'keɪʒənəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Purchase",
+    "Uzb": "Xarid",
+    "Transcription": "'pɜrʧəs"
   },
   {
     "Degre": "Intermediate",
@@ -373,275 +359,72 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Smartphone",
-    "Uzb": "Smartfon",
-    "Transcription": "ˈsmɑːrtfoʊn"
+    "Eng": "Charity",
+    "Uzb": "Xayriya",
+    "Transcription": "'ʧærɪti"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Socialise",
-    "Uzb": "Muloqot qilmoq",
-    "Transcription": "'soʊʃə,laɪz"
+    "Eng": "Half price",
+    "Uzb": "Yarim narx",
+    "Transcription": "hɑːf praɪs"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Special offer",
-    "Uzb": "Maxsus taklif",
-    "Transcription": "'spɛʃəl 'ɔfər"
+    "Eng": "Help out",
+    "Uzb": "Yordamlashish",
+    "Transcription": "hɛlp aʊt"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Transport",
-    "Uzb": "Tashimoq",
-    "Transcription": "ˈtrænspɔːrt"
+    "Eng": "Achievement",
+    "Uzb": "Yutuq",
+    "Transcription": "ə'ʧivmənt"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Trend",
-    "Uzb": "Ommaviylashmoq",
-    "Transcription": "trɛnd"
+    "Eng": "Come face-to-face with",
+    "Uzb": "Yuzma-yuz ko’rishmoq",
+    "Transcription": "kʌm feɪs tuː feɪs wɪð"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 1",
-    "Eng": "Trust",
-    "Uzb": "Ishonmoq",
-    "Transcription": "trʌst"
+    "Eng": "Harmful",
+    "Uzb": "Zararli",
+    "Transcription": "ˈhɑːmfʊl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Behave",
+    "Uzb": "O'zini tutmoq",
+    "Transcription": "bɪ'heɪv"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 1",
+    "Eng": "Deeply",
+    "Uzb": "Chuqur",
+    "Transcription": "ˈdiːplɪ"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Announce",
-    "Uzb": "E'lon qilmoq",
-    "Transcription": "ə'naʊns"
+    "Eng": "Unfortunately",
+    "Uzb": "Afsuski",
+    "Transcription": "ʌn'fɔrtʃənətli"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Appear",
-    "Uzb": "Paydo bo'lmoq",
-    "Transcription": "ə'pɪr"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Attempt",
-    "Uzb": "Urinish",
-    "Transcription": "ə'tɛmpt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Be stuck",
-    "Uzb": "Tiqilib qolmoq",
-    "Transcription": "bi stʌk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Believe",
-    "Uzb": "Ishonmoq",
-    "Transcription": "bɪ'liv"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Breath",
-    "Uzb": "Nafas",
-    "Transcription": "brɛθ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Cable car",
-    "Uzb": "Funikulyor",
-    "Transcription": "'keɪbəl kɑr"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Charge",
-    "Uzb": "Zaryadlamoq",
-    "Transcription": "tʃɑrdʒ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Circulate",
-    "Uzb": "Tarqalmoq",
-    "Transcription": "'sɜrkjə,leɪt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Claim",
-    "Uzb": "Da'vo qilmoq",
-    "Transcription": "kleɪm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Coincidence",
-    "Uzb": "Tasodif",
-    "Transcription": "koʊ'ɪnsɪdəns"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Conclusion",
-    "Uzb": "Xulosa",
-    "Transcription": "kən'kluʒən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Consecutively",
-    "Uzb": "Ketma-ket",
-    "Transcription": "kən'sɛkjətɪvli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Create",
-    "Uzb": "Yaratmoq",
-    "Transcription": "kri'eɪt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Curiously",
-    "Uzb": "Qizig'i shundaki",
-    "Transcription": "'kjʊriəsli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Disappear",
-    "Uzb": "G'oyib bo'lmoq",
-    "Transcription": ",dɪsə'pɪr"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Escape",
-    "Uzb": "Qochish",
-    "Transcription": "ɪ'skeɪp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Evidence",
-    "Uzb": "Isbot",
-    "Transcription": "'ɛvədəns"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Expect",
-    "Uzb": "Kutmoq",
-    "Transcription": "ɪk'spɛkt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Fake",
-    "Uzb": "Soxta",
-    "Transcription": "feɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Float",
-    "Uzb": "Qalqib turmoq",
-    "Transcription": "floʊt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Fortunately",
-    "Uzb": "Xayriyatki",
-    "Transcription": "'fɔrtʃənətli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Free",
-    "Uzb": "Bo'shatmoq",
-    "Transcription": "fri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Hire",
-    "Uzb": "Ishga yollamoq",
-    "Transcription": "'haɪər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Hoax",
-    "Uzb": "Yolg'on",
-    "Transcription": "hoʊks"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Inform",
-    "Uzb": "Xabar bermoq",
-    "Transcription": "ɪn'fɔrm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Interview",
-    "Uzb": "Intervyu olmoq",
-    "Transcription": "'ɪntər,vju"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Invent",
-    "Uzb": "O'ylab topmoq",
-    "Transcription": "ɪn'vɛnt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Jaw",
-    "Uzb": "Jag'",
-    "Transcription": "dʒɔ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Keen",
-    "Uzb": "Qiziqqan",
-    "Transcription": "kin"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Keep quiet",
-    "Uzb": "Jimlik saqlamoq (Sir saqlamoq)",
-    "Transcription": "kip 'kwaɪət"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Knock into",
-    "Uzb": "Urilish",
-    "Transcription": "nɑk 'ɪntu"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Live",
-    "Uzb": "Jonli",
-    "Transcription": "laɪv"
+    "Eng": "Surprisingly",
+    "Uzb": "Ajablanarli",
+    "Transcription": "sər'praɪzɪŋli"
   },
   {
     "Degre": "Intermediate",
@@ -653,100 +436,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Luckily",
-    "Uzb": "Yaxshiyamki",
-    "Transcription": "'lʌkɪli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Medical",
-    "Uzb": "Tibbiy",
-    "Transcription": "'mɛdɪkəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Mention",
-    "Uzb": "Eslatib o'tish (Aytmoq)",
-    "Transcription": "'mɛnʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Orchestra",
-    "Uzb": "Orkestr",
-    "Transcription": "'ɔrkɪstrə"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Ordinary",
-    "Uzb": "Oddiy",
-    "Transcription": "'ɔrdə,nɛri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Personally",
-    "Uzb": "Shaxsan",
-    "Transcription": "'pɜrsənəli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
     "Eng": "Realise",
     "Uzb": "Anglab yetmoq",
     "Transcription": "'riə,laɪz"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Recognize",
-    "Uzb": "Tanimoq",
-    "Transcription": "'rɛkəɡ,naɪz"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Remarkably",
-    "Uzb": "E'tiborga loyiq tarzda",
-    "Transcription": "rɪ'mɑrkəbli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Remember",
-    "Uzb": "Eslamoq",
-    "Transcription": "rɪ'mɛmbər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Remind",
-    "Uzb": "Eslatmoq",
-    "Transcription": "ri'maɪnd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Report",
-    "Uzb": "Xabar bermoq",
-    "Transcription": "rɪ'pɔrt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Responsible",
-    "Uzb": "Javobgar",
-    "Transcription": "rɪ'spɑnsəbəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Sadly",
-    "Uzb": "Xafa (Afsuski)",
-    "Transcription": "'sædli"
   },
   {
     "Degre": "Intermediate",
@@ -758,16 +450,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Screen",
-    "Uzb": "Ekran",
-    "Transcription": "skrin"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 2",
-    "Eng": "Sharply",
-    "Uzb": "Keskin",
-    "Transcription": "'ʃɑrpli"
+    "Eng": "Waste",
+    "Uzb": "Behuda sarflamoq",
+    "Transcription": "weɪst"
   },
   {
     "Degre": "Intermediate",
@@ -779,9 +464,177 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
+    "Eng": "Free",
+    "Uzb": "Bo'shatmoq",
+    "Transcription": "fri"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Claim",
+    "Uzb": "Da'vo qilmoq",
+    "Transcription": "kleɪm"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Screen",
+    "Uzb": "Ekran",
+    "Transcription": "skrin"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Remember",
+    "Uzb": "Eslamoq",
+    "Transcription": "rɪ'mɛmbər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Mention",
+    "Uzb": "Eslatib o'tish (Aytmoq)",
+    "Transcription": "'mɛnʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Remind",
+    "Uzb": "Eslatmoq",
+    "Transcription": "ri'maɪnd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Announce",
+    "Uzb": "E'lon qilmoq",
+    "Transcription": "ə'naʊns"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Remarkably",
+    "Uzb": "E'tiborga loyiq tarzda",
+    "Transcription": "rɪ'mɑrkəbli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Cable car",
+    "Uzb": "Funikulyor",
+    "Transcription": "'keɪbəl kɑr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Tell",
+    "Uzb": "Gapirib bermoq",
+    "Transcription": "tɛl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Interview",
+    "Uzb": "Intervyu olmoq",
+    "Transcription": "'ɪntər,vju"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Evidence",
+    "Uzb": "Isbot",
+    "Transcription": "'ɛvədəns"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Hire",
+    "Uzb": "Ishga yollamoq",
+    "Transcription": "'haɪər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Believe",
+    "Uzb": "Ishonmoq",
+    "Transcription": "bɪ'liv"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Responsible",
+    "Uzb": "Javobgar",
+    "Transcription": "rɪ'spɑnsəbəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Jaw",
+    "Uzb": "Jag'",
+    "Transcription": "dʒɔ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Keep quiet",
+    "Uzb": "Jimlik saqlamoq (Sir saqlamoq)",
+    "Transcription": "kip 'kwaɪət"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Live",
+    "Uzb": "Jonli",
+    "Transcription": "laɪv"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Sharply",
+    "Uzb": "Keskin",
+    "Transcription": "'ʃɑrpli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Consecutively",
+    "Uzb": "Ketma-ket",
+    "Transcription": "kən'sɛkjətɪvli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Expect",
+    "Uzb": "Kutmoq",
+    "Transcription": "ɪk'spɛkt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Track",
+    "Uzb": "Kuzatmoq",
+    "Transcription": "træk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Breath",
+    "Uzb": "Nafas",
+    "Transcription": "brɛθ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
     "Eng": "Sour",
     "Uzb": "Nordon",
     "Transcription": "'saʊər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Ordinary",
+    "Uzb": "Oddiy",
+    "Transcription": "'ɔrdə,nɛri"
   },
   {
     "Degre": "Intermediate",
@@ -793,16 +646,107 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Surface",
-    "Uzb": "Yuza",
-    "Transcription": "'sɜrfəs"
+    "Eng": "Orchestra",
+    "Uzb": "Orkestr",
+    "Transcription": "'ɔrkɪstrə"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Surprisingly",
-    "Uzb": "Ajablanarli",
-    "Transcription": "sər'praɪzɪŋli"
+    "Eng": "Appear",
+    "Uzb": "Paydo bo'lmoq",
+    "Transcription": "ə'pɪr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Whisper",
+    "Uzb": "Pichirlamoq",
+    "Transcription": "'wɪspər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Float",
+    "Uzb": "Qalqib turmoq",
+    "Transcription": "floʊt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Keen",
+    "Uzb": "Qiziqqan",
+    "Transcription": "kin"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Curiously",
+    "Uzb": "Qizig'i shundaki",
+    "Transcription": "'kjʊriəsli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Escape",
+    "Uzb": "Qochish",
+    "Transcription": "ɪ'skeɪp"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Fake",
+    "Uzb": "Soxta",
+    "Transcription": "feɪk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Underwater",
+    "Uzb": "Suv ostida",
+    "Transcription": ",ʌndər'wɔtər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Recognize",
+    "Uzb": "Tanimoq",
+    "Transcription": "'rɛkəɡ,naɪz"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Circulate",
+    "Uzb": "Tarqalmoq",
+    "Transcription": "'sɜrkjə,leɪt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Watermelon",
+    "Uzb": "Tarvuz",
+    "Transcription": "'wɔtər,mɛlən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Coincidence",
+    "Uzb": "Tasodif",
+    "Transcription": "koʊ'ɪnsɪdəns"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Medical",
+    "Uzb": "Tibbiy",
+    "Transcription": "'mɛdɪkəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Be stuck",
+    "Uzb": "Tiqilib qolmoq",
+    "Transcription": "bi stʌk"
   },
   {
     "Degre": "Intermediate",
@@ -821,51 +765,79 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Tell",
-    "Uzb": "Gapirib bermoq",
-    "Transcription": "tɛl"
+    "Eng": "Knock into",
+    "Uzb": "Urilish",
+    "Transcription": "nɑk 'ɪntu"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Track",
-    "Uzb": "Kuzatmoq",
-    "Transcription": "træk"
+    "Eng": "Attempt",
+    "Uzb": "Urinish",
+    "Transcription": "ə'tɛmpt"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Turn around",
-    "Uzb": "O'girilmoq",
-    "Transcription": "tɜrn ə'raʊnd"
+    "Eng": "Inform",
+    "Uzb": "Xabar bermoq",
+    "Transcription": "ɪn'fɔrm"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Underwater",
-    "Uzb": "Suv ostida",
-    "Transcription": ",ʌndər'wɔtər"
+    "Eng": "Report",
+    "Uzb": "Xabar bermoq",
+    "Transcription": "rɪ'pɔrt"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Unfortunately",
-    "Uzb": "Afsuski",
-    "Transcription": "ʌn'fɔrtʃənətli"
+    "Eng": "Sadly",
+    "Uzb": "Xafa (Afsuski)",
+    "Transcription": "'sædli"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Waste",
-    "Uzb": "Behuda sarflamoq",
-    "Transcription": "weɪst"
+    "Eng": "Fortunately",
+    "Uzb": "Xayriyatki",
+    "Transcription": "'fɔrtʃənətli"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Watermelon",
-    "Uzb": "Tarvuz",
-    "Transcription": "'wɔtər,mɛlən"
+    "Eng": "Conclusion",
+    "Uzb": "Xulosa",
+    "Transcription": "kən'kluʒən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Create",
+    "Uzb": "Yaratmoq",
+    "Transcription": "kri'eɪt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Luckily",
+    "Uzb": "Yaxshiyamki",
+    "Transcription": "'lʌkɪli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Hoax",
+    "Uzb": "Yolg'on",
+    "Transcription": "hoʊks"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Surface",
+    "Uzb": "Yuza",
+    "Transcription": "'sɜrfəs"
   },
   {
     "Degre": "Intermediate",
@@ -877,16 +849,86 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 2",
-    "Eng": "Whisper",
-    "Uzb": "Pichirlamoq",
-    "Transcription": "'wɪspər"
+    "Eng": "Charge",
+    "Uzb": "Zaryadlamoq",
+    "Transcription": "tʃɑrdʒ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Turn around",
+    "Uzb": "O'girilmoq",
+    "Transcription": "tɜrn ə'raʊnd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Invent",
+    "Uzb": "O'ylab topmoq",
+    "Transcription": "ɪn'vɛnt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Disappear",
+    "Uzb": "G'oyib bo'lmoq",
+    "Transcription": ",dɪsə'pɪr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 2",
+    "Eng": "Personally",
+    "Uzb": "Shaxsan",
+    "Transcription": "'pɜrsənəli"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Admire",
-    "Uzb": "Qoyil qolmoq",
-    "Transcription": "əd'maɪər"
+    "Eng": "Spare",
+    "Uzb": "Ajratmoq",
+    "Transcription": "spɛr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Precise",
+    "Uzb": "Aniq",
+    "Transcription": "prɪ'saɪs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Easy-going",
+    "Uzb": "Bag'ri keng",
+    "Transcription": "'izi,ɡoʊɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Symptom",
+    "Uzb": "Belgi",
+    "Transcription": "'sɪmptəm"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Contest",
+    "Uzb": "Bellashuv",
+    "Transcription": "'kɑntɛst"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Five-star",
+    "Uzb": "Besh yulduzli",
+    "Transcription": "faɪv stɑr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Manage",
+    "Uzb": "Boshqarmoq",
+    "Transcription": "'mænədʒ"
   },
   {
     "Degre": "Intermediate",
@@ -898,30 +940,65 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Beat",
-    "Uzb": "Urmoq",
-    "Transcription": "bit"
+    "Eng": "Van",
+    "Uzb": "Furgon",
+    "Transcription": "væn"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Bleach",
-    "Uzb": "Oqartiruvchi vosita",
-    "Transcription": "blitʃ"
+    "Eng": "Shocked",
+    "Uzb": "Hayratda qolgan",
+    "Transcription": "ʃɑkt"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Blood vessel",
-    "Uzb": "Qon tomiri",
-    "Transcription": "blʌd 'vɛsəl"
+    "Eng": "Panel",
+    "Uzb": "Hay'at",
+    "Transcription": "'pænəl"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Computerized",
-    "Uzb": "Kompyuterlashtirilgan",
-    "Transcription": "kəm'pjutə,raɪzd"
+    "Eng": "Respect",
+    "Uzb": "Hurmat qilmoq",
+    "Transcription": "rɪ'spɛkt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Intelligence",
+    "Uzb": "Idrok",
+    "Transcription": "ɪn'tɛlədʒəns"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Scientifically proven",
+    "Uzb": "Ilmiy isbotlangan",
+    "Transcription": ",saɪən'tɪfɪkli 'pruːvən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Fail",
+    "Uzb": "Imtihondan yiqilmoq",
+    "Transcription": "feɪl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "English-speaking",
+    "Uzb": "Ingliz tilida so'zlashuvchi",
+    "Transcription": "'ɪŋɡlɪʃ 'spikɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Second-hand",
+    "Uzb": "Ishlatilgan",
+    "Transcription": "'sɛkənd hænd"
   },
   {
     "Degre": "Intermediate",
@@ -933,9 +1010,324 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Contest",
-    "Uzb": "Bellashuv",
-    "Transcription": "'kɑntɛst"
+    "Eng": "Rub",
+    "Uzb": "Ishqalamoq",
+    "Transcription": "rʌb"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Participant",
+    "Uzb": "Ishtirokchi",
+    "Transcription": "pɑr'tɪsəpənt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Take part in",
+    "Uzb": "Ishtirok etmoq",
+    "Transcription": "teɪk pɑrt ɪn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Schedule",
+    "Uzb": "Jadval",
+    "Transcription": "'skɛdʒul"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Short-sleeved",
+    "Uzb": "Kalta yengli",
+    "Transcription": "ʃɔrt slivd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Computerized",
+    "Uzb": "Kompyuterlashtirilgan",
+    "Transcription": "kəm'pjutə,raɪzd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Observe",
+    "Uzb": "Kuzatmoq",
+    "Transcription": "əb'zɜrv"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Passion",
+    "Uzb": "Kuchli ishtiyoq",
+    "Transcription": "'pæʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Set goals",
+    "Uzb": "Maqsadlar qo'ymoq",
+    "Transcription": "sɛt ɡoʊlz"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Responsibility",
+    "Uzb": "Ma'suliyat",
+    "Transcription": "rɪ,spɑnsə'bɪləti"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Take responsibility",
+    "Uzb": "Ma'suliyatni o'z bo'yniga olmoq",
+    "Transcription": "teɪk rɪ,spɑnsə'bɪləti"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Reward",
+    "Uzb": "Mukofot",
+    "Transcription": "rɪ'wɔrd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Expert",
+    "Uzb": "Mutaxassis",
+    "Transcription": "'ɛkspərt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Temptation",
+    "Uzb": "Nafs",
+    "Transcription": "tɛmp'teɪʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Overpriced",
+    "Uzb": "Narxiga arzimaydi",
+    "Transcription": ",oʊvər'praɪst"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Result",
+    "Uzb": "Natija",
+    "Transcription": "rɪ'zʌlt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Think ahead",
+    "Uzb": "Oldindan o'ylamoq",
+    "Transcription": "θɪŋk ə'hɛd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Bleach",
+    "Uzb": "Oqartiruvchi vosita",
+    "Transcription": "blitʃ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Stressful",
+    "Uzb": "Og'ir",
+    "Transcription": "'strɛsfəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Turn up",
+    "Uzb": "Paydo bo'lmoq",
+    "Transcription": "tɜrn ʌp"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Professional",
+    "Uzb": "Professional",
+    "Transcription": "prə'fɛʃənəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Decision",
+    "Uzb": "Qaror",
+    "Transcription": "dɪ'sɪʒən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Work hard",
+    "Uzb": "Qattiq ishlamoq",
+    "Transcription": "wɜrk hɑrd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Rise to the challenge",
+    "Uzb": "Qiyinchiliklarga dosh berish",
+    "Transcription": "raɪz tu ðə 'ʧælɪndʒ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Blood vessel",
+    "Uzb": "Qon tomiri",
+    "Transcription": "blʌd 'vɛsəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Admire",
+    "Uzb": "Qoyil qolmoq",
+    "Transcription": "əd'maɪər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Sandpaper",
+    "Uzb": "Qum qog'oz",
+    "Transcription": "'sænd,peɪpər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Device",
+    "Uzb": "Qurilma",
+    "Transcription": "dɪ'vaɪs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Leader",
+    "Uzb": "Rahbar",
+    "Transcription": "'lidər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Patient",
+    "Uzb": "Sabrli",
+    "Transcription": "'peɪʃənt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Hobby",
+    "Uzb": "Sevimli mashg'ulot",
+    "Transcription": "'hɑbi"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Stress",
+    "Uzb": "Stress",
+    "Transcription": "strɛs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Talk",
+    "Uzb": "Suhbat (Nutq)",
+    "Transcription": "tɔk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Deadline",
+    "Uzb": "So'nggi muddat",
+    "Transcription": "'dɛd,laɪn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Experiment",
+    "Uzb": "Tajriba",
+    "Transcription": "ɪk'spɛrəmənt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Give in",
+    "Uzb": "Taslim bo'lmoq",
+    "Transcription": "ɡɪv ɪn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Sweat",
+    "Uzb": "Terlamoq",
+    "Transcription": "swɛt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Multitask",
+    "Uzb": "Turli topshiriqlarni bir vaqtni o'zida bajarmoq",
+    "Transcription": "'mʌlti,tæsk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Full-time",
+    "Uzb": "To’liq stavka",
+    "Transcription": "fʊl taɪm"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Deal with",
+    "Uzb": "To'qnash kelmoq",
+    "Transcription": "dil wɪð"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Make an effort",
+    "Uzb": "Urinmoq",
+    "Transcription": "meɪk ən 'ɛfərt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Beat",
+    "Uzb": "Urmoq",
+    "Transcription": "bit"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Technique",
+    "Uzb": "Usul",
+    "Transcription": "tɛk'nik"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Good-looking",
+    "Uzb": "Xushbichim",
+    "Transcription": "ɡʊd 'lʊkɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Polite",
+    "Uzb": "Xushmuomala",
+    "Transcription": "pə'laɪt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 3",
+    "Eng": "Pleasant",
+    "Uzb": "Yoqimli",
+    "Transcription": "'plɛzənt"
   },
   {
     "Degre": "Intermediate",
@@ -954,72 +1346,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Deadline",
-    "Uzb": "So'nggi muddat",
-    "Transcription": "'dɛd,laɪn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Deal with",
-    "Uzb": "To'qnash kelmoq",
-    "Transcription": "dil wɪð"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Decision",
-    "Uzb": "Qaror",
-    "Transcription": "dɪ'sɪʒən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Device",
-    "Uzb": "Qurilma",
-    "Transcription": "dɪ'vaɪs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Easy-going",
-    "Uzb": "Bag'ri keng",
-    "Transcription": "'izi,ɡoʊɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "English-speaking",
-    "Uzb": "Ingliz tilida so'zlashuvchi",
-    "Transcription": "'ɪŋɡlɪʃ 'spikɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Experiment",
-    "Uzb": "Tajriba",
-    "Transcription": "ɪk'spɛrəmənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Expert",
-    "Uzb": "Mutaxassis",
-    "Transcription": "'ɛkspərt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Fail",
-    "Uzb": "Imtihondan yiqilmoq",
-    "Transcription": "feɪl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Five-star",
-    "Uzb": "Besh yulduzli",
-    "Transcription": "faɪv stɑr"
+    "Eng": "Marshmallow",
+    "Uzb": "Zefir",
+    "Transcription": "'mɑrʃ,mɛloʊ"
   },
   {
     "Degre": "Intermediate",
@@ -1031,30 +1360,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Full-time",
-    "Uzb": "To’liq stavka",
-    "Transcription": "fʊl taɪm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Give in",
-    "Uzb": "Taslim bo'lmoq",
-    "Transcription": "ɡɪv ɪn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Good-looking",
-    "Uzb": "Xushbichim",
-    "Transcription": "ɡʊd 'lʊkɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Hobby",
-    "Uzb": "Sevimli mashg'ulot",
-    "Transcription": "'hɑbi"
+    "Eng": "Measure",
+    "Uzb": "O'lchamoq",
+    "Transcription": "'mɛʒər"
   },
   {
     "Degre": "Intermediate",
@@ -1066,142 +1374,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Intelligence",
-    "Uzb": "Idrok",
-    "Transcription": "ɪn'tɛlədʒəns"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Leader",
-    "Uzb": "Rahbar",
-    "Transcription": "'lidər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Left handed",
-    "Uzb": "Chapaqay",
-    "Transcription": "lɛft 'hændɪd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Make an effort",
-    "Uzb": "Urinmoq",
-    "Transcription": "meɪk ən 'ɛfərt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Manage",
-    "Uzb": "Boshqarmoq",
-    "Transcription": "'mænədʒ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Marshmallow",
-    "Uzb": "Zefir",
-    "Transcription": "'mɑrʃ,mɛloʊ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Measure",
-    "Uzb": "O'lchamoq",
-    "Transcription": "'mɛʒər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Multitask",
-    "Uzb": "Turli topshiriqlarni bir vaqtni o'zida bajarmoq",
-    "Transcription": "'mʌlti,tæsk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Observe",
-    "Uzb": "Kuzatmoq",
-    "Transcription": "əb'zɜrv"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "On impulse",
-    "Uzb": "Shoshqaloqlik bilan",
-    "Transcription": "ɑn 'ɪmpʌls"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
     "Eng": "Overcook",
     "Uzb": "O'ta ko'p pishirmoq",
     "Transcription": ",oʊvər'kʊk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Overpriced",
-    "Uzb": "Narxiga arzimaydi",
-    "Transcription": ",oʊvər'praɪst"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Panel",
-    "Uzb": "Hay'at",
-    "Transcription": "'pænəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Participant",
-    "Uzb": "Ishtirokchi",
-    "Transcription": "pɑr'tɪsəpənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Passion",
-    "Uzb": "Kuchli ishtiyoq",
-    "Transcription": "'pæʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Patient",
-    "Uzb": "Sabrli",
-    "Transcription": "'peɪʃənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Pleasant",
-    "Uzb": "Yoqimli",
-    "Transcription": "'plɛzənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Polite",
-    "Uzb": "Xushmuomala",
-    "Transcription": "pə'laɪt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Precise",
-    "Uzb": "Aniq",
-    "Transcription": "prɪ'saɪs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Professional",
-    "Uzb": "Professional",
-    "Transcription": "prə'fɛʃənəl"
   },
   {
     "Degre": "Intermediate",
@@ -1213,191 +1388,65 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Respect",
-    "Uzb": "Hurmat qilmoq",
-    "Transcription": "rɪ'spɛkt"
+    "Eng": "On impulse",
+    "Uzb": "Shoshqaloqlik bilan",
+    "Transcription": "ɑn 'ɪmpʌls"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 3",
-    "Eng": "Responsibility",
-    "Uzb": "Ma'suliyat",
-    "Transcription": "rɪ,spɑnsə'bɪləti"
+    "Eng": "Left handed",
+    "Uzb": "Chapaqay",
+    "Transcription": "lɛft 'hændɪd"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Result",
-    "Uzb": "Natija",
-    "Transcription": "rɪ'zʌlt"
+    "Unit": "Unit 4",
+    "Eng": "Inhabitant",
+    "Uzb": "Aholi",
+    "Transcription": "ɪn'hæbətənt"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Reward",
-    "Uzb": "Mukofot",
-    "Transcription": "rɪ'wɔrd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Rise to the challenge",
-    "Uzb": "Qiyinchiliklarga dosh berish",
-    "Transcription": "raɪz tu ðə 'ʧælɪndʒ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Rub",
-    "Uzb": "Ishqalamoq",
-    "Transcription": "rʌb"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Sandpaper",
-    "Uzb": "Qum qog'oz",
-    "Transcription": "'sænd,peɪpər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Schedule",
-    "Uzb": "Jadval",
-    "Transcription": "'skɛdʒul"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Scientifically proven",
-    "Uzb": "Ilmiy isbotlangan",
-    "Transcription": ",saɪən'tɪfɪkli 'pruːvən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Second-hand",
-    "Uzb": "Ishlatilgan",
-    "Transcription": "'sɛkənd hænd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Set goals",
-    "Uzb": "Maqsadlar qo'ymoq",
-    "Transcription": "sɛt ɡoʊlz"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Shocked",
-    "Uzb": "Hayratda qolgan",
-    "Transcription": "ʃɑkt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Short-sleeved",
-    "Uzb": "Kalta yengli",
-    "Transcription": "ʃɔrt slivd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Spare",
+    "Unit": "Unit 4",
+    "Eng": "Give off",
     "Uzb": "Ajratmoq",
-    "Transcription": "spɛr"
+    "Transcription": "ɡɪv ɔf"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Stress",
-    "Uzb": "Stress",
-    "Transcription": "strɛs"
+    "Unit": "Unit 4",
+    "Eng": "Mixture",
+    "Uzb": "Aralashma",
+    "Transcription": "'mɪksʧər"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Stressful",
-    "Uzb": "Og'ir",
-    "Transcription": "'strɛsfəl"
+    "Unit": "Unit 4",
+    "Eng": "Feel at home",
+    "Uzb": "Bemalol his qilish",
+    "Transcription": "fil ət hoʊm"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Sweat",
-    "Uzb": "Terlamoq",
-    "Transcription": "swɛt"
+    "Unit": "Unit 4",
+    "Eng": "Permanent",
+    "Uzb": "Doimiy",
+    "Transcription": "'pɜrmənənt"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Symptom",
-    "Uzb": "Belgi",
-    "Transcription": "'sɪmptəm"
+    "Unit": "Unit 4",
+    "Eng": "Season",
+    "Uzb": "Fasl",
+    "Transcription": "'sizən"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Take part in",
-    "Uzb": "Ishtirok etmoq",
-    "Transcription": "teɪk pɑrt ɪn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Take responsibility",
-    "Uzb": "Ma'suliyatni o'z bo'yniga olmoq",
-    "Transcription": "teɪk rɪ,spɑnsə'bɪləti"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Talk",
-    "Uzb": "Suhbat (Nutq)",
-    "Transcription": "tɔk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Technique",
-    "Uzb": "Usul",
-    "Transcription": "tɛk'nik"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Temptation",
-    "Uzb": "Nafs",
-    "Transcription": "tɛmp'teɪʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Think ahead",
-    "Uzb": "Oldindan o'ylamoq",
-    "Transcription": "θɪŋk ə'hɛd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Turn up",
-    "Uzb": "Paydo bo'lmoq",
-    "Transcription": "tɜrn ʌp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Van",
-    "Uzb": "Furgon",
-    "Transcription": "væn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 3",
-    "Eng": "Work hard",
-    "Uzb": "Qattiq ishlamoq",
-    "Transcription": "wɜrk hɑrd"
+    "Unit": "Unit 4",
+    "Eng": "Globalization",
+    "Uzb": "Globallashuv",
+    "Transcription": ",ɡloʊbələ'zeɪʃən"
   },
   {
     "Degre": "Intermediate",
@@ -1409,9 +1458,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Artificial",
-    "Uzb": "Sun'iy",
-    "Transcription": ",ɑrtə'fɪʃəl"
+    "Eng": "Luxury",
+    "Uzb": "Hashamatli",
+    "Transcription": "'lʌkʃəri"
   },
   {
     "Degre": "Intermediate",
@@ -1419,6 +1468,41 @@
     "Eng": "Aspiring",
     "Uzb": "Intiluvchan (Bo'lish istagidagi)",
     "Transcription": "ə'spaɪrɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Make room",
+    "Uzb": "Joy ajratmoq",
+    "Transcription": "meɪk rum"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Miles from anywhere",
+    "Uzb": "Juda uzoq",
+    "Transcription": "maɪlz frəm 'ɛni,wɛr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Know like the back of your hand",
+    "Uzb": "Juda yaxshi bilmoq",
+    "Transcription": "noʊ laɪk ðə bæk əv jɔr hænd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Set off",
+    "Uzb": "Jo'namoq",
+    "Transcription": "sɛt ɔf"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Cubicle",
+    "Uzb": "Kabinka",
+    "Transcription": "'kjubɪkəl"
   },
   {
     "Degre": "Intermediate",
@@ -1437,23 +1521,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Cliff",
-    "Uzb": "Tik qoya",
-    "Transcription": "klɪf"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Communal",
-    "Uzb": "Umumiy foydalaniladigan",
-    "Transcription": "kə'mjunəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Cubicle",
-    "Uzb": "Kabinka",
-    "Transcription": "'kjubɪkəl"
+    "Eng": "Packed in like sardine",
+    "Uzb": "Liq to'la",
+    "Transcription": "pækt ɪn laɪk sɑr'din"
   },
   {
     "Degre": "Intermediate",
@@ -1465,191 +1535,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Feel at home",
-    "Uzb": "Bemalol his qilish",
-    "Transcription": "fil ət hoʊm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Ferry service",
-    "Uzb": "Parom xizmati",
-    "Transcription": "'fɛri 'sɜrvɪs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Get rid of",
-    "Uzb": "Xalos bo'lmoq",
-    "Transcription": "ɡɛt rɪd əv"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Give off",
-    "Uzb": "Ajratmoq",
-    "Transcription": "ɡɪv ɔf"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Globalization",
-    "Uzb": "Globallashuv",
-    "Transcription": ",ɡloʊbələ'zeɪʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Greenery",
-    "Uzb": "Yashil o'simliklar",
-    "Transcription": "'ɡrinəri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Historic",
-    "Uzb": "Tarixiy",
-    "Transcription": "hɪ'stɔrɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Hoarder",
-    "Uzb": "Yig'uvchi",
-    "Transcription": "'hɔrdər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Inhabitant",
-    "Uzb": "Aholi",
-    "Transcription": "ɪn'hæbətənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Inland",
-    "Uzb": "Quruqlik ichkarisida",
-    "Transcription": "'ɪnlənd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Know like the back of your hand",
-    "Uzb": "Juda yaxshi bilmoq",
-    "Transcription": "noʊ laɪk ðə bæk əv jɔr hænd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
     "Eng": "Landscape",
     "Uzb": "Manzara",
     "Transcription": "'lænd,skeɪp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Luxury",
-    "Uzb": "Hashamatli",
-    "Transcription": "'lʌkʃəri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Mainland",
-    "Uzb": "Materik",
-    "Transcription": "'meɪn,lænd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Make room",
-    "Uzb": "Joy ajratmoq",
-    "Transcription": "meɪk rum"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Make yourself at home",
-    "Uzb": "O'z uyidagidek his qilish",
-    "Transcription": "meɪk jər'sɛlf ət hoʊm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Miles from anywhere",
-    "Uzb": "Juda uzoq",
-    "Transcription": "maɪlz frəm 'ɛni,wɛr"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Mixture",
-    "Uzb": "Aralashma",
-    "Transcription": "'mɪksʧər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Neat and tidy",
-    "Uzb": "Ozoda va tartibli",
-    "Transcription": "nit ənd 'taɪdi"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Ocean",
-    "Uzb": "Ummon",
-    "Transcription": "'oʊʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Packed in like sardine",
-    "Uzb": "Liq to'la",
-    "Transcription": "pækt ɪn laɪk sɑr'din"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Peak",
-    "Uzb": "Cho'qqi",
-    "Transcription": "pik"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Permanent",
-    "Uzb": "Doimiy",
-    "Transcription": "'pɜrmənənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Pool",
-    "Uzb": "Suzish havzasi",
-    "Transcription": "pul"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Reed",
-    "Uzb": "Qamish",
-    "Transcription": "rid"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Rock",
-    "Uzb": "Xarsangtosh",
-    "Transcription": "rɑk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Run out of",
-    "Uzb": "Tugamoq",
-    "Transcription": "rən aʊt əv"
   },
   {
     "Degre": "Intermediate",
@@ -1661,44 +1549,37 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Season",
-    "Uzb": "Fasl",
-    "Transcription": "'sizən"
+    "Eng": "Mainland",
+    "Uzb": "Materik",
+    "Transcription": "'meɪn,lænd"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Set off",
-    "Uzb": "Jo'namoq",
-    "Transcription": "sɛt ɔf"
+    "Eng": "Neat and tidy",
+    "Uzb": "Ozoda va tartibli",
+    "Transcription": "nit ənd 'taɪdi"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Settle down",
-    "Uzb": "O'rnashmoq",
-    "Transcription": "'sɛtəl daʊn"
+    "Eng": "Ferry service",
+    "Uzb": "Parom xizmati",
+    "Transcription": "'fɛri 'sɜrvɪs"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Solar power",
-    "Uzb": "Quyosh quvvati",
-    "Transcription": "'soʊlər 'paʊər"
+    "Eng": "Reed",
+    "Uzb": "Qamish",
+    "Transcription": "rid"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Steep",
-    "Uzb": "Tik",
-    "Transcription": "stip"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 4",
-    "Eng": "Suburb",
-    "Uzb": "Shahar chekkasi",
-    "Transcription": "'sʌbɜrb"
+    "Eng": "Inland",
+    "Uzb": "Quruqlik ichkarisida",
+    "Transcription": "'ɪnlənd"
   },
   {
     "Degre": "Intermediate",
@@ -1710,9 +1591,79 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
+    "Eng": "Solar power",
+    "Uzb": "Quyosh quvvati",
+    "Transcription": "'soʊlər 'paʊər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Artificial",
+    "Uzb": "Sun'iy",
+    "Transcription": ",ɑrtə'fɪʃəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Pool",
+    "Uzb": "Suzish havzasi",
+    "Transcription": "pul"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
     "Eng": "Trail",
     "Uzb": "So'qmoq",
     "Transcription": "treɪl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Historic",
+    "Uzb": "Tarixiy",
+    "Transcription": "hɪ'stɔrɪk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Steep",
+    "Uzb": "Tik",
+    "Transcription": "stip"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Cliff",
+    "Uzb": "Tik qoya",
+    "Transcription": "klɪf"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Run out of",
+    "Uzb": "Tugamoq",
+    "Transcription": "rən aʊt əv"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Wave",
+    "Uzb": "To'lqin",
+    "Transcription": "weɪv"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Ocean",
+    "Uzb": "Ummon",
+    "Transcription": "'oʊʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Communal",
+    "Uzb": "Umumiy foydalaniladigan",
+    "Transcription": "kə'mjunəl"
   },
   {
     "Degre": "Intermediate",
@@ -1724,44 +1675,58 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 4",
-    "Eng": "Wave",
-    "Uzb": "To'lqin",
-    "Transcription": "weɪv"
+    "Eng": "Get rid of",
+    "Uzb": "Xalos bo'lmoq",
+    "Transcription": "ɡɛt rɪd əv"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Absolutely",
-    "Uzb": "Shubhasiz",
-    "Transcription": ",æbsə'lutli"
+    "Unit": "Unit 4",
+    "Eng": "Rock",
+    "Uzb": "Xarsangtosh",
+    "Transcription": "rɑk"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Accessible",
-    "Uzb": "Foydalanish mumkin",
-    "Transcription": "æk'sɛsəbəl"
+    "Unit": "Unit 4",
+    "Eng": "Greenery",
+    "Uzb": "Yashil o'simliklar",
+    "Transcription": "'ɡrinəri"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Action film",
-    "Uzb": "Jangari film",
-    "Transcription": "'ækʃən fɪlm"
+    "Unit": "Unit 4",
+    "Eng": "Hoarder",
+    "Uzb": "Yig'uvchi",
+    "Transcription": "'hɔrdər"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Action hero",
-    "Uzb": "Bosh qahramon",
-    "Transcription": "'ækʃən 'hɪroʊ"
+    "Unit": "Unit 4",
+    "Eng": "Settle down",
+    "Uzb": "O'rnashmoq",
+    "Transcription": "'sɛtəl daʊn"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Addicted",
-    "Uzb": "Qaram",
-    "Transcription": "ə'dɪktɪd"
+    "Unit": "Unit 4",
+    "Eng": "Make yourself at home",
+    "Uzb": "O'z uyidagidek his qilish",
+    "Transcription": "meɪk jər'sɛlf ət hoʊm"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Suburb",
+    "Uzb": "Shahar chekkasi",
+    "Transcription": "'sʌbɜrb"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 4",
+    "Eng": "Peak",
+    "Uzb": "Cho'qqi",
+    "Transcription": "pik"
   },
   {
     "Degre": "Intermediate",
@@ -1773,478 +1738,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 5",
-    "Eng": "Animated",
-    "Uzb": "Animatsion",
-    "Transcription": "'ænə,meɪtɪd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "App",
-    "Uzb": "Ilova",
-    "Transcription": "æp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Appeal",
-    "Uzb": "Jalb qilish",
-    "Transcription": "ə'pil"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Astonishing",
-    "Uzb": "Hayratlanarli",
-    "Transcription": "ə'stɑnɪʃɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Atmosphere",
-    "Uzb": "Muhit (Kayfiyat)",
-    "Transcription": "'ætmə,sfɪr"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Authentic",
-    "Uzb": "Haqiqiy",
-    "Transcription": "ɔ'θɛntɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Banker",
-    "Uzb": "Bankir",
-    "Transcription": "'bæŋkər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Base on",
-    "Uzb": "Asoslanmoq",
-    "Transcription": "beɪs ɑn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
     "Eng": "Brilliant",
     "Uzb": "Ajoyib",
     "Transcription": "'brɪljənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Cast",
-    "Uzb": "Ijodiy jamoa",
-    "Transcription": "kæst"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Character",
-    "Uzb": "Qahramon",
-    "Transcription": "'kærəktər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Chat",
-    "Uzb": "Gaplashmoq",
-    "Transcription": "tʃæt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Classic",
-    "Uzb": "Mumtoz san'at",
-    "Transcription": "'klæsɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Clip",
-    "Uzb": "Klip",
-    "Transcription": "klɪp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Dash",
-    "Uzb": "Yeldek uchmoq",
-    "Transcription": "dæʃ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Dear",
-    "Uzb": "Aziz (Ezgu)",
-    "Transcription": "dɪr"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Despite",
-    "Uzb": "-ga qaramasdan",
-    "Transcription": "dɪ'spaɪt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Difficult",
-    "Uzb": "Qiyin",
-    "Transcription": "'dɪfəkəlt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Disappointing",
-    "Uzb": "Hafsalani pir qiladigan",
-    "Transcription": ",dɪsə'pɔɪntɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Disturbing",
-    "Uzb": "Xavotirli",
-    "Transcription": "dɪ'stɜrbɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Documentary",
-    "Uzb": "Hujjatli film",
-    "Transcription": ",dɑkjə'mɛntəri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Dreadful",
-    "Uzb": "Juda yomon",
-    "Transcription": "'drɛdfəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Entertaining",
-    "Uzb": "Ko'ngilochar",
-    "Transcription": ",ɛntər'teɪnɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Essentially",
-    "Uzb": "Asosan",
-    "Transcription": "ɪ'sɛnʃəli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Exhibition",
-    "Uzb": "Ko'rgazma",
-    "Transcription": ",ɛksə'bɪʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Falsely",
-    "Uzb": "Asossiz ravishda",
-    "Transcription": "'fɔlsli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Fan",
-    "Uzb": "Muxlis",
-    "Transcription": "fæn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Fantasize",
-    "Uzb": "Tasavvur qilmoq",
-    "Transcription": "'fæntə,saɪz"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Genre",
-    "Uzb": "Janr",
-    "Transcription": "'ʒɑnrə"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Grow apart",
-    "Uzb": "Ayrilmoq",
-    "Transcription": "ɡroʊ ə'pɑrt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Hand-held",
-    "Uzb": "Qo'lda olib yurish mumkin",
-    "Transcription": "'hænd,hɛld"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Harmless",
-    "Uzb": "Zararsiz",
-    "Transcription": "'hɑrmləs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Hope",
-    "Uzb": "Umid",
-    "Transcription": "hoʊp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Incredibly",
-    "Uzb": "Aql bovar qilmaydigan darajada",
-    "Transcription": "ɪn'krɛdəbli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Infuriating",
-    "Uzb": "G'azabga soluvchi",
-    "Transcription": "ɪn'fjʊri,eɪtɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Interact",
-    "Uzb": "Muloqot qilmoq",
-    "Transcription": ",ɪntər'ækt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Irritation",
-    "Uzb": "Asabbuzarlik",
-    "Transcription": ",ɪrə'teɪʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Log in",
-    "Uzb": "Tizimga kirmoq",
-    "Transcription": "lɔg ɪn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Magically",
-    "Uzb": "Mo'jizaviy",
-    "Transcription": "'mædʒɪkəli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Middle class",
-    "Uzb": "O'rta tabaqa",
-    "Transcription": "'mɪdəl klæs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Military",
-    "Uzb": "Harbiy",
-    "Transcription": "'mɪlə,tɛri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Modern",
-    "Uzb": "Zamonaviy",
-    "Transcription": "'mɑdərn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Moving",
-    "Uzb": "Ta'sirli",
-    "Transcription": "'muvɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Novel",
-    "Uzb": "Roman",
-    "Transcription": "'nɑvəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "On balance",
-    "Uzb": "Umuman olganda",
-    "Transcription": "ɑn 'bæləns"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Original",
-    "Uzb": "Asl",
-    "Transcription": "ə'rɪdʒənəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Performance",
-    "Uzb": "Ijro",
-    "Transcription": "pər'fɔrməns"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Plot",
-    "Uzb": "Syujet",
-    "Transcription": "plɑt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Post",
-    "Uzb": "Internetga joylashtirmoq",
-    "Transcription": "poʊst"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Pothole",
-    "Uzb": "Yo'ldagi o'nqir-cho'nqir",
-    "Transcription": "'pɑt,hoʊl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Predictable",
-    "Uzb": "Oldindan ayon",
-    "Transcription": "prɪ'dɪktəbəl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Prisoner",
-    "Uzb": "Mahbus",
-    "Transcription": "'prɪzənər"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Recommend",
-    "Uzb": "Tavsiya qilmoq",
-    "Transcription": ",rɛkə'mɛnd"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Release",
-    "Uzb": "Chiqarmoq",
-    "Transcription": "rɪ'lis"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Remake",
-    "Uzb": "Yangi talqin",
-    "Transcription": "'ri,meɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Result in",
-    "Uzb": "Olib kelmoq",
-    "Transcription": "rɪ'zʌlt ɪn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Rom com",
-    "Uzb": "Romantik komediya",
-    "Transcription": "rɑm kɑm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Salsa",
-    "Uzb": "Salsa",
-    "Transcription": "'sɔlsə"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Scene",
-    "Uzb": "Sahna",
-    "Transcription": "sin"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Set out",
-    "Uzb": "Otlanmoq",
-    "Transcription": "sɛt aʊt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Showcase",
-    "Uzb": "Namoyish qilmoq",
-    "Transcription": "'ʃoʊ,keɪs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Silly",
-    "Uzb": "Axmoqona",
-    "Transcription": "'sɪli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Slavery",
-    "Uzb": "Qullik",
-    "Transcription": "'sleɪvəri"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Soundtrack",
-    "Uzb": "Saundtrek",
-    "Transcription": "'saʊnd,træk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Special effects",
-    "Uzb": "Maxsus effektlar",
-    "Transcription": "'spɛʃəl ɪ'fɛkts"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Stunning",
-    "Uzb": "Hayratlanarli",
-    "Transcription": "'stʌnɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Sweep",
-    "Uzb": "Tarqalmoq",
-    "Transcription": "swip"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 5",
-    "Eng": "Tend",
-    "Uzb": "Moyil bo'lmoq",
-    "Transcription": "tɛnd"
   },
   {
     "Degre": "Intermediate",
@@ -2256,6 +1752,90 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 5",
+    "Eng": "Animated",
+    "Uzb": "Animatsion",
+    "Transcription": "'ænə,meɪtɪd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Incredibly",
+    "Uzb": "Aql bovar qilmaydigan darajada",
+    "Transcription": "ɪn'krɛdəbli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Irritation",
+    "Uzb": "Asabbuzarlik",
+    "Transcription": ",ɪrə'teɪʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Original",
+    "Uzb": "Asl",
+    "Transcription": "ə'rɪdʒənəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Essentially",
+    "Uzb": "Asosan",
+    "Transcription": "ɪ'sɛnʃəli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Base on",
+    "Uzb": "Asoslanmoq",
+    "Transcription": "beɪs ɑn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Falsely",
+    "Uzb": "Asossiz ravishda",
+    "Transcription": "'fɔlsli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Silly",
+    "Uzb": "Axmoqona",
+    "Transcription": "'sɪli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Grow apart",
+    "Uzb": "Ayrilmoq",
+    "Transcription": "ɡroʊ ə'pɑrt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Dear",
+    "Uzb": "Aziz (Ezgu)",
+    "Transcription": "dɪr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Banker",
+    "Uzb": "Bankir",
+    "Transcription": "'bæŋkər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Action hero",
+    "Uzb": "Bosh qahramon",
+    "Transcription": "'ækʃən 'hɪroʊ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
     "Eng": "Terrifying",
     "Uzb": "Dahshatli",
     "Transcription": "'tɛrə,faɪ-ɪŋ"
@@ -2263,9 +1843,156 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 5",
-    "Eng": "Thriller",
-    "Uzb": "Triller",
-    "Transcription": "'θrɪlər"
+    "Eng": "Worldwide",
+    "Uzb": "Dunyo bo'ylab",
+    "Transcription": "'wɜrld,waɪd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Accessible",
+    "Uzb": "Foydalanish mumkin",
+    "Transcription": "æk'sɛsəbəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Chat",
+    "Uzb": "Gaplashmoq",
+    "Transcription": "tʃæt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Despite",
+    "Uzb": "-ga qaramasdan",
+    "Transcription": "dɪ'spaɪt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Disappointing",
+    "Uzb": "Hafsalani pir qiladigan",
+    "Transcription": ",dɪsə'pɔɪntɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Authentic",
+    "Uzb": "Haqiqiy",
+    "Transcription": "ɔ'θɛntɪk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Military",
+    "Uzb": "Harbiy",
+    "Transcription": "'mɪlə,tɛri"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Astonishing",
+    "Uzb": "Hayratlanarli",
+    "Transcription": "ə'stɑnɪʃɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Stunning",
+    "Uzb": "Hayratlanarli",
+    "Transcription": "'stʌnɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Documentary",
+    "Uzb": "Hujjatli film",
+    "Transcription": ",dɑkjə'mɛntəri"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Cast",
+    "Uzb": "Ijodiy jamoa",
+    "Transcription": "kæst"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Performance",
+    "Uzb": "Ijro",
+    "Transcription": "pər'fɔrməns"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "App",
+    "Uzb": "Ilova",
+    "Transcription": "æp"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Post",
+    "Uzb": "Internetga joylashtirmoq",
+    "Transcription": "poʊst"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Appeal",
+    "Uzb": "Jalb qilish",
+    "Transcription": "ə'pil"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Action film",
+    "Uzb": "Jangari film",
+    "Transcription": "'ækʃən fɪlm"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Genre",
+    "Uzb": "Janr",
+    "Transcription": "'ʒɑnrə"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Dreadful",
+    "Uzb": "Juda yomon",
+    "Transcription": "'drɛdfəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Clip",
+    "Uzb": "Klip",
+    "Transcription": "klɪp"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Entertaining",
+    "Uzb": "Ko'ngilochar",
+    "Transcription": ",ɛntər'teɪnɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Exhibition",
+    "Uzb": "Ko'rgazma",
+    "Transcription": ",ɛksə'bɪʃən"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Prisoner",
+    "Uzb": "Mahbus",
+    "Transcription": "'prɪzənər"
   },
   {
     "Degre": "Intermediate",
@@ -2277,16 +2004,79 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 5",
-    "Eng": "Unexciting",
-    "Uzb": "Zerikarli",
-    "Transcription": ",ʌnɪk'saɪtɪŋ"
+    "Eng": "Special effects",
+    "Uzb": "Maxsus effektlar",
+    "Transcription": "'spɛʃəl ɪ'fɛkts"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 5",
-    "Eng": "Violent",
-    "Uzb": "Zo'ravon",
-    "Transcription": "'vaɪələnt"
+    "Eng": "Tend",
+    "Uzb": "Moyil bo'lmoq",
+    "Transcription": "tɛnd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Atmosphere",
+    "Uzb": "Muhit (Kayfiyat)",
+    "Transcription": "'ætmə,sfɪr"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Interact",
+    "Uzb": "Muloqot qilmoq",
+    "Transcription": ",ɪntər'ækt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Classic",
+    "Uzb": "Mumtoz san'at",
+    "Transcription": "'klæsɪk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Fan",
+    "Uzb": "Muxlis",
+    "Transcription": "fæn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Magically",
+    "Uzb": "Mo'jizaviy",
+    "Transcription": "'mædʒɪkəli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Showcase",
+    "Uzb": "Namoyish qilmoq",
+    "Transcription": "'ʃoʊ,keɪs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Predictable",
+    "Uzb": "Oldindan ayon",
+    "Transcription": "prɪ'dɪktəbəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Result in",
+    "Uzb": "Olib kelmoq",
+    "Transcription": "rɪ'zʌlt ɪn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Set out",
+    "Uzb": "Otlanmoq",
+    "Transcription": "sɛt aʊt"
   },
   {
     "Degre": "Intermediate",
@@ -2305,23 +2095,219 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 5",
-    "Eng": "Worldwide",
-    "Uzb": "Dunyo bo'ylab",
-    "Transcription": "'wɜrld,waɪd"
+    "Eng": "Character",
+    "Uzb": "Qahramon",
+    "Transcription": "'kærəktər"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Accident",
-    "Uzb": "Baxtsiz hodisa",
-    "Transcription": "'æksɪdənt"
+    "Unit": "Unit 5",
+    "Eng": "Addicted",
+    "Uzb": "Qaram",
+    "Transcription": "ə'dɪktɪd"
   },
   {
     "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "At speed",
-    "Uzb": "Tezlikda",
-    "Transcription": "ət spid"
+    "Unit": "Unit 5",
+    "Eng": "Difficult",
+    "Uzb": "Qiyin",
+    "Transcription": "'dɪfəkəlt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Slavery",
+    "Uzb": "Qullik",
+    "Transcription": "'sleɪvəri"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Hand-held",
+    "Uzb": "Qo'lda olib yurish mumkin",
+    "Transcription": "'hænd,hɛld"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Novel",
+    "Uzb": "Roman",
+    "Transcription": "'nɑvəl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Rom com",
+    "Uzb": "Romantik komediya",
+    "Transcription": "rɑm kɑm"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Scene",
+    "Uzb": "Sahna",
+    "Transcription": "sin"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Salsa",
+    "Uzb": "Salsa",
+    "Transcription": "'sɔlsə"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Soundtrack",
+    "Uzb": "Saundtrek",
+    "Transcription": "'saʊnd,træk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Plot",
+    "Uzb": "Syujet",
+    "Transcription": "plɑt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Sweep",
+    "Uzb": "Tarqalmoq",
+    "Transcription": "swip"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Fantasize",
+    "Uzb": "Tasavvur qilmoq",
+    "Transcription": "'fæntə,saɪz"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Recommend",
+    "Uzb": "Tavsiya qilmoq",
+    "Transcription": ",rɛkə'mɛnd"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Moving",
+    "Uzb": "Ta'sirli",
+    "Transcription": "'muvɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Log in",
+    "Uzb": "Tizimga kirmoq",
+    "Transcription": "lɔg ɪn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Thriller",
+    "Uzb": "Triller",
+    "Transcription": "'θrɪlər"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Hope",
+    "Uzb": "Umid",
+    "Transcription": "hoʊp"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "On balance",
+    "Uzb": "Umuman olganda",
+    "Transcription": "ɑn 'bæləns"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Disturbing",
+    "Uzb": "Xavotirli",
+    "Transcription": "dɪ'stɜrbɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Remake",
+    "Uzb": "Yangi talqin",
+    "Transcription": "'ri,meɪk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Dash",
+    "Uzb": "Yeldek uchmoq",
+    "Transcription": "dæʃ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Pothole",
+    "Uzb": "Yo'ldagi o'nqir-cho'nqir",
+    "Transcription": "'pɑt,hoʊl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Modern",
+    "Uzb": "Zamonaviy",
+    "Transcription": "'mɑdərn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Harmless",
+    "Uzb": "Zararsiz",
+    "Transcription": "'hɑrmləs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Unexciting",
+    "Uzb": "Zerikarli",
+    "Transcription": ",ʌnɪk'saɪtɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Violent",
+    "Uzb": "Zo'ravon",
+    "Transcription": "'vaɪələnt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Middle class",
+    "Uzb": "O'rta tabaqa",
+    "Transcription": "'mɪdəl klæs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Infuriating",
+    "Uzb": "G'azabga soluvchi",
+    "Transcription": "ɪn'fjʊri,eɪtɪŋ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Absolutely",
+    "Uzb": "Shubhasiz",
+    "Transcription": ",æbsə'lutli"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 5",
+    "Eng": "Release",
+    "Uzb": "Chiqarmoq",
+    "Transcription": "rɪ'lis"
   },
   {
     "Degre": "Intermediate",
@@ -2333,58 +2319,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Brake",
-    "Uzb": "To'xtamoq",
-    "Transcription": "breɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Commute",
-    "Uzb": "Ishga qatnamoq",
-    "Transcription": "kə'mjut"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Confirm",
-    "Uzb": "Tasdiqlash",
-    "Transcription": "kən'fɜrm"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Contract",
-    "Uzb": "Shartnoma",
-    "Transcription": "'kɑntrækt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Crew",
-    "Uzb": "Ekipaj",
-    "Transcription": "kru"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Disability",
-    "Uzb": "Nogironlik",
-    "Transcription": ",dɪsə'bɪləti"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Driverless",
-    "Uzb": "Mustaqil boshqariladigan",
-    "Transcription": "'draɪvərləs"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Driving test",
-    "Uzb": "Haydovchilik imtihoni",
-    "Transcription": "'draɪvɪŋ tɛst"
+    "Eng": "Accident",
+    "Uzb": "Baxtsiz hodisa",
+    "Transcription": "'æksɪdənt"
   },
   {
     "Degre": "Intermediate",
@@ -2396,16 +2333,30 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "In charge",
-    "Uzb": "Mas'ul",
-    "Transcription": "ɪn tʃɑrdʒ"
+    "Eng": "Crew",
+    "Uzb": "Ekipaj",
+    "Transcription": "kru"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "In control",
-    "Uzb": "Nazorat ostida",
-    "Transcription": "ɪn kən'troʊl"
+    "Eng": "Driving test",
+    "Uzb": "Haydovchilik imtihoni",
+    "Transcription": "'draɪvɪŋ tɛst"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Commute",
+    "Uzb": "Ishga qatnamoq",
+    "Transcription": "kə'mjut"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Unemployable",
+    "Uzb": "Ishsiz",
+    "Transcription": ",ʌnɪm'plɔɪəbəl"
   },
   {
     "Degre": "Intermediate",
@@ -2417,44 +2368,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Interrupt",
-    "Uzb": "To'xtatmoq (bo'lmoq)",
-    "Transcription": ",ɪntə'rʌpt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Junction",
-    "Uzb": "Chorraha",
-    "Transcription": "'dʒʌŋkʃən"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Lane",
-    "Uzb": "Chiziq",
-    "Transcription": "leɪn"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Motorway",
     "Uzb": "Katta avtomobil yo'li",
     "Transcription": "'moʊtər,weɪ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Overtake",
-    "Uzb": "Quvib o'tmoq",
-    "Transcription": ",oʊvər'teɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Park",
-    "Uzb": "Mashinani qo'ymoq",
-    "Transcription": "pɑrk"
   },
   {
     "Degre": "Intermediate",
@@ -2466,16 +2382,44 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Slip out",
-    "Uzb": "Sirpanib ketmoq",
-    "Transcription": "slɪp aʊt"
+    "Eng": "In charge",
+    "Uzb": "Mas'ul",
+    "Transcription": "ɪn tʃɑrdʒ"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Speed limit",
-    "Uzb": "Tezlik chegarasi",
-    "Transcription": "spid 'lɪmɪt"
+    "Eng": "Park",
+    "Uzb": "Mashinani qo'ymoq",
+    "Transcription": "pɑrk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Driverless",
+    "Uzb": "Mustaqil boshqariladigan",
+    "Transcription": "'draɪvərləs"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "In control",
+    "Uzb": "Nazorat ostida",
+    "Transcription": "ɪn kən'troʊl"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Disability",
+    "Uzb": "Nogironlik",
+    "Transcription": ",dɪsə'bɪləti"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Overtake",
+    "Uzb": "Quvib o'tmoq",
+    "Transcription": ",oʊvər'teɪk"
   },
   {
     "Degre": "Intermediate",
@@ -2487,6 +2431,34 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
+    "Eng": "Slip out",
+    "Uzb": "Sirpanib ketmoq",
+    "Transcription": "slɪp aʊt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Confirm",
+    "Uzb": "Tasdiqlash",
+    "Transcription": "kən'fɜrm"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "At speed",
+    "Uzb": "Tezlikda",
+    "Transcription": "ət spid"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Speed limit",
+    "Uzb": "Tezlik chegarasi",
+    "Transcription": "spid 'lɪmɪt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
     "Eng": "Traffic jam",
     "Uzb": "Tirbandlik",
     "Transcription": "'træfɪk dʒæm"
@@ -2494,8 +2466,36 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Unemployable",
-    "Uzb": "Ishsiz",
-    "Transcription": ",ʌnɪm'plɔɪəbəl"
+    "Eng": "Brake",
+    "Uzb": "To'xtamoq",
+    "Transcription": "breɪk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Interrupt",
+    "Uzb": "To'xtatmoq (bo'lmoq)",
+    "Transcription": ",ɪntə'rʌpt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Contract",
+    "Uzb": "Shartnoma",
+    "Transcription": "'kɑntrækt"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Lane",
+    "Uzb": "Chiziq",
+    "Transcription": "leɪn"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Junction",
+    "Uzb": "Chorraha",
+    "Transcription": "'dʒʌŋkʃən"
   }
 ]

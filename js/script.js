@@ -151,6 +151,58 @@ function normalizeWord(w) {
     };
 }
 
+const UZ_RANKS = {
+    'a': 1, 'b': 2, 'd': 3, 'e': 4, 'f': 5, 'g': 6, 'h': 7,
+    'i': 8, 'j': 9, 'k': 10, 'l': 11, 'm': 12, 'n': 13, 'o': 14, 'p': 15,
+    'q': 16, 'r': 17, 's': 18, 't': 19, 'u': 20, 'v': 21, 'x': 22, 'y': 23, 'z': 24,
+    "o'": 25, "g'": 26, 'sh': 27, 'ch': 28, 'c': 29, 'w': 30
+};
+
+function normalizeApostrophe(str) {
+    return (str || '').replace(/[‘’`ʻʼ]/g, "'");
+}
+
+function cleanUzbek(str) {
+    return (str || '').trim()
+        .replace(/^[-–—()\[\]"'.\s]+/g, '')
+        .replace(/^Х/g, 'X').replace(/^х/g, 'x')
+        .replace(/^Сh/g, 'Ch').replace(/^сh/g, 'ch')
+        .replace(/^С/g, 'S').replace(/^с/g, 's');
+}
+
+function tokenizeUzbek(word) {
+    const normalized = normalizeApostrophe(cleanUzbek(word).toLowerCase());
+    const tokens = [];
+    let i = 0;
+    while (i < normalized.length) {
+        const two = normalized.slice(i, i + 2);
+        if (two === 'sh' || two === 'ch' || two === "o'" || two === "g'") {
+            tokens.push(two);
+            i += 2;
+        } else {
+            tokens.push(normalized[i]);
+            i += 1;
+        }
+    }
+    return tokens;
+}
+
+function compareUzbek(aStr, bStr) {
+    const tokensA = tokenizeUzbek(aStr || '');
+    const tokensB = tokenizeUzbek(bStr || '');
+    const minLen = Math.min(tokensA.length, tokensB.length);
+    for (let i = 0; i < minLen; i++) {
+        const tA = tokensA[i];
+        const tB = tokensB[i];
+        if (tA === tB) continue;
+        const rankA = UZ_RANKS[tA] !== undefined ? UZ_RANKS[tA] : (100 + tA.charCodeAt(0));
+        const rankB = UZ_RANKS[tB] !== undefined ? UZ_RANKS[tB] : (100 + tB.charCodeAt(0));
+        if (rankA !== rankB) return rankA - rankB;
+        if (tA !== tB) return tA.localeCompare(tB);
+    }
+    return tokensA.length - tokensB.length;
+}
+
 // Load JSON data
 Promise.all([
     fetch('lugat.json').then(response => response.json()),
@@ -198,7 +250,7 @@ Promise.all([
         }
     });
     
-    allLugatWords.sort((a, b) => (a.word || '').localeCompare(b.word || '', 'en', { sensitivity: 'base' }));
+    allLugatWords.sort((a, b) => compareUzbek(a.translation || a.uz, b.translation || b.uz) || (a.word || '').localeCompare(b.word || '', 'en', { sensitivity: 'base' }));
     initCards();
 })
 .catch(error => console.error('Error loading initialization data:', error));
@@ -516,7 +568,7 @@ function showCategory(category) {
                 }
             });
         }
-        displayedWords.sort((a, b) => (a.word || '').localeCompare(b.word || '', 'en', { sensitivity: 'base' }));
+        displayedWords.sort((a, b) => compareUzbek(a.translation || a.uz, b.translation || b.uz) || (a.word || '').localeCompare(b.word || '', 'en', { sensitivity: 'base' }));
     } else if (category === 'Full Dictionary') {
         displayedWords = allLugatWords;
     } else {
