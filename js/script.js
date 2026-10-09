@@ -198,6 +198,7 @@ Promise.all([
         }
     });
     
+    allLugatWords.sort((a, b) => (a.word || '').localeCompare(b.word || '', 'en', { sensitivity: 'base' }));
     initCards();
 })
 .catch(error => console.error('Error loading initialization data:', error));
@@ -515,6 +516,7 @@ function showCategory(category) {
                 }
             });
         }
+        displayedWords.sort((a, b) => (a.word || '').localeCompare(b.word || '', 'en', { sensitivity: 'base' }));
     } else if (category === 'Full Dictionary') {
         displayedWords = allLugatWords;
     } else {
