@@ -7556,5 +7556,310 @@
       "en": "Seat",
       "transcription": "/siːt/"
     }
+  ],
+  "Office": [
+    {
+      "word": "Colleague",
+      "translation": "Hamkasb",
+      "transcription": "/ˈkɒliːɡ/"
+    },
+    {
+      "word": "Salary",
+      "translation": "Maosh",
+      "transcription": "/ˈsæləri/"
+    },
+    {
+      "word": "Promotion",
+      "translation": "Lavozimda ko'tarilish",
+      "transcription": "/prəˈmoʊʃən/"
+    },
+    {
+      "word": "Schedule",
+      "translation": "Jadval",
+      "transcription": "/ˈskɛdʒuːl/"
+    },
+    {
+      "word": "Deadline",
+      "translation": "So'nggi muddat",
+      "transcription": "/ˈdɛdlaɪn/"
+    },
+    {
+      "word": "Contract",
+      "translation": "Shartnoma",
+      "transcription": "/ˈkɒntrækt/"
+    },
+    {
+      "word": "Email",
+      "translation": "Elektron xat",
+      "transcription": "/ˈiːmeɪl/"
+    },
+    {
+      "word": "Desk",
+      "translation": "Ish stoli",
+      "transcription": "/dɛsk/"
+    },
+    {
+      "word": "Printer",
+      "translation": "Printer",
+      "transcription": "/ˈprɪntər/"
+    },
+    {
+      "word": "Teamwork",
+      "translation": "Jamoaviy ish",
+      "transcription": "/ˈtiːmwɜːrk/"
+    },
+    {
+      "word": "Meeting room",
+      "translation": "Yig'ilishlar xonasi",
+      "transcription": "/ˈmiːtɪŋ ruːm/"
+    },
+    {
+      "word": "File",
+      "translation": "Fayl / papka",
+      "transcription": "/faɪl/"
+    },
+    {
+      "word": "Supervisor",
+      "translation": "Rahbar / nazoratchi",
+      "transcription": "/ˈsuːpərvaɪzər/"
+    },
+    {
+      "word": "Resign",
+      "translation": "Iste'foga chiqmoq",
+      "transcription": "/rɪˈzaɪn/"
+    },
+    {
+      "word": "Overtime",
+      "translation": "Qo'shimcha ish vaqti",
+      "transcription": "/ˈoʊvərtaɪm/"
+    }
+  ],
+  "Meetings & Negotiations": [
+    {
+      "word": "Presentation",
+      "translation": "Taqdimot",
+      "transcription": "/ˌprɛzənˈteɪʃən/"
+    },
+    {
+      "word": "Participant",
+      "translation": "Ishtirokchi",
+      "transcription": "/pɑːrˈtɪsɪpənt/"
+    },
+    {
+      "word": "Reschedule",
+      "translation": "Boshqa vaqtga ko'chirmoq",
+      "transcription": "/ˌriːˈskɛdʒuːl/"
+    },
+    {
+      "word": "News agenda",
+      "translation": "Yangiliklar kun tartibi",
+      "transcription": "/njuːz əˈdʒɛndə/"
+    },
+    {
+      "word": "Objection",
+      "translation": "E'tiroz",
+      "transcription": "/əbˈdʒɛkʃən/"
+    },
+    {
+      "word": "To conclude",
+      "translation": "Xulosa qilganda",
+      "transcription": "/tuː kənˈkluːd/"
+    },
+    {
+      "word": "Feedback",
+      "translation": "Fikr-mulohaza",
+      "transcription": "/ˈfiːdbæk/"
+    },
+    {
+      "word": "Negotiate",
+      "translation": "Muzokara qilmoq",
+      "transcription": "/nɪˈɡoʊʃieɪt/"
+    },
+    {
+      "word": "Compromise",
+      "translation": "Murosa qilmoq",
+      "transcription": "/ˈkɒmprəmaɪz/"
+    },
+    {
+      "word": "Proposal",
+      "translation": "Taklif",
+      "transcription": "/prəˈpoʊzəl/"
+    },
+    {
+      "word": "Brainstorm",
+      "translation": "Fikr yurituv",
+      "transcription": "/ˈbreɪnstɔːrm/"
+    },
+    {
+      "word": "Minutes",
+      "translation": "Bayonnoma",
+      "transcription": "/ˈmɪnɪts/"
+    },
+    {
+      "word": "Attendee",
+      "translation": "Ishtirokchi",
+      "transcription": "/əˌtɛnˈdiː/"
+    },
+    {
+      "word": "Consensus",
+      "translation": "Umumiy kelishuv",
+      "transcription": "/kənˈsɛnsəs/"
+    },
+    {
+      "word": "Postpone",
+      "translation": "Kechiktirmoq",
+      "transcription": "/poʊstˈpoʊn/"
+    }
+  ],
+  "Entrepreneurship & Startups": [
+    {
+      "word": "Risk",
+      "translation": "Xavf ostiga qo'ymoq",
+      "transcription": "/rɪsk/"
+    },
+    {
+      "word": "Entrepreneur",
+      "translation": "Tadbirkor",
+      "transcription": "/ˌɒntrəprəˈnɜːr/"
+    },
+    {
+      "word": "Investor",
+      "translation": "Sarmoyador",
+      "transcription": "/ɪnˈvɛstər/"
+    },
+    {
+      "word": "Profit",
+      "translation": "Foyda",
+      "transcription": "/ˈprɒfɪt/"
+    },
+    {
+      "word": "Revenue",
+      "translation": "Daromad",
+      "transcription": "/ˈrɛvənjuː/"
+    },
+    {
+      "word": "Innovation",
+      "translation": "Innovatsiya / Yangilik",
+      "transcription": "/ˌɪnəˈveɪʃən/"
+    },
+    {
+      "word": "Startup",
+      "translation": "Startap",
+      "transcription": "/ˈstɑːrtʌp/"
+    },
+    {
+      "word": "Funding",
+      "translation": "Moliyalashtirish",
+      "transcription": "/ˈfʌndɪŋ/"
+    },
+    {
+      "word": "Loss",
+      "translation": "Zarar",
+      "transcription": "/lɒs/"
+    },
+    {
+      "word": "Venture",
+      "translation": "Tashabbus / loyiha",
+      "transcription": "/ˈvɛntʃər/"
+    },
+    {
+      "word": "Stakeholder",
+      "translation": "Manfaatdor tomon",
+      "transcription": "/ˈsteɪkhoʊldər/"
+    },
+    {
+      "word": "Bankruptcy",
+      "translation": "Bankrotlik",
+      "transcription": "/ˈbæŋkrəptsi/"
+    },
+    {
+      "word": "Shareholder",
+      "translation": "Aksiyador",
+      "transcription": "/ˈʃɛərhoʊldər/"
+    }
+  ],
+  "Physics & Chemistry": [
+    {
+      "word": "Gravity",
+      "translation": "Gravitatsiya",
+      "transcription": "/ˈɡrævəti/"
+    },
+    {
+      "word": "Liquid",
+      "translation": "Suyuqlik",
+      "transcription": "/ˈlɪkwɪd/"
+    },
+    {
+      "word": "Gas",
+      "translation": "Gaz",
+      "transcription": "/ɡæs/"
+    },
+    {
+      "word": "Molecule",
+      "translation": "Molekula",
+      "transcription": "/ˈmɒlɪkjuːl/"
+    },
+    {
+      "word": "Atom",
+      "translation": "Atom",
+      "transcription": "/ˈætəm/"
+    },
+    {
+      "word": "Energy",
+      "translation": "Energiya",
+      "transcription": "/ˈɛnərdʒi/"
+    },
+    {
+      "word": "Force",
+      "translation": "Kuch",
+      "transcription": "/fɔːrs/"
+    },
+    {
+      "word": "Temperature",
+      "translation": "Harorat",
+      "transcription": "/ˈtɛmprətʃər/"
+    },
+    {
+      "word": "Reaction",
+      "translation": "Reaksiya",
+      "transcription": "/riˈækʃən/"
+    },
+    {
+      "word": "Solid",
+      "translation": "Qattiq jism",
+      "transcription": "/ˈsɒlɪd/"
+    },
+    {
+      "word": "Mass",
+      "translation": "Massa",
+      "transcription": "/mæs/"
+    },
+    {
+      "word": "Velocity",
+      "translation": "Tezlik",
+      "transcription": "/vəˈlɒsəti/"
+    },
+    {
+      "word": "Electricity",
+      "translation": "Elektr energiyasi",
+      "transcription": "/ɪˌlɛkˈtrɪsəti/"
+    },
+    {
+      "word": "Magnet",
+      "translation": "Magnit",
+      "transcription": "/ˈmæɡnɪt/"
+    },
+    {
+      "word": "Compound",
+      "translation": "Birikma",
+      "transcription": "/ˈkɒmpaʊnd/"
+    }
+  ],
+  "Biology": [
+    {
+      "word": "Cell",
+      "translation": "Hujayra",
+      "transcription": "/sɛl/"
+    }
   ]
 }
