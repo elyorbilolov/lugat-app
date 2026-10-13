@@ -928,7 +928,7 @@ function renderQuizWord() {
         
         for (let i = 0; i < word.length; i++) {
             const char = word[i];
-            if (char === '-' || char === '\'') {
+            if (char === '-' || char === '\'' || char === '.' || char === '?' || char === '!' || char === ',' || char === '/') {
                 const span = document.createElement('span');
                 span.innerText = char;
                 span.className = 'separator';
