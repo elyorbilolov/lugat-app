@@ -2326,30 +2326,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "As a matter of fact",
-    "Uzb": "Aslida olib qaraganda",
-    "Transcription": "æz ə ˈmætər əv fækt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "In fact",
-    "Uzb": "Aslida / Darhaqiqat",
-    "Transcription": "ɪn fækt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Basically",
-    "Uzb": "Asosan / Aslida",
+    "Uzb": "Asosan",
     "Transcription": "ˈbeɪsɪkli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "To get back to the point...",
-    "Uzb": "Asosiy mavzuga qaytadigan bo'lsak...",
-    "Transcription": "tə ɡet bæk tə ðə pɔɪnt"
   },
   {
     "Degre": "Intermediate",
@@ -2361,37 +2340,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "By the way",
-    "Uzb": "Aytgancha",
-    "Transcription": "baɪ ðə weɪ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Accident",
     "Uzb": "Baxtsiz hodisa",
-    "Transcription": "'æksɪdənt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "As I was saying...",
-    "Uzb": "Boya aytayotganimdek...",
-    "Transcription": "æz aɪ wəz ˈseɪɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "To put it another way",
-    "Uzb": "Boshqacha qilib aytganda",
-    "Transcription": "tə pʊt ɪt əˈnʌðə weɪ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "In other words",
-    "Uzb": "Boshqa so'z bilan aytganda",
-    "Transcription": "ɪn ˈʌðə wɜːdz"
+    "Transcription": "'æksədənt"
   },
   {
     "Degre": "Intermediate",
@@ -2399,20 +2350,6 @@
     "Eng": "Cloud seeding",
     "Uzb": "Bulut ekish",
     "Transcription": "klaʊd ˈsiːdɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "That reminds me...",
-    "Uzb": "Bu menga bir narsani eslatdi...",
-    "Transcription": "ðæt rɪˈmaɪndz mi"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "What I mean is...",
-    "Uzb": "Demoqchi bo'lganim shuki...",
-    "Transcription": "wɒt aɪ miːn ɪz"
   },
   {
     "Degre": "Intermediate",
@@ -2431,30 +2368,16 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Back to what I was saying...",
-    "Uzb": "Gapimga qaytadigan bo'lsam...",
-    "Transcription": "bæk tə wɒt aɪ wəz ˈseɪɪŋ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Speaking of...",
-    "Uzb": "... haqida gapiradigan bo'lsak",
-    "Transcription": "ˈspiːkɪŋ əv"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "To tell the truth",
-    "Uzb": "Haqiqatni aytganda",
-    "Transcription": "tə tel ðə truːθ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Driving test",
-    "Uzb": "Haydovchilik imtihoni",
-    "Transcription": "'draɪvɪŋ tɛst"
+    "Uzb": "Haydash imtihoni",
+    "Transcription": "'draɪvɪŋ test"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Driverless",
+    "Uzb": "Haydovchisiz",
+    "Transcription": "'draɪvərləs"
   },
   {
     "Degre": "Intermediate",
@@ -2502,7 +2425,7 @@
     "Degre": "Intermediate",
     "Unit": "Unit 6",
     "Eng": "Commute",
-    "Uzb": "Ishga qatnamoq",
+    "Uzb": "Ishga qatnash",
     "Transcription": "kə'mjut"
   },
   {
@@ -2522,13 +2445,6 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Motorway",
-    "Uzb": "Katta avtomobil yo'li",
-    "Transcription": "'moʊtər,weɪ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Extreme",
     "Uzb": "Keskin",
     "Transcription": "ɪkˈstriːm"
@@ -2543,16 +2459,23 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Skill",
-    "Uzb": "Ko'nikma",
-    "Transcription": "skɪl"
+    "Eng": "Increase",
+    "Uzb": "Ko'payish",
+    "Transcription": "ɪnˈkriːs"
   },
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Increase",
-    "Uzb": "Ko'payish",
-    "Transcription": "ɪnˈkriːs"
+    "Eng": "Motorway",
+    "Uzb": "Magistral yo'l",
+    "Transcription": "'moʊtər,weɪ"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
+    "Eng": "Skill",
+    "Uzb": "Mahorat",
+    "Transcription": "skɪl"
   },
   {
     "Degre": "Intermediate",
@@ -2579,7 +2502,7 @@
     "Degre": "Intermediate",
     "Unit": "Unit 6",
     "Eng": "Park",
-    "Uzb": "Mashinani qo'ymoq",
+    "Uzb": "Mashina qo'ymoq",
     "Transcription": "pɑrk"
   },
   {
@@ -2602,13 +2525,6 @@
     "Eng": "Musical",
     "Uzb": "Musiqani yaxshi tushunadigan",
     "Transcription": "ˈmjuːzɪkl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Driverless",
-    "Uzb": "Mustaqil boshqariladigan",
-    "Transcription": "'draɪvərləs"
   },
   {
     "Degre": "Intermediate",
@@ -2648,37 +2564,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "To put it simply",
-    "Uzb": "Oddiy qilib aytganda",
-    "Transcription": "tə pʊt ɪt ˈsɪmpli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Prevent",
     "Uzb": "Oldini olmoq",
     "Transcription": "prɪˈvent"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "In the end",
-    "Uzb": "Oxir-oqibat",
-    "Transcription": "ɪn ði end"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "At the end of the day",
-    "Uzb": "Oxir-oqibat / Eng muhimi",
-    "Transcription": "æt ði end əv ðə deɪ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Frankly / To be frank",
-    "Uzb": "Ochiqchasiga aytganda",
-    "Transcription": "ˈfræŋkli / tə bi fræŋk"
   },
   {
     "Degre": "Intermediate",
@@ -2693,13 +2581,6 @@
     "Eng": "Pulse",
     "Uzb": "Puls (Zarba)",
     "Transcription": "pʌls"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Where were we?",
-    "Uzb": "Qayerda to'xtagan edik?",
-    "Transcription": "weə wɜː wi"
   },
   {
     "Degre": "Intermediate",
@@ -2725,27 +2606,6 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Honestly",
-    "Uzb": "Rostdan ham / To'g'risi",
-    "Transcription": "ˈɒnɪstli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Truth be told",
-    "Uzb": "Rostini aytganda",
-    "Transcription": "truːθ bi təʊld"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "To be honest",
-    "Uzb": "Rostini aytsam",
-    "Transcription": "tə bi ˈɒnɪst"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Steering wheel",
     "Uzb": "Rul",
     "Transcription": "'stɪrɪŋ wil"
@@ -2754,7 +2614,7 @@
     "Degre": "Intermediate",
     "Unit": "Unit 6",
     "Eng": "Slip out",
-    "Uzb": "Sirpanib ketmoq",
+    "Uzb": "Sirg'alib ketmoq",
     "Transcription": "slɪp aʊt"
   },
   {
@@ -2775,7 +2635,7 @@
     "Degre": "Intermediate",
     "Unit": "Unit 6",
     "Eng": "Confirm",
-    "Uzb": "Tasdiqlash",
+    "Uzb": "Tasdiqlamoq",
     "Transcription": "kən'fɜrm"
   },
   {
@@ -2790,7 +2650,7 @@
     "Unit": "Unit 6",
     "Eng": "At speed",
     "Uzb": "Tezlikda",
-    "Transcription": "ət spid"
+    "Transcription": "æt spid"
   },
   {
     "Degre": "Intermediate",
@@ -2809,6 +2669,13 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
+    "Eng": "Brake",
+    "Uzb": "Tormoz",
+    "Transcription": "breɪk"
+  },
+  {
+    "Degre": "Intermediate",
+    "Unit": "Unit 6",
     "Eng": "Tropical",
     "Uzb": "Tropik",
     "Transcription": "ˈtrɒpɪkl"
@@ -2816,37 +2683,9 @@
   {
     "Degre": "Intermediate",
     "Unit": "Unit 6",
-    "Eng": "Incidentally",
-    "Uzb": "To'satdan yodga tushdi / Aytganday",
-    "Transcription": "ˌɪnsɪˈdentli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Brake",
-    "Uzb": "To'xtamoq",
-    "Transcription": "breɪk"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
     "Eng": "Interrupt",
-    "Uzb": "To'xtatmoq (bo'lmoq)",
+    "Uzb": "To'xtatmoq",
     "Transcription": ",ɪntə'rʌpt"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Actually",
-    "Uzb": "To'g'risini aytganda / Aslida",
-    "Transcription": "ˈæktʃuəli"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "All in all",
-    "Uzb": "Umuman olganda / Xulosa qilib aytganda",
-    "Transcription": "ɔːl ɪn ɔːl"
   },
   {
     "Degre": "Intermediate",
@@ -2854,27 +2693,6 @@
     "Eng": "Practical",
     "Uzb": "Vaziyatga to'g'ri baho beradigan",
     "Transcription": "ˈpræktɪkl"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "Anyway",
-    "Uzb": "Xullas / Nima bo'lganda ham",
-    "Transcription": "ˈeniweɪ"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "To sum up",
-    "Uzb": "Xulosa qilganda",
-    "Transcription": "tə sʌm ʌp"
-  },
-  {
-    "Degre": "Intermediate",
-    "Unit": "Unit 6",
-    "Eng": "That is to say",
-    "Uzb": "Ya'ni / To'g'rirog'i",
-    "Transcription": "ðæt ɪz tə seɪ"
   },
   {
     "Degre": "Intermediate",
