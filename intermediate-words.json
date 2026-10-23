@@ -3411,6 +3411,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Suffer",
+        "Uzb":  "Aziyat chekmoq",
+        "Transcription":  "ˈsʌfə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Bully",
         "Uzb":  "Bezori",
         "Transcription":  "ˈbʊli"
@@ -3428,6 +3435,20 @@
         "Eng":  "Childcare",
         "Uzb":  "Bolalarga g\u0027amxo\u0027rlik",
         "Transcription":  "ˈtʃaɪldkeə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Pram",
+        "Uzb":  "Bolalar aravachasi",
+        "Transcription":  "præm"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Reschedule",
+        "Uzb":  "Boshqa vaqtga ko\u0027chirmoq",
+        "Transcription":  "ˌriːˈʃedjuːl"
     },
     {
         "Degre":  "Intermediate",
@@ -3461,7 +3482,7 @@
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
         "Eng":  "Have no problems",
-        "Uzb":  "Hech qanday muammosi yo\u0027q",
+        "Uzb":  "Hech qanday muammoga ega bo\u0027lmaslik",
         "Transcription":  "hæv nəʊ ˈprɒbləmz"
     },
     {
@@ -3516,6 +3537,20 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Rarely",
+        "Uzb":  "Kamdan-kam",
+        "Transcription":  "ˈreəli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Disadvantage",
+        "Uzb":  "Kamchilik",
+        "Transcription":  "ˌdɪsədˈvɑːntɪdʒ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Dress code",
         "Uzb":  "Kiyinish qoidalari",
         "Transcription":  "ˈdres kəʊd"
@@ -3551,9 +3586,44 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Redecorate",
+        "Uzb":  "Ko\u0027rinishni yangilamoq",
+        "Transcription":  "ˌriːˈdekəreɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Eye contact",
+        "Uzb":  "Ko\u0027ziga qarash",
+        "Transcription":  "ˈaɪ kɒntækt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Spectacularly",
+        "Uzb":  "Ko\u0027zni qamashtiradigan darajada",
+        "Transcription":  "spekˈtækjələli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Lottery",
         "Uzb":  "Lotereya",
         "Transcription":  "ˈlɒtəri"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Cultural",
+        "Uzb":  "Madaniy",
+        "Transcription":  "ˈkʌltʃərəl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Culture shock",
+        "Uzb":  "Madaniy shok",
+        "Transcription":  "ˈkʌltʃə ʃɒk"
     },
     {
         "Degre":  "Intermediate",
@@ -3572,6 +3642,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Appropriate",
+        "Uzb":  "Mos",
+        "Transcription":  "əˈprəʊpriət"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Adapt",
         "Uzb":  "Moslashmoq",
         "Transcription":  "əˈdæpt"
@@ -3586,9 +3663,30 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Misunderstand",
+        "Uzb":  "Noto\u0027g\u0027ri tushunmoq",
+        "Transcription":  "ˌmɪsʌndəˈstænd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Misjudge",
+        "Uzb":  "Noto\u0027g\u0027ri xulosa chiqarmoq",
+        "Transcription":  "ˌmɪsˈdʒʌdʒ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Factor",
         "Uzb":  "Omil",
         "Transcription":  "ˈfæktə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Overspend",
+        "Uzb":  "Ortiqcha sarf qilmoq",
+        "Transcription":  "ˌəʊvəˈspend"
     },
     {
         "Degre":  "Intermediate",
@@ -3628,6 +3726,20 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Reappear",
+        "Uzb":  "Qayta paydo bo\u0027lmoq",
+        "Transcription":  "ˌriːəˈpɪə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Renewable",
+        "Uzb":  "Qayta tiklanuvchi",
+        "Transcription":  "rɪˈnjuːəbl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Poverty",
         "Uzb":  "Qashshoqlik",
         "Transcription":  "ˈpɒvəti"
@@ -3638,6 +3750,13 @@
         "Eng":  "Be capable of",
         "Uzb":  "Qodir bo\u0027lmoq",
         "Transcription":  "bi ˈkeɪpəbl əv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Rescue",
+        "Uzb":  "Qutqarmoq",
+        "Transcription":  "ˈreskjuː"
     },
     {
         "Degre":  "Intermediate",
@@ -3656,6 +3775,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Neighbour",
+        "Uzb":  "Qo\u0027shni",
+        "Transcription":  "ˈneɪbə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Formal",
         "Uzb":  "Rasmiy",
         "Transcription":  "ˈfɔːml"
@@ -3666,6 +3792,13 @@
         "Eng":  "Generous",
         "Uzb":  "Saxiy",
         "Transcription":  "ˈdʒenərəs"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Superstar",
+        "Uzb":  "Super yulduz",
+        "Transcription":  "ˈsuːpəstɑː(r)"
     },
     {
         "Degre":  "Intermediate",
@@ -3687,6 +3820,27 @@
         "Eng":  "Healthcare",
         "Uzb":  "Tibbiy xizmat",
         "Transcription":  "ˈhelθkeə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Audience",
+        "Uzb":  "Tomoshabinlar",
+        "Transcription":  "ˈɔːdiəns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Stay up",
+        "Uzb":  "Tunni uxlamasdan o\u0027tkazmoq",
+        "Transcription":  "steɪ ʌp"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Knitting",
+        "Uzb":  "To\u0027qish",
+        "Transcription":  "ˈnɪtɪŋ"
     },
     {
         "Degre":  "Intermediate",
@@ -3754,8 +3908,22 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 8",
+        "Eng":  "Misbehave",
+        "Uzb":  "O\u0027zini yomon tutmoq",
+        "Transcription":  "ˌmɪsbɪˈheɪv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
         "Eng":  "Cosy",
         "Uzb":  "Shinam",
         "Transcription":  "ˈkəʊzi"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 8",
+        "Eng":  "Undercook",
+        "Uzb":  "Chala pishirmoq",
+        "Transcription":  "ˌʌndəˈkʊk"
     }
 ]
