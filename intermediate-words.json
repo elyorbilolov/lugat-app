@@ -3925,5 +3925,215 @@
         "Eng":  "Undercook",
         "Uzb":  "Chala pishirmoq",
         "Transcription":  "ˌʌndəˈkʊk"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Sketch",
+        "Uzb":  "Andoza",
+        "Transcription":  "sketʃ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Well-built",
+        "Uzb":  "Baquvvat",
+        "Transcription":  "ˌwel ˈbɪlt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Dye",
+        "Uzb":  "Bo\u0027yamoq",
+        "Transcription":  "daɪ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Beauty",
+        "Uzb":  "Go\u0027zallik",
+        "Transcription":  "ˈbjuːti"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Double chin",
+        "Uzb":  "Ikki yoqlama iyak",
+        "Transcription":  "ˌdʌbl ˈtʃɪn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Curly",
+        "Uzb":  "Jingalak",
+        "Transcription":  "ˈkɜːli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Go bald",
+        "Uzb":  "Kal bo\u0027lmoq",
+        "Transcription":  "ɡəʊ bɔːld"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Eyelash",
+        "Uzb":  "Kiprik",
+        "Transcription":  "ˈaɪlæʃ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Grey",
+        "Uzb":  "Kulrang",
+        "Transcription":  "ɡreɪ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Blonde",
+        "Uzb":  "Mallasoch",
+        "Transcription":  "blɒnd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Moustache",
+        "Uzb":  "Mo\u0027ylov",
+        "Transcription":  "məˈstɑːʃ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Stranger",
+        "Uzb":  "Notanish",
+        "Transcription":  "ˈstreɪndʒə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Background",
+        "Uzb":  "Orqa fon",
+        "Transcription":  "ˈbækɡraʊnd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Overweight",
+        "Uzb":  "Ortiqcha vaznli",
+        "Transcription":  "ˌəʊvəˈweɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Stubble",
+        "Uzb":  "Ozgina o\u0027sgan soqol",
+        "Transcription":  "ˈstʌbl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Curtain",
+        "Uzb":  "Parda",
+        "Transcription":  "ˈkɜːtn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Fringe",
+        "Uzb":  "Peshona soch",
+        "Transcription":  "frɪndʒ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Eyebrow",
+        "Uzb":  "Qosh",
+        "Transcription":  "ˈaɪbraʊ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Bird-watching",
+        "Uzb":  "Qushlarni kuzatish",
+        "Transcription":  "ˈbɜːdwɒtʃɪŋ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Clean-shaven",
+        "Uzb":  "Soqoli silliq olingan",
+        "Transcription":  "ˌkliːn ˈʃeɪvn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Description",
+        "Uzb":  "Ta\u0027rif",
+        "Transcription":  "dɪˈskrɪpʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Complexion",
+        "Uzb":  "Teri tusi",
+        "Transcription":  "kəmˈplekʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Spiky",
+        "Uzb":  "Tikanli",
+        "Transcription":  "ˈspaɪki"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Campaign",
+        "Uzb":  "Uyushma",
+        "Transcription":  "kæmˈpeɪn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Honestly",
+        "Uzb":  "Vijdonan",
+        "Transcription":  "ˈɒnɪstli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Slim",
+        "Uzb":  "Xushbichim",
+        "Transcription":  "slɪm"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Shoulder-length",
+        "Uzb":  "Yelka uzunligida",
+        "Transcription":  "ˈʃəʊldəleŋθ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Side by side",
+        "Uzb":  "Yonma-yon",
+        "Transcription":  "ˌsaɪd baɪ ˈsaɪd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Closed off",
+        "Uzb":  "Yopiq",
+        "Transcription":  "kləʊzd ˈɒf"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Self-described",
+        "Uzb":  "O\u0027z-o\u0027zini ta\u0027riflagan",
+        "Transcription":  "ˌself dɪˈskraɪbd"
     }
 ]
