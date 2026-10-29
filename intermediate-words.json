@@ -3929,6 +3929,27 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Abstract",
+        "Uzb":  "Abstrakt yo\u0027nalishdagi",
+        "Transcription":  "ˈæbstrækt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Reflection",
+        "Uzb":  "Aks",
+        "Transcription":  "rɪˈflekʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Reflect",
+        "Uzb":  "Aks etmoq",
+        "Transcription":  "rɪˈflekt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Sketch",
         "Uzb":  "Andoza",
         "Transcription":  "sketʃ"
@@ -3943,9 +3964,23 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Detailed",
+        "Uzb":  "Batafsil",
+        "Transcription":  "ˈdiːteɪld"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Dye",
         "Uzb":  "Bo\u0027yamoq",
         "Transcription":  "daɪ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Curve",
+        "Uzb":  "Egri chiziq",
+        "Transcription":  "kɜːv"
     },
     {
         "Degre":  "Intermediate",
@@ -4027,6 +4062,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Hunt",
+        "Uzb":  "Ov qilmoq",
+        "Transcription":  "hʌnt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Stubble",
         "Uzb":  "Ozgina o\u0027sgan soqol",
         "Transcription":  "ˈstʌbl"
@@ -4048,6 +4090,20 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Portrait",
+        "Uzb":  "Portret",
+        "Transcription":  "ˈpɔːtreɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Projector",
+        "Uzb":  "Proyektor",
+        "Transcription":  "prəˈdʒektə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Eyebrow",
         "Uzb":  "Qosh",
         "Transcription":  "ˈaɪbraʊ"
@@ -4058,6 +4114,13 @@
         "Eng":  "Bird-watching",
         "Uzb":  "Qushlarni kuzatish",
         "Transcription":  "ˈbɜːdwɒtʃɪŋ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Mysterious",
+        "Uzb":  "Sirli",
+        "Transcription":  "mɪˈstɪəriəs"
     },
     {
         "Degre":  "Intermediate",
@@ -4076,6 +4139,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Historical",
+        "Uzb":  "Tarixiy",
+        "Transcription":  "hɪˈstɒrɪkl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Complexion",
         "Uzb":  "Teri tusi",
         "Transcription":  "kəmˈplekʃn"
@@ -4086,6 +4156,20 @@
         "Eng":  "Spiky",
         "Uzb":  "Tikanli",
         "Transcription":  "ˈspaɪki"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Seem",
+        "Uzb":  "Tuyulmoq",
+        "Transcription":  "siːm"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Old-fashioned",
+        "Uzb":  "Urfdan qolgan",
+        "Transcription":  "ˌəʊld ˈfæʃnd"
     },
     {
         "Degre":  "Intermediate",
@@ -4133,7 +4217,7 @@
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
         "Eng":  "Self-described",
-        "Uzb":  "O'z-o'zini tasvirlagan",
+        "Uzb":  "O\u0027z-o\u0027zini tasvirlagan",
         "Transcription":  "ˌself dɪˈskraɪbd"
     }
 ]
