@@ -3971,9 +3971,30 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Devote",
+        "Uzb":  "Bag\u0027ishlamoq",
+        "Transcription":  "dɪˈvəʊt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Dye",
         "Uzb":  "Bo\u0027yamoq",
         "Transcription":  "daɪ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Make out",
+        "Uzb":  "Deb tushunmoq",
+        "Transcription":  "meɪk aʊt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Come across",
+        "Uzb":  "Duch kelmoq",
+        "Transcription":  "kʌm əˈkrɒs"
     },
     {
         "Degre":  "Intermediate",
@@ -3992,6 +4013,27 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Emotion",
+        "Uzb":  "Hissiyot",
+        "Transcription":  "ɪˈməʊʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Phenomenon",
+        "Uzb":  "Hodisa",
+        "Transcription":  "fəˈnɒmɪnən"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Express",
+        "Uzb":  "Ifodalamoq",
+        "Transcription":  "ɪkˈspres"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Double chin",
         "Uzb":  "Ikki yoqlama iyak",
         "Transcription":  "ˌdʌbl ˈtʃɪn"
@@ -3999,9 +4041,23 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Look forward to",
+        "Uzb":  "Intizorlik bilan kutmoq",
+        "Transcription":  "lʊk ˈfɔːwəd tu"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Curly",
         "Uzb":  "Jingalak",
         "Transcription":  "ˈkɜːli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Tap",
+        "Uzb":  "Jo\u0027mrak",
+        "Transcription":  "tæp"
     },
     {
         "Degre":  "Intermediate",
@@ -4020,6 +4076,20 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Wear",
+        "Uzb":  "Kiymoq",
+        "Transcription":  "weə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Skate",
+        "Uzb":  "Konkida uchmoq",
+        "Transcription":  "skeɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Grey",
         "Uzb":  "Kulrang",
         "Transcription":  "ɡreɪ"
@@ -4027,9 +4097,44 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Consider",
+        "Uzb":  "Ko\u0027rib chiqmoq",
+        "Transcription":  "kənˈsɪdə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Seemingly",
+        "Uzb":  "Ko\u0027rinishidan",
+        "Transcription":  "ˈsiːmɪŋli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Tape recorder",
+        "Uzb":  "Magnitofon",
+        "Transcription":  "ˈteɪp rɪkɔːdə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Blonde",
         "Uzb":  "Mallasoch",
         "Transcription":  "blɒnd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Database",
+        "Uzb":  "Ma\u0027lumotlar bazasi",
+        "Transcription":  "ˈdeɪtəbeɪs"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Suit",
+        "Uzb":  "Mos kelmoq",
+        "Transcription":  "suːt"
     },
     {
         "Degre":  "Intermediate",
@@ -4048,6 +4153,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Foreground",
+        "Uzb":  "Oldingi planda",
+        "Transcription":  "ˈfɔːɡraʊnd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Background",
         "Uzb":  "Orqa fon",
         "Transcription":  "ˈbækɡraʊnd"
@@ -4058,6 +4170,13 @@
         "Eng":  "Overweight",
         "Uzb":  "Ortiqcha vaznli",
         "Transcription":  "ˌəʊvəˈweɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Put up",
+        "Uzb":  "Osmoq",
+        "Transcription":  "pʊt ʌp"
     },
     {
         "Degre":  "Intermediate",
@@ -4146,6 +4265,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 9",
+        "Eng":  "Look up",
+        "Uzb":  "Tepaga qaramoq (lug\u0027atdan qidirmoq)",
+        "Transcription":  "lʊk ʌp"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
         "Eng":  "Complexion",
         "Uzb":  "Teri tusi",
         "Transcription":  "kəmˈplekʃn"
@@ -4156,6 +4282,13 @@
         "Eng":  "Spiky",
         "Uzb":  "Tikanli",
         "Transcription":  "ˈspaɪki"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Blob",
+        "Uzb":  "Tomchi",
+        "Transcription":  "blɒb"
     },
     {
         "Degre":  "Intermediate",
@@ -4219,5 +4352,19 @@
         "Eng":  "Self-described",
         "Uzb":  "O\u0027z-o\u0027zini tasvirlagan",
         "Transcription":  "ˌself dɪˈskraɪbd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Irritated",
+        "Uzb":  "G\u0027azablangan",
+        "Transcription":  "ˈɪrɪteɪtɪd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 9",
+        "Eng":  "Teapot",
+        "Uzb":  "Choynak",
+        "Transcription":  "ˈtiːpɒt"
     }
 ]
