@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lugat-cache-v55';
+const CACHE_NAME = 'lugat-cache-v56';
 const ASSETS = [
   './',
   './index.html',
@@ -32,16 +32,39 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch Event (Stale-while-revalidate)
+// Fetch Event
 self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+
+  // Network-first for JSON data files so new units/words update immediately
+  if (url.pathname.endsWith('.json') || event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then(networkResponse => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseClone = networkResponse.clone();
+            caches.open(CACHE_NAME).then(cache => {
+              cache.put(event.request, responseClone);
+            });
+          }
+          return networkResponse;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // Stale-while-revalidate for static assets
   event.respondWith(
     caches.match(event.request).then(response => {
       const fetchPromise = fetch(event.request).then(networkResponse => {
-        caches.open(CACHE_NAME).then(cache => {
-          cache.put(event.request, networkResponse.clone());
-        });
+        if (networkResponse && networkResponse.status === 200) {
+          caches.open(CACHE_NAME).then(cache => {
+            cache.put(event.request, networkResponse.clone());
+          });
+        }
         return networkResponse;
-      });
+      }).catch(() => response);
       return response || fetchPromise;
     })
   );
