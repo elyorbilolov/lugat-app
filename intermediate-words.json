@@ -4370,6 +4370,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Decade",
+        "Uzb":  "10 yillik",
+        "Transcription":  "ˈdekeɪd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Academically",
         "Uzb":  "Akademik jihatdan",
         "Transcription":  "ˌækəˈdemɪkli"
@@ -4398,6 +4405,41 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Set up",
+        "Uzb":  "Boshlamoq",
+        "Transcription":  "set ʌp"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Boutique hotel",
+        "Uzb":  "Butik mehmonxona",
+        "Transcription":  "buːˈtiːk həʊˈtel"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Attraction",
+        "Uzb":  "Diqqatga sazovor joy",
+        "Transcription":  "əˈtrækʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "State-of-the-art",
+        "Uzb":  "Eng zamonaviy",
+        "Transcription":  "ˌsteɪt əv ði ˈɑːt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Resemble",
+        "Uzb":  "Eslatmoq (O\u0027xshamoq)",
+        "Transcription":  "rɪˈzembl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Unheard of",
         "Uzb":  "Eshitilmagan (Uchramagan)",
         "Transcription":  "ʌnˈhɜːd ɒv"
@@ -4405,9 +4447,30 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Take no notice of",
+        "Uzb":  "E\u0027tibor bermaslik",
+        "Transcription":  "teɪk nəʊ ˈnəʊtɪs əv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Profit",
         "Uzb":  "Foyda",
         "Transcription":  "ˈprɒfɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Take advantage of",
+        "Uzb":  "Foydalanmoq",
+        "Transcription":  "teɪk ədˈvɑːntɪdʒ əv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Take word for it",
+        "Uzb":  "Gapiga ishonmoq",
+        "Transcription":  "teɪk wɜːd fɔːr ɪt"
     },
     {
         "Degre":  "Intermediate",
@@ -4433,6 +4496,20 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Magnificent",
+        "Uzb":  "Hashamatli",
+        "Transcription":  "mæɡˈnɪfɪsnt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Have a feeling",
+        "Uzb":  "His qilmoq",
+        "Transcription":  "hæv ə ˈfiːlɪŋ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Demotivating",
         "Uzb":  "Istakni so\u0027ndiradigan",
         "Transcription":  "ˌdiːˈməʊtɪveɪtɪŋ"
@@ -4447,9 +4524,30 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Take seriously",
+        "Uzb":  "Jiddiy qabul qilmoq",
+        "Transcription":  "teɪk ˈsɪəriəsli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Vibrant",
+        "Uzb":  "Jo\u0027shqin",
+        "Transcription":  "ˈvaɪbrənt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Guarantee",
         "Uzb":  "Kafolat",
         "Transcription":  "ˌɡærənˈtiː"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Dramatically",
+        "Uzb":  "Keskin",
+        "Transcription":  "drəˈmætɪkli"
     },
     {
         "Degre":  "Intermediate",
@@ -4461,9 +4559,23 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Must see",
+        "Uzb":  "Ko\u0027rish shart bo\u0027lgan",
+        "Transcription":  "mʌst siː"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Raise",
         "Uzb":  "Ko\u0027tarmoq (To\u0027plamoq)",
         "Transcription":  "reɪz"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Home stadium",
+        "Uzb":  "Mahalliy stadion",
+        "Transcription":  "ˈhəʊm ˈsteɪdiəm"
     },
     {
         "Degre":  "Intermediate",
@@ -4482,6 +4594,20 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Fashionable",
+        "Uzb":  "Moda (Zamonaviy)",
+        "Transcription":  "ˈfæʃnəbl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Sophisticated",
+        "Uzb":  "Murakkab (Zamonaviy)",
+        "Transcription":  "səˈfɪstɪkeɪtɪd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Tournament",
         "Uzb":  "Musobaqa",
         "Transcription":  "ˈtʊənəmənt"
@@ -4489,9 +4615,51 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Abundance",
+        "Uzb":  "Mo\u0027l - ko\u0027llik (Ko\u0027p)",
+        "Transcription":  "əˈbʌndəns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Take turns",
+        "Uzb":  "Navbatlashmoq",
+        "Transcription":  "teɪk tɜːnz"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Open air",
+        "Uzb":  "Ochiq havodagi",
+        "Transcription":  "ˌəʊpən ˈeə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Take out",
+        "Uzb":  "Olmoq",
+        "Transcription":  "teɪk aʊt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Pledge",
         "Uzb":  "Pul tikmoq",
         "Transcription":  "pledʒ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Short of cash",
+        "Uzb":  "Pul yetishmovchiligi",
+        "Transcription":  "ʃɔːt əv kæʃ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Take a decision",
+        "Uzb":  "Qaror qabul qilmoq",
+        "Transcription":  "teɪk ə dɪˈsɪʒn"
     },
     {
         "Degre":  "Intermediate",
@@ -4573,6 +4741,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Athlete",
+        "Uzb":  "Sportchi",
+        "Transcription":  "ˈæθliːt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Event",
         "Uzb":  "Tadbir",
         "Transcription":  "ɪˈvent"
@@ -4587,9 +4762,93 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 10",
+        "Eng":  "Present",
+        "Uzb":  "Taqdim qilmoq",
+        "Transcription":  "prɪˈzent"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Take a risk",
+        "Uzb":  "Tavakkal qilmoq",
+        "Transcription":  "teɪk ə rɪsk"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Renovate",
+        "Uzb":  "Ta\u0027mirlamoq",
+        "Transcription":  "ˈrenəveɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "District",
+        "Uzb":  "Tuman",
+        "Transcription":  "ˈdɪstrɪkt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Nightclub",
+        "Uzb":  "Tungi klub",
+        "Transcription":  "ˈnaɪtklʌb"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Have a clue",
+        "Uzb":  "Tushunchaga ega bo\u0027lmoq",
+        "Transcription":  "hæv ə kluː"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Skyline",
+        "Uzb":  "Ufq",
+        "Transcription":  "ˈskaɪlaɪn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Have a go",
+        "Uzb":  "Urinib ko\u0027rmoq",
+        "Transcription":  "hæv ə ɡəʊ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Dominate",
+        "Uzb":  "Ustunlik qilmoq",
+        "Transcription":  "ˈdɒmɪneɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Run-down",
+        "Uzb":  "Xaroba",
+        "Transcription":  "ˌrʌn ˈdaʊn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Service",
+        "Uzb":  "Xizmat",
+        "Transcription":  "ˈsɜːvɪs"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
         "Eng":  "Padded",
         "Uzb":  "Yumshoq",
         "Transcription":  "ˈpædɪd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Trendy",
+        "Uzb":  "Zamonaviy",
+        "Transcription":  "ˈtrendi"
     },
     {
         "Degre":  "Intermediate",
@@ -4604,5 +4863,19 @@
         "Eng":  "Self-esteem",
         "Uzb":  "O\u0027ziga bo\u0027lgan hurmat",
         "Transcription":  "ˌself ɪˈstiːm"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Riot",
+        "Uzb":  "G\u0027alayon",
+        "Transcription":  "ˈraɪət"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 10",
+        "Eng":  "Take care of",
+        "Uzb":  "G\u0027amxo\u0027rlik qilmoq",
+        "Transcription":  "teɪk keə(r) əv"
     }
 ]
