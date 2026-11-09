@@ -4889,7 +4889,7 @@
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
         "Eng":  "Crash-land",
-        "Uzb":  "Favqulodda qo\u0027nmoq",
+        "Uzb":  "Favqulodda qo\u0027nish",
         "Transcription":  "ˈkræʃ lænd"
     },
     {
@@ -4933,13 +4933,6 @@
         "Eng":  "Delay",
         "Uzb":  "Kechikish",
         "Transcription":  "dɪˈleɪ"
-    },
-    {
-        "Degre":  "Intermediate",
-        "Unit":  "Unit 11",
-        "Eng":  "Stop someone from doing",
-        "Uzb":  "Kimnidir biror ishni qilishdan to\u0027xtatmoq",
-        "Transcription":  "stɒp ˈsʌmwʌn frəm ˈduːɪŋ"
     },
     {
         "Degre":  "Intermediate",
@@ -4989,6 +4982,13 @@
         "Eng":  "Capture",
         "Uzb":  "Qo\u0027lga olish",
         "Transcription":  "ˈkæptʃə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Stop someone from doing",
+        "Uzb":  "To\u0027sqinlik qilmoq",
+        "Transcription":  "stɒp ˈsʌmwʌn frəm ˈduːɪŋ"
     },
     {
         "Degre":  "Intermediate",
