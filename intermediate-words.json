@@ -4877,5 +4877,194 @@
         "Eng":  "Take care of",
         "Uzb":  "G\u0027amxo\u0027rlik qilmoq",
         "Transcription":  "teɪk keə(r) əv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Bandit",
+        "Uzb":  "Bosqinchi",
+        "Transcription":  "ˈbændɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Crash-land",
+        "Uzb":  "Favqulodda qo\u0027nmoq",
+        "Transcription":  "ˈkræʃ lænd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Suspect",
+        "Uzb":  "Gumon qilmoq",
+        "Transcription":  "səˈspekt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Fine",
+        "Uzb":  "Jarima",
+        "Transcription":  "faɪn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Punishment",
+        "Uzb":  "Jazo",
+        "Transcription":  "ˈpʌnɪʃmənt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Criminal",
+        "Uzb":  "Jinoyatchi",
+        "Transcription":  "ˈkrɪmɪnl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Outlaw",
+        "Uzb":  "Jinoyatchi (Qochoq)",
+        "Transcription":  "ˈaʊtlɔː"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Delay",
+        "Uzb":  "Kechikish",
+        "Transcription":  "dɪˈleɪ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Stop someone from doing",
+        "Uzb":  "Kimnidir biror ishni qilishdan to\u0027xtatmoq",
+        "Transcription":  "stɒp ˈsʌmwʌn frəm ˈduːɪŋ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Sentence",
+        "Uzb":  "Mahkum qilmoq",
+        "Transcription":  "ˈsentəns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Illegally",
+        "Uzb":  "Noqonuniy",
+        "Transcription":  "ɪˈliːɡəli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Inconvenience",
+        "Uzb":  "Noqulaylik",
+        "Transcription":  "ˌɪnkənˈviːniəns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Sensation",
+        "Uzb":  "Olamshumul voqea",
+        "Transcription":  "senˈseɪʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Prison",
+        "Uzb":  "Qamoqxona",
+        "Transcription":  "ˈprɪzn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Escape",
+        "Uzb":  "Qochmoq",
+        "Transcription":  "ɪˈskeɪp"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Capture",
+        "Uzb":  "Qo\u0027lga olish",
+        "Transcription":  "ˈkæptʃə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Reportedly",
+        "Uzb":  "Xabarlarga ko\u0027ra",
+        "Transcription":  "rɪˈpɔːtɪdli"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Arrest",
+        "Uzb":  "Xibsga olmoq",
+        "Transcription":  "əˈrest"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Barefoot",
+        "Uzb":  "Yalangoyoq",
+        "Transcription":  "ˈbeəfʊt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Violence",
+        "Uzb":  "Zo\u0027ravonlik",
+        "Transcription":  "ˈvaɪələns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Stolen",
+        "Uzb":  "O\u0027g\u0027irlangan",
+        "Transcription":  "ˈstəʊlən"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Robber",
+        "Uzb":  "O\u0027g\u0027ri",
+        "Transcription":  "ˈrɒbə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Thief",
+        "Uzb":  "O\u0027g\u0027ri",
+        "Transcription":  "θiːf"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Burglar",
+        "Uzb":  "O\u0027g\u0027ri qulfbuzar",
+        "Transcription":  "ˈbɜːɡlə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Burglary",
+        "Uzb":  "O\u0027g\u0027rilik",
+        "Transcription":  "ˈbɜːɡləri"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Theft",
+        "Uzb":  "O\u0027g\u0027rilik",
+        "Transcription":  "θeft"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Rob",
+        "Uzb":  "O\u0027marmoq",
+        "Transcription":  "rɒb"
     }
 ]
