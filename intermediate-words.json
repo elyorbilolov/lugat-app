@@ -4881,9 +4881,30 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Regret",
+        "Uzb":  "Afsuslanmoq",
+        "Transcription":  "rɪˈɡret"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Blog",
+        "Uzb":  "Blog yozmoq",
+        "Transcription":  "blɒɡ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Bandit",
         "Uzb":  "Bosqinchi",
         "Transcription":  "ˈbændɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Careless",
+        "Uzb":  "Ehtiyotsiz",
+        "Transcription":  "ˈkeələs"
     },
     {
         "Degre":  "Intermediate",
@@ -4898,6 +4919,20 @@
         "Eng":  "Suspect",
         "Uzb":  "Gumon qilmoq",
         "Transcription":  "səˈspekt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Insult",
+        "Uzb":  "Haqorat qilmoq",
+        "Transcription":  "ɪnˈsʌlt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Passionate",
+        "Uzb":  "Ishtiyoqli",
+        "Transcription":  "ˈpæʃənət"
     },
     {
         "Degre":  "Intermediate",
@@ -4937,9 +4972,30 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Cyberbullying",
+        "Uzb":  "Kiberzo\u0027ravonlik",
+        "Transcription":  "ˈsaɪbəbʊliɪŋ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Sentence",
         "Uzb":  "Mahkum qilmoq",
         "Transcription":  "ˈsentəns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Issue",
+        "Uzb":  "Muammo",
+        "Transcription":  "ˈɪʃuː"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Candidate",
+        "Uzb":  "Nomzod",
+        "Transcription":  "ˈkændɪdət"
     },
     {
         "Degre":  "Intermediate",
@@ -4965,6 +5021,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Spare",
+        "Uzb":  "Ortiqcha",
+        "Transcription":  "speə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Prison",
         "Uzb":  "Qamoqxona",
         "Transcription":  "ˈprɪzn"
@@ -4986,6 +5049,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Victim",
+        "Uzb":  "Qurbon",
+        "Transcription":  "ˈvɪktɪm"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Stop someone from doing",
         "Uzb":  "To\u0027sqinlik qilmoq",
         "Transcription":  "stɒp ˈsʌmwʌn frəm ˈduːɪŋ"
@@ -5000,6 +5070,13 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Upset",
+        "Uzb":  "Xafa qilmoq",
+        "Transcription":  "ʌpˈset"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Arrest",
         "Uzb":  "Xibsga olmoq",
         "Transcription":  "əˈrest"
@@ -5010,6 +5087,13 @@
         "Eng":  "Barefoot",
         "Uzb":  "Yalangoyoq",
         "Transcription":  "ˈbeəfʊt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Nasty",
+        "Uzb":  "Yoqimsiz",
+        "Transcription":  "ˈnɑːsti"
     },
     {
         "Degre":  "Intermediate",
@@ -5066,5 +5150,12 @@
         "Eng":  "Rob",
         "Uzb":  "O\u0027marmoq",
         "Transcription":  "rɒb"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Interaction",
+        "Uzb":  "O\u0027zaro ta\u0027sir (Muloqot)",
+        "Transcription":  "ˌɪntərˈækʃn"
     }
 ]
