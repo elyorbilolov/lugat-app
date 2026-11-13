@@ -4979,9 +4979,23 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Unintended",
+        "Uzb":  "Kutilmagan",
+        "Transcription":  "ˌʌnɪnˈtendɪd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Sentence",
         "Uzb":  "Mahkum qilmoq",
         "Transcription":  "ˈsentəns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Square",
+        "Uzb":  "Maydon",
+        "Transcription":  "skweə(r)"
     },
     {
         "Degre":  "Intermediate",
@@ -5021,9 +5035,23 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Consequence",
+        "Uzb":  "Oqibat",
+        "Transcription":  "ˈkɒnsɪkwəns"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Spare",
         "Uzb":  "Ortiqcha",
         "Transcription":  "speə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Unprofessional",
+        "Uzb":  "Professional bo\u0027lmagan",
+        "Transcription":  "ˌʌnprəˈfeʃənl"
     },
     {
         "Degre":  "Intermediate",
@@ -5056,9 +5084,30 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Permission",
+        "Uzb":  "Ruxsat",
+        "Transcription":  "pəˈmɪʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Submission",
+        "Uzb":  "Topshirish",
+        "Transcription":  "səbˈmɪʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Stop someone from doing",
         "Uzb":  "To\u0027sqinlik qilmoq",
         "Transcription":  "stɒp ˈsʌmwʌn frəm ˈduːɪŋ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Extension",
+        "Uzb":  "Uzaytirish",
+        "Transcription":  "ɪkˈstenʃn"
     },
     {
         "Degre":  "Intermediate",
@@ -5094,6 +5143,20 @@
         "Eng":  "Nasty",
         "Uzb":  "Yoqimsiz",
         "Transcription":  "ˈnɑːsti"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Upload",
+        "Uzb":  "Yuklamoq",
+        "Transcription":  "ˌʌpˈləʊd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Unfashionable",
+        "Uzb":  "Zamonaviy emas",
+        "Transcription":  "ʌnˈfæʃnəbl"
     },
     {
         "Degre":  "Intermediate",
@@ -5154,8 +5217,36 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 11",
+        "Eng":  "Match",
+        "Uzb":  "O\u0027yin",
+        "Transcription":  "mætʃ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Speak up",
+        "Uzb":  "O\u0027z fikrini aytish",
+        "Transcription":  "spiːk ʌp"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
         "Eng":  "Interaction",
         "Uzb":  "O\u0027zaro ta\u0027sir (Muloqot)",
         "Transcription":  "ˌɪntərˈækʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Change",
+        "Uzb":  "O\u0027zgarmoq",
+        "Transcription":  "tʃeɪndʒ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 11",
+        "Eng":  "Light",
+        "Uzb":  "Chiroq",
+        "Transcription":  "laɪt"
     }
 ]
