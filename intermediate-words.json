@@ -5248,5 +5248,89 @@
         "Eng":  "Light",
         "Uzb":  "Chiroq",
         "Transcription":  "laɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Associate",
+        "Uzb":  "Bog\u0027lamoq",
+        "Transcription":  "əˈsəʊʃieɪt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Brand",
+        "Uzb":  "Brend",
+        "Transcription":  "brænd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Poster",
+        "Uzb":  "E\u0027lon",
+        "Transcription":  "ˈpəʊstə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Billboard",
+        "Uzb":  "E\u0027lonlar taxtasi",
+        "Transcription":  "ˈbɪlbɔːd"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Memorable",
+        "Uzb":  "Esda qolarli",
+        "Transcription":  "ˈmemərəbl"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Persuasive",
+        "Uzb":  "Ishonarli",
+        "Transcription":  "pəˈsweɪsɪv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Logo",
+        "Uzb":  "Mahsulot belgisi",
+        "Transcription":  "ˈləʊɡəʊ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Advert",
+        "Uzb":  "Reklama",
+        "Transcription":  "ˈædvɜːt"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Effective",
+        "Uzb":  "Samarali",
+        "Transcription":  "ɪˈfektɪv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Homeless",
+        "Uzb":  "Uysiz",
+        "Transcription":  "ˈhəʊmləs"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Make someone aware of",
+        "Uzb":  "Xabardor qilmoq",
+        "Transcription":  "meɪk ˈsʌmwʌn əˈweə(r) əv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Slogan",
+        "Uzb":  "Shior",
+        "Transcription":  "ˈsləʊɡən"
     }
 ]
