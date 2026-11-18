@@ -5280,6 +5280,20 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 12",
+        "Eng":  "Objection",
+        "Uzb":  "E\u0027tiroz",
+        "Transcription":  "əbˈdʒekʃn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Menswear store",
+        "Uzb":  "Erkaklar kiyim do\u0027koni",
+        "Transcription":  "ˈmenzweə stɔː(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
         "Eng":  "Memorable",
         "Uzb":  "Esda qolarli",
         "Transcription":  "ˈmemərəbl"
@@ -5294,9 +5308,58 @@
     {
         "Degre":  "Intermediate",
         "Unit":  "Unit 12",
+        "Eng":  "Persuasion",
+        "Uzb":  "Ishontirish",
+        "Transcription":  "pəˈsweɪʒn"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Moth",
+        "Uzb":  "Kuya kapalak",
+        "Transcription":  "mɒθ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
         "Eng":  "Logo",
         "Uzb":  "Mahsulot belgisi",
         "Transcription":  "ˈləʊɡəʊ"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Negotiator",
+        "Uzb":  "Muzokarachi",
+        "Transcription":  "nɪˈɡəʊʃieɪtə(r)"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Point of view",
+        "Uzb":  "Nuqtai nazar",
+        "Transcription":  "ˌpɔɪnt əv ˈvjuː"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Bring someone round to",
+        "Uzb":  "Ortidan ergashtirmoq",
+        "Transcription":  "brɪŋ ˈsʌmwʌn raʊnd tu"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Psychology",
+        "Uzb":  "Psixologiya",
+        "Transcription":  "saɪˈkɒlədʒi"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Pass a law",
+        "Uzb":  "Qonun qabul qilish",
+        "Transcription":  "pɑːs ə lɔː"
     },
     {
         "Degre":  "Intermediate",
@@ -5325,6 +5388,27 @@
         "Eng":  "Make someone aware of",
         "Uzb":  "Xabardor qilmoq",
         "Transcription":  "meɪk ˈsʌmwʌn əˈweə(r) əv"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Upset",
+        "Uzb":  "Xafa",
+        "Transcription":  "ʌpˈset"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Overcome",
+        "Uzb":  "Yengmoq",
+        "Transcription":  "ˌəʊvəˈkʌm"
+    },
+    {
+        "Degre":  "Intermediate",
+        "Unit":  "Unit 12",
+        "Eng":  "Win over",
+        "Uzb":  "O\u0027z tomoniga og\u0027dirmoq",
+        "Transcription":  "wɪn ˈəʊvə(r)"
     },
     {
         "Degre":  "Intermediate",
